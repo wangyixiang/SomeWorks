@@ -1,0 +1,2168 @@
+
+--- Module:   ..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp (C++)
+                                                           _
+	CI_DISPLAY_EFFECT_NONE				 = 0x00000000l,
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(237) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                                                   _
+	CI_DISPLAY_EFFECT_BRIGHTNESS		 = 0x00000001l,
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(238) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                                                           _
+	CI_DISPLAY_EFFECT_CONTRAST			 = 0x00000002l,          
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(239) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                                                           _
+	CI_DISPLAY_EFFECT_HUE				 = 0x00000004l,
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(240) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                                                   _
+	CI_DISPLAY_EFFECT_SATURATION		 = 0x00000008l,          
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(241) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                                                           _
+	CI_DISPLAY_EFFECT_SHARPNESS			 = 0x00000010l,           
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(242) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                                                           _
+	CI_DISPLAY_EFFECT_GAMMA				 = 0x00000020l,               
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(243) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                                                   _
+	CI_DISPLAY_EFFECT_COLORENABLE		 = 0x00000040l,         
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(244) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                                                   _
+	CI_DISPLAY_EFFECT_NOISE_REDUCTION	 = 0x00000080l,     
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(245) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                                                   _
+	CI_DISPLAY_EFFECT_EDGE_ENHANCE		 = 0x00000100l,        
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(246) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                                               _
+	CI_DISPLAY_EFFECT_ANAMORPHIC_SCALING = 0x00000200l  
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(247) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                            _
+			free(pucImgBuff);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(82) : Warning 586: function 'free'
+    is deprecated. [MISRA C++ Rule 18-4-1]
+                            _
+			free(ptcFileName);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(86) : Warning 586: function 'free'
+    is deprecated. [MISRA C++ Rule 18-4-1]
+                                                    _
+						free(ptOutput[i].apu8Buff[0]);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(94) : Warning 586: function 'free'
+    is deprecated. [MISRA C++ Rule 18-4-1]
+                                                    _
+						free(ptOutput[i].apu8Buff[1]);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(96) : Warning 586: function 'free'
+    is deprecated. [MISRA C++ Rule 18-4-1]
+                                                    _
+						free(ptOutput[i].apu8Buff[2]);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(98) : Warning 586: function 'free'
+    is deprecated. [MISRA C++ Rule 18-4-1]
+                                                                                                             _
+					ptJpegDecFunc->ReleaseFrame(pvDecoder, (CI_JPEGDEC_FRAME*)pvOutFrame);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(112) : Warning 534: Ignoring
+    return value of function 'ReleaseFrame' (compare with line 285, file
+    ..\ExternalDependency\ci_jpegdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_jpegdec.h(285) : Info 830: Location cited in prior
+    message
+                                            _
+					free(pvOutFrame);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(113) : Warning 586: function
+    'free' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                               _
+				ptJpegDecFunc->Close(pvDecoder);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(115) : Warning 534: Ignoring
+    return value of function 'Close' (compare with line 278, file
+    ..\ExternalDependency\ci_jpegdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_jpegdec.h(278) : Info 830: Location cited in prior
+    message
+                                                                 _
+				ptJpegDecFunc->Release(pvDecoder);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(116) : Warning 534: Ignoring
+    return value of function 'Release' (compare with line 279, file
+    ..\ExternalDependency\ci_jpegdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_jpegdec.h(279) : Info 830: Location cited in prior
+    message
+                                                                                                           _
+					ptPngDecFunc->ReleaseFrame(pvDecoder, (CI_PNGDEC_FRAME*)pvOutFrame);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(123) : Warning 534: Ignoring
+    return value of function 'ReleaseFrame' (compare with line 271, file
+    ..\ExternalDependency\ci_pngdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_pngdec.h(271) : Info 830: Location cited in prior
+    message
+                                            _
+					free(pvOutFrame);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(124) : Warning 586: function
+    'free' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                              _
+				ptPngDecFunc->Close(pvDecoder);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(126) : Warning 534: Ignoring
+    return value of function 'Close' (compare with line 264, file
+    ..\ExternalDependency\ci_pngdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_pngdec.h(264) : Info 830: Location cited in prior
+    message
+                                                                _
+				ptPngDecFunc->Release(pvDecoder);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(127) : Warning 534: Ignoring
+    return value of function 'Release' (compare with line 265, file
+    ..\ExternalDependency\ci_pngdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_pngdec.h(265) : Info 830: Location cited in prior
+    message
+                                                                                                           _
+					ptTifDecFunc->ReleaseFrame(pvDecoder, (CI_TIFDEC_FRAME*)pvOutFrame);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(134) : Warning 534: Ignoring
+    return value of function 'ReleaseFrame' (compare with line 276, file
+    ..\ExternalDependency\ci_tifdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_tifdec.h(276) : Info 830: Location cited in prior
+    message
+                                            _
+					free(pvOutFrame);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(135) : Warning 586: function
+    'free' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                              _
+				ptTifDecFunc->Close(pvDecoder);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(137) : Warning 534: Ignoring
+    return value of function 'Close' (compare with line 269, file
+    ..\ExternalDependency\ci_tifdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_tifdec.h(269) : Info 830: Location cited in prior
+    message
+                                                                _
+				ptTifDecFunc->Release(pvDecoder);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(138) : Warning 534: Ignoring
+    return value of function 'Release' (compare with line 270, file
+    ..\ExternalDependency\ci_tifdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_tifdec.h(270) : Info 830: Location cited in prior
+    message
+                                                                                                           _
+					ptGifDecFunc->ReleaseFrame(pvDecoder, (CI_GIFDEC_FRAME*)pvOutFrame);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(145) : Warning 534: Ignoring
+    return value of function 'ReleaseFrame' (compare with line 265, file
+    ..\ExternalDependency\ci_gifdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_gifdec.h(265) : Info 830: Location cited in prior
+    message
+                                            _
+					free(pvOutFrame);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(146) : Warning 586: function
+    'free' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                              _
+				ptGifDecFunc->Close(pvDecoder);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(148) : Warning 534: Ignoring
+    return value of function 'Close' (compare with line 258, file
+    ..\ExternalDependency\ci_gifdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_gifdec.h(258) : Info 830: Location cited in prior
+    message
+                                                                _
+				ptGifDecFunc->Release(pvDecoder);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(149) : Warning 534: Ignoring
+    return value of function 'Release' (compare with line 259, file
+    ..\ExternalDependency\ci_gifdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_gifdec.h(259) : Info 830: Location cited in prior
+    message
+                                                                                                           _
+					ptBmpDecFunc->ReleaseFrame(pvDecoder, (CI_BMPDEC_FRAME*)pvOutFrame);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(156) : Warning 534: Ignoring
+    return value of function 'ReleaseFrame' (compare with line 265, file
+    ..\ExternalDependency\ci_bmpdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_bmpdec.h(265) : Info 830: Location cited in prior
+    message
+                                            _
+					free(pvOutFrame);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(157) : Warning 586: function
+    'free' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                              _
+				ptBmpDecFunc->Close(pvDecoder);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(159) : Warning 534: Ignoring
+    return value of function 'Close' (compare with line 258, file
+    ..\ExternalDependency\ci_bmpdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_bmpdec.h(258) : Info 830: Location cited in prior
+    message
+                                                                _
+				ptBmpDecFunc->Release(pvDecoder);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(160) : Warning 534: Ignoring
+    return value of function 'Release' (compare with line 259, file
+    ..\ExternalDependency\ci_bmpdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_bmpdec.h(259) : Info 830: Location cited in prior
+    message
+                                               _
+			FreeLibrary(hImgDecLib);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(164) : Warning 534: Ignoring
+    return value of function 'FreeLibrary(struct HINSTANCE__ *)' (compare with
+    line 1885, file C:\Program Files\Microsoft Visual Studio
+    8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(1885)
+    : Info 830: Location cited in prior message
+                                                                         _
+				ptCurrOutput->apu8Buff[0] = (ci8u*)malloc(ptCurrOutput->au32Stride[0]*ptCurrOutput->au32Height[0]);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(558) : Warning 586: function
+    'malloc' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                                         _
+				ptCurrOutput->apu8Buff[1] = (ci8u*)malloc(ptCurrOutput->au32Stride[1]*ptCurrOutput->au32Height[1]);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(567) : Warning 586: function
+    'malloc' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                                         _
+				ptCurrOutput->apu8Buff[2] = (ci8u*)malloc(ptCurrOutput->au32Stride[2]*ptCurrOutput->au32Height[2]);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(576) : Warning 586: function
+    'malloc' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                                       _
+					CI_IMAGEPROC_Destroy(pvImgProc);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(627) : Warning 534: Ignoring
+    return value of function 'CI_IMAGEPROC_Destroy(void *)' (compare with line
+    205, file ..\ExternalDependency\ci_imageproc.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\ExternalDependency\ci_imageproc.h(205) : Info 830: Location cited in prior
+    message
+                                                               _
+				CI_IMAGEPROC_Destroy(pvImgProc);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(630) : Warning 534: Ignoring
+    return value of function 'CI_IMAGEPROC_Destroy(void *)' (compare with line
+    205, file ..\ExternalDependency\ci_imageproc.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\ExternalDependency\ci_imageproc.h(205) : Info 830: Location cited in prior
+    message
+                                                                        _
+		ptImage->pfnGetImgFunc(tImgDecGuid, &ptImage->pvDecFunc);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(822) : Warning 534: Ignoring
+    return value of function 'CI_IMAGE_DATA::pfnGetImgFunc' (compare with line
+    169) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(169) : Info 830: Location cited in
+    prior message
+                                _
+		CI_RESULT ciRes = ptJpegDecFunc->Create(&ptImage->pvDecoder, 0);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(830) : Warning 578: Declaration of
+    symbol 'ciRes' hides symbol 'ciRes' (line 816) [MISRA C++ Rule 2-10-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(816) : Info 830: Location cited in
+    prior message
+                                                                  _
+			tJpegOpenOpt.pfnRead = (CI_VOID*)jpeg_read;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(842) : Warning 611: Suspicious
+    cast [MISRA C++ Rule 5-2-6]
+                                                                    _
+			tJpegOpenOpt.pfnWrite = (CI_VOID*)jpeg_write;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(843) : Warning 611: Suspicious
+    cast [MISRA C++ Rule 5-2-6]
+                                                                  _
+			tJpegOpenOpt.pfnSeek = (CI_VOID*)jpeg_seek;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(844) : Warning 611: Suspicious
+    cast [MISRA C++ Rule 5-2-6]
+                                                                  _
+			tJpegOpenOpt.pfnSize = (CI_VOID*)jpeg_tell;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(845) : Warning 611: Suspicious
+    cast [MISRA C++ Rule 5-2-6]
+                                                        _
+		ptJpegDecFunc->Close(ptImage->pvDecoder);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(864) : Warning 534: Ignoring
+    return value of function 'Close' (compare with line 278, file
+    ..\ExternalDependency\ci_jpegdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_jpegdec.h(278) : Info 830: Location cited in prior
+    message
+                                                          _
+		ptJpegDecFunc->Release(ptImage->pvDecoder);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(865) : Warning 534: Ignoring
+    return value of function 'Release' (compare with line 279, file
+    ..\ExternalDependency\ci_jpegdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_jpegdec.h(279) : Info 830: Location cited in prior
+    message
+                                                                        _
+		ptImage->pfnGetImgFunc(tImgDecGuid, &ptImage->pvDecFunc);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(871) : Warning 534: Ignoring
+    return value of function 'CI_IMAGE_DATA::pfnGetImgFunc' (compare with line
+    169) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(169) : Info 830: Location cited in
+    prior message
+                                                            _
+		ptPngDecFunc->Create(&ptImage->pvDecoder, 0);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(878) : Warning 534: Ignoring
+    return value of function 'Create' (compare with line 262, file
+    ..\ExternalDependency\ci_pngdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_pngdec.h(262) : Info 830: Location cited in prior
+    message
+                                                       _
+		ptPngDecFunc->Close(ptImage->pvDecoder);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(907) : Warning 534: Ignoring
+    return value of function 'Close' (compare with line 264, file
+    ..\ExternalDependency\ci_pngdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_pngdec.h(264) : Info 830: Location cited in prior
+    message
+                                                         _
+		ptPngDecFunc->Release(ptImage->pvDecoder);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(908) : Warning 534: Ignoring
+    return value of function 'Release' (compare with line 265, file
+    ..\ExternalDependency\ci_pngdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_pngdec.h(265) : Info 830: Location cited in prior
+    message
+                                                                        _
+		ptImage->pfnGetImgFunc(tImgDecGuid, &ptImage->pvDecFunc);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(913) : Warning 534: Ignoring
+    return value of function 'CI_IMAGE_DATA::pfnGetImgFunc' (compare with line
+    169) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(169) : Info 830: Location cited in
+    prior message
+                                                            _
+		ptTifDecFunc->Create(&ptImage->pvDecoder, 0);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(920) : Warning 534: Ignoring
+    return value of function 'Create' (compare with line 267, file
+    ..\ExternalDependency\ci_tifdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_tifdec.h(267) : Info 830: Location cited in prior
+    message
+                                                        _
+		tTifOpenOpt.pfnRead = (CI_VOID*)tif_read;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(930) : Warning 611: Suspicious
+    cast [MISRA C++ Rule 5-2-6]
+                                                          _
+		tTifOpenOpt.pfnWrite = (CI_VOID*)tif_write;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(931) : Warning 611: Suspicious
+    cast [MISRA C++ Rule 5-2-6]
+                                                        _
+		tTifOpenOpt.pfnSeek = (CI_VOID*)tif_seek;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(932) : Warning 611: Suspicious
+    cast [MISRA C++ Rule 5-2-6]
+                                                          _
+		tTifOpenOpt.pfnClose = (CI_VOID*)tif_close;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(933) : Warning 611: Suspicious
+    cast [MISRA C++ Rule 5-2-6]
+                                                        _
+		tTifOpenOpt.pfnSize = (CI_VOID*)tif_size;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(934) : Warning 611: Suspicious
+    cast [MISRA C++ Rule 5-2-6]
+                                                          _
+		tTifOpenOpt.pfnMapFile = (CI_VOID*)tif_map;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(935) : Warning 611: Suspicious
+    cast [MISRA C++ Rule 5-2-6]
+                                                            _
+		tTifOpenOpt.pfnMapFile = (CI_VOID*)tif_unmap;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(936) : Warning 611: Suspicious
+    cast [MISRA C++ Rule 5-2-6]
+                                                       _
+		ptTifDecFunc->Close(ptImage->pvDecoder);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(954) : Warning 534: Ignoring
+    return value of function 'Close' (compare with line 269, file
+    ..\ExternalDependency\ci_tifdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_tifdec.h(269) : Info 830: Location cited in prior
+    message
+                                                         _
+		ptTifDecFunc->Release(ptImage->pvDecoder);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(955) : Warning 534: Ignoring
+    return value of function 'Release' (compare with line 270, file
+    ..\ExternalDependency\ci_tifdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_tifdec.h(270) : Info 830: Location cited in prior
+    message
+                                                                        _
+		ptImage->pfnGetImgFunc(tImgDecGuid, &ptImage->pvDecFunc);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(960) : Warning 534: Ignoring
+    return value of function 'CI_IMAGE_DATA::pfnGetImgFunc' (compare with line
+    169) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(169) : Info 830: Location cited in
+    prior message
+                                                            _
+		ptGifDecFunc->Create(&ptImage->pvDecoder, 0);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(967) : Warning 534: Ignoring
+    return value of function 'Create' (compare with line 256, file
+    ..\ExternalDependency\ci_gifdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_gifdec.h(256) : Info 830: Location cited in prior
+    message
+                                                       _
+		ptGifDecFunc->Close(ptImage->pvDecoder);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(993) : Warning 534: Ignoring
+    return value of function 'Close' (compare with line 258, file
+    ..\ExternalDependency\ci_gifdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_gifdec.h(258) : Info 830: Location cited in prior
+    message
+                                                         _
+		ptGifDecFunc->Release(ptImage->pvDecoder);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(994) : Warning 534: Ignoring
+    return value of function 'Release' (compare with line 259, file
+    ..\ExternalDependency\ci_gifdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_gifdec.h(259) : Info 830: Location cited in prior
+    message
+                                                                        _
+		ptImage->pfnGetImgFunc(tImgDecGuid, &ptImage->pvDecFunc);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(999) : Warning 534: Ignoring
+    return value of function 'CI_IMAGE_DATA::pfnGetImgFunc' (compare with line
+    169) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(169) : Info 830: Location cited in
+    prior message
+                                                            _
+		ptBmpDecFunc->Create(&ptImage->pvDecoder, 0);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1006) : Warning 534: Ignoring
+    return value of function 'Create' (compare with line 256, file
+    ..\ExternalDependency\ci_bmpdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_bmpdec.h(256) : Info 830: Location cited in prior
+    message
+                                                       _
+		ptBmpDecFunc->Close(ptImage->pvDecoder);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1034) : Warning 534: Ignoring
+    return value of function 'Close' (compare with line 258, file
+    ..\ExternalDependency\ci_bmpdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_bmpdec.h(258) : Info 830: Location cited in prior
+    message
+                                                         _
+		ptBmpDecFunc->Release(ptImage->pvDecoder);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1035) : Warning 534: Ignoring
+    return value of function 'Release' (compare with line 259, file
+    ..\ExternalDependency\ci_bmpdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_bmpdec.h(259) : Info 830: Location cited in prior
+    message
+                                                                        _
+		ptImage->pfnGetImgFunc(tImgDecGuid, &ptImage->pvDecFunc);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1097) : Warning 534: Ignoring
+    return value of function 'CI_IMAGE_DATA::pfnGetImgFunc' (compare with line
+    169) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(169) : Info 830: Location cited in
+    prior message
+                                                             _
+		ptJpegDecFunc->Create(&ptImage->pvDecoder, 0);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1104) : Warning 534: Ignoring
+    return value of function 'Create' (compare with line 276, file
+    ..\ExternalDependency\ci_jpegdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_jpegdec.h(276) : Info 830: Location cited in prior
+    message
+                                                      _
+		ptImage->pvOutFrame = (CI_VOID*)malloc(sizeof(CI_JPEGDEC_FRAME));
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1136) : Warning 586: function
+    'malloc' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                                        _
+		ptImage->pfnGetImgFunc(tImgDecGuid, &ptImage->pvDecFunc);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1157) : Warning 534: Ignoring
+    return value of function 'CI_IMAGE_DATA::pfnGetImgFunc' (compare with line
+    169) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(169) : Info 830: Location cited in
+    prior message
+                                                            _
+		ptPngDecFunc->Create(&ptImage->pvDecoder, 0);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1164) : Warning 534: Ignoring
+    return value of function 'Create' (compare with line 262, file
+    ..\ExternalDependency\ci_pngdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_pngdec.h(262) : Info 830: Location cited in prior
+    message
+                                                      _
+		ptImage->pvOutFrame = (CI_VOID*)malloc(sizeof(CI_PNGDEC_FRAME));
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1195) : Warning 586: function
+    'malloc' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                                        _
+		ptImage->pfnGetImgFunc(tImgDecGuid, &ptImage->pvDecFunc);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1216) : Warning 534: Ignoring
+    return value of function 'CI_IMAGE_DATA::pfnGetImgFunc' (compare with line
+    169) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(169) : Info 830: Location cited in
+    prior message
+                                                            _
+		ptTifDecFunc->Create(&ptImage->pvDecoder, 0);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1223) : Warning 534: Ignoring
+    return value of function 'Create' (compare with line 267, file
+    ..\ExternalDependency\ci_tifdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_tifdec.h(267) : Info 830: Location cited in prior
+    message
+                                                        _
+		tTifOpenOpt.pfnRead = (CI_VOID*)tif_read;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1233) : Warning 611: Suspicious
+    cast [MISRA C++ Rule 5-2-6]
+                                                          _
+		tTifOpenOpt.pfnWrite = (CI_VOID*)tif_write;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1234) : Warning 611: Suspicious
+    cast [MISRA C++ Rule 5-2-6]
+                                                        _
+		tTifOpenOpt.pfnSeek = (CI_VOID*)tif_seek;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1235) : Warning 611: Suspicious
+    cast [MISRA C++ Rule 5-2-6]
+                                                          _
+		tTifOpenOpt.pfnClose = (CI_VOID*)tif_close;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1236) : Warning 611: Suspicious
+    cast [MISRA C++ Rule 5-2-6]
+                                                        _
+		tTifOpenOpt.pfnSize = (CI_VOID*)tif_size;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1237) : Warning 611: Suspicious
+    cast [MISRA C++ Rule 5-2-6]
+                                                          _
+		tTifOpenOpt.pfnMapFile = (CI_VOID*)tif_map;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1238) : Warning 611: Suspicious
+    cast [MISRA C++ Rule 5-2-6]
+                                                            _
+		tTifOpenOpt.pfnMapFile = (CI_VOID*)tif_unmap;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1239) : Warning 611: Suspicious
+    cast [MISRA C++ Rule 5-2-6]
+                                                      _
+		ptImage->pvOutFrame = (CI_VOID*)malloc(sizeof(CI_TIFDEC_FRAME));
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1260) : Warning 586: function
+    'malloc' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                                        _
+		ptImage->pfnGetImgFunc(tImgDecGuid, &ptImage->pvDecFunc);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1281) : Warning 534: Ignoring
+    return value of function 'CI_IMAGE_DATA::pfnGetImgFunc' (compare with line
+    169) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(169) : Info 830: Location cited in
+    prior message
+                                                            _
+		ptGifDecFunc->Create(&ptImage->pvDecoder, 0);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1288) : Warning 534: Ignoring
+    return value of function 'Create' (compare with line 256, file
+    ..\ExternalDependency\ci_gifdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_gifdec.h(256) : Info 830: Location cited in prior
+    message
+                                                      _
+		ptImage->pvOutFrame = (CI_VOID*)malloc(sizeof(CI_GIFDEC_FRAME));
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1318) : Warning 586: function
+    'malloc' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                                        _
+		ptImage->pfnGetImgFunc(tImgDecGuid, &ptImage->pvDecFunc);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1339) : Warning 534: Ignoring
+    return value of function 'CI_IMAGE_DATA::pfnGetImgFunc' (compare with line
+    169) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(169) : Info 830: Location cited in
+    prior message
+                                                            _
+		ptBmpDecFunc->Create(&ptImage->pvDecoder, 0);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1346) : Warning 534: Ignoring
+    return value of function 'Create' (compare with line 256, file
+    ..\ExternalDependency\ci_bmpdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_bmpdec.h(256) : Info 830: Location cited in prior
+    message
+                                                      _
+		ptImage->pvOutFrame = (CI_VOID*)malloc(sizeof(CI_BMPDEC_FRAME));
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1376) : Warning 586: function
+    'malloc' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                     _
+	CI_IMAGE_DATA* ptNewImage = new CI_IMAGE_DATA;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1432) : Warning 586: function
+    'operator new' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                _
+	ptNewImage->ptcFileName = (TCHAR*)malloc((ulFileNameLen+1)*sizeof(TCHAR));
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1450) : Warning 586: function
+    'malloc' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                            _
+	_tcscpy(ptNewImage->ptcFileName, (TCHAR*)pvFileName);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1456) : Warning 534: Ignoring
+    return value of function 'wcscpy(wchar_t *, const wchar_t *)' (compare with
+    line 1002, file C:\Program Files\Microsoft Visual Studio
+    8\VC\include\wchar.h) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\wchar.h(1002) : Info 830:
+    Location cited in prior message
+                                                       _
+	ptNewImage->pucImgBuff = (unsigned char*)malloc(ulImgFileLen);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1492) : Warning 586: function
+    'malloc' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                     _
+	CI_IMAGE_DATA* ptNewImage = new CI_IMAGE_DATA;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1531) : Warning 586: function
+    'operator new' is deprecated. [MISRA C++ Rule 18-4-1]
+                      _
+	delete ptImage;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1598) : Warning 586: function
+    'operator delete' is deprecated. [MISRA C++ Rule 18-4-1]
+                       _
+		return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1604) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(1611) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+               _
+	return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(2045) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(2052) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_NOT_INITED;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(2056) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                            _
+					free(ptNewOutput[i].apu8Buff[0]);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(2079) : Warning 586: function
+    'free' is deprecated. [MISRA C++ Rule 18-4-1]
+                                            _
+					free(ptNewOutput[i].apu8Buff[1]);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(2081) : Warning 586: function
+    'free' is deprecated. [MISRA C++ Rule 18-4-1]
+                                            _
+					free(ptNewOutput[i].apu8Buff[2]);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(2083) : Warning 586: function
+    'free' is deprecated. [MISRA C++ Rule 18-4-1]
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(2094) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(2100) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                         _
+	ciResult ciRet = CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(2103) : Warning 569: Loss of
+    information (initialization) (32 bits to 31 bits)
+                               _
+			return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp(2107) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+
+--- Module:   ..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp (C++)
+                                                           _
+	CI_DISPLAY_EFFECT_NONE				 = 0x00000000l,
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(237) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                                                   _
+	CI_DISPLAY_EFFECT_BRIGHTNESS		 = 0x00000001l,
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(238) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                                                           _
+	CI_DISPLAY_EFFECT_CONTRAST			 = 0x00000002l,          
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(239) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                                                           _
+	CI_DISPLAY_EFFECT_HUE				 = 0x00000004l,
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(240) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                                                   _
+	CI_DISPLAY_EFFECT_SATURATION		 = 0x00000008l,          
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(241) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                                                           _
+	CI_DISPLAY_EFFECT_SHARPNESS			 = 0x00000010l,           
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(242) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                                                           _
+	CI_DISPLAY_EFFECT_GAMMA				 = 0x00000020l,               
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(243) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                                                   _
+	CI_DISPLAY_EFFECT_COLORENABLE		 = 0x00000040l,         
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(244) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                                                   _
+	CI_DISPLAY_EFFECT_NOISE_REDUCTION	 = 0x00000080l,     
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(245) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                                                   _
+	CI_DISPLAY_EFFECT_EDGE_ENHANCE		 = 0x00000100l,        
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(246) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                                               _
+	CI_DISPLAY_EFFECT_ANAMORPHIC_SCALING = 0x00000200l  
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(247) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                            _
+			free(tMetaDataItem.ps8Data);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(37) : Warning 586: function
+    'free' is deprecated. [MISRA C++ Rule 18-4-1]
+                                 _
+		memset(&tListHead, 0, sizeof(tListHead));
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(49) : Warning 1415: Pointer to
+    non-POD class 'CI_MD_ITEM_NODE' passed to function 'memset(void *, int,
+    unsigned int)' (arg. no. 1)
+                            _
+			free(ptcFileName);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(58) : Warning 586: function
+    'free' is deprecated. [MISRA C++ Rule 18-4-1]
+                                               _
+				delete ptDelete;
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(65) : Warning 586: function
+    'operator delete' is deprecated. [MISRA C++ Rule 18-4-1]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(65) : Warning 1551: Function
+    may throw exception '...' in destructor 'CI_META_DATA::~CI_META_DATA(void)'
+                                    _
+			delete ptFMB;
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(73) : Warning 586: function
+    'operator delete' is deprecated. [MISRA C++ Rule 18-4-1]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(73) : Warning 1551: Function
+    may throw exception '...' in destructor 'CI_META_DATA::~CI_META_DATA(void)'
+                                                        _
+	CI_MD_ITEM_NODE* ptNewNode = new CI_MD_ITEM_NODE;
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(88) : Warning 586: function
+    'operator new' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                                        _
+			ptNewNode->tMetaDataItem.ps8Data = (ci8s*)malloc(s32DataSize+2);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(96) : Warning 586: function
+    'malloc' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                _
+				delete ptNewNode;
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(99) : Warning 586: function
+    'operator delete' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                                        _
+			ptNewNode->tMetaDataItem.ps8Data = (ci8s*)malloc(s32DataSize);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(108) : Warning 586: function
+    'malloc' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                _
+				delete ptNewNode;
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(111) : Warning 586: function
+    'operator delete' is deprecated. [MISRA C++ Rule 18-4-1]
+                                _
+		delete ptSearch2;
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(137) : Warning 586: function
+    'operator delete' is deprecated. [MISRA C++ Rule 18-4-1]
+                             _
+		return strlen((const char*)pvStr);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(269) : Warning 586: function
+    'strlen' is deprecated. [MISRA C++ Rule 18-0-5]
+                                                      _
+	CI_META_DATA* ptNewMetaData = new CI_META_DATA;
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(289) : Warning 586: function
+    'operator new' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                   _
+	ptNewMetaData->ptcFileName = (TCHAR*)malloc((ulFileNameLen+1)*sizeof(TCHAR));
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(294) : Warning 586: function
+    'malloc' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                               _
+	_tcscpy(ptNewMetaData->ptcFileName, (TCHAR*)pvFileName);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(300) : Warning 534: Ignoring
+    return value of function 'wcscpy(wchar_t *, const wchar_t *)' (compare with
+    line 252, file C:\Program Files\Microsoft Visual Studio
+    8\VC\include\string.h) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(252) : Info 830:
+    Location cited in prior message
+                                                           _
+		ptNewMetaData->ptFMB = new CCiFileMapBuffer(32, 4096);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(308) : Warning 586: function
+    'operator new' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                                                                                                                                                                 _
+						AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_TRACK, mp3encType_2_mdCodeType(ptTextFrame->ucTextEncoding), ptTextFrame->pcTextString, s32DataLen);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(411) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                       _
+						AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_TRACK, CI_MD_CODETYPE_INT, (ci8s*)ptFrame->pucContent, 1);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(415) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                                                 _
+						AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_ALBUM, mp3encType_2_mdCodeType(ptTextFrame->ucTextEncoding), ptTextFrame->pcTextString, s32DataLen);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(437) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                 _
+						AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_ALBUM, CI_MD_CODETYPE_ANSI, (ci8s*)ptFrame->pucContent, s32DataLen);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(442) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                                                  _
+						AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_ARTIST, mp3encType_2_mdCodeType(ptTextFrame->ucTextEncoding), ptTextFrame->pcTextString, s32DataLen);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(464) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                  _
+						AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_ARTIST, CI_MD_CODETYPE_ANSI, (ci8s*)ptFrame->pucContent, s32DataLen);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(469) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                                                   _
+						AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_COMMENT, mp3encType_2_mdCodeType(ptTextFrame->ucTextEncoding), ptTextFrame->pcTextString, s32DataLen);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(491) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                   _
+						AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_COMMENT, CI_MD_CODETYPE_ANSI, (ci8s*)ptFrame->pucContent, s32DataLen);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(496) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                                                 _
+						AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_GENRE, mp3encType_2_mdCodeType(ptTextFrame->ucTextEncoding), ptTextFrame->pcTextString, s32DataLen);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(518) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                     _
+						AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_GENRE, CI_MD_CODETYPE_ANSI, (ci8s*)pcGenre, s32DataLen);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(524) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                                                 _
+						AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_TITLE, mp3encType_2_mdCodeType(ptTextFrame->ucTextEncoding), ptTextFrame->pcTextString, s32DataLen);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(546) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                 _
+						AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_TITLE, CI_MD_CODETYPE_ANSI, (ci8s*)ptFrame->pucContent, s32DataLen);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(551) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                                                _
+						AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_YEAR, mp3encType_2_mdCodeType(ptTextFrame->ucTextEncoding), ptTextFrame->pcTextString, s32DataLen);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(573) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                _
+						AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_YEAR, CI_MD_CODETYPE_ANSI, (ci8s*)ptFrame->pucContent, s32DataLen);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(578) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                        _
+						AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_PICTURE, eCodeType, (ci8s*)ptPicFrame->pvPicData, ptPicFrame->uPicDataLen);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(599) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                                                                       _
+				AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_COPYRIGHT, Mp4CodeTypeToCiCodeType(tMp4MetaData.copyright.nCodes), (ci8s*)tMp4MetaData.copyright.szContent, tMp4MetaData.copyright.nSize);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(636) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                                                           _
+				AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_ARTIST, Mp4CodeTypeToCiCodeType(tMp4MetaData.artist.nCodes), (ci8s*)tMp4MetaData.artist.szContent, tMp4MetaData.artist.nSize);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(638) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                                                           _
+				AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_AUTHOR, Mp4CodeTypeToCiCodeType(tMp4MetaData.author.nCodes), (ci8s*)tMp4MetaData.author.szContent, tMp4MetaData.author.nSize);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(640) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                                                       _
+				AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_TITLE, Mp4CodeTypeToCiCodeType(tMp4MetaData.title.nCodes), (ci8s*)tMp4MetaData.title.szContent, tMp4MetaData.title.nSize);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(642) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                                                                               _
+				AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_DESCRIPTION, Mp4CodeTypeToCiCodeType(tMp4MetaData.description.nCodes), (ci8s*)tMp4MetaData.description.szContent, tMp4MetaData.description.nSize);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(644) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                                                       _
+				AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_ALBUM, Mp4CodeTypeToCiCodeType(tMp4MetaData.album.nCodes), (ci8s*)tMp4MetaData.album.szContent, tMp4MetaData.album.nSize);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(646) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                               _
+			MP4Demux_Close(pMp4Dmx);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(650) : Warning 534: Ignoring
+    return value of function 'MP4Demux_Close(void *)' (compare with line 211,
+    file ..\ExternalDependency\MP4Demux.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\MP4Demux.h(211) : Info 830: Location cited in prior
+    message
+                                                 _
+			MP4Demux_Release(pMp4Dmx);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(651) : Warning 534: Ignoring
+    return value of function 'MP4Demux_Release(void *)' (compare with line 170,
+    file ..\ExternalDependency\MP4Demux.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\MP4Demux.h(170) : Info 830: Location cited in prior
+    message
+        _
+	}
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(659) : Warning 438: Last value
+    assigned to variable 'pMp4Dmx' (defined at line 621) not used [MISRA C++
+    Rule 0-1-6], [MISRA C++ Rules 0-1-6 and 0-1-9]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(621) : Info 830: Location cited
+    in prior message
+        _
+	}
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(659) : Warning 438: Last value
+    assigned to variable 'hMp4File' (defined at line 616) not used [MISRA C++
+    Rule 0-1-6], [MISRA C++ Rules 0-1-6 and 0-1-9]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(616) : Info 830: Location cited
+    in prior message
+                                                               _
+			AsfDemuxGetFileInfo(pAsfDmx, &tAsfInfo);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(679) : Warning 534: Ignoring
+    return value of function 'AsfDemuxGetFileInfo(void *, struct _AsfFileInfo
+    *)' (compare with line 241, file ..\ExternalDependency\AsfDemuxApi.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\ExternalDependency\AsfDemuxApi.h(241) : Info 830: Location cited in prior
+    message
+                                                                                                                                                  _
+				AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_ARTIST, CI_MD_CODETYPE_UTF16, tAsfInfo.szAuthor, tAsfInfo.authorLen);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(683) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                               _
+				AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_TITLE, CI_MD_CODETYPE_UTF16, tAsfInfo.szTitle, tAsfInfo.titleLen);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(685) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                           _
+				AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_COPYRIGHT, CI_MD_CODETYPE_UTF16, tAsfInfo.szCopyright, tAsfInfo.copyrightLen);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(687) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                             _
+				AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_DESCRIPTION, CI_MD_CODETYPE_UTF16, tAsfInfo.szDescription, tAsfInfo.descripLen);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(689) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                         _
+				wcstombs(acDespName, (const wchar_t*)tAsfInfo.pExConDesc[i].descName, sizeof(acDespName));
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(696) : Warning 534: Ignoring
+    return value of function 'wcstombs(char *, const wchar_t *, unsigned int)'
+    (compare with line 572, file C:\Program Files\Microsoft Visual Studio
+    8\VC\include\stdlib.h) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\stdlib.h(572) : Info 830:
+    Location cited in prior message
+                                           _
+				if (!strcmp(acDespName, "WM/AlbumTitle") && tAsfInfo.pExConDesc[i].descValue != NULL && *((short*)(tAsfInfo.pExConDesc[i].descValue)) != 0)
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(698) : Warning 586: function
+    'strcmp' is deprecated. [MISRA C++ Rule 18-0-5]
+                                                                                                                                                                                                                                           _
+					AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_ALBUM, AsfCodeTypeToCiCodeType(tAsfInfo.pExConDesc[i].descValueType), (ci8s*)(tAsfInfo.pExConDesc[i].descValue), tAsfInfo.pExConDesc[i].descValueLen);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(699) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                           _
+				if (!strcmp(acDespName, "WM/Year") && tAsfInfo.pExConDesc[i].descValue != NULL && *((short*)(tAsfInfo.pExConDesc[i].descValue)) != 0)
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(700) : Warning 586: function
+    'strcmp' is deprecated. [MISRA C++ Rule 18-0-5]
+                                                                                                                                                                                                                                          _
+					AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_YEAR, AsfCodeTypeToCiCodeType(tAsfInfo.pExConDesc[i].descValueType), (ci8s*)(tAsfInfo.pExConDesc[i].descValue), tAsfInfo.pExConDesc[i].descValueLen);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(701) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                           _
+				if (!strcmp(acDespName, "WM/Genre") && tAsfInfo.pExConDesc[i].descValue != NULL && *((short*)(tAsfInfo.pExConDesc[i].descValue)) != 0)
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(702) : Warning 586: function
+    'strcmp' is deprecated. [MISRA C++ Rule 18-0-5]
+                                                                                                                                                                                                                                           _
+					AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_GENRE, AsfCodeTypeToCiCodeType(tAsfInfo.pExConDesc[i].descValueType), (ci8s*)(tAsfInfo.pExConDesc[i].descValue), tAsfInfo.pExConDesc[i].descValueLen);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(703) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                           _
+				if (!strcmp(acDespName, "WM/TrackNumber") && tAsfInfo.pExConDesc[i].descValue != NULL && *((short*)(tAsfInfo.pExConDesc[i].descValue)) != 0)
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(704) : Warning 586: function
+    'strcmp' is deprecated. [MISRA C++ Rule 18-0-5]
+                                                                                                                                                                                                                                           _
+					AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_TRACK, AsfCodeTypeToCiCodeType(tAsfInfo.pExConDesc[i].descValueType), (ci8s*)(tAsfInfo.pExConDesc[i].descValue), tAsfInfo.pExConDesc[i].descValueLen);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(705) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                           _
+				if (!strcmp(acDespName, "WM/AlbumArtist") && tAsfInfo.pExConDesc[i].descValue != NULL && *((short*)(tAsfInfo.pExConDesc[i].descValue)) != 0)
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(706) : Warning 586: function
+    'strcmp' is deprecated. [MISRA C++ Rule 18-0-5]
+                                                                                                                                                                                                                                            _
+					AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_ARTIST, AsfCodeTypeToCiCodeType(tAsfInfo.pExConDesc[i].descValueType), (ci8s*)(tAsfInfo.pExConDesc[i].descValue), tAsfInfo.pExConDesc[i].descValueLen);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(707) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                              _
+			AsfDemuxClose(pAsfDmx);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(712) : Warning 534: Ignoring
+    return value of function 'AsfDemuxClose(void *)' (compare with line 228,
+    file ..\ExternalDependency\AsfDemuxApi.h) [MISRA C++ Rules 0-1-7], [MISRA
+    C++ Rules 0-3-2]
+..\ExternalDependency\AsfDemuxApi.h(228) : Info 830: Location cited in prior
+    message
+                                             _
+			CloseHandle(hAsfFile);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(717) : Warning 534: Ignoring
+    return value of function 'CloseHandle(void *)' (compare with line 3713,
+    file C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3713)
+    : Info 830: Location cited in prior message
+        _
+	}
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(720) : Warning 438: Last value
+    assigned to variable 'hAsfFile' (defined at line 666) not used [MISRA C++
+    Rule 0-1-6], [MISRA C++ Rules 0-1-6 and 0-1-9]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(666) : Info 830: Location cited
+    in prior message
+        _
+	}
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(720) : Warning 438: Last value
+    assigned to variable 'pAsfDmx' (defined at line 674) not used [MISRA C++
+    Rule 0-1-6], [MISRA C++ Rules 0-1-6 and 0-1-9]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(674) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                           _
+					AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_TITLE, CI_MD_CODETYPE_UTF8, (ci8s*)(oggComment.title.content), oggComment.title.size);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(734) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                              _
+					AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_ARTIST, CI_MD_CODETYPE_UTF8, (ci8s*)(oggComment.artist.content), oggComment.artist.size);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(738) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                           _
+					AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_ALBUM, CI_MD_CODETYPE_UTF8, (ci8s*)(oggComment.album.content), oggComment.album.size);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(742) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                                 _
+					AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_COMMENT, CI_MD_CODETYPE_UTF8, (ci8s*)(oggComment.comment.content), oggComment.comment.size);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(746) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                                       _
+					AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_TRACK, CI_MD_CODETYPE_UTF8, (ci8s*)(oggComment.tracknumber.content), oggComment.tracknumber.size);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(750) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                        _
+					AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_YEAR, CI_MD_CODETYPE_UTF8, (ci8s*)(oggComment.date.content), oggComment.date.size);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(754) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                           _
+					AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_GENRE, CI_MD_CODETYPE_UTF8, (ci8s*)(oggComment.genre.content), oggComment.genre.size);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(758) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                            _
+			OGG_Close(oggHandle);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(762) : Warning 534: Ignoring
+    return value of function 'OGG_Close(void *)' (compare with line 75, file
+    ..\ExternalDependency\OGGDemuxAPI.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\OGGDemuxAPI.h(75) : Info 830: Location cited in prior
+    message
+                                                                                                                                                                             _
+						AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_TITLE, CI_MD_CODETYPE_UTF8, (ci8s*)(ptComment->pcCommentContent), (ci32s)strlen(ptComment->pcCommentContent));
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(794) : Warning 586: function
+    'strlen' is deprecated. [MISRA C++ Rule 18-0-5]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(794) : Warning 586: function
+    'strlen' is deprecated. [MISRA C++ Rule 18-0-5]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(794) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                             _
+						AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_TRACK, CI_MD_CODETYPE_UTF8, (ci8s*)(ptComment->pcCommentContent), (ci32s)strlen(ptComment->pcCommentContent));
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(796) : Warning 586: function
+    'strlen' is deprecated. [MISRA C++ Rule 18-0-5]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(796) : Warning 586: function
+    'strlen' is deprecated. [MISRA C++ Rule 18-0-5]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(796) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                              _
+						AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_ARTIST, CI_MD_CODETYPE_UTF8, (ci8s*)(ptComment->pcCommentContent), (ci32s)strlen(ptComment->pcCommentContent));
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(798) : Warning 586: function
+    'strlen' is deprecated. [MISRA C++ Rule 18-0-5]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(798) : Warning 586: function
+    'strlen' is deprecated. [MISRA C++ Rule 18-0-5]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(798) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                             _
+						AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_ALBUM, CI_MD_CODETYPE_UTF8, (ci8s*)(ptComment->pcCommentContent), (ci32s)strlen(ptComment->pcCommentContent));
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(800) : Warning 586: function
+    'strlen' is deprecated. [MISRA C++ Rule 18-0-5]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(800) : Warning 586: function
+    'strlen' is deprecated. [MISRA C++ Rule 18-0-5]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(800) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                             _
+						AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_TRACK, CI_MD_CODETYPE_UTF8, (ci8s*)(ptComment->pcCommentContent), (ci32s)strlen(ptComment->pcCommentContent));
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(802) : Warning 586: function
+    'strlen' is deprecated. [MISRA C++ Rule 18-0-5]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(802) : Warning 586: function
+    'strlen' is deprecated. [MISRA C++ Rule 18-0-5]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(802) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                            _
+						AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_YEAR, CI_MD_CODETYPE_UTF8, (ci8s*)(ptComment->pcCommentContent), (ci32s)strlen(ptComment->pcCommentContent));
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(804) : Warning 586: function
+    'strlen' is deprecated. [MISRA C++ Rule 18-0-5]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(804) : Warning 586: function
+    'strlen' is deprecated. [MISRA C++ Rule 18-0-5]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(804) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                             _
+						AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_GENRE, CI_MD_CODETYPE_UTF8, (ci8s*)(ptComment->pcCommentContent), (ci32s)strlen(ptComment->pcCommentContent));
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(806) : Warning 586: function
+    'strlen' is deprecated. [MISRA C++ Rule 18-0-5]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(806) : Warning 586: function
+    'strlen' is deprecated. [MISRA C++ Rule 18-0-5]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(806) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                                                                                                                                                                   _
+						AddMetaDataItemNode(ptNewMetaData, CI_MD_TYPE_DESCRIPTION, CI_MD_CODETYPE_UTF8, (ci8s*)(ptComment->pcCommentContent), (ci32s)strlen(ptComment->pcCommentContent));
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(808) : Warning 586: function
+    'strlen' is deprecated. [MISRA C++ Rule 18-0-5]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(808) : Warning 586: function
+    'strlen' is deprecated. [MISRA C++ Rule 18-0-5]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(808) : Warning 534: Ignoring
+    return value of function 'AddMetaDataItemNode(CI_META_DATA *, enum
+    _tagCI_METADATA_TYPE, enum _tagCI_METADATA_CODETYPE, char *, long)'
+    (compare with line 86) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(86) : Info 830: Location cited
+    in prior message
+                                            _
+		CiFlacDemux_Close(pvFlacDmx);
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(812) : Warning 534: Ignoring
+    return value of function 'CiFlacDemux_Close(void *)' (compare with line
+    464, file ..\ExternalDependency\FlacDemux.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\ExternalDependency\FlacDemux.h(464) : Info 830: Location cited in prior
+    message
+        _
+	}
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(819) : Warning 438: Last value
+    assigned to variable 'pfFlacFile' (defined at line 768) not used [MISRA C++
+    Rule 0-1-6], [MISRA C++ Rules 0-1-6 and 0-1-9]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(768) : Info 830: Location cited
+    in prior message
+        _
+	}
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(819) : Warning 438: Last value
+    assigned to variable 'pvFlacDmx' (defined at line 772) not used [MISRA C++
+    Rule 0-1-6], [MISRA C++ Rules 0-1-6 and 0-1-9]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(772) : Info 830: Location cited
+    in prior message
+                         _
+	delete ptMetaData;
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(837) : Warning 586: function
+    'operator delete' is deprecated. [MISRA C++ Rule 18-4-1]
+                       _
+		return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(843) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                               _
+			return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(849) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+               _
+	return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(863) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(869) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+               _
+	return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(873) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(873) : Warning 438: Last value
+    assigned to variable 'ptMetaData' (defined at line 871) not used [MISRA C++
+    Rule 0-1-6], [MISRA C++ Rules 0-1-6 and 0-1-9]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(871) : Info 830: Location cited
+    in prior message
+_
+}
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(874) : Warning 529: Symbol
+    'ptMetaData' (line 871) not subsequently referenced [MISRA C++ Rule 0-1-3],
+    [MISRA C++ Rule 0-1-4]
+..\..\..\src\LibPlaybackSDK\CI_SDK_MetaData.cpp(871) : Info 830: Location cited
+    in prior message
+
+--- Module:   ..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp (C++)
+                                                           _
+	CI_DISPLAY_EFFECT_NONE				 = 0x00000000l,
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(237) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                                                   _
+	CI_DISPLAY_EFFECT_BRIGHTNESS		 = 0x00000001l,
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(238) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                                                           _
+	CI_DISPLAY_EFFECT_CONTRAST			 = 0x00000002l,          
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(239) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                                                           _
+	CI_DISPLAY_EFFECT_HUE				 = 0x00000004l,
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(240) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                                                   _
+	CI_DISPLAY_EFFECT_SATURATION		 = 0x00000008l,          
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(241) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                                                           _
+	CI_DISPLAY_EFFECT_SHARPNESS			 = 0x00000010l,           
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(242) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                                                           _
+	CI_DISPLAY_EFFECT_GAMMA				 = 0x00000020l,               
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(243) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                                                   _
+	CI_DISPLAY_EFFECT_COLORENABLE		 = 0x00000040l,         
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(244) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                                                   _
+	CI_DISPLAY_EFFECT_NOISE_REDUCTION	 = 0x00000080l,     
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(245) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                                                   _
+	CI_DISPLAY_EFFECT_EDGE_ENHANCE		 = 0x00000100l,        
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(246) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+                                               _
+	CI_DISPLAY_EFFECT_ANAMORPHIC_SCALING = 0x00000200l  
+..\..\..\src\LibPlaybackSDK\CI_SDK_Typedef.h(247) : Warning 620: Suspicious
+    constant (L or one?) [MISRA C++ Rule 2-10-1], [MISRA C++ Rule 2-13-4]
+        _
+	}
+..\..\..\src\LibPlaybackSDK\SdkStructureDefine.h(50) : Warning 1540: Pointer
+    member 'CLockSDK::m_ptPlaybackSDK' (line 54) neither freed nor zeroed by
+    destructor
+..\..\..\src\LibPlaybackSDK\SdkStructureDefine.h(54) : Info 830: Location cited
+    in prior message
+                       _
+		return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(102) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                                            _
+	CI_PLAYBACK_SDK*  pPlaybackSDK = new CI_PLAYBACK_SDK;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(105) : Warning 586: function
+    'operator new' is deprecated. [MISRA C++ Rule 18-4-1]
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(109) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                           _
+		CI_Player_Destroy(phPlayer);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(119) : Warning 534: Ignoring
+    return value of function 'CI_Player_Destroy(void **)' (compare with line
+    75, file ..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.h) [MISRA C++ Rules
+    0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.h(75) : Info 830: Location cited in
+    prior message
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(120) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(164) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(170) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+	CLockSDK* ptLock = new CLockSDK(pPlaybackSDK);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(172) : Warning 586: function
+    'operator new' is deprecated. [MISRA C++ Rule 18-4-1]
+                             _
+		delete ptLock;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(175) : Warning 586: function
+    'operator delete' is deprecated. [MISRA C++ Rule 18-4-1]
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(176) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                                _
+		pPlaybackSDK->m_pEngine->Close();
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(182) : Warning 534: Ignoring
+    return value of function 'IEmcEngine::Close(int)' (compare with line 979,
+    file ..\..\..\src\LibEMC\emccore.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(979) : Info 830: Location cited in prior message
+                                                  _
+		pPlaybackSDK->m_pEngine->Release();
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(183) : Warning 534: Ignoring
+    return value of function 'IUnknown::Release(void)' (compare with line 119,
+    file C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h,
+    module ..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp) [MISRA C++ Rules
+    0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h(119)
+    : Info 830: Location cited in prior message
+                                                      _
+		pPlaybackSDK->m_pAudioContext->Close();
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(189) : Warning 534: Ignoring
+    return value of function 'IEmcMediaComponent::Close(void)' (compare with
+    line 541, file ..\..\..\src\LibEMC\emccore.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(541) : Info 830: Location cited in prior message
+                                                        _
+		pPlaybackSDK->m_pAudioContext->Release();
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(190) : Warning 534: Ignoring
+    return value of function 'IUnknown::Release(void)' (compare with line 119,
+    file C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h,
+    module ..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp) [MISRA C++ Rules
+    0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h(119)
+    : Info 830: Location cited in prior message
+                     _
+	delete ptLock;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(201) : Warning 586: function
+    'operator delete' is deprecated. [MISRA C++ Rule 18-4-1]
+                           _
+	delete pPlaybackSDK;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(202) : Warning 586: function
+    'operator delete' is deprecated. [MISRA C++ Rule 18-4-1]
+                                _
+	CI_Player_Close(hPlayer);  // do this to make sure previous file is closed
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(227) : Warning 534: Ignoring
+    return value of function 'CI_Player_Close(void *)' (compare with line 109,
+    file ..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.h) [MISRA C++ Rules
+    0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.h(109) : Info 830: Location cited
+    in prior message
+                       _
+		return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(232) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(237) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_NOT_INITED;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(241) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(248) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                                                                                     _
+	pPlaybackSDK->m_pEngine->SetInterface(0, IID_IEmcAudioContext, pPlaybackSDK->m_pAudioContext);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(250) : Warning 534: Ignoring
+    return value of function 'IEmcEngine::SetInterface(unsigned long, const
+    struct _GUID &, IUnknown *)' (compare with line 988, file
+    ..\..\..\src\LibEMC\emccore.h) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\..\src\LibEMC\emccore.h(988) : Info 830: Location cited in prior message
+                                                                                      _
+	pPlaybackSDK->m_pEngine->SetFuncList((void*)pPlaybackSDK->m_ptfnCallBackArray);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(252) : Warning 534: Ignoring
+    return value of function 'IEmcEngine::SetFuncList(void *)' (compare with
+    line 989, file ..\..\..\src\LibEMC\emccore.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(989) : Info 830: Location cited in prior message
+                                                                                                                                                          _
+		pPlaybackSDK->m_pEngine->Set(EMC_PROPSET_ENG, EMC_PROPID_ENG_VIDEOWND, 0, 0, (LPVOID)&(pPlaybackSDK->m_tDispParam.hDispWnd), sizeof(HWND));
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(258) : Warning 534: Ignoring
+    return value of function 'IEmcPropertySet::Set(const struct _GUID &,
+    unsigned long, void *, unsigned long, void *, unsigned long)' (compare with
+    line 526, file ..\..\..\src\LibEMC\emccore.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(526) : Info 830: Location cited in prior message
+        _
+	}
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(259) : Warning 550: Symbol
+    'tGOpenOption' (line 256) not accessed [MISRA C++ Rule 0-1-4]
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(256) : Info 830: Location cited
+    in prior message
+                       _
+		return CI_ERR_DEMUX_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(267) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_AUDIO_DECODER_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(269) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_AUDIO_RENDER_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(272) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_VIDEO_DECODER_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(274) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_VIDEO_RENDER_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(277) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(279) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(304) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(309) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                               _
+			return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(317) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                                      _
+		pPlaybackSDK->m_pAudioContext->Close();
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(324) : Warning 534: Ignoring
+    return value of function 'IEmcMediaComponent::Close(void)' (compare with
+    line 541, file ..\..\..\src\LibEMC\emccore.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(541) : Info 830: Location cited in prior message
+                                                        _
+		pPlaybackSDK->m_pAudioContext->Release();
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(325) : Warning 534: Ignoring
+    return value of function 'IUnknown::Release(void)' (compare with line 119,
+    file C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h,
+    module ..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp) [MISRA C++ Rules
+    0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h(119)
+    : Info 830: Location cited in prior message
+                       _
+		return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(354) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(359) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                                                              _
+		pPlaybackSDK->m_pEngine->SetFuncList((void*)ptfnCallBackArray);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(365) : Warning 534: Ignoring
+    return value of function 'IEmcEngine::SetFuncList(void *)' (compare with
+    line 989, file ..\..\..\src\LibEMC\emccore.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(989) : Info 830: Location cited in prior message
+                       _
+		return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(388) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(393) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_NOT_INITED;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(397) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(403) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(426) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(431) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_NOT_INITED;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(435) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(441) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(453) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(458) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_NOT_INITED;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(462) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(468) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(491) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(496) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_NOT_INITED;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(500) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(506) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(529) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(534) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_NOT_INITED;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(538) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(544) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(567) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(572) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_NOT_INITED;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(576) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(582) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(605) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(610) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_NOT_INITED;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(614) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(620) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(645) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(650) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_NOT_INITED;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(654) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(660) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(686) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(691) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_NOT_INITED;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(695) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(698) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                               _
+			return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(704) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                               _
+			return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(710) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(716) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(741) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(746) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_NOT_INITED;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(750) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(756) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(783) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(788) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_NOT_INITED;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(792) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(801) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(814) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(821) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                          _
+			pTempAC->Release();
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(829) : Warning 534: Ignoring
+    return value of function 'IUnknown::Release(void)' (compare with line 119,
+    file C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h,
+    module ..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp) [MISRA C++ Rules
+    0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h(119)
+    : Info 830: Location cited in prior message
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(835) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(842) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(849) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(856) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(863) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(870) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(877) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(884) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(891) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(898) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(905) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(912) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(919) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(926) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(933) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(940) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(947) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(954) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(961) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(968) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(975) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                                                         _
+			_tcscat(pPlaybackSDK->m_pExternLibPath, _T("\\"));
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(987) : Warning 534: Ignoring
+    return value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with
+    line 245, file C:\Program Files\Microsoft Visual Studio
+    8\VC\include\string.h) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(995) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1007) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1015) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1046) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1089) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1094) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_NOT_INITED;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1098) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;			
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1107) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                                                                                                        _
+			pPlaybackSDK->m_pEngine->Get(EMC_PROPSET_DMX, EMC_PROPID_DMX_HAVEAUDIOINFO, 0, 0, 0, 0, &dwTemp);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1121) : Warning 534: Ignoring
+    return value of function 'IEmcPropertySet::Get(const struct _GUID &,
+    unsigned long, void *, unsigned long, void *, unsigned long, unsigned long
+    *)' (compare with line 516, file ..\..\..\src\LibEMC\emccore.h) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(516) : Info 830: Location cited in prior message
+                                                                                                                        _
+			pPlaybackSDK->m_pEngine->Get(EMC_PROPSET_DMX, EMC_PROPID_DMX_HAVEVIDEOINFO, 0, 0, 0, 0, &dwTemp);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1126) : Warning 534: Ignoring
+    return value of function 'IEmcPropertySet::Get(const struct _GUID &,
+    unsigned long, void *, unsigned long, void *, unsigned long, unsigned long
+    *)' (compare with line 516, file ..\..\..\src\LibEMC\emccore.h) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(516) : Info 830: Location cited in prior message
+                                                                                                                                                                           _
+				pPlaybackSDK->m_pEngine->Get(EMC_PROPSET_ENG, EMC_PROPID_ENG_AUDIOINFO, 0, 0, (LPVOID)&AudioInfo, (DWORD)(sizeof(EMC_AUDIOBUFFER_INFO)), 0);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1135) : Warning 534: Ignoring
+    return value of function 'IEmcPropertySet::Get(const struct _GUID &,
+    unsigned long, void *, unsigned long, void *, unsigned long, unsigned long
+    *)' (compare with line 516, file ..\..\..\src\LibEMC\emccore.h) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(516) : Info 830: Location cited in prior message
+                                                                                                                                                                                         _
+				pPlaybackSDK->m_pEngine->Get(EMC_PROPSET_ENG, EMC_PROPID_ENG_AUDIO_CODEC_NAME, 0, 0, (LPVOID)&pTrack->au8CdcNameStr[0], sizeof(pTrack->au8CdcNameStr), 0);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1138) : Warning 534: Ignoring
+    return value of function 'IEmcPropertySet::Get(const struct _GUID &,
+    unsigned long, void *, unsigned long, void *, unsigned long, unsigned long
+    *)' (compare with line 516, file ..\..\..\src\LibEMC\emccore.h) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(516) : Info 830: Location cited in prior message
+                                                                                                                                                                                _
+				pPlaybackSDK->m_pEngine->Get(EMC_PROPSET_ENG, EMC_PROPID_ENG_AUDIO_CODEC_TYPE, 0, 0, (LPVOID)&pTrack->eCodecType, sizeof(pTrack->eCodecType), 0);				
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1139) : Warning 534: Ignoring
+    return value of function 'IEmcPropertySet::Get(const struct _GUID &,
+    unsigned long, void *, unsigned long, void *, unsigned long, unsigned long
+    *)' (compare with line 516, file ..\..\..\src\LibEMC\emccore.h) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(516) : Info 830: Location cited in prior message
+                                                                                                                                                                           _
+				pPlaybackSDK->m_pEngine->Get(EMC_PROPSET_ENG, EMC_PROPID_ENG_VIDEOINFO, 0, 0, (LPVOID)&VideoInfo, (DWORD)(sizeof(EMC_VIDEOBUFFER_INFO)), 0);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1159) : Warning 534: Ignoring
+    return value of function 'IEmcPropertySet::Get(const struct _GUID &,
+    unsigned long, void *, unsigned long, void *, unsigned long, unsigned long
+    *)' (compare with line 516, file ..\..\..\src\LibEMC\emccore.h) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(516) : Info 830: Location cited in prior message
+                                                                                                                                                                                         _
+				pPlaybackSDK->m_pEngine->Get(EMC_PROPSET_ENG, EMC_PROPID_ENG_VIDEO_CODEC_NAME, 0, 0, (LPVOID)&pTrack->au8CdcNameStr[0], sizeof(pTrack->au8CdcNameStr), 0);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1162) : Warning 534: Ignoring
+    return value of function 'IEmcPropertySet::Get(const struct _GUID &,
+    unsigned long, void *, unsigned long, void *, unsigned long, unsigned long
+    *)' (compare with line 516, file ..\..\..\src\LibEMC\emccore.h) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(516) : Info 830: Location cited in prior message
+                                                                                                                                                                                _
+				pPlaybackSDK->m_pEngine->Get(EMC_PROPSET_ENG, EMC_PROPID_ENG_VIDEO_CODEC_TYPE, 0, 0, (LPVOID)&pTrack->eCodecType, sizeof(pTrack->eCodecType), 0);				
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1163) : Warning 534: Ignoring
+    return value of function 'IEmcPropertySet::Get(const struct _GUID &,
+    unsigned long, void *, unsigned long, void *, unsigned long, unsigned long
+    *)' (compare with line 516, file ..\..\..\src\LibEMC\emccore.h) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(516) : Info 830: Location cited in prior message
+                _
+		}
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1177) : Warning 438: Last value
+    assigned to variable 'pTrack' (defined at line 1114) not used [MISRA C++
+    Rule 0-1-6], [MISRA C++ Rules 0-1-6 and 0-1-9]
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1114) : Info 830: Location
+    cited in prior message
+                _
+		}
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1177) : Warning 550: Symbol
+    'dwNumOfSubtitle' (line 1109) not accessed [MISRA C++ Rule 0-1-4]
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1109) : Info 830: Location
+    cited in prior message
+                _
+		}
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1177) : Warning 438: Last value
+    assigned to variable 'dwNumOfSubtitle' (defined at line 1109) not used
+    [MISRA C++ Rule 0-1-6], [MISRA C++ Rules 0-1-6 and 0-1-9]
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1109) : Info 830: Location
+    cited in prior message
+                _
+		}
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1177) : Warning 438: Last value
+    assigned to variable 'dwNumOfTracks' (defined at line 1110) not used [MISRA
+    C++ Rule 0-1-6], [MISRA C++ Rules 0-1-6 and 0-1-9]
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1110) : Info 830: Location
+    cited in prior message
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1182) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                                                                                                        _
+			pPlaybackSDK->m_pEngine->Get(EMC_PROPSET_DMX, EMC_PROPID_DMX_HAVEAUDIOINFO, 0, 0, 0, 0, &dwTemp);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1194) : Warning 534: Ignoring
+    return value of function 'IEmcPropertySet::Get(const struct _GUID &,
+    unsigned long, void *, unsigned long, void *, unsigned long, unsigned long
+    *)' (compare with line 516, file ..\..\..\src\LibEMC\emccore.h) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(516) : Info 830: Location cited in prior message
+                                                                                                                        _
+			pPlaybackSDK->m_pEngine->Get(EMC_PROPSET_DMX, EMC_PROPID_DMX_HAVEVIDEOINFO, 0, 0, 0, 0, &dwTemp);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1199) : Warning 534: Ignoring
+    return value of function 'IEmcPropertySet::Get(const struct _GUID &,
+    unsigned long, void *, unsigned long, void *, unsigned long, unsigned long
+    *)' (compare with line 516, file ..\..\..\src\LibEMC\emccore.h) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(516) : Info 830: Location cited in prior message
+                                                                                                                                                                                   _
+			pPlaybackSDK->m_pEngine->Get(EMC_PROPSET_ENG, EMC_PROPID_ENG_DEMUX_NAME, 0, 0, (LPVOID)pMediaInfo->au8DemuxNameStr, sizeof(pMediaInfo->au8DemuxNameStr), 0);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1208) : Warning 534: Ignoring
+    return value of function 'IEmcPropertySet::Get(const struct _GUID &,
+    unsigned long, void *, unsigned long, void *, unsigned long, unsigned long
+    *)' (compare with line 516, file ..\..\..\src\LibEMC\emccore.h) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(516) : Info 830: Location cited in prior message
+                                                                                                                                                                          _
+			pPlaybackSDK->m_pEngine->Get(EMC_PROPSET_ENG, EMC_PROPID_ENG_DEMUX_TYPE, 0, 0, (LPVOID)&pMediaInfo->eDemuxType, sizeof(pMediaInfo->eDemuxType), 0);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1209) : Warning 534: Ignoring
+    return value of function 'IEmcPropertySet::Get(const struct _GUID &,
+    unsigned long, void *, unsigned long, void *, unsigned long, unsigned long
+    *)' (compare with line 516, file ..\..\..\src\LibEMC\emccore.h) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(516) : Info 830: Location cited in prior message
+                                                                                                                           _
+			pPlaybackSDK->m_pEngine->Get(EMC_PROPSET_DMX, EMC_PROPID_DMX_DURATION, 0, 0, 0, 0, (DWORD*)&dwTemp);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1210) : Warning 534: Ignoring
+    return value of function 'IEmcPropertySet::Get(const struct _GUID &,
+    unsigned long, void *, unsigned long, void *, unsigned long, unsigned long
+    *)' (compare with line 516, file ..\..\..\src\LibEMC\emccore.h) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(516) : Info 830: Location cited in prior message
+                                                                                                                          _
+			pPlaybackSDK->m_pEngine->Get(EMC_PROPSET_DMX, EMC_PROPID_DMX_BITRATE, 0, 0, 0, 0, (DWORD*)&dwTemp);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1212) : Warning 534: Ignoring
+    return value of function 'IEmcPropertySet::Get(const struct _GUID &,
+    unsigned long, void *, unsigned long, void *, unsigned long, unsigned long
+    *)' (compare with line 516, file ..\..\..\src\LibEMC\emccore.h) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(516) : Info 830: Location cited in prior message
+                                                                                                                           _
+			pPlaybackSDK->m_pEngine->Get(EMC_PROPSET_DMX, EMC_PROPID_DMX_SEEKABLE, 0, 0, 0, 0, (DWORD*)&dwTemp);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1214) : Warning 534: Ignoring
+    return value of function 'IEmcPropertySet::Get(const struct _GUID &,
+    unsigned long, void *, unsigned long, void *, unsigned long, unsigned long
+    *)' (compare with line 516, file ..\..\..\src\LibEMC\emccore.h) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(516) : Info 830: Location cited in prior message
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1221) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                          _
+			pTempAC->Release();
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1229) : Warning 534: Ignoring
+    return value of function 'IUnknown::Release(void)' (compare with line 119,
+    file C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h,
+    module ..\..\..\src\LibPlaybackSDK\CI_SDK_Image.cpp) [MISRA C++ Rules
+    0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h(119)
+    : Info 830: Location cited in prior message
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1235) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1242) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1249) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1256) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1263) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1270) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1277) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1284) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1291) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1298) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1305) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1312) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1344) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1353) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                                       _
+				return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1360) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1381) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_INVALID_PARAM;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1394) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1399) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_NOT_INITED;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1403) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                       _
+		return CI_ERR_FAIL;
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1408) : Warning 569: Loss of
+    information (return) (32 bits to 31 bits)
+                              _
+	return SetDllDirectory(g_szModulePath);
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1441) : Error 1055: Symbol
+    'SetDllDirectory' undeclared, assumed to return int
+                                                    _
+		UpdateDllDirectory((HMODULE)hModule); // adds current dll directory to dll search path
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1460) : Warning 534: Ignoring
+    return value of function 'UpdateDllDirectory(struct HINSTANCE__ *)'
+    (compare with line 1425) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1425) : Info 830: Location
+    cited in prior message
+
+--- Global Wrap-up
+
+Warning 526: Symbol 'AssignComponentEntry(void *)' (line 42, file
+    ..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp) not defined
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(42) : Info 830: Location cited
+    in prior message
+Warning 526: Symbol 'SetDllDirectory()' (line 1441, file ..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp)
+ not defined
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1441) : Info 830: Location
+    cited in prior message
+Warning 628: no argument information provided for function 'SetDllDirectory()'
+    (line 1441, file ..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp)
+..\..\..\src\LibPlaybackSDK\CI_SDK_Playback.cpp(1441) : Info 830: Location
+    cited in prior message

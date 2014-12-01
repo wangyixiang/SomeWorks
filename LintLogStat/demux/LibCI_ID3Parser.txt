@@ -1,0 +1,273 @@
+
+--- Module:   ..\..\src\CI_ID3Parser.c (C)
+                    _
+		free(ptFrame->pucContent);
+..\..\src\CI_ID3Parser.c(217) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                    _
+		free(ptFrame->pvSpecInfo);
+..\..\src\CI_ID3Parser.c(219) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+            _
+	free(ptFrame);
+..\..\src\CI_ID3Parser.c(220) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                    _
+		free(ptToFree);
+..\..\src\CI_ID3Parser.c(234) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                    _
+		free(ptParser->tInfo.pptFrames);
+..\..\src\CI_ID3Parser.c(238) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                                         _
+	struct ID3_TextFrame* ptTextFrame = (struct ID3_TextFrame*)malloc(sizeof(struct ID3_TextFrame));
+..\..\src\CI_ID3Parser.c(543) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                    _
+		free(ptFrame->pvSpecInfo);
+..\..\src\CI_ID3Parser.c(608) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                                              _
+	struct ID3_PictureFrame* ptPicFrame = (struct ID3_PictureFrame*)malloc(sizeof(struct ID3_PictureFrame));
+..\..\src\CI_ID3Parser.c(629) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                _
+			return 1;
+..\..\src\CI_ID3Parser.c(923) : Warning 438: Last value assigned to variable
+    'iRet' (defined at line 854) not used [MISRA C++ Rule 0-1-6], [MISRA C++
+    Rules 0-1-6 and 0-1-9]
+..\..\src\CI_ID3Parser.c(854) : Info 830: Location cited in prior message
+                                                               _
+		ptNewFrame->pucContent = (unsigned char*)malloc(ptNewFrame->uContentSize+2);  // allocate two extra bytes to store an explicit termination $00 (00)
+..\..\src\CI_ID3Parser.c(989) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                _
+	return 0;
+..\..\src\CI_ID3Parser.c(1038) : Warning 438: Last value assigned to variable
+    'uFlagDataLen' (defined at line 856) not used [MISRA C++ Rule 0-1-6],
+    [MISRA C++ Rules 0-1-6 and 0-1-9]
+..\..\src\CI_ID3Parser.c(856) : Info 830: Location cited in prior message
+_
+}
+..\..\src\CI_ID3Parser.c(1039) : Warning 529: Symbol 'uFlagDataLen' (line 856)
+    not subsequently referenced [MISRA C++ Rule 0-1-3], [MISRA C++ Rule 0-1-4]
+..\..\src\CI_ID3Parser.c(856) : Info 830: Location cited in prior message
+                 _
+	}while (1);
+..\..\src\CI_ID3Parser.c(1055) : Warning 506: Constant value Boolean [MISRA C++
+    Rule 0-1-1]
+                                                      _
+		ptNewFrame = (struct ID3_Frame*)malloc(sizeof(struct ID3_Frame));
+..\..\src\CI_ID3Parser.c(1068) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                                                         _
+			struct ID3_Frame_Node* ptNewNode = (struct ID3_Frame_Node*)malloc(sizeof(struct ID3_Frame_Node));
+..\..\src\CI_ID3Parser.c(1086) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                          _
+		ptNewNode = (struct ID3_Frame_Node*)malloc(sizeof(struct ID3_Frame_Node));
+..\..\src\CI_ID3Parser.c(1154) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                      _
+		ptNewFrame = (struct ID3_Frame*)malloc(sizeof(struct ID3_Frame));
+..\..\src\CI_ID3Parser.c(1157) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                            _
+			free(ptNewNode);
+..\..\src\CI_ID3Parser.c(1160) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                               _
+		ptNewFrame->pucContent = (unsigned char*)malloc(30+1);
+..\..\src\CI_ID3Parser.c(1166) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                            _
+			free(ptNewNode);
+..\..\src\CI_ID3Parser.c(1169) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                            _
+			free(ptNewFrame);
+..\..\src\CI_ID3Parser.c(1170) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                          _
+		ptNewNode = (struct ID3_Frame_Node*)malloc(sizeof(struct ID3_Frame_Node));
+..\..\src\CI_ID3Parser.c(1191) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                      _
+		ptNewFrame = (struct ID3_Frame*)malloc(sizeof(struct ID3_Frame));
+..\..\src\CI_ID3Parser.c(1194) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                            _
+			free(ptNewNode);
+..\..\src\CI_ID3Parser.c(1197) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                               _
+		ptNewFrame->pucContent = (unsigned char*)malloc(30+1);
+..\..\src\CI_ID3Parser.c(1203) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                            _
+			free(ptNewNode);
+..\..\src\CI_ID3Parser.c(1206) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                            _
+			free(ptNewFrame);
+..\..\src\CI_ID3Parser.c(1207) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                          _
+		ptNewNode = (struct ID3_Frame_Node*)malloc(sizeof(struct ID3_Frame_Node));
+..\..\src\CI_ID3Parser.c(1228) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                      _
+		ptNewFrame = (struct ID3_Frame*)malloc(sizeof(struct ID3_Frame));
+..\..\src\CI_ID3Parser.c(1231) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                            _
+			free(ptNewNode);
+..\..\src\CI_ID3Parser.c(1234) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                               _
+		ptNewFrame->pucContent = (unsigned char*)malloc(30+1);
+..\..\src\CI_ID3Parser.c(1240) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                            _
+			free(ptNewNode);
+..\..\src\CI_ID3Parser.c(1243) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                            _
+			free(ptNewFrame);
+..\..\src\CI_ID3Parser.c(1244) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                          _
+		ptNewNode = (struct ID3_Frame_Node*)malloc(sizeof(struct ID3_Frame_Node));
+..\..\src\CI_ID3Parser.c(1265) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                      _
+		ptNewFrame = (struct ID3_Frame*)malloc(sizeof(struct ID3_Frame));
+..\..\src\CI_ID3Parser.c(1268) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                            _
+			free(ptNewNode);
+..\..\src\CI_ID3Parser.c(1271) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                               _
+		ptNewFrame->pucContent = (unsigned char*)malloc(4+1);
+..\..\src\CI_ID3Parser.c(1277) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                            _
+			free(ptNewNode);
+..\..\src\CI_ID3Parser.c(1280) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                            _
+			free(ptNewFrame);
+..\..\src\CI_ID3Parser.c(1281) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                          _
+		ptNewNode = (struct ID3_Frame_Node*)malloc(sizeof(struct ID3_Frame_Node));
+..\..\src\CI_ID3Parser.c(1304) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                      _
+		ptNewFrame = (struct ID3_Frame*)malloc(sizeof(struct ID3_Frame));
+..\..\src\CI_ID3Parser.c(1307) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                            _
+			free(ptNewNode);
+..\..\src\CI_ID3Parser.c(1310) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                               _
+		ptNewFrame->pucContent = (unsigned char*)malloc(30+1);
+..\..\src\CI_ID3Parser.c(1316) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                            _
+			free(ptNewNode);
+..\..\src\CI_ID3Parser.c(1319) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                            _
+			free(ptNewFrame);
+..\..\src\CI_ID3Parser.c(1320) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                          _
+		ptNewNode = (struct ID3_Frame_Node*)malloc(sizeof(struct ID3_Frame_Node));
+..\..\src\CI_ID3Parser.c(1341) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                      _
+		ptNewFrame = (struct ID3_Frame*)malloc(sizeof(struct ID3_Frame));
+..\..\src\CI_ID3Parser.c(1344) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                            _
+			free(ptNewNode);
+..\..\src\CI_ID3Parser.c(1347) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                               _
+		ptNewFrame->pucContent = (unsigned char*)malloc(1+1);
+..\..\src\CI_ID3Parser.c(1353) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                            _
+			free(ptNewNode);
+..\..\src\CI_ID3Parser.c(1356) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                            _
+			free(ptNewFrame);
+..\..\src\CI_ID3Parser.c(1357) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                  _
+	ptNewNode = (struct ID3_Frame_Node*)malloc(sizeof(struct ID3_Frame_Node));
+..\..\src\CI_ID3Parser.c(1376) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                              _
+	ptNewFrame = (struct ID3_Frame*)malloc(sizeof(struct ID3_Frame));
+..\..\src\CI_ID3Parser.c(1379) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                    _
+		free(ptNewNode);
+..\..\src\CI_ID3Parser.c(1382) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                       _
+	ptNewFrame->pucContent = (unsigned char*)malloc(1+1);
+..\..\src\CI_ID3Parser.c(1388) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                    _
+		free(ptNewNode);
+..\..\src\CI_ID3Parser.c(1391) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                    _
+		free(ptNewFrame);
+..\..\src\CI_ID3Parser.c(1392) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                _
+	return 0;
+..\..\src\CI_ID3Parser.c(1410) : Warning 438: Last value assigned to variable
+    'iRet' (defined at line 1125) not used [MISRA C++ Rule 0-1-6], [MISRA C++
+    Rules 0-1-6 and 0-1-9]
+..\..\src\CI_ID3Parser.c(1125) : Info 830: Location cited in prior message
+                                                              _
+		ptInfo->pptFrames = (struct ID3_Frame**)malloc(sizeof(struct ID3_Frame*)*ptParser->uFrameCount);
+..\..\src\CI_ID3Parser.c(1432) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                         _
+	ptNewParser = (struct ID3_Handle_Internal*)malloc(sizeof(struct ID3_Handle_Internal));
+..\..\src\CI_ID3Parser.c(1464) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                            _
+	ptParser->pcFileName = (char*)malloc(strlen(pcFileName)+1);
+..\..\src\CI_ID3Parser.c(1488) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+..\..\src\CI_ID3Parser.c(1488) : Warning 586: function 'strlen' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+              _
+	strcpy(ptParser->pcFileName, pcFileName);
+..\..\src\CI_ID3Parser.c(1491) : Warning 586: function 'strcpy' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                                                             _
+		ptParser->tExtIO.pfnExtSeek(0, 0, ptParser->tExtIO.pvContext);
+..\..\src\CI_ID3Parser.c(1507) : Warning 534: Ignoring return value of function
+    'EXTERN_IO_FUNC::pfnExtSeek' (compare with line 28, file
+    ..\..\src\CI_ID3Parser.h) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\CI_ID3Parser.h(28) : Info 830: Location cited in prior message
+                    _
+		free(ptParser->pcFileName);
+..\..\src\CI_ID3Parser.c(1614) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+            _
+	free(ptParser);
+..\..\src\CI_ID3Parser.c(1617) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]

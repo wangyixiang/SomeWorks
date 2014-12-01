@@ -1,0 +1,2542 @@
+
+--- Module:   ..\..\..\src\LibASFDemux\AsfDemux.cpp (C++)
+        _
+#define IsEqualGUID(rguid1, rguid2) (!memcmp(rguid1, rguid2, sizeof(GUID)))
+..\..\..\src\LibASFDemux\AsfGuids.h(38) : Warning 652: #define of symbol
+    'IsEqualGUID(const struct _GUID &, const struct _GUID &)' declared
+    previously at line 159, file C:\Program Files\Microsoft Visual Studio
+    8\VC\PlatformSDK\Include\guiddef.h
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\guiddef.h(159)
+    : Info 830: Location cited in prior message
+                                                         _
+		for(pItem=m_pAudioStreamLst;pItem,dwIndex;dwIndex--) 
+..\..\..\src\LibASFDemux\AsfDemux.h(113) : Warning 505: Redundant left argument
+    to comma
+..\..\..\src\LibASFDemux\AsfDemux.h(113) : Warning 443: for clause
+    irregularity: variable 'pItem' initialized in 1st expression does not match
+    'dwIndex' modified in 3rd
+                                                         _
+		for(pItem=m_pVideoStreamLst;pItem,dwIndex;dwIndex--) 
+..\..\..\src\LibASFDemux\AsfDemux.h(129) : Warning 505: Redundant left argument
+    to comma
+..\..\..\src\LibASFDemux\AsfDemux.h(129) : Warning 443: for clause
+    irregularity: variable 'pItem' initialized in 1st expression does not match
+    'dwIndex' modified in 3rd
+         _
+#include "AsfGuids.h"
+..\..\..\src\LibASFDemux\AsfDemux.cpp(13) : Warning 537: Repeated include file
+    '..\..\..\src\LibASFDemux\AsfGuids.h'
+        _
+	}
+..\..\..\src\LibASFDemux\AsfStream.h(16) : Warning 1401: member
+    'CAsfStream::m_File' (line 36) not initialized by constructor [MISRA C++
+    Rule 8-5-1]
+..\..\..\src\LibASFDemux\AsfStream.h(36) : Info 830: Location cited in prior
+    message
+        _
+	}
+..\..\..\src\LibASFDemux\AsfStream.h(16) : Warning 1401: member
+    'CAsfStream::m_nCurPacket' (line 43) not initialized by constructor [MISRA
+    C++ Rule 8-5-1]
+..\..\..\src\LibASFDemux\AsfStream.h(43) : Info 830: Location cited in prior
+    message
+        _
+	}
+..\..\..\src\LibASFDemux\AsfStream.h(16) : Warning 1401: member
+    'CAsfStream::m_CurPayload' (line 44) not initialized by constructor [MISRA
+    C++ Rule 8-5-1]
+..\..\..\src\LibASFDemux\AsfStream.h(44) : Info 830: Location cited in prior
+    message
+        _
+	}
+..\..\..\src\LibASFDemux\AsfStream.h(16) : Warning 1401: member
+    'CAsfStream::m_nPrePacket' (line 46) not initialized by constructor [MISRA
+    C++ Rule 8-5-1]
+..\..\..\src\LibASFDemux\AsfStream.h(46) : Info 830: Location cited in prior
+    message
+        _
+	}
+..\..\..\src\LibASFDemux\AsfStream.h(16) : Warning 1401: member
+    'CAsfStream::m_PrePayload' (line 47) not initialized by constructor [MISRA
+    C++ Rule 8-5-1]
+..\..\..\src\LibASFDemux\AsfStream.h(47) : Info 830: Location cited in prior
+    message
+                              _
+	virtual ~CAsfStream(){}
+..\..\..\src\LibASFDemux\AsfStream.h(17) : Warning 1540: Pointer member
+    'CAsfStream::m_File' (line 36) neither freed nor zeroed by destructor
+..\..\..\src\LibASFDemux\AsfStream.h(36) : Info 830: Location cited in prior
+    message
+        _
+	}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(36) : Warning 1401: member
+    'AsfDemuxBrokerFileCtrl::m_nFileSize' (line 215) not initialized by
+    constructor [MISRA C++ Rule 8-5-1]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(215) : Info 830: Location cited in prior
+    message
+                     _
+		Close();
+..\..\..\src\LibASFDemux\AsfDemux.cpp(40) : Warning 1506: Call to virtual
+    function 'AsfDemuxBrokerFileCtrl::Close(void)' within a constructor or
+    destructor [MISRA C++ Rule 12-1-1]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(40) : Warning 534: Ignoring return value
+    of function 'AsfDemuxBrokerFileCtrl::Close(void)' (compare with line 61)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(61) : Info 830: Location cited in prior
+    message
+                       _
+		Close();
+..\..\..\src\LibASFDemux\AsfDemux.cpp(40) : Warning 1551: Function may throw
+    exception '...' in destructor 'AsfDemuxBrokerFileCtrl::~AsfDemuxBrokerFileCtrl(void)'
+        _
+	}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(41) : Warning 1579: Pointer member
+    'AsfDemuxBrokerFileCtrl::m_hfile' (line 213) might have been freed by a
+    separate function but no '-sem(AsfDemuxBrokerFileCtrl::Close,cleanup)' was
+    seen
+..\..\..\src\LibASFDemux\AsfDemux.cpp(213) : Info 830: Location cited in prior
+    message
+                                                                                      _
+					SetFilePointer(m_hfile, pos, NULL, FILE_BEGIN);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(104) : Warning 534: Ignoring return value
+    of function 'SetFilePointer(void *, long, long *, unsigned long)' (compare
+    with line 3638, file C:\Program Files\Microsoft Visual Studio
+    8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3638)
+    : Info 830: Location cited in prior message
+                                                                                                                       _
+				ReadFile(m_hfile, (LPVOID)read_buf[m_nCurBuf].pBuf, (DWORD)BUF_SIZE, (LPDWORD)&n, NULL);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(108) : Warning 534: Ignoring return value
+    of function 'ReadFile(void *, void *, unsigned long, unsigned long *,
+    struct _OVERLAPPED *)' (compare with line 3569, file C:\Program
+    Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA
+    C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3569)
+    : Info 830: Location cited in prior message
+                                    _
+		if(pos > m_nFileSize)
+..\..\..\src\LibASFDemux\AsfDemux.cpp(138) : Warning 574: Signed-unsigned mix
+    with relational
+                                                                                      _
+					SetFilePointer(m_hfile, pos, NULL, FILE_BEGIN);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(161) : Warning 534: Ignoring return value
+    of function 'SetFilePointer(void *, long, long *, unsigned long)' (compare
+    with line 3638, file C:\Program Files\Microsoft Visual Studio
+    8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3638)
+    : Info 830: Location cited in prior message
+                                                                                                                       _
+				ReadFile(m_hfile, (LPVOID)read_buf[m_nCurBuf].pBuf, (DWORD)BUF_SIZE, (LPDWORD)&n, NULL);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(165) : Warning 534: Ignoring return value
+    of function 'ReadFile(void *, void *, unsigned long, unsigned long *,
+    struct _OVERLAPPED *)' (compare with line 3569, file C:\Program
+    Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA
+    C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3569)
+    : Info 830: Location cited in prior message
+                              _
+		for(int i=1;i<BUF_NUM;i++)
+..\..\..\src\LibASFDemux\AsfDemux.cpp(204) : Warning 681: Loop is not entered
+    [MISRA C++ Rule 0-1-1]
+                                           _
+	m_File = new AsfDemuxBrokerFileCtrl();	
+..\..\..\src\LibASFDemux\AsfDemux.cpp(394) : Warning 586: function 'operator
+    new' is deprecated. [MISRA C++ Rule 18-4-1]
+               _
+	Reset();
+..\..\..\src\LibASFDemux\AsfDemux.cpp(396) : Warning 534: Ignoring return value
+    of function 'CAsfDemux::Reset(void)' (compare with line 142, file
+    ..\..\..\src\LibASFDemux\AsfDemux.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfDemux.h(142) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(397) : Warning 1566: member
+    'CAsfDemux::m_FileInfo' (line 155, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(155) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(397) : Warning 1566: member
+    'CAsfDemux::m_pAudioStream' (line 157, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(157) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(397) : Warning 1566: member
+    'CAsfDemux::m_pVideoStream' (line 158, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(158) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(397) : Warning 1566: member
+    'CAsfDemux::m_pVideoStreamLst' (line 159, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(159) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(397) : Warning 1566: member
+    'CAsfDemux::m_pAudioStreamLst' (line 160, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(160) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(397) : Warning 1566: member
+    'CAsfDemux::m_bVideoChecked' (line 161, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(161) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(397) : Warning 1566: member
+    'CAsfDemux::m_bAudioChecked' (line 162, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(162) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(397) : Warning 1566: member
+    'CAsfDemux::m_PacketEntry' (line 164, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(164) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(397) : Warning 1566: member
+    'CAsfDemux::m_PacketCount' (line 165, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(165) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(397) : Warning 1566: member
+    'CAsfDemux::m_DataFilePos' (line 167, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(167) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(397) : Warning 1566: member
+    'CAsfDemux::m_DataObjectLength' (line 168, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(168) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(397) : Warning 1566: member
+    'CAsfDemux::m_IndexObject' (line 169, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(169) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(397) : Warning 1566: member
+    'CAsfDemux::m_IndexEntry' (line 170, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(170) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(397) : Warning 1566: member
+    'CAsfDemux::m_pExPropObj' (line 171, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(171) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(397) : Warning 1566: member
+    'CAsfDemux::m_bHaveAudio' (line 175, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(175) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(397) : Warning 1566: member
+    'CAsfDemux::m_bHaveVideo' (line 176, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(176) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(397) : Warning 1566: member
+    'CAsfDemux::m_dwNumOfAudioStreams' (line 177, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(177) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(397) : Warning 1566: member
+    'CAsfDemux::m_dwNumOfVideoStreams' (line 178, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(178) : Info 830: Location cited in prior
+    message
+                                       _
+	m_File = new AsfDemuxBufferCtrl(pHandle, iLen);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(401) : Warning 586: function 'operator
+    new' is deprecated. [MISRA C++ Rule 18-4-1]
+               _
+	Reset();	
+..\..\..\src\LibASFDemux\AsfDemux.cpp(403) : Warning 534: Ignoring return value
+    of function 'CAsfDemux::Reset(void)' (compare with line 142, file
+    ..\..\..\src\LibASFDemux\AsfDemux.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfDemux.h(142) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(404) : Warning 1566: member
+    'CAsfDemux::m_FileInfo' (line 155, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(155) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(404) : Warning 1566: member
+    'CAsfDemux::m_pAudioStream' (line 157, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(157) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(404) : Warning 1566: member
+    'CAsfDemux::m_pVideoStream' (line 158, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(158) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(404) : Warning 1566: member
+    'CAsfDemux::m_pVideoStreamLst' (line 159, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(159) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(404) : Warning 1566: member
+    'CAsfDemux::m_pAudioStreamLst' (line 160, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(160) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(404) : Warning 1566: member
+    'CAsfDemux::m_bVideoChecked' (line 161, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(161) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(404) : Warning 1566: member
+    'CAsfDemux::m_bAudioChecked' (line 162, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(162) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(404) : Warning 1566: member
+    'CAsfDemux::m_PacketEntry' (line 164, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(164) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(404) : Warning 1566: member
+    'CAsfDemux::m_PacketCount' (line 165, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(165) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(404) : Warning 1566: member
+    'CAsfDemux::m_DataFilePos' (line 167, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(167) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(404) : Warning 1566: member
+    'CAsfDemux::m_DataObjectLength' (line 168, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(168) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(404) : Warning 1566: member
+    'CAsfDemux::m_IndexObject' (line 169, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(169) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(404) : Warning 1566: member
+    'CAsfDemux::m_IndexEntry' (line 170, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(170) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(404) : Warning 1566: member
+    'CAsfDemux::m_pExPropObj' (line 171, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(171) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(404) : Warning 1566: member
+    'CAsfDemux::m_bHaveAudio' (line 175, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(175) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(404) : Warning 1566: member
+    'CAsfDemux::m_bHaveVideo' (line 176, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(176) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(404) : Warning 1566: member
+    'CAsfDemux::m_dwNumOfAudioStreams' (line 177, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(177) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(404) : Warning 1566: member
+    'CAsfDemux::m_dwNumOfVideoStreams' (line 178, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been initialized by a separate function but no
+    '-sem(CAsfDemux::Reset,initializer)' was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(178) : Info 830: Location cited in prior
+    message
+               _
+	Close();
+..\..\..\src\LibASFDemux\AsfDemux.cpp(408) : Warning 534: Ignoring return value
+    of function 'CAsfDemux::Close(void)' (compare with line 74, file
+    ..\..\..\src\LibASFDemux\AsfDemux.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfDemux.h(74) : Info 830: Location cited in prior
+    message
+               _
+	Close();
+..\..\..\src\LibASFDemux\AsfDemux.cpp(408) : Warning 1551: Function may throw
+    exception '...' in destructor 'CAsfDemux::~CAsfDemux(void)'
+                     _
+	delete m_File;
+..\..\..\src\LibASFDemux\AsfDemux.cpp(409) : Warning 586: function 'operator
+    delete' is deprecated. [MISRA C++ Rule 18-4-1]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(409) : Warning 1551: Function may throw
+    exception '...' in destructor 'CAsfDemux::~CAsfDemux(void)'
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(410) : Warning 1579: Pointer member
+    'CAsfDemux::m_pAudioStream' (line 157, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been freed by a separate function but no '-sem(CAsfDemux::Close,cleanup)'
+    was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(157) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(410) : Warning 1579: Pointer member
+    'CAsfDemux::m_pVideoStream' (line 158, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been freed by a separate function but no '-sem(CAsfDemux::Close,cleanup)'
+    was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(158) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(410) : Warning 1579: Pointer member
+    'CAsfDemux::m_pVideoStreamLst' (line 159, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been freed by a separate function but no '-sem(CAsfDemux::Close,cleanup)'
+    was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(159) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(410) : Warning 1579: Pointer member
+    'CAsfDemux::m_pAudioStreamLst' (line 160, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been freed by a separate function but no '-sem(CAsfDemux::Close,cleanup)'
+    was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(160) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(410) : Warning 1579: Pointer member
+    'CAsfDemux::m_PacketEntry' (line 164, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been freed by a separate function but no '-sem(CAsfDemux::Close,cleanup)'
+    was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(164) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(410) : Warning 1579: Pointer member
+    'CAsfDemux::m_IndexEntry' (line 170, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been freed by a separate function but no '-sem(CAsfDemux::Close,cleanup)'
+    was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(170) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(410) : Warning 1579: Pointer member
+    'CAsfDemux::m_pExPropObj' (line 171, file ..\..\..\src\LibASFDemux\AsfDemux.h)
+    might have been freed by a separate function but no '-sem(CAsfDemux::Close,cleanup)'
+    was seen
+..\..\..\src\LibASFDemux\AsfDemux.h(171) : Info 830: Location cited in prior
+    message
+                               _
+		m_File->Close();
+..\..\..\src\LibASFDemux\AsfDemux.cpp(435) : Warning 534: Ignoring return value
+    of function 'FileCtrl::Close(void)' (compare with line 32, file
+    ..\..\..\src\LibASFDemux\AsfDemux.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfDemux.h(32) : Info 830: Location cited in prior
+    message
+                    _
+		free(m_FileInfo.szTitle);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(439) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                    _
+		free(m_FileInfo.szAuthor);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(444) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                    _
+		free(m_FileInfo.szCopyright);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(449) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                    _
+		free(m_FileInfo.szDescription);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(454) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                                          _
+			if (m_FileInfo.pExConDesc[i].descName!=NULL)  free(m_FileInfo.pExConDesc[i].descName);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(461) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                                           _
+			if (m_FileInfo.pExConDesc[i].descValue!=NULL)  free(m_FileInfo.pExConDesc[i].descValue);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(462) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                    _
+		free(m_FileInfo.pExConDesc);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(464) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                    _
+				free(m_FileInfo.ptMetadata[i].pwcName);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(473) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                    _
+				free(m_FileInfo.ptMetadata[i].pbData);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(475) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                    _
+		free(m_FileInfo.ptMetadata);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(477) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                    _
+				free(m_FileInfo.ptLangList[i].pwcLanguageID);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(486) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                    _
+		free(m_FileInfo.ptLangList);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(488) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                    _
+				free(m_FileInfo.ptMetadataLib[i].pwcName);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(497) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                    _
+				free(m_FileInfo.ptMetadataLib[i].pbData);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(499) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                    _
+		free(m_FileInfo.ptMetadataLib);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(501) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                    _
+		free(m_FileInfo.pBitrateMutualExclusion);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(507) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                                               _
+				m_pAudioStreamLst->pAudioStream->Uninitialize();
+..\..\..\src\LibASFDemux\AsfDemux.cpp(529) : Warning 534: Ignoring return value
+    of function 'CAsfStream::Uninitialize(void)' (compare with line 30, file
+    ..\..\..\src\LibASFDemux\AsfStream.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfStream.h(30) : Info 830: Location cited in prior
+    message
+                                                                      _
+				delete m_pAudioStreamLst->pAudioStream;
+..\..\..\src\LibASFDemux\AsfDemux.cpp(530) : Warning 586: function 'operator
+    delete' is deprecated. [MISRA C++ Rule 18-4-1]
+                                    _
+			delete pItem;
+..\..\..\src\LibASFDemux\AsfDemux.cpp(535) : Warning 586: function 'operator
+    delete' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                                               _
+				m_pVideoStreamLst->pVideoStream->Uninitialize();
+..\..\..\src\LibASFDemux\AsfDemux.cpp(545) : Warning 534: Ignoring return value
+    of function 'CAsfStream::Uninitialize(void)' (compare with line 30, file
+    ..\..\..\src\LibASFDemux\AsfStream.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfStream.h(30) : Info 830: Location cited in prior
+    message
+                                                                      _
+				delete m_pVideoStreamLst->pVideoStream;
+..\..\..\src\LibASFDemux\AsfDemux.cpp(546) : Warning 586: function 'operator
+    delete' is deprecated. [MISRA C++ Rule 18-4-1]
+                                    _
+			delete pItem;
+..\..\..\src\LibASFDemux\AsfDemux.cpp(551) : Warning 586: function 'operator
+    delete' is deprecated. [MISRA C++ Rule 18-4-1]
+                                           _
+			delete m_pExPropObj;
+..\..\..\src\LibASFDemux\AsfDemux.cpp(571) : Warning 586: function 'operator
+    delete' is deprecated. [MISRA C++ Rule 18-4-1]
+               _
+	Close();
+..\..\..\src\LibASFDemux\AsfDemux.cpp(583) : Warning 534: Ignoring return value
+    of function 'CAsfDemux::Close(void)' (compare with line 432) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(432) : Info 830: Location cited in prior
+    message
+                                       _
+	for(int i=0; i<header.objectNum; i++)
+..\..\..\src\LibASFDemux\AsfDemux.cpp(616) : Warning 574: Signed-unsigned mix
+    with relational
+                                                                   _
+				m_FileInfo.szTitle = (char *)malloc(m_FileInfo.titleLen);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(694) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                                    _
+				m_FileInfo.szAuthor = (char *)malloc(m_FileInfo.authorLen);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(696) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                                       _
+				m_FileInfo.szCopyright = (char *)malloc(m_FileInfo.copyrightLen);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(698) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                                         _
+				m_FileInfo.szDescription = (char *)malloc(m_FileInfo.descripLen);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(700) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                                          _
+			m_File->Read((char*)&m_FileInfo.exConDescCount, 2);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(752) : Warning 534: Ignoring return value
+    of function 'FileCtrl::Read(char *, int)' (compare with line 34, file
+    ..\..\..\src\LibASFDemux\AsfDemux.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfDemux.h(34) : Info 830: Location cited in prior
+    message
+                                                                                _
+			m_FileInfo.pExConDesc = (AsfExContentDescriptors*)malloc(m_FileInfo.exConDescCount*sizeof(AsfExContentDescriptors));
+..\..\..\src\LibASFDemux\AsfDemux.cpp(754) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                 _
+			for(int i=0;i<m_FileInfo.exConDescCount;i++)
+..\..\..\src\LibASFDemux\AsfDemux.cpp(756) : Warning 578: Declaration of symbol
+    'i' hides symbol 'i' (line 616) [MISRA C++ Rule 2-10-2]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(616) : Info 830: Location cited in prior
+    message
+                                                                                             _
+				m_File->Read((char*)&m_FileInfo.pExConDesc[i].descNameLen, 2);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(759) : Warning 534: Ignoring return value
+    of function 'FileCtrl::Read(char *, int)' (compare with line 34, file
+    ..\..\..\src\LibASFDemux\AsfDemux.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfDemux.h(34) : Info 830: Location cited in prior
+    message
+                                                                                           _
+					m_FileInfo.pExConDesc[i].descName = (CHAR16*)malloc(m_FileInfo.pExConDesc[i].descNameLen);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(762) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                                                                                                    _
+					m_File->Read((char*)m_FileInfo.pExConDesc[i].descName, m_FileInfo.pExConDesc[i].descNameLen);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(763) : Warning 534: Ignoring return value
+    of function 'FileCtrl::Read(char *, int)' (compare with line 34, file
+    ..\..\..\src\LibASFDemux\AsfDemux.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfDemux.h(34) : Info 830: Location cited in prior
+    message
+                                                                                               _
+				m_File->Read((char*)&m_FileInfo.pExConDesc[i].descValueType, 2);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(766) : Warning 534: Ignoring return value
+    of function 'FileCtrl::Read(char *, int)' (compare with line 34, file
+    ..\..\..\src\LibASFDemux\AsfDemux.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfDemux.h(34) : Info 830: Location cited in prior
+    message
+                                                                                              _
+				m_File->Read((char*)&m_FileInfo.pExConDesc[i].descValueLen, 2);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(768) : Warning 534: Ignoring return value
+    of function 'FileCtrl::Read(char *, int)' (compare with line 34, file
+    ..\..\..\src\LibASFDemux\AsfDemux.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfDemux.h(34) : Info 830: Location cited in prior
+    message
+                                                                                           _
+					m_FileInfo.pExConDesc[i].descValue = (BYTE *)malloc(m_FileInfo.pExConDesc[i].descValueLen);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(771) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                                                                                                      _
+					m_File->Read((char*)m_FileInfo.pExConDesc[i].descValue, m_FileInfo.pExConDesc[i].descValueLen);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(772) : Warning 534: Ignoring return value
+    of function 'FileCtrl::Read(char *, int)' (compare with line 34, file
+    ..\..\..\src\LibASFDemux\AsfDemux.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfDemux.h(34) : Info 830: Location cited in prior
+    message
+                                                                _
+			m_File->Read((char*)&guid, sizeof(GUID));
+..\..\..\src\LibASFDemux\AsfDemux.cpp(783) : Warning 534: Ignoring return value
+    of function 'FileCtrl::Read(char *, int)' (compare with line 34, file
+    ..\..\..\src\LibASFDemux\AsfDemux.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfDemux.h(34) : Info 830: Location cited in prior
+    message
+                                                      _
+			m_File->Read((char*)&count, 2);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(784) : Warning 534: Ignoring return value
+    of function 'FileCtrl::Read(char *, int)' (compare with line 34, file
+    ..\..\..\src\LibASFDemux\AsfDemux.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfDemux.h(34) : Info 830: Location cited in prior
+    message
+                                                                                  _
+			m_FileInfo.pBitrateMutualExclusion = (unsigned int*)malloc(count*sizeof(unsigned int));
+..\..\..\src\LibASFDemux\AsfDemux.cpp(786) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                 _
+			for(int i=0;i<count;i++)
+..\..\..\src\LibASFDemux\AsfDemux.cpp(788) : Warning 578: Declaration of symbol
+    'i' hides symbol 'i' (line 616) [MISRA C++ Rule 2-10-2]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(616) : Info 830: Location cited in prior
+    message
+                                           _
+			for(int i=0;i<count;i++)
+..\..\..\src\LibASFDemux\AsfDemux.cpp(788) : Warning 574: Signed-unsigned mix
+    with relational
+                                                                                              _
+				m_File->Read((char*)&m_FileInfo.pBitrateMutualExclusion[i], 2);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(790) : Warning 534: Ignoring return value
+    of function 'FileCtrl::Read(char *, int)' (compare with line 34, file
+    ..\..\..\src\LibASFDemux\AsfDemux.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfDemux.h(34) : Info 830: Location cited in prior
+    message
+                                                                   _
+				ret = m_File->Read((char*)&overhead, 64);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(867) : Warning 545: Suspicious use of &
+                                            _
+		m_pVideoStream->Initialize();
+..\..\..\src\LibASFDemux\AsfDemux.cpp(904) : Warning 534: Ignoring return value
+    of function 'CAsfStream::Initialize(void)' (compare with line 19, file
+    ..\..\..\src\LibASFDemux\AsfStream.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfStream.h(19) : Info 830: Location cited in prior
+    message
+                                            _
+		m_pAudioStream->Initialize();
+..\..\..\src\LibASFDemux\AsfDemux.cpp(908) : Warning 534: Ignoring return value
+    of function 'CAsfStream::Initialize(void)' (compare with line 19, file
+    ..\..\..\src\LibASFDemux\AsfStream.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfStream.h(19) : Info 830: Location cited in prior
+    message
+                                                                           _
+						m_File->Seek(dwCurrFilePos);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(991) : Warning 534: Ignoring return value
+    of function 'FileCtrl::Seek(int)' (compare with line 38, file
+    ..\..\..\src\LibASFDemux\AsfDemux.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfDemux.h(38) : Info 830: Location cited in prior
+    message
+                                                                                                     _
+					for (int i = dwLostEntryCount+1; i < m_IndexObject.entryCount; i++)
+..\..\..\src\LibASFDemux\AsfDemux.cpp(999) : Warning 574: Signed-unsigned mix
+    with relational
+               _
+	return S_FALSE;
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1049) : Warning 438: Last value assigned
+    to variable 'nCurPos' (defined at line 595) not used [MISRA C++ Rule
+    0-1-6], [MISRA C++ Rules 0-1-6 and 0-1-9]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(595) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1050) : Warning 529: Symbol 'nCurPos'
+    (line 595) not subsequently referenced [MISRA C++ Rule 0-1-3], [MISRA C++
+    Rule 0-1-4]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(595) : Info 830: Location cited in prior
+    message
+                                                                                                          _
+				ret = m_File->Seek(m_DataFilePos + (nIndex + 1) * m_FileInfo.packetLength);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1079) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                                     _
+				ret = m_File->Seek(m_PacketEntry[nIndex + 1].filePos);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1087) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                                     _
+				ret = m_File->Seek(m_PacketEntry[nIndex + 1].filePos);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1087) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_PacketEntry' in left argument to operator '['
+    [Reference: file ..\..\..\src\LibASFDemux\AsfDemux.cpp: lines 416, 554,
+    557]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(416) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(554) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(557) : Info 831: Reference cited in prior
+    message
+                                                                                                    _
+				ret = m_File->Seek(m_DataFilePos + nIndex * m_FileInfo.packetLength);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1098) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                                 _
+				ret = m_File->Seek(m_PacketEntry[nIndex].filePos);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1107) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                                 _
+				ret = m_File->Seek(m_PacketEntry[nIndex].filePos);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1107) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_PacketEntry' in left argument to operator '['
+    [Reference: file ..\..\..\src\LibASFDemux\AsfDemux.cpp: lines 416, 554,
+    557]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(416) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(554) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(557) : Info 831: Reference cited in prior
+    message
+                                                                                 _
+				PacketLength = m_PacketEntry[nIndex].packetLength;
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1112) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_PacketEntry' in left argument to operator '['
+    [Reference: file ..\..\..\src\LibASFDemux\AsfDemux.cpp: lines 416, 554,
+    557]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(416) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(554) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(557) : Info 831: Reference cited in prior
+    message
+                                                          _
+			pPayload->filePos = m_File->Tell();
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1117) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                               _
+			ret = m_File->Seek( pPayload->filePos );
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1129) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                          _
+			pPayload->filePos = m_File->Tell();
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1138) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                                                          _
+				ret = m_File->Seek(m_DataFilePos + (nIndex + 1) * m_FileInfo.packetLength);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1391) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                                     _
+				ret = m_File->Seek(m_PacketEntry[nIndex + 1].filePos);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1399) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                                     _
+				ret = m_File->Seek(m_PacketEntry[nIndex + 1].filePos);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1399) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_PacketEntry' in left argument to operator '['
+    [Reference: file ..\..\..\src\LibASFDemux\AsfDemux.cpp: lines 416, 554,
+    557]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(416) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(554) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(557) : Info 831: Reference cited in prior
+    message
+                                                                                                        _
+					ret = m_File->Seek(m_DataFilePos+nIndex*m_FileInfo.packetLength);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1418) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                                         _
+					ret = m_File->Seek(m_PacketEntry[nIndex].filePos);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1427) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                                         _
+					ret = m_File->Seek(m_PacketEntry[nIndex].filePos);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1427) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_PacketEntry' in left argument to operator '['
+    [Reference: file ..\..\..\src\LibASFDemux\AsfDemux.cpp: lines 416, 554,
+    557]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(416) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(554) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(557) : Info 831: Reference cited in prior
+    message
+                                                                                         _
+					PacketLength = m_PacketEntry[nIndex].packetLength;
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1432) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_PacketEntry' in left argument to operator '['
+    [Reference: file ..\..\..\src\LibASFDemux\AsfDemux.cpp: lines 416, 554,
+    557]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(416) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(554) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(557) : Info 831: Reference cited in prior
+    message
+                                                          _
+			pPayload->filePos = m_File->Tell();
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1438) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                                                  _
+					m_File->Seek(m_DataFilePos+nIndex*m_FileInfo.packetLength);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1444) : Warning 534: Ignoring return
+    value of function 'FileCtrl::Seek(int)' (compare with line 38, file
+    ..\..\..\src\LibASFDemux\AsfDemux.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfDemux.h(38) : Info 830: Location cited in prior
+    message
+                                                                                   _
+					m_File->Seek(m_PacketEntry[nIndex].filePos);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1446) : Warning 534: Ignoring return
+    value of function 'FileCtrl::Seek(int)' (compare with line 38, file
+    ..\..\..\src\LibASFDemux\AsfDemux.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfDemux.h(38) : Info 830: Location cited in prior
+    message
+                                                               _
+			ret = m_File->Seek( pPayload->filePos );
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1454) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                          _
+			pPayload->filePos = m_File->Tell();
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1463) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                 _
+						LastMediaNum = -1;
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1558) : Warning 570: Loss of sign
+    (assignment) (int to unsigned long)
+                                                                     _
+	if (m_pVideoStream->m_nCurPacket>m_pAudioStream->m_nCurPacket)
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1657) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_pVideoStream' in left argument to operator '->'
+    [Reference: file ..\..\..\src\LibASFDemux\AsfDemux.cpp: lines 415, 902,
+    1059, 1360]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(415) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(902) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1059) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1360) : Info 831: Reference cited in
+    prior message
+                                                                     _
+	if (m_pVideoStream->m_nCurPacket>m_pAudioStream->m_nCurPacket)
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1657) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_pAudioStream' in left argument to operator '->'
+    [Reference: file ..\..\..\src\LibASFDemux\AsfDemux.cpp: lines 414, 906,
+    1311, 1371, 1642]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(414) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(906) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1311) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1371) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1642) : Info 831: Reference cited in
+    prior message
+                                        _
+		ReadAudioSample(pSample);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1660) : Warning 534: Ignoring return
+    value of function 'CAsfDemux::ReadAudioSample(struct _AsfSample *)'
+    (compare with line 1350) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1350) : Info 830: Location cited in prior
+    message
+                                        _
+		ReadVideoSample(pSample);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1668) : Warning 534: Ignoring return
+    value of function 'CAsfDemux::ReadVideoSample(struct _AsfSample *)'
+    (compare with line 1052) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1052) : Info 830: Location cited in prior
+    message
+        _
+	return S_OK;
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1674) : Warning 527: Unreachable code at
+    token 'return' [MISRA C++ Rule 0-1-1]
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1675) : Warning 529: Symbol 'ret' (line
+    1640) not subsequently referenced [MISRA C++ Rule 0-1-3], [MISRA C++ Rule
+    0-1-4]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1640) : Info 830: Location cited in prior
+    message
+                                                    _
+			m_pAudioStream->Initialize();
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1682) : Warning 534: Ignoring return
+    value of function 'CAsfStream::Initialize(void)' (compare with line 19,
+    file ..\..\..\src\LibASFDemux\AsfStream.h) [MISRA C++ Rules 0-1-7], [MISRA
+    C++ Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfStream.h(19) : Info 830: Location cited in prior
+    message
+                                                    _
+			m_pVideoStream->Initialize();
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1684) : Warning 534: Ignoring return
+    value of function 'CAsfStream::Initialize(void)' (compare with line 19,
+    file ..\..\..\src\LibASFDemux\AsfStream.h) [MISRA C++ Rules 0-1-7], [MISRA
+    C++ Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfStream.h(19) : Info 830: Location cited in prior
+    message
+                                                                            _
+				if (m_PacketEntry[index].filePos > dwSeekPos)
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1704) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_PacketEntry' in left argument to operator '['
+    [Reference: file ..\..\..\src\LibASFDemux\AsfDemux.cpp: lines 416, 554,
+    557]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(416) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(554) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(557) : Info 831: Reference cited in prior
+    message
+                                                             _
+		*pdwFileOffset = m_PacketEntry[index].filePos;
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1723) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_PacketEntry' in left argument to operator '['
+    [Reference: file ..\..\..\src\LibASFDemux\AsfDemux.cpp: lines 416, 554,
+    557]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(416) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(554) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(557) : Info 831: Reference cited in prior
+    message
+                                             _
+		m_File->Reset(*pdwFileOffset);	
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1724) : Warning 534: Ignoring return
+    value of function 'FileCtrl::Reset(int)' (compare with line 46, file
+    ..\..\..\src\LibASFDemux\AsfDemux.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfDemux.h(46) : Info 830: Location cited in prior
+    message
+                                             _
+		m_File->Reset(*pdwFileOffset);	
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1724) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                             _
+		m_File->Reset(*pdwFileOffset);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1737) : Warning 534: Ignoring return
+    value of function 'FileCtrl::Reset(int)' (compare with line 46, file
+    ..\..\..\src\LibASFDemux\AsfDemux.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfDemux.h(46) : Info 830: Location cited in prior
+    message
+                                             _
+		m_File->Reset(*pdwFileOffset);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1737) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                    _
+			m_pAudioStream->Initialize();
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1760) : Warning 534: Ignoring return
+    value of function 'CAsfStream::Initialize(void)' (compare with line 19,
+    file ..\..\..\src\LibASFDemux\AsfStream.h) [MISRA C++ Rules 0-1-7], [MISRA
+    C++ Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfStream.h(19) : Info 830: Location cited in prior
+    message
+                                                    _
+			m_pVideoStream->Initialize();
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1762) : Warning 534: Ignoring return
+    value of function 'CAsfStream::Initialize(void)' (compare with line 19,
+    file ..\..\..\src\LibASFDemux\AsfStream.h) [MISRA C++ Rules 0-1-7], [MISRA
+    C++ Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfStream.h(19) : Info 830: Location cited in prior
+    message
+                                                                                                                   _
+					ret = m_File->Seek(m_DataFilePos + dwPacketIndex * m_FileInfo.packetLength);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1807) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                        _
+			}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1847) : Warning 529: Symbol
+    'packetheader' (line 1801) not subsequently referenced [MISRA C++ Rule
+    0-1-3], [MISRA C++ Rule 0-1-4]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1801) : Info 830: Location cited in prior
+    message
+                        _
+			}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1847) : Warning 550: Symbol
+    'PacketLength' (line 1803) not accessed [MISRA C++ Rule 0-1-4]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1803) : Info 830: Location cited in prior
+    message
+                        _
+			}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1847) : Warning 438: Last value assigned
+    to variable 'PacketLength' (defined at line 1803) not used [MISRA C++ Rule
+    0-1-6], [MISRA C++ Rules 0-1-6 and 0-1-9]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1803) : Info 830: Location cited in prior
+    message
+                                                                                                               _
+					ret = m_File->Seek(m_DataFilePos+dwPacketIndex*m_FileInfo.packetLength);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1854) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                 _
+	for(pItem=m_pAudioStreamLst;pItem,dwIndex;dwIndex--) 
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1949) : Warning 505: Redundant left
+    argument to comma
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1949) : Warning 443: for clause
+    irregularity: variable 'pItem' initialized in 1st expression does not match
+    'dwIndex' modified in 3rd
+                                    _
+		pItem = pItem->pNext;
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1951) : Warning 613: Possible use of null
+    pointer 'pItem' in left argument to operator '->' [Reference: file
+    ..\..\..\src\LibASFDemux\AsfDemux.cpp: lines 420, 522, 536, 1949]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(420) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(522) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(536) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1949) : Info 831: Reference cited in
+    prior message
+                                                 _
+	for(pItem=m_pVideoStreamLst;pItem,dwIndex;dwIndex--) 
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1964) : Warning 505: Redundant left
+    argument to comma
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1964) : Warning 443: for clause
+    irregularity: variable 'pItem' initialized in 1st expression does not match
+    'dwIndex' modified in 3rd
+                                    _
+		pItem = pItem->pNext;
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1966) : Warning 613: Possible use of null
+    pointer 'pItem' in left argument to operator '->' [Reference: file
+    ..\..\..\src\LibASFDemux\AsfDemux.cpp: lines 419, 538, 552, 1964]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(419) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(538) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(552) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1964) : Info 831: Reference cited in
+    prior message
+                                      _
+	*pSize = m_File->StoredBytes();
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1977) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                                                                    _
+						ret = m_File->Seek(m_DataFilePos + nIndex * m_FileInfo.packetLength);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2006) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                                                 _
+						ret = m_File->Seek(m_PacketEntry[nIndex].filePos);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2014) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                                                 _
+						ret = m_File->Seek(m_PacketEntry[nIndex].filePos);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2014) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_PacketEntry' in left argument to operator '['
+    [Reference: file ..\..\..\src\LibASFDemux\AsfDemux.cpp: lines 416, 554,
+    557]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(416) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(554) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(557) : Info 831: Reference cited in prior
+    message
+                                                  _
+	return m_File->Write((char*)pBuf, iBufLen);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2087) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                               _
+	ret = m_File->Read((char*)overhead, 64);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2096) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                               _
+	ret = m_File->Seek(m_File->Tell() - 64 + ph.HeaderSize);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2182) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                               _
+	ret = m_File->Seek(m_File->Tell() - 64 + ph.HeaderSize);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2182) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 975: CAsfDemux::ParsePacketHeader(?)
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2096) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 975: CAsfDemux::ParsePacketHeader(?)
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2182) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 975: CAsfDemux::ParsePacketHeader(?)
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2182) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                _
+	ret = m_File->Read((char *)overhead, 64);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2197) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                     _
+	ret = m_File->Seek(m_File->Tell() - 64 + payloadh.HeaderSize);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2240) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                     _
+	ret = m_File->Seek(m_File->Tell() - 64 + payloadh.HeaderSize);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2240) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 977: CAsfDemux::ParsePayloadHeader(?,
+    ?) #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2197) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 977: CAsfDemux::ParsePayloadHeader(?,
+    ?) #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2240) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 977: CAsfDemux::ParsePayloadHeader(?,
+    ?) #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2240) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                _
+	if (payloadHeader->StreamNum == m_pAudioStream->m_Number)
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2286) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_pAudioStream' in left argument to operator '->'
+    [Reference: file ..\..\..\src\LibASFDemux\AsfDemux.cpp: lines 414, 906,
+    1311, 1371, 1681, 1718, 1744, 1759]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(414) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(906) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1311) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1371) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1681) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1718) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1744) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1759) : Info 831: Reference cited in
+    prior message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 1473: CAsfDemux::CheckAudioStreamInfo([1])
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2286) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_pAudioStream' in left argument to operator '->'
+    [Reference: file ..\..\..\src\LibASFDemux\AsfDemux.cpp: lines 414, 906,
+    1311, 1371, 1681, 1718, 1744, 1759]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(414) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(906) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1311) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1371) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1681) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1718) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1744) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1759) : Info 831: Reference cited in
+    prior message
+                                                                _
+	if (payloadHeader->StreamNum == m_pVideoStream->m_Number)
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2328) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_pVideoStream' in left argument to operator '->'
+    [Reference: file ..\..\..\src\LibASFDemux\AsfDemux.cpp: lines 415, 902,
+    1059, 1360, 1683, 1712, 1738, 1761, 1924]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(415) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(902) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1059) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1360) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1683) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1712) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1738) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1761) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1924) : Info 831: Reference cited in
+    prior message
+                                                                                                _
+				m_pVideoStream->m_Number = m_FileInfo.pBitrateMutualExclusion[i];
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2336) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_pVideoStream' in left argument to operator '->'
+    [Reference: file ..\..\..\src\LibASFDemux\AsfDemux.cpp: lines 415, 902,
+    1059, 1360, 1683, 1712, 1738, 1761, 1924]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(415) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(902) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1059) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1360) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1683) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1712) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1738) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1761) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1924) : Info 831: Reference cited in
+    prior message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 1148: CAsfDemux::CheckVideoStreamInfo([1])
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2328) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_pVideoStream' in left argument to operator '->'
+    [Reference: file ..\..\..\src\LibASFDemux\AsfDemux.cpp: lines 415, 902,
+    1059, 1360, 1683, 1712, 1738, 1761, 1924]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(415) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(902) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1059) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1360) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1683) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1712) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1738) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1761) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1924) : Info 831: Reference cited in
+    prior message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 1148: CAsfDemux::CheckVideoStreamInfo([1])
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2336) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_pVideoStream' in left argument to operator '->'
+    [Reference: file ..\..\..\src\LibASFDemux\AsfDemux.cpp: lines 415, 902,
+    1059, 1360, 1683, 1712, 1738, 1761, 1924]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(415) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(902) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1059) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1360) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1683) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1712) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1738) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1761) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1924) : Info 831: Reference cited in
+    prior message
+                                                         _
+	ret = m_File->Read((char*)&streamProperties, 48 );
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2351) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                             _
+	ret = m_File->Read((char*)&streamProperties.flags, 2);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2356) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                _
+	ret = m_File->Read((char*)&streamProperties.reserved, 4);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2361) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                   _
+		CAsfAudioStream* pAudioStream = new CAsfAudioStream;
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2372) : Warning 586: function 'operator
+    new' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                            _
+			ret = m_File->Read((char*)&acm, 16 );
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2387) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                    _
+				free(pAudioStream);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2390) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2390) : Warning 424: Inappropriate
+    deallocation (free) for 'new' data
+                                                                             _
+			ret = m_File->Read((char*)&acm.SpecificDataLength, 2);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2393) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                    _
+				free(pAudioStream);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2396) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2396) : Warning 424: Inappropriate
+    deallocation (free) for 'new' data
+                                                                                                                     _
+				ret = m_File->Read((char*)pAudioStream->m_Info.specific_data, acm.SpecificDataLength);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2404) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                            _
+					free(pAudioStream);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2407) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2407) : Warning 424: Inappropriate
+    deallocation (free) for 'new' data
+                                                                     _
+		LIST_AUDIO_STREAM_S * pItem = new LIST_AUDIO_STREAM_S;
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2514) : Warning 586: function 'operator
+    new' is deprecated. [MISRA C++ Rule 18-4-1]
+                                            _
+			pTemp->pNext = pItem;
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2534) : Warning 613: Possible use of null
+    pointer 'pTemp' in left argument to operator '->' [Reference: file
+    ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 2529]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2529) : Info 831: Reference cited in
+    prior message
+                                                                    _
+		CAsfVideoStream * pVideoStream = new CAsfVideoStream;
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2539) : Warning 586: function 'operator
+    new' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                         _
+			ret= m_File->Read((char*)&vcm, 8);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2551) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                    _
+				free(pVideoStream);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2554) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2554) : Warning 424: Inappropriate
+    deallocation (free) for 'new' data
+                                                                   _
+			ret = m_File->Read((char*)&vcm.reserved, 1);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2557) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                    _
+				free(pVideoStream);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2560) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2560) : Warning 424: Inappropriate
+    deallocation (free) for 'new' data
+                                                                           _
+			ret = m_File->Read((char*)&vcm.FormatDataLength, 2);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2563) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                    _
+				free(pVideoStream);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2566) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2566) : Warning 424: Inappropriate
+    deallocation (free) for 'new' data
+                                                                                                                   _
+				ret = m_File->Read((char*)pVideoStream->m_Info.specific_data, vcm.FormatDataLength);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2574) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                            _
+					free(pVideoStream);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2577) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2577) : Warning 424: Inappropriate
+    deallocation (free) for 'new' data
+                                                                     _
+		LIST_VIDEO_STREAM_S * pItem = new LIST_VIDEO_STREAM_S;
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2605) : Warning 586: function 'operator
+    new' is deprecated. [MISRA C++ Rule 18-4-1]
+                                            _
+			pTemp->pNext = pItem;
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2625) : Warning 613: Possible use of null
+    pointer 'pTemp' in left argument to operator '->' [Reference: file
+    ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 2620]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2620) : Info 831: Reference cited in
+    prior message
+                                                                                                _
+			ret = m_File->Seek(m_File->Tell() + streamProperties.typeSpecificLength);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2632) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                                                _
+			ret = m_File->Seek(m_File->Tell() + streamProperties.typeSpecificLength);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2632) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                                         _
+		ret = m_File->Seek(m_File->Tell() + streamProperties.errCorrectionLength);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2641) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                                         _
+		ret = m_File->Seek(m_File->Tell() + streamProperties.errCorrectionLength);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2641) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 646: CAsfDemux::ParseStreamPropertyObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2351) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 646: CAsfDemux::ParseStreamPropertyObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2356) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 646: CAsfDemux::ParseStreamPropertyObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2361) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 646: CAsfDemux::ParseStreamPropertyObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2387) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 646: CAsfDemux::ParseStreamPropertyObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2393) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 646: CAsfDemux::ParseStreamPropertyObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2404) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 646: CAsfDemux::ParseStreamPropertyObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2534) : Warning 613: Possible use of null
+    pointer 'pTemp' in left argument to operator '->' [Reference: file
+    ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 2529]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2529) : Info 831: Reference cited in
+    prior message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 646: CAsfDemux::ParseStreamPropertyObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2551) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 646: CAsfDemux::ParseStreamPropertyObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2557) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 646: CAsfDemux::ParseStreamPropertyObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2563) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 646: CAsfDemux::ParseStreamPropertyObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2574) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 646: CAsfDemux::ParseStreamPropertyObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2625) : Warning 613: Possible use of null
+    pointer 'pTemp' in left argument to operator '->' [Reference: file
+    ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 2620]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2620) : Info 831: Reference cited in
+    prior message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 646: CAsfDemux::ParseStreamPropertyObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2632) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 646: CAsfDemux::ParseStreamPropertyObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2632) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 646: CAsfDemux::ParseStreamPropertyObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2641) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 646: CAsfDemux::ParseStreamPropertyObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2641) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                             _
+	ret = m_File->Read((char*)overhead, sizeof(overhead));
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2657) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                        _
+		ret = m_File->Read((char*)&objHeader, sizeof(objHeader));
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2676) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                                       _
+		int iNextObjPos = m_File->Tell()+objHeader.objectSize-sizeof(objHeader);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2682) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                             _
+		int iCurrPos = m_File->Tell();
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2708) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                       _
+			ret = m_File->Seek(iNextObjPos);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2711) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 742: CAsfDemux::ParseExternHeaderObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2657) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 742: CAsfDemux::ParseExternHeaderObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2676) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 742: CAsfDemux::ParseExternHeaderObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2682) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 742: CAsfDemux::ParseExternHeaderObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2708) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 742: CAsfDemux::ParseExternHeaderObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2711) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                             _
+	ret = m_File->Read((char*)overhead, sizeof(overhead));
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2729) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                          _
+	pExPropObj = new AsfExtendedStreamPropertiesObject;
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2741) : Warning 586: function 'operator
+    new' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                                         _
+		ret = m_File->Read((char*)StreamName, sizeof(StreamName));
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2780) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                          _
+		DWORD pos = m_File->Tell();
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2786) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                         _
+		ret = m_File->Seek( pos + nStreamNameLen);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2787) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                               _
+		ret = m_File->Read((char*)PayloadExtSys, sizeof(PayloadExtSys));
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2799) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                          _
+		DWORD pos = m_File->Tell();
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2805) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                            _
+		ret = m_File->Seek( pos + nPayloadExtSysLen);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2806) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                _
+	ret = m_File->Read((char*)&objHeader, sizeof(objHeader));
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2815) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                          _
+		DWORD pos = m_File->Tell();
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2835) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                           _
+		ret = m_File->Seek(pos - sizeof(objHeader));
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2836) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 2685: CAsfDemux::ParseExternStreamPropertyObject()
+ #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2729) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 2685: CAsfDemux::ParseExternStreamPropertyObject()
+ #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2780) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 2685: CAsfDemux::ParseExternStreamPropertyObject()
+ #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2786) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 2685: CAsfDemux::ParseExternStreamPropertyObject()
+ #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2787) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 2685: CAsfDemux::ParseExternStreamPropertyObject()
+ #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2799) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 2685: CAsfDemux::ParseExternStreamPropertyObject()
+ #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2805) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 2685: CAsfDemux::ParseExternStreamPropertyObject()
+ #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2806) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 2685: CAsfDemux::ParseExternStreamPropertyObject()
+ #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2815) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 2685: CAsfDemux::ParseExternStreamPropertyObject()
+ #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2835) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 2685: CAsfDemux::ParseExternStreamPropertyObject()
+ #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2836) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                             _
+		ret = m_File->Read((char*)&wMetadataCount, 2);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2851) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                            _
+		m_FileInfo.ptMetadata = (AsfMetadata*)malloc(wMetadataCount*sizeof(AsfMetadata));
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2856) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                                _
+			ret = m_File->Read((char*)&wReserved, 2);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2867) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                    _
+			ret = m_File->Read((char*)&wStreamNumber, 2);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2874) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                  _
+			ret = m_File->Read((char*)&wNameLength, 2);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2882) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                _
+			ret = m_File->Read((char*)&wDataType, 2);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2890) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                   _
+			ret = m_File->Read((char*)&dwDataLength, 4);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2898) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                                  _
+				m_FileInfo.ptMetadata[i].pwcName = (CHAR16*)malloc(m_FileInfo.ptMetadata[i].wNameLength+2);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2926) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                                                                                                          _
+				ret = m_File->Read((char*)(m_FileInfo.ptMetadata[i].pwcName), (int)(m_FileInfo.ptMetadata[i].wNameLength));
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2929) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                               _
+				m_FileInfo.ptMetadata[i].pbData = (BYTE*)malloc(m_FileInfo.ptMetadata[i].dwDataLength);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2939) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                                                                                                          _
+				ret = m_File->Read((char*)(m_FileInfo.ptMetadata[i].pbData), (int)(m_FileInfo.ptMetadata[i].dwDataLength));
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2942) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 2691: CAsfDemux::ParseMetadataObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2851) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 2691: CAsfDemux::ParseMetadataObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2867) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 2691: CAsfDemux::ParseMetadataObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2874) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 2691: CAsfDemux::ParseMetadataObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2882) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 2691: CAsfDemux::ParseMetadataObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2890) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 2691: CAsfDemux::ParseMetadataObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2898) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 2691: CAsfDemux::ParseMetadataObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2929) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 2691: CAsfDemux::ParseMetadataObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2942) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                _
+		ret = m_File->Read((char*)&wMetadataLibCount, 2);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2957) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                  _
+		m_FileInfo.ptMetadataLib = (AsfMetadataLib*)malloc(wMetadataLibCount*sizeof(AsfMetadataLib));
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2962) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                                   _
+			ret = m_File->Read((char*)&wLangListIdx, 2);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2973) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                    _
+			ret = m_File->Read((char*)&wStreamNumber, 2);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2981) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                  _
+			ret = m_File->Read((char*)&wNameLength, 2);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2989) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                _
+			ret = m_File->Read((char*)&wDataType, 2);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2997) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                   _
+			ret = m_File->Read((char*)&dwDataLength, 4);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(3005) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                                     _
+				m_FileInfo.ptMetadataLib[i].pwcName = (CHAR16*)malloc(m_FileInfo.ptMetadataLib[i].wNameLength+2);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(3037) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                                                                                                                _
+				ret = m_File->Read((char*)(m_FileInfo.ptMetadataLib[i].pwcName), (int)(m_FileInfo.ptMetadataLib[i].wNameLength));
+..\..\..\src\LibASFDemux\AsfDemux.cpp(3040) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                                  _
+				m_FileInfo.ptMetadataLib[i].pbData = (BYTE*)malloc(m_FileInfo.ptMetadataLib[i].dwDataLength);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(3050) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                                                                                                                _
+				ret = m_File->Read((char*)(m_FileInfo.ptMetadataLib[i].pbData), (int)(m_FileInfo.ptMetadataLib[i].dwDataLength));
+..\..\..\src\LibASFDemux\AsfDemux.cpp(3053) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 2697: CAsfDemux::ParseMetadataLibraryObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2957) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 2697: CAsfDemux::ParseMetadataLibraryObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2973) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 2697: CAsfDemux::ParseMetadataLibraryObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2981) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 2697: CAsfDemux::ParseMetadataLibraryObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2989) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 2697: CAsfDemux::ParseMetadataLibraryObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2997) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 2697: CAsfDemux::ParseMetadataLibraryObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(3005) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 2697: CAsfDemux::ParseMetadataLibraryObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(3040) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 2697: CAsfDemux::ParseMetadataLibraryObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(3053) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                           _
+		ret = m_File->Read((char*)&wLangIdCount, 2);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(3068) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                _
+		m_FileInfo.ptLangList = (AsfLanguageList*)malloc(wLangIdCount*sizeof(AsfLanguageList));
+..\..\..\src\LibASFDemux\AsfDemux.cpp(3073) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                                   _
+			ret = m_File->Read((char*)&bLanIdLength, 1);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(3084) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                                                        _
+				m_FileInfo.ptLangList[i].pwcLanguageID = (CHAR16*)malloc(m_FileInfo.ptLangList[i].bLanIdLength+2);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(3093) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                                                                                                                 _
+				ret = m_File->Read((char*)(m_FileInfo.ptLangList[i].pwcLanguageID), (int)(m_FileInfo.ptLangList[i].bLanIdLength));
+..\..\..\src\LibASFDemux\AsfDemux.cpp(3096) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 2703: CAsfDemux::ParseLanguageListObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(3068) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 2703: CAsfDemux::ParseLanguageListObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(3084) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibASFDemux\AsfDemux.cpp line 2703: CAsfDemux::ParseLanguageListObject()
+    #1
+..\..\..\src\LibASFDemux\AsfDemux.cpp(3096) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                 _
+	DWORD CurrentDataFilePos = m_File->Tell();
+..\..\..\src\LibASFDemux\AsfDemux.cpp(3111) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_File' in left argument to operator '->' [Reference:
+    file ..\..\..\src\LibASFDemux\AsfDemux.cpp: line 434]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(434) : Info 831: Reference cited in prior
+    message
+                                                      _
+	DWORD CurPacket = m_pVideoStream->m_nCurPacket;
+..\..\..\src\LibASFDemux\AsfDemux.cpp(3112) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_pVideoStream' in left argument to operator '->'
+    [Reference: file ..\..\..\src\LibASFDemux\AsfDemux.cpp: lines 415, 902,
+    1059, 1360, 1683, 1712, 1738, 1761, 1924]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(415) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(902) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1059) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1360) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1683) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1712) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1738) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1761) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1924) : Info 831: Reference cited in
+    prior message
+                                                                           _
+	memcpy(&Payload, &m_pVideoStream->m_CurPayload, sizeof(AsfPayload));
+..\..\..\src\LibASFDemux\AsfDemux.cpp(3115) : Warning 613: Possible use of null
+    pointer 'CAsfDemux::m_pVideoStream' in left argument to operator '->'
+    [Reference: file ..\..\..\src\LibASFDemux\AsfDemux.cpp: lines 415, 902,
+    1059, 1360, 1683, 1712, 1738, 1761, 1924]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(415) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(902) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1059) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1360) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1683) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1712) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1738) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1761) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibASFDemux\AsfDemux.cpp(1924) : Info 831: Reference cited in
+    prior message
+                                        _
+	m_File->Seek(CurrentDataFilePos);
+..\..\..\src\LibASFDemux\AsfDemux.cpp(3132) : Warning 534: Ignoring return
+    value of function 'FileCtrl::Seek(int)' (compare with line 38, file
+    ..\..\..\src\LibASFDemux\AsfDemux.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfDemux.h(38) : Info 830: Location cited in prior
+    message
+                             _
+	return found? S_OK : E_FAIL;
+..\..\..\src\LibASFDemux\AsfDemux.cpp(3135) : Warning 438: Last value assigned
+    to variable 'ret' (defined at line 3108) not used [MISRA C++ Rule 0-1-6],
+    [MISRA C++ Rules 0-1-6 and 0-1-9]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(3108) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibASFDemux\AsfDemux.cpp(3136) : Warning 529: Symbol 'ret' (line
+    3108) not subsequently referenced [MISRA C++ Rule 0-1-3], [MISRA C++ Rule
+    0-1-4]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(3108) : Info 830: Location cited in prior
+    message
+
+--- Module:   ..\..\..\src\LibASFDemux\AsfDemuxApi.cpp (C++)
+        _
+#define IsEqualGUID(rguid1, rguid2) (!memcmp(rguid1, rguid2, sizeof(GUID)))
+..\..\..\src\LibASFDemux\AsfGuids.h(38) : Warning 652: #define of symbol
+    'IsEqualGUID(const struct _GUID &, const struct _GUID &)' declared
+    previously at line 159, file C:\Program Files\Microsoft Visual Studio
+    8\VC\PlatformSDK\Include\guiddef.h
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\guiddef.h(159)
+    : Info 830: Location cited in prior message
+                                        _
+	CAsfDemux* demux = new CAsfDemux;
+..\..\..\src\LibASFDemux\AsfDemuxApi.cpp(12) : Warning 586: function 'operator
+    new' is deprecated. [MISRA C++ Rule 18-4-1]
+                    _
+	delete demux;
+..\..\..\src\LibASFDemux\AsfDemuxApi.cpp(18) : Warning 586: function 'operator
+    delete' is deprecated. [MISRA C++ Rule 18-4-1]
+                                        _
+	CAsfDemux* demux = new CAsfDemux( (LPVOID) hBuff, iBufLen);
+..\..\..\src\LibASFDemux\AsfDemuxApi.cpp(25) : Warning 586: function 'operator
+    new' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                           _
+	demux->WriteSample((unsigned char*)hBuff, iDataLen);
+..\..\..\src\LibASFDemux\AsfDemuxApi.cpp(26) : Warning 534: Ignoring return
+    value of function 'CAsfDemux::WriteSample(unsigned char *, int)' (compare
+    with line 2085, file ..\..\..\src\LibASFDemux\AsfDemux.cpp) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2085) : Info 830: Location cited in prior
+    message
+                    _
+	delete demux;
+..\..\..\src\LibASFDemux\AsfDemuxApi.cpp(32) : Warning 586: function 'operator
+    delete' is deprecated. [MISRA C++ Rule 18-4-1]
+                                        _
+	CAsfDemux* demux = new CAsfDemux( (LPVOID) hfile, iBufLen);
+..\..\..\src\LibASFDemux\AsfDemuxApi.cpp(41) : Warning 586: function 'operator
+    new' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                           _
+	demux->WriteSample((unsigned char*)hfile, iDataLen);
+..\..\..\src\LibASFDemux\AsfDemuxApi.cpp(42) : Warning 534: Ignoring return
+    value of function 'CAsfDemux::WriteSample(unsigned char *, int)' (compare
+    with line 2085, file ..\..\..\src\LibASFDemux\AsfDemux.cpp) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(2085) : Info 830: Location cited in prior
+    message
+                    _
+	delete demux;
+..\..\..\src\LibASFDemux\AsfDemuxApi.cpp(48) : Warning 586: function 'operator
+    delete' is deprecated. [MISRA C++ Rule 18-4-1]
+                      _
+	demux->Close();
+..\..\..\src\LibASFDemux\AsfDemuxApi.cpp(56) : Warning 534: Ignoring return
+    value of function 'CAsfDemux::Close(void)' (compare with line 432, file
+    ..\..\..\src\LibASFDemux\AsfDemux.cpp) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibASFDemux\AsfDemux.cpp(432) : Info 830: Location cited in prior
+    message
+                    _
+	delete demux;
+..\..\..\src\LibASFDemux\AsfDemuxApi.cpp(57) : Warning 586: function 'operator
+    delete' is deprecated. [MISRA C++ Rule 18-4-1]
+
+--- Module:   ..\..\..\src\LibASFDemux\AsfGuids.cpp (C++)
+        _
+#define IsEqualGUID(rguid1, rguid2) (!memcmp(rguid1, rguid2, sizeof(GUID)))
+..\..\..\src\LibASFDemux\AsfGuids.h(38) : Warning 652: #define of symbol
+    'IsEqualGUID(const struct _GUID &, const struct _GUID &)' declared
+    previously at line 159, file C:\Program Files\Microsoft Visual Studio
+    8\VC\PlatformSDK\Include\guiddef.h
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\guiddef.h(159)
+    : Info 830: Location cited in prior message

@@ -1,0 +1,2423 @@
+
+--- Module:   ..\..\src\helix_date.c (C)
+
+--- Module:   ..\..\src\memory_utils.c (C)
+         _
+#include "helix_types.h"
+..\..\src\helix_result.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_memory.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\memory_utils.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\memory_utils.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\memory_utils.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+
+--- Module:   ..\..\src\pack_utils.c (C)
+         _
+#include "helix_types.h"
+..\..\src\helix_result.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_memory.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\pack_utils.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\pack_utils.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\pack_utils.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+
+--- Module:   ..\..\src\parse_sdp_chunk.c (C)
+         _
+#include "helix_types.h"
+..\..\src\helix_result.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_property.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rm_property.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_memory.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+                               _
+        ulLen = (UINT32) strlen(pszStr);
+..\..\src\parse_sdp_chunk.c(89) : Warning 586: function 'strlen' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                     _
+            ulIndx = (UINT32) strcspn(pszStr, pszWS);
+..\..\src\parse_sdp_chunk.c(93) : Warning 586: function 'strcspn' is
+    deprecated. [MISRA C++ Rule 18-0-5]
+                                             _
+                    ulIndx += (UINT32) strspn(pszStr + ulIndx, pszWSS);
+..\..\src\parse_sdp_chunk.c(100) : Warning 586: function 'strspn' is
+    deprecated. [MISRA C++ Rule 18-0-5]
+                                                  _
+                        ulIndx += (UINT32) strcspn(pszStr + ulIndx, pszWSE);
+..\..\src\parse_sdp_chunk.c(106) : Warning 586: function 'strcspn' is
+    deprecated. [MISRA C++ Rule 18-0-5]
+                                                     _
+                            ulIndx += (UINT32) strspn(pszStr + ulIndx, pszWSE);
+..\..\src\parse_sdp_chunk.c(128) : Warning 586: function 'strspn' is
+    deprecated. [MISRA C++ Rule 18-0-5]
+                                                          _
+                                ulIndx += (UINT32) strcspn(pszStr + ulIndx, pszWSS);
+..\..\src\parse_sdp_chunk.c(134) : Warning 586: function 'strcspn' is
+    deprecated. [MISRA C++ Rule 18-0-5]
+
+--- Module:   ..\..\src\ra_depack.c (C)
+         _
+#include "helix_types.h"
+..\..\src\helix_result.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\ra_depack.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\ra_depack.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_error.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rm_error.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_memory.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_stream.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rm_stream.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_property.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rm_property.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\rm_property.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_packet.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\ra_format_info.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\ra_depack_internal.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\ra_depack_internal.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\ra_depack_internal.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "rm_error.h"
+..\..\src\ra_depack_internal.h(44) : Warning 537: Repeated include file
+    '..\..\src\rm_error.h'
+         _
+#include "ra_depack.h"
+..\..\src\ra_depack_internal.h(45) : Warning 537: Repeated include file
+    '..\..\src\ra_depack.h'
+         _
+#include "helix_types.h"
+..\..\src\stream_hdr_structs.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_memory_default.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_error_default.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\memory_utils.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\memory_utils.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\memory_utils.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+
+--- Module:   ..\..\src\ra_depack_internal.c (C)
+         _
+#include "helix_types.h"
+..\..\src\helix_result.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\pack_utils.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\pack_utils.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_memory.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\string_utils.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "rm_memory.h"
+..\..\src\string_utils.h(42) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "helix_types.h"
+..\..\src\memory_utils.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\memory_utils.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\memory_utils.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "helix_types.h"
+..\..\src\stream_hdr_utils.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\stream_hdr_utils.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\stream_hdr_utils.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "helix_types.h"
+..\..\src\stream_hdr_structs.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\ra_depack_internal.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\ra_depack_internal.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\ra_depack_internal.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_error.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rm_error.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "helix_types.h"
+..\..\src\ra_depack.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\ra_depack.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_error.h"
+..\..\src\ra_depack.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_error.h'
+         _
+#include "rm_memory.h"
+..\..\src\ra_depack.h(44) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_stream.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rm_stream.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_property.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rm_property.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\rm_property.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_packet.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\ra_format_info.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "stream_hdr_structs.h"
+..\..\src\ra_depack_internal.h(46) : Warning 537: Repeated include file
+    '..\..\src\stream_hdr_structs.h'
+         _
+#include "helix_types.h"
+..\..\src\parse_sdp_chunk.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\parse_sdp_chunk.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_property.h"
+..\..\src\parse_sdp_chunk.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_property.h'
+_
+{
+..\..\src\bit_utils.h(61) : Warning 695: Inline function 'initbuffer' defined
+    without a storage-class specifier ('static' recommended).
+_
+{
+..\..\src\bit_utils.h(85) : Warning 695: Inline function 'showbits' defined
+    without a storage-class specifier ('static' recommended).
+_
+{
+..\..\src\bit_utils.h(113) : Warning 695: Inline function 'rm_flushbits'
+    defined without a storage-class specifier ('static' recommended).
+_
+{
+..\..\src\bit_utils.h(137) : Warning 695: Inline function 'getbits' defined
+    without a storage-class specifier ('static' recommended).
+_
+{
+..\..\src\bit_utils.h(153) : Warning 695: Inline function 'getbits1' defined
+    without a storage-class specifier ('static' recommended).
+_
+{
+..\..\src\bit_utils.h(181) : Warning 695: Inline function 'gotoByte' defined
+    without a storage-class specifier ('static' recommended).
+         _
+#include "helix_types.h"
+..\..\src\rasl.h(41) : Warning 537: Repeated include file '..\..\src\helix_types.h'
+                       _
+            if (!strcmp(pszTmp, "audio/x-ralf-mpeg4-generic"))
+..\..\src\ra_depack_internal.c(123) : Warning 586: function 'strcmp' is
+    deprecated. [MISRA C++ Rule 18-0-5]
+    _
+    }
+..\..\src\ra_depack_internal.c(192) : Warning 529: Symbol 'i' (line 89) not
+    subsequently referenced [MISRA C++ Rule 0-1-3], [MISRA C++ Rule 0-1-4]
+..\..\src\ra_depack_internal.c(89) : Info 830: Location cited in prior message
+    _
+    }
+..\..\src\ra_depack_internal.c(192) : Warning 438: Last value assigned to
+    variable 'i' (defined at line 89) not used [MISRA C++ Rule 0-1-6], [MISRA
+    C++ Rules 0-1-6 and 0-1-9]
+..\..\src\ra_depack_internal.c(89) : Info 830: Location cited in prior message
+                                              _
+                    rm_unpack16(&pBuf, &ulLen);
+..\..\src\ra_depack_internal.c(561) : Warning 534: Ignoring return value of
+    function 'rm_unpack16(unsigned char **, unsigned long *)' (compare with
+    line 122, file ..\..\src\pack_utils.c) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\src\pack_utils.c(122) : Info 830: Location cited in prior message
+    _
+    }
+..\..\src\ra_depack_internal.c(658) : Warning 529: Symbol 'i' (line 612) not
+    subsequently referenced [MISRA C++ Rule 0-1-3], [MISRA C++ Rule 0-1-4]
+..\..\src\ra_depack_internal.c(612) : Info 830: Location cited in prior message
+    _
+    }
+..\..\src\ra_depack_internal.c(658) : Warning 438: Last value assigned to
+    variable 'i' (defined at line 612) not used [MISRA C++ Rule 0-1-6], [MISRA
+    C++ Rules 0-1-6 and 0-1-9]
+..\..\src\ra_depack_internal.c(612) : Info 830: Location cited in prior message
+    _
+    }
+..\..\src\ra_depack_internal.c(658) : Warning 529: Symbol 'ulSize' (line 611)
+    not subsequently referenced [MISRA C++ Rule 0-1-3], [MISRA C++ Rule 0-1-4]
+..\..\src\ra_depack_internal.c(611) : Info 830: Location cited in prior message
+    _
+    }
+..\..\src\ra_depack_internal.c(658) : Warning 438: Last value assigned to
+    variable 'ulSize' (defined at line 611) not used [MISRA C++ Rule 0-1-6],
+    [MISRA C++ Rules 0-1-6 and 0-1-9]
+..\..\src\ra_depack_internal.c(611) : Info 830: Location cited in prior message
+            _
+            }
+..\..\src\ra_depack_internal.c(1015) : Warning 529: Symbol 'i' (line 968) not
+    subsequently referenced [MISRA C++ Rule 0-1-3], [MISRA C++ Rule 0-1-4]
+..\..\src\ra_depack_internal.c(968) : Info 830: Location cited in prior message
+            _
+            }
+..\..\src\ra_depack_internal.c(1015) : Warning 438: Last value assigned to
+    variable 'i' (defined at line 968) not used [MISRA C++ Rule 0-1-6], [MISRA
+    C++ Rules 0-1-6 and 0-1-9]
+..\..\src\ra_depack_internal.c(968) : Info 830: Location cited in prior message
+    _
+    }
+..\..\src\ra_depack_internal.c(2049) : Warning 529: Symbol 'pBlock' (line 1978)
+    not subsequently referenced [MISRA C++ Rule 0-1-3], [MISRA C++ Rule 0-1-4]
+..\..\src\ra_depack_internal.c(1978) : Info 830: Location cited in prior
+    message
+    _
+    }
+..\..\src\ra_depack_internal.c(2049) : Warning 438: Last value assigned to
+    variable 'pBlock' (defined at line 1978) not used [MISRA C++ Rule 0-1-6],
+    [MISRA C++ Rules 0-1-6 and 0-1-9]
+..\..\src\ra_depack_internal.c(1978) : Info 830: Location cited in prior
+    message
+                                                                           _
+        get_rm_property_int(pSet, "constantsize", &pConfig->ulConstantSize);
+..\..\src\ra_depack_internal.c(2315) : Warning 534: Ignoring return value of
+    function 'get_rm_property_int(struct rm_property_set_struct *, const char
+    *, unsigned long *)' (compare with line 128, file ..\..\src\rm_property.h,
+    module ..\..\src\parse_sdp_chunk.c) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\src\rm_property.h(128) : Info 830: Location cited in prior message
+                                                                                   _
+        get_rm_property_int(pSet, "constantduration", &pConfig->ulConstantDuration);
+..\..\src\ra_depack_internal.c(2317) : Warning 534: Ignoring return value of
+    function 'get_rm_property_int(struct rm_property_set_struct *, const char
+    *, unsigned long *)' (compare with line 128, file ..\..\src\rm_property.h,
+    module ..\..\src\parse_sdp_chunk.c) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\src\rm_property.h(128) : Info 830: Location cited in prior message
+                                                                       _
+        get_rm_property_int(pSet, "sizelength", &pConfig->ulSizeLength);
+..\..\src\ra_depack_internal.c(2319) : Warning 534: Ignoring return value of
+    function 'get_rm_property_int(struct rm_property_set_struct *, const char
+    *, unsigned long *)' (compare with line 128, file ..\..\src\rm_property.h,
+    module ..\..\src\parse_sdp_chunk.c) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\src\rm_property.h(128) : Info 830: Location cited in prior message
+                                                                         _
+        get_rm_property_int(pSet, "indexlength", &pConfig->ulIndexLength);
+..\..\src\ra_depack_internal.c(2321) : Warning 534: Ignoring return value of
+    function 'get_rm_property_int(struct rm_property_set_struct *, const char
+    *, unsigned long *)' (compare with line 128, file ..\..\src\rm_property.h,
+    module ..\..\src\parse_sdp_chunk.c) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\src\rm_property.h(128) : Info 830: Location cited in prior message
+                                                                                   _
+        get_rm_property_int(pSet, "indexdeltalength", &pConfig->ulIndexDeltaLength);
+..\..\src\ra_depack_internal.c(2323) : Warning 534: Ignoring return value of
+    function 'get_rm_property_int(struct rm_property_set_struct *, const char
+    *, unsigned long *)' (compare with line 128, file ..\..\src\rm_property.h,
+    module ..\..\src\parse_sdp_chunk.c) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\src\rm_property.h(128) : Info 830: Location cited in prior message
+                                                                               _
+        get_rm_property_int(pSet, "ctsdeltalength", &pConfig->ulCTSDeltaLength);
+..\..\src\ra_depack_internal.c(2325) : Warning 534: Ignoring return value of
+    function 'get_rm_property_int(struct rm_property_set_struct *, const char
+    *, unsigned long *)' (compare with line 128, file ..\..\src\rm_property.h,
+    module ..\..\src\parse_sdp_chunk.c) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\src\rm_property.h(128) : Info 830: Location cited in prior message
+                                                                               _
+        get_rm_property_int(pSet, "dtsdeltalength", &pConfig->ulDTSDeltaLength);
+..\..\src\ra_depack_internal.c(2327) : Warning 534: Ignoring return value of
+    function 'get_rm_property_int(struct rm_property_set_struct *, const char
+    *, unsigned long *)' (compare with line 128, file ..\..\src\rm_property.h,
+    module ..\..\src\parse_sdp_chunk.c) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\src\rm_property.h(128) : Info 830: Location cited in prior message
+                                                                                     _
+        get_rm_property_int(pSet, "auxdatasizelength", &pConfig->ulAuxDataSizeLength);
+..\..\src\ra_depack_internal.c(2329) : Warning 534: Ignoring return value of
+    function 'get_rm_property_int(struct rm_property_set_struct *, const char
+    *, unsigned long *)' (compare with line 128, file ..\..\src\rm_property.h,
+    module ..\..\src\parse_sdp_chunk.c) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\src\rm_property.h(128) : Info 830: Location cited in prior message
+
+--- Module:   ..\..\src\rasl.c (C)
+         _
+#include "helix_types.h"
+..\..\src\rasl.h(41) : Warning 537: Repeated include file '..\..\src\helix_types.h'
+                           _
+        if(nCodeBits%8 == 0)
+..\..\src\rasl.c(136) : Warning 644: Variable 'nCodeBits' (line 102) may not
+    have been initialized
+..\..\src\rasl.c(102) : Info 830: Location cited in prior message
+                                                         _
+                if (pFlags && inFlags[RASL_BLOCK_NUM(fi)])
+..\..\src\rasl.c(159) : Warning 644: Variable 'inFlags' (line 101) may not have
+    been initialized
+..\..\src\rasl.c(101) : Info 830: Location cited in prior message
+    _
+    }
+..\..\src\rasl.c(208) : Warning 525: Negative indentation from line 163
+..\..\src\rasl.c(163) : Info 830: Location cited in prior message
+                _
+                break;
+..\..\src\rasl.c(294) : Warning 539: Did not expect positive indentation from
+    line 292
+..\..\src\rasl.c(292) : Info 830: Location cited in prior message
+                _
+                break;
+..\..\src\rasl.c(303) : Warning 539: Did not expect positive indentation from
+    line 297
+..\..\src\rasl.c(297) : Info 830: Location cited in prior message
+                _
+                break;
+..\..\src\rasl.c(311) : Warning 539: Did not expect positive indentation from
+    line 306
+..\..\src\rasl.c(306) : Info 830: Location cited in prior message
+            _
+            leftInword = *(byteOffsetFrom++);
+..\..\src\rasl.c(347) : Warning 539: Did not expect positive indentation from
+    line 324
+..\..\src\rasl.c(324) : Info 830: Location cited in prior message
+_
+}
+..\..\src\rasl.c(381) : Warning 438: Last value assigned to variable
+    'pFromLimit' (defined at line 220) not used [MISRA C++ Rule 0-1-6], [MISRA
+    C++ Rules 0-1-6 and 0-1-9]
+..\..\src\rasl.c(220) : Info 830: Location cited in prior message
+_
+}
+..\..\src\rasl.c(381) : Warning 529: Symbol 'pFromLimit' (line 220) not
+    subsequently referenced [MISRA C++ Rule 0-1-3], [MISRA C++ Rule 0-1-4]
+..\..\src\rasl.c(220) : Info 830: Location cited in prior message
+
+--- Module:   ..\..\src\rm_allocator.c (C)
+         _
+#include "helix_types.h"
+..\..\src\helix_result.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_memory.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+                 _
+    return retVal;
+..\..\src\rm_allocator.c(105) : Warning 438: Last value assigned to variable
+    'ulSize' (defined at line 91) not used [MISRA C++ Rule 0-1-6], [MISRA C++
+    Rules 0-1-6 and 0-1-9]
+..\..\src\rm_allocator.c(91) : Info 830: Location cited in prior message
+_
+}
+..\..\src\rm_allocator.c(106) : Warning 529: Symbol 'ulSize' (line 91) not
+    subsequently referenced [MISRA C++ Rule 0-1-3], [MISRA C++ Rule 0-1-4]
+..\..\src\rm_allocator.c(91) : Info 830: Location cited in prior message
+                                                                               _
+                    rm_allocator_release_buffer(pAlloc, pAlloc->pBlock[i].pPtr);
+..\..\src\rm_allocator.c(370) : Warning 534: Ignoring return value of function
+    'rm_allocator_release_buffer(struct rm_allocator_struct *, unsigned char
+    *)' (compare with line 311) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_allocator.c(311) : Info 830: Location cited in prior message
+
+--- Module:   ..\..\src\rm_error_default.c (C)
+         _
+#include "helix_types.h"
+..\..\src\helix_result.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_error_default.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+                          _
+                pUserError, err, msg);
+..\..\src\rm_error_default.c(48) : Warning 626: argument no. 3 inconsistent
+    with format
+                          _
+                pUserError, err);
+..\..\src\rm_error_default.c(54) : Warning 626: argument no. 3 inconsistent
+    with format
+
+--- Module:   ..\..\src\rm_io_default.c (C)
+         _
+#include "helix_types.h"
+..\..\src\rm_io_default.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\helix_result.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+        _
+	return -1;
+..\..\src\rm_io_default.c(68) : Warning 539: Did not expect positive
+    indentation from line 60
+..\..\src\rm_io_default.c(60) : Info 830: Location cited in prior message
+
+--- Module:   ..\..\src\rm_memory_default.c (C)
+         _
+#include "helix_types.h"
+..\..\src\rm_memory_default.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+                 _
+    return malloc(ulSize);
+..\..\src\rm_memory_default.c(47) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+        _
+    free(ptr);
+..\..\src\rm_memory_default.c(52) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+
+--- Module:   ..\..\src\rm_packet.c (C)
+         _
+#include "helix_types.h"
+..\..\src\rm_packet.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+
+--- Module:   ..\..\src\rm_parser.c (C)
+         _
+#include "helix_types.h"
+..\..\src\helix_result.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_parse.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rm_parse.h(43) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_memory.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_error.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rm_error.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_property.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rm_property.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\rm_property.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_stream.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rm_stream.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_property.h"
+..\..\src\rm_stream.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_property.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_packet.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_parser_internal.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rm_parser_internal.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\rm_parser_internal.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "rm_error.h"
+..\..\src\rm_parser_internal.h(44) : Warning 537: Repeated include file
+    '..\..\src\rm_error.h'
+         _
+#include "rm_parse.h"
+..\..\src\rm_parser_internal.h(45) : Warning 537: Repeated include file
+    '..\..\src\rm_parse.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_allocator.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rm_allocator.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\rm_allocator.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_memory_default.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_error_default.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_io_default.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rm_io_default.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "helix_types.h"
+..\..\src\memory_utils.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\memory_utils.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\memory_utils.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "helix_types.h"
+..\..\src\pack_utils.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\pack_utils.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\pack_utils.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+        _
+	return retVal;
+..\..\src\rm_parser.c(601) : Warning 539: Did not expect positive indentation
+    from line 595
+..\..\src\rm_parser.c(595) : Info 830: Location cited in prior message
+    _
+    {
+..\..\src\rm_parser.c(610) : Warning 525: Negative indentation from line 608
+..\..\src\rm_parser.c(608) : Info 830: Location cited in prior message
+                                        _
+                     HX_SEEK_ORIGIN_CUR);
+..\..\src\rm_parser.c(651) : Warning 534: Ignoring return value of function
+    'rm_parseri_file_seek(struct rm_parser_internal_struct *, long long,
+    unsigned long)' (compare with line 420, file ..\..\src\rm_parser_internal.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\rm_parser_internal.h(420) : Info 830: Location cited in prior message
+                                                                                            _
+				rm_parseri_file_seek(pInt, ulFileOffset, HX_SEEK_ORIGIN_SET);
+..\..\src\rm_parser.c(654) : Warning 534: Ignoring return value of function
+    'rm_parseri_file_seek(struct rm_parser_internal_struct *, long long,
+    unsigned long)' (compare with line 420, file ..\..\src\rm_parser_internal.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\rm_parser_internal.h(420) : Info 830: Location cited in prior message
+
+--- Module:   ..\..\src\rm_parser_internal.c (C)
+         _
+#include "helix_types.h"
+..\..\src\helix_result.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_parser_internal.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rm_parser_internal.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_memory.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_error.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rm_error.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_parse.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rm_parse.h(43) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\rm_parse.h(44) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "rm_error.h"
+..\..\src\rm_parse.h(45) : Warning 537: Repeated include file
+    '..\..\src\rm_error.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_property.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rm_property.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\rm_property.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_stream.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rm_stream.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_property.h"
+..\..\src\rm_stream.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_property.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_packet.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_allocator.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rm_allocator.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\rm_allocator.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_memory_default.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\memory_utils.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\memory_utils.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\memory_utils.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "helix_types.h"
+..\..\src\pack_utils.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\pack_utils.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\pack_utils.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "helix_types.h"
+..\..\src\string_utils.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "rm_memory.h"
+..\..\src\string_utils.h(42) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "rm_stream.h"
+..\..\src\rm_parser_internal.c(48) : Warning 537: Repeated include file
+    '..\..\src\rm_stream.h'
+                                                             _
+                                pInt->fpMalloc, pInt->fpFree);
+..\..\src\rm_parser_internal.c(203) : Warning 534: Ignoring return value of
+    function 'rm_unpack_string(unsigned char **, unsigned long *, unsigned
+    long, char **, void *, void *(*)(void *, unsigned long), void (*)(void *,
+    void *))' (compare with line 176, file ..\..\src\pack_utils.c) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\pack_utils.c(176) : Info 830: Location cited in prior message
+                                                                 _
+                                    pInt->fpMalloc, pInt->fpFree);
+..\..\src\rm_parser_internal.c(209) : Warning 534: Ignoring return value of
+    function 'rm_unpack_string(unsigned char **, unsigned long *, unsigned
+    long, char **, void *, void *(*)(void *, unsigned long), void (*)(void *,
+    void *))' (compare with line 176, file ..\..\src\pack_utils.c) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\pack_utils.c(176) : Info 830: Location cited in prior message
+                                                                     _
+                                        pInt->fpMalloc, pInt->fpFree);
+..\..\src\rm_parser_internal.c(215) : Warning 534: Ignoring return value of
+    function 'rm_unpack_string(unsigned char **, unsigned long *, unsigned
+    long, char **, void *, void *(*)(void *, unsigned long), void (*)(void *,
+    void *))' (compare with line 176, file ..\..\src\pack_utils.c) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\pack_utils.c(176) : Info 830: Location cited in prior message
+                                                                         _
+                                            pInt->fpMalloc, pInt->fpFree);
+..\..\src\rm_parser_internal.c(221) : Warning 534: Ignoring return value of
+    function 'rm_unpack_string(unsigned char **, unsigned long *, unsigned
+    long, char **, void *, void *(*)(void *, unsigned long), void (*)(void *,
+    void *))' (compare with line 176, file ..\..\src\pack_utils.c) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\pack_utils.c(176) : Info 830: Location cited in prior message
+                                                                             _
+                                pInt->pUserMem, pInt->fpMalloc, pInt->fpFree);
+..\..\src\rm_parser_internal.c(293) : Warning 534: Ignoring return value of
+    function 'rm_unpack_string(unsigned char **, unsigned long *, unsigned
+    long, char **, void *, void *(*)(void *, unsigned long), void (*)(void *,
+    void *))' (compare with line 176, file ..\..\src\pack_utils.c) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\pack_utils.c(176) : Info 830: Location cited in prior message
+                                                                                 _
+                                    pInt->pUserMem, pInt->fpMalloc, pInt->fpFree);
+..\..\src\rm_parser_internal.c(298) : Warning 534: Ignoring return value of
+    function 'rm_unpack_string(unsigned char **, unsigned long *, unsigned
+    long, char **, void *, void *(*)(void *, unsigned long), void (*)(void *,
+    void *))' (compare with line 176, file ..\..\src\pack_utils.c) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\pack_utils.c(176) : Info 830: Location cited in prior message
+                                                                                     _
+                                        pInt->pUserMem, pInt->fpMalloc, pInt->fpFree);
+..\..\src\rm_parser_internal.c(303) : Warning 534: Ignoring return value of
+    function 'rm_unpack_buffer(unsigned char **, unsigned long *, unsigned
+    long, unsigned char **, void *, void *(*)(void *, unsigned long), void
+    (*)(void *, void *))' (compare with line 221, file ..\..\src\pack_utils.c)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\pack_utils.c(221) : Info 830: Location cited in prior message
+                                                                         _
+                            pInt->pUserMem, pInt->fpMalloc, pInt->fpFree);
+..\..\src\rm_parser_internal.c(376) : Warning 534: Ignoring return value of
+    function 'rm_unpack_string(unsigned char **, unsigned long *, unsigned
+    long, char **, void *, void *(*)(void *, unsigned long), void (*)(void *,
+    void *))' (compare with line 176, file ..\..\src\pack_utils.c) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\pack_utils.c(176) : Info 830: Location cited in prior message
+                                                                             _
+                                pInt->pUserMem, pInt->fpMalloc, pInt->fpFree);
+..\..\src\rm_parser_internal.c(382) : Warning 534: Ignoring return value of
+    function 'rm_unpack_buffer(unsigned char **, unsigned long *, unsigned
+    long, unsigned char **, void *, void *(*)(void *, unsigned long), void
+    (*)(void *, void *))' (compare with line 221, file ..\..\src\pack_utils.c)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\pack_utils.c(221) : Info 830: Location cited in prior message
+                                                             _
+                                pInt->fpMalloc, pInt->fpFree);
+..\..\src\rm_parser_internal.c(455) : Warning 534: Ignoring return value of
+    function 'rm_unpack_array(unsigned char **, unsigned long *, unsigned long,
+    unsigned long, void **, void *, void *(*)(void *, unsigned long), void
+    (*)(void *, void *))' (compare with line 264, file ..\..\src\pack_utils.c)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\pack_utils.c(264) : Info 830: Location cited in prior message
+                                                             _
+                                pInt->fpMalloc, pInt->fpFree);
+..\..\src\rm_parser_internal.c(458) : Warning 534: Ignoring return value of
+    function 'rm_unpack_array(unsigned char **, unsigned long *, unsigned long,
+    unsigned long, void **, void *, void *(*)(void *, unsigned long), void
+    (*)(void *, void *))' (compare with line 264, file ..\..\src\pack_utils.c)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\pack_utils.c(264) : Info 830: Location cited in prior message
+                                                                 _
+                                    pInt->fpMalloc, pInt->fpFree);
+..\..\src\rm_parser_internal.c(464) : Warning 534: Ignoring return value of
+    function 'rm_unpack_array(unsigned char **, unsigned long *, unsigned long,
+    unsigned long, void **, void *, void *(*)(void *, unsigned long), void
+    (*)(void *, void *))' (compare with line 264, file ..\..\src\pack_utils.c)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\pack_utils.c(264) : Info 830: Location cited in prior message
+                              _
+                        strlen(RM_PARSER_LOGICAL_PREFIX)))
+..\..\src\rm_parser_internal.c(891) : Warning 586: function 'strlen' is
+    deprecated. [MISRA C++ Rule 18-0-5]
+                   _
+        if (!strcmp(pszMimeType, RM_PARSER_LOGICAL_FILEINFO))
+..\..\src\rm_parser_internal.c(907) : Warning 586: function 'strcmp' is
+    deprecated. [MISRA C++ Rule 18-0-5]
+                                                        _
+            rm_parseri_unpack_generic_hdr(pInt, &genHdr);
+..\..\src\rm_parser_internal.c(935) : Warning 534: Ignoring return value of
+    function 'rm_parseri_unpack_generic_hdr(struct rm_parser_internal_struct *,
+    struct rm_generic_hdr *)' (compare with line 90) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\src\rm_parser_internal.c(90) : Info 830: Location cited in prior message
+                                                         _
+        rm_parseri_file_seek(pInt, 0, HX_SEEK_ORIGIN_SET);
+..\..\src\rm_parser_internal.c(1119) : Warning 534: Ignoring return value of
+    function 'rm_parseri_file_seek(struct rm_parser_internal_struct *, long
+    long, unsigned long)' (compare with line 420, file ..\..\src\rm_parser_internal.h,
+    module ..\..\src\rm_parser.c) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.h(420) : Info 830: Location cited in prior message
+                                                      _
+                                                strlen(pInt->contHdr.title) + 1);
+..\..\src\rm_parser_internal.c(1409) : Warning 586: function 'strlen' is
+    deprecated. [MISRA C++ Rule 18-0-5]
+                                                      _
+                                                strlen(pInt->contHdr.author) + 1);
+..\..\src\rm_parser_internal.c(1416) : Warning 586: function 'strlen' is
+    deprecated. [MISRA C++ Rule 18-0-5]
+                                                      _
+                                                strlen(pInt->contHdr.copyright) + 1);
+..\..\src\rm_parser_internal.c(1423) : Warning 586: function 'strlen' is
+    deprecated. [MISRA C++ Rule 18-0-5]
+                                                             _
+        pProp->pName = (char*) rm_parseri_malloc(pInt, strlen(pszName) + 1);
+..\..\src\rm_parser_internal.c(1469) : Warning 586: function 'strlen' is
+    deprecated. [MISRA C++ Rule 18-0-5]
+                  _
+            strcpy(pProp->pName, pszName);
+..\..\src\rm_parser_internal.c(1473) : Warning 586: function 'strcpy' is
+    deprecated. [MISRA C++ Rule 18-0-5]
+                                                              _
+                        UINT32      ulLen    = (UINT32) strlen(pszValue) + 1;
+..\..\src\rm_parser_internal.c(1503) : Warning 586: function 'strlen' is
+    deprecated. [MISRA C++ Rule 18-0-5]
+                                  _
+                            strcpy((char*) pProp->pValue, pszValue);
+..\..\src\rm_parser_internal.c(1508) : Warning 586: function 'strcpy' is
+    deprecated. [MISRA C++ Rule 18-0-5]
+                                                                                 _
+        rm_parseri_file_seek(pInt, pInt->propHdr.data_offset, HX_SEEK_ORIGIN_SET);
+..\..\src\rm_parser_internal.c(1732) : Warning 534: Ignoring return value of
+    function 'rm_parseri_file_seek(struct rm_parser_internal_struct *, long
+    long, unsigned long)' (compare with line 420, file ..\..\src\rm_parser_internal.h,
+    module ..\..\src\rm_parser.c) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.h(420) : Info 830: Location cited in prior message
+                                                                            _
+                                                         HX_SEEK_ORIGIN_SET);
+..\..\src\rm_parser_internal.c(1801) : Warning 534: Ignoring return value of
+    function 'rm_parseri_file_seek(struct rm_parser_internal_struct *, long
+    long, unsigned long)' (compare with line 420, file ..\..\src\rm_parser_internal.h,
+    module ..\..\src\rm_parser.c) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.h(420) : Info 830: Location cited in prior message
+                                                                            _
+                                                         HX_SEEK_ORIGIN_CUR);
+..\..\src\rm_parser_internal.c(1813) : Warning 534: Ignoring return value of
+    function 'rm_parseri_file_seek(struct rm_parser_internal_struct *, long
+    long, unsigned long)' (compare with line 420, file ..\..\src\rm_parser_internal.h,
+    module ..\..\src\rm_parser.c) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.h(420) : Info 830: Location cited in prior message
+                                                                              _
+                                                         hdr->ulNumProperties);
+..\..\src\rm_parser_internal.c(2031) : Warning 534: Ignoring return value of
+    function 'rm_parseri_count_set_stream_header_props(struct
+    rm_parser_internal_struct *, unsigned long, struct rm_stream_header_struct
+    *, struct rm_property_struct *, unsigned long)' (compare with line 409,
+    file ..\..\src\rm_parser_internal.h, module ..\..\src\rm_parser.c) [MISRA
+    C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\rm_parser_internal.h(409) : Info 830: Location cited in prior message
+                                                                             _
+                                       RM_PROPERTY_TYPE_UINT32, (void*) i, 0);
+..\..\src\rm_parser_internal.c(2150) : Warning 534: Ignoring return value of
+    function 'rm_parseri_set_rm_property(struct rm_parser_internal_struct *,
+    struct rm_property_struct *, const char *, unsigned long, void *, unsigned
+    long)' (compare with line 1458) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.c(1458) : Info 830: Location cited in prior
+    message
+                                                                                           _
+                                           (void*) pInt->pMediaPropsHdr[i].max_bit_rate, 0);
+..\..\src\rm_parser_internal.c(2160) : Warning 534: Ignoring return value of
+    function 'rm_parseri_set_rm_property(struct rm_parser_internal_struct *,
+    struct rm_property_struct *, const char *, unsigned long, void *, unsigned
+    long)' (compare with line 1458) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.c(1458) : Info 830: Location cited in prior
+    message
+                                                                                           _
+                                           (void*) pInt->pMediaPropsHdr[i].avg_bit_rate, 0);
+..\..\src\rm_parser_internal.c(2171) : Warning 534: Ignoring return value of
+    function 'rm_parseri_set_rm_property(struct rm_parser_internal_struct *,
+    struct rm_property_struct *, const char *, unsigned long, void *, unsigned
+    long)' (compare with line 1458) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.c(1458) : Info 830: Location cited in prior
+    message
+                                                                                           _
+                                           (void*) pInt->pMediaPropsHdr[i].max_pkt_size, 0);
+..\..\src\rm_parser_internal.c(2182) : Warning 534: Ignoring return value of
+    function 'rm_parseri_set_rm_property(struct rm_parser_internal_struct *,
+    struct rm_property_struct *, const char *, unsigned long, void *, unsigned
+    long)' (compare with line 1458) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.c(1458) : Info 830: Location cited in prior
+    message
+                                                                                           _
+                                           (void*) pInt->pMediaPropsHdr[i].avg_pkt_size, 0);
+..\..\src\rm_parser_internal.c(2193) : Warning 534: Ignoring return value of
+    function 'rm_parseri_set_rm_property(struct rm_parser_internal_struct *,
+    struct rm_property_struct *, const char *, unsigned long, void *, unsigned
+    long)' (compare with line 1458) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.c(1458) : Info 830: Location cited in prior
+    message
+                                                                                         _
+                                           (void*) pInt->pMediaPropsHdr[i].start_time, 0);
+..\..\src\rm_parser_internal.c(2204) : Warning 534: Ignoring return value of
+    function 'rm_parseri_set_rm_property(struct rm_parser_internal_struct *,
+    struct rm_property_struct *, const char *, unsigned long, void *, unsigned
+    long)' (compare with line 1458) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.c(1458) : Info 830: Location cited in prior
+    message
+                                                                                        _
+                                           (void*) pInt->pMediaPropsHdr[i].mime_type, 0);
+..\..\src\rm_parser_internal.c(2215) : Warning 534: Ignoring return value of
+    function 'rm_parseri_set_rm_property(struct rm_parser_internal_struct *,
+    struct rm_property_struct *, const char *, unsigned long, void *, unsigned
+    long)' (compare with line 1458) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.c(1458) : Info 830: Location cited in prior
+    message
+                                                                                          _
+                                           (void*) pInt->pMediaPropsHdr[i].stream_name, 0);
+..\..\src\rm_parser_internal.c(2226) : Warning 534: Ignoring return value of
+    function 'rm_parseri_set_rm_property(struct rm_parser_internal_struct *,
+    struct rm_property_struct *, const char *, unsigned long, void *, unsigned
+    long)' (compare with line 1458) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.c(1458) : Info 830: Location cited in prior
+    message
+                                                                                _
+                                           pInt->pMediaPropsHdr[i].type_spec_sz);
+..\..\src\rm_parser_internal.c(2238) : Warning 534: Ignoring return value of
+    function 'rm_parseri_set_rm_property(struct rm_parser_internal_struct *,
+    struct rm_property_struct *, const char *, unsigned long, void *, unsigned
+    long)' (compare with line 1458) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.c(1458) : Info 830: Location cited in prior
+    message
+                                                                                    _
+                                           (void*) "intrinsicDurationContinuous", 0);
+..\..\src\rm_parser_internal.c(2251) : Warning 534: Ignoring return value of
+    function 'rm_parseri_set_rm_property(struct rm_parser_internal_struct *,
+    struct rm_property_struct *, const char *, unsigned long, void *, unsigned
+    long)' (compare with line 1458) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.c(1458) : Info 830: Location cited in prior
+    message
+                                                                             _
+                                           (void*) pInt->propHdr.duration, 0);
+..\..\src\rm_parser_internal.c(2262) : Warning 534: Ignoring return value of
+    function 'rm_parseri_set_rm_property(struct rm_parser_internal_struct *,
+    struct rm_property_struct *, const char *, unsigned long, void *, unsigned
+    long)' (compare with line 1458) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.c(1458) : Info 830: Location cited in prior
+    message
+                                                                                 _
+                                           RM_PROPERTY_TYPE_UINT32, (void*) 1, 0);
+..\..\src\rm_parser_internal.c(2273) : Warning 534: Ignoring return value of
+    function 'rm_parseri_set_rm_property(struct rm_parser_internal_struct *,
+    struct rm_property_struct *, const char *, unsigned long, void *, unsigned
+    long)' (compare with line 1458) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.c(1458) : Info 830: Location cited in prior
+    message
+                                                                                 _
+                                           RM_PROPERTY_TYPE_UINT32, (void*) 1, 0);
+..\..\src\rm_parser_internal.c(2283) : Warning 534: Ignoring return value of
+    function 'rm_parseri_set_rm_property(struct rm_parser_internal_struct *,
+    struct rm_property_struct *, const char *, unsigned long, void *, unsigned
+    long)' (compare with line 1458) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.c(1458) : Info 830: Location cited in prior
+    message
+                                                             _
+                                       (void*) ulDuration, 0);
+..\..\src\rm_parser_internal.c(2306) : Warning 534: Ignoring return value of
+    function 'rm_parseri_set_rm_property(struct rm_parser_internal_struct *,
+    struct rm_property_struct *, const char *, unsigned long, void *, unsigned
+    long)' (compare with line 1458) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.c(1458) : Info 830: Location cited in prior
+    message
+                                                            _
+                                       (void*) ulPreroll, 0);
+..\..\src\rm_parser_internal.c(2380) : Warning 534: Ignoring return value of
+    function 'rm_parseri_set_rm_property(struct rm_parser_internal_struct *,
+    struct rm_property_struct *, const char *, unsigned long, void *, unsigned
+    long)' (compare with line 1458) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.c(1458) : Info 830: Location cited in prior
+    message
+                                                                   _
+                                           (void*) ulOldPreroll, 0);
+..\..\src\rm_parser_internal.c(2390) : Warning 534: Ignoring return value of
+    function 'rm_parseri_set_rm_property(struct rm_parser_internal_struct *,
+    struct rm_property_struct *, const char *, unsigned long, void *, unsigned
+    long)' (compare with line 1458) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.c(1458) : Info 830: Location cited in prior
+    message
+                                                                         _
+                                           (void*) ulStreamingPreroll, 0);
+..\..\src\rm_parser_internal.c(2401) : Warning 534: Ignoring return value of
+    function 'rm_parseri_set_rm_property(struct rm_parser_internal_struct *,
+    struct rm_property_struct *, const char *, unsigned long, void *, unsigned
+    long)' (compare with line 1458) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.c(1458) : Info 830: Location cited in prior
+    message
+                                                                      _
+                                           (void*) ulPreDecBufSize, 0);
+..\..\src\rm_parser_internal.c(2412) : Warning 534: Ignoring return value of
+    function 'rm_parseri_set_rm_property(struct rm_parser_internal_struct *,
+    struct rm_property_struct *, const char *, unsigned long, void *, unsigned
+    long)' (compare with line 1458) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.c(1458) : Info 830: Location cited in prior
+    message
+                                                                   _
+                                           (void*) pASMRuleBook, 0);
+..\..\src\rm_parser_internal.c(2432) : Warning 534: Ignoring return value of
+    function 'rm_parseri_set_rm_property(struct rm_parser_internal_struct *,
+    struct rm_property_struct *, const char *, unsigned long, void *, unsigned
+    long)' (compare with line 1458) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.c(1458) : Info 830: Location cited in prior
+    message
+                                                                    _
+                                               (void*) ulPreData, 0);
+..\..\src\rm_parser_internal.c(2451) : Warning 534: Ignoring return value of
+    function 'rm_parseri_set_rm_property(struct rm_parser_internal_struct *,
+    struct rm_property_struct *, const char *, unsigned long, void *, unsigned
+    long)' (compare with line 1458) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.c(1458) : Info 830: Location cited in prior
+    message
+                                                                                     _
+                                               RM_PROPERTY_TYPE_UINT32, (void*) 1, 0);
+..\..\src\rm_parser_internal.c(2453) : Warning 534: Ignoring return value of
+    function 'rm_parseri_set_rm_property(struct rm_parser_internal_struct *,
+    struct rm_property_struct *, const char *, unsigned long, void *, unsigned
+    long)' (compare with line 1458) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.c(1458) : Info 830: Location cited in prior
+    message
+                                                                                     _
+                                               RM_PROPERTY_TYPE_UINT32, (void*) 1, 0);
+..\..\src\rm_parser_internal.c(2455) : Warning 534: Ignoring return value of
+    function 'rm_parseri_set_rm_property(struct rm_parser_internal_struct *,
+    struct rm_property_struct *, const char *, unsigned long, void *, unsigned
+    long)' (compare with line 1458) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.c(1458) : Info 830: Location cited in prior
+    message
+                                                                                     _
+                                               RM_PROPERTY_TYPE_UINT32, (void*) 1, 0);
+..\..\src\rm_parser_internal.c(2457) : Warning 534: Ignoring return value of
+    function 'rm_parseri_set_rm_property(struct rm_parser_internal_struct *,
+    struct rm_property_struct *, const char *, unsigned long, void *, unsigned
+    long)' (compare with line 1458) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.c(1458) : Info 830: Location cited in prior
+    message
+                                 _
+                    BYTE*  pBuf  = &ucRuleToFlag[0];
+..\..\src\rm_parser_internal.c(2476) : Warning 578: Declaration of symbol
+    'pBuf' hides symbol 'pBuf' (line 2143) [MISRA C++ Rule 2-10-2]
+..\..\src\rm_parser_internal.c(2143) : Info 830: Location cited in prior
+    message
+                                 _
+                    UINT32 ulLen = 8;
+..\..\src\rm_parser_internal.c(2477) : Warning 578: Declaration of symbol
+    'ulLen' hides symbol 'ulLen' (line 2144) [MISRA C++ Rule 2-10-2]
+..\..\src\rm_parser_internal.c(2144) : Info 830: Location cited in prior
+    message
+                                                                           _
+                                               (void*) &ucRuleToFlag[0], 8);
+..\..\src\rm_parser_internal.c(2485) : Warning 534: Ignoring return value of
+    function 'rm_parseri_set_rm_property(struct rm_parser_internal_struct *,
+    struct rm_property_struct *, const char *, unsigned long, void *, unsigned
+    long)' (compare with line 1458) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.c(1458) : Info 830: Location cited in prior
+    message
+                                 _
+                    BYTE*  pBuf  = &ucRuleToFlag[0];
+..\..\src\rm_parser_internal.c(2494) : Warning 578: Declaration of symbol
+    'pBuf' hides symbol 'pBuf' (line 2143) [MISRA C++ Rule 2-10-2]
+..\..\src\rm_parser_internal.c(2143) : Info 830: Location cited in prior
+    message
+                                 _
+                    UINT32 ulLen = 8;
+..\..\src\rm_parser_internal.c(2495) : Warning 578: Declaration of symbol
+    'ulLen' hides symbol 'ulLen' (line 2144) [MISRA C++ Rule 2-10-2]
+..\..\src\rm_parser_internal.c(2144) : Info 830: Location cited in prior
+    message
+                                                                           _
+                                               (void*) &ucRuleToFlag[0], 6);
+..\..\src\rm_parser_internal.c(2502) : Warning 534: Ignoring return value of
+    function 'rm_parseri_set_rm_property(struct rm_parser_internal_struct *,
+    struct rm_property_struct *, const char *, unsigned long, void *, unsigned
+    long)' (compare with line 1458) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.c(1458) : Info 830: Location cited in prior
+    message
+                                                                                 _
+                                               pMap->type, pMap->value, ulLength);
+..\..\src\rm_parser_internal.c(2526) : Warning 534: Ignoring return value of
+    function 'rm_parseri_set_rm_property(struct rm_parser_internal_struct *,
+    struct rm_property_struct *, const char *, unsigned long, void *, unsigned
+    long)' (compare with line 1458) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.c(1458) : Info 830: Location cited in prior
+    message
+    _
+    }
+..\..\src\rm_parser_internal.c(2531) : Warning 529: Symbol 'ulLen' (line 2144)
+    not subsequently referenced [MISRA C++ Rule 0-1-3], [MISRA C++ Rule 0-1-4]
+..\..\src\rm_parser_internal.c(2144) : Info 830: Location cited in prior
+    message
+    _
+    }
+..\..\src\rm_parser_internal.c(2531) : Warning 438: Last value assigned to
+    variable 'ulLen' (defined at line 2144) not used [MISRA C++ Rule 0-1-6],
+    [MISRA C++ Rules 0-1-6 and 0-1-9]
+..\..\src\rm_parser_internal.c(2144) : Info 830: Location cited in prior
+    message
+    _
+    }
+..\..\src\rm_parser_internal.c(2531) : Warning 529: Symbol 'pBuf' (line 2143)
+    not subsequently referenced [MISRA C++ Rule 0-1-3], [MISRA C++ Rule 0-1-4]
+..\..\src\rm_parser_internal.c(2143) : Info 830: Location cited in prior
+    message
+    _
+    }
+..\..\src\rm_parser_internal.c(2531) : Warning 438: Last value assigned to
+    variable 'pBuf' (defined at line 2143) not used [MISRA C++ Rule 0-1-6],
+    [MISRA C++ Rules 0-1-6 and 0-1-9]
+..\..\src\rm_parser_internal.c(2143) : Info 830: Location cited in prior
+    message
+                                                  _
+                    sprintf(pRet, g_pszRuleBook[6]);
+..\..\src\rm_parser_internal.c(2582) : Warning 592: Non-literal format
+    specifier used without arguments
+                                                      _
+                        sprintf(pRet, g_pszRuleBook[4]);
+..\..\src\rm_parser_internal.c(2621) : Warning 592: Non-literal format
+    specifier used without arguments
+                 _
+    return retVal;
+..\..\src\rm_parser_internal.c(2670) : Warning 438: Last value assigned to
+    variable 'pPacket' (defined at line 2639) not used [MISRA C++ Rule 0-1-6],
+    [MISRA C++ Rules 0-1-6 and 0-1-9]
+..\..\src\rm_parser_internal.c(2639) : Info 830: Location cited in prior
+    message
+                                                                            _
+                                                         HX_SEEK_ORIGIN_CUR);
+..\..\src\rm_parser_internal.c(2741) : Warning 534: Ignoring return value of
+    function 'rm_parseri_file_seek(struct rm_parser_internal_struct *, long
+    long, unsigned long)' (compare with line 420, file ..\..\src\rm_parser_internal.h,
+    module ..\..\src\rm_parser.c) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\rm_parser_internal.h(420) : Info 830: Location cited in prior message
+                                _
+				if(hdr.length < RM_PARSER_PACKET_HEADER_SIZE)
+..\..\src\rm_parser_internal.c(2840) : Warning 539: Did not expect positive
+    indentation from line 2817
+..\..\src\rm_parser_internal.c(2817) : Info 830: Location cited in prior
+    message
+                                _
+				if(hdr.length < RM_PARSER_PACKET_HEADER_SIZE)
+..\..\src\rm_parser_internal.c(2840) : Warning 539: Did not expect positive
+    indentation from line 2798
+..\..\src\rm_parser_internal.c(2798) : Info 830: Location cited in prior
+    message
+                                                                          _
+								hdr.flags);
+..\..\src\rm_parser_internal.c(2878) : Warning 534: Ignoring return value of
+    function 'rm_parseri_update_seek_table(struct rm_parser_internal_struct *,
+    unsigned long, unsigned long, unsigned long, unsigned long)' (compare with
+    line 423, file ..\..\src\rm_parser_internal.h, module ..\..\src\rm_parser.c)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\rm_parser_internal.h(423) : Info 830: Location cited in prior message
+                                                                         _
+            rm_allocator_release_buffer(&pInt->allocator, pPacket->pData);
+..\..\src\rm_parser_internal.c(2916) : Warning 534: Ignoring return value of
+    function 'rm_allocator_release_buffer(struct rm_allocator_struct *,
+    unsigned char *)' (compare with line 311, file ..\..\src\rm_allocator.c)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\rm_allocator.c(311) : Info 830: Location cited in prior message
+        _
+	return -1;
+..\..\src\rm_parser_internal.c(2998) : Warning 539: Did not expect positive
+    indentation from line 2969
+..\..\src\rm_parser_internal.c(2969) : Info 830: Location cited in prior
+    message
+                _
+		if (ulTableIdx >= pTable->ulNumEntries)
+..\..\src\rm_parser_internal.c(3326) : Warning 539: Did not expect positive
+    indentation from line 3321
+..\..\src\rm_parser_internal.c(3321) : Info 830: Location cited in prior
+    message
+                        _
+			ulIndexOffset = 0;
+..\..\src\rm_parser_internal.c(3382) : Warning 539: Did not expect positive
+    indentation from line 3377
+..\..\src\rm_parser_internal.c(3377) : Info 830: Location cited in prior
+    message
+                                                                                  _
+                                                                 HX_KEYFRAME_FLAG);
+..\..\src\rm_parser_internal.c(3433) : Warning 534: Ignoring return value of
+    function 'rm_parseri_update_seek_table(struct rm_parser_internal_struct *,
+    unsigned long, unsigned long, unsigned long, unsigned long)' (compare with
+    line 3065) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\rm_parser_internal.c(3065) : Info 830: Location cited in prior
+    message
+                                            _
+                                            if(pKey->ulTimestamp > 2000)
+..\..\src\rm_parser_internal.c(3458) : Warning 525: Negative indentation from
+    line 3447
+..\..\src\rm_parser_internal.c(3447) : Info 830: Location cited in prior
+    message
+                                                                                        _
+											bVideoReady = TRUE;
+..\..\src\rm_parser_internal.c(3466) : Warning 539: Did not expect positive
+    indentation from line 3462
+..\..\src\rm_parser_internal.c(3462) : Info 830: Location cited in prior
+    message
+                                                _
+						if (ulIndexOffset == 0)
+..\..\src\rm_parser_internal.c(3490) : Warning 539: Did not expect positive
+    indentation from line 3403
+..\..\src\rm_parser_internal.c(3403) : Info 830: Location cited in prior
+    message
+        _
+        {
+..\..\src\rm_parser_internal.c(3545) : Warning 525: Negative indentation from
+    line 3544
+..\..\src\rm_parser_internal.c(3544) : Info 830: Location cited in prior
+    message
+                   _
+            retVal = rm_parseri_search_index_chunk(pInt, ulSeekTime);
+..\..\src\rm_parser_internal.c(3550) : Warning 525: Negative indentation from
+    line 3544
+..\..\src\rm_parser_internal.c(3544) : Info 830: Location cited in prior
+    message
+        _
+        }
+..\..\src\rm_parser_internal.c(3561) : Warning 525: Negative indentation from
+    line 3544
+..\..\src\rm_parser_internal.c(3544) : Info 830: Location cited in prior
+    message
+        _
+        else if (status == HXR_AT_END)
+..\..\src\rm_parser_internal.c(3562) : Warning 525: Negative indentation from
+    line 3544
+..\..\src\rm_parser_internal.c(3544) : Info 830: Location cited in prior
+    message
+                                                                       _
+        rm_parseri_file_seek(pInt, ulInitialOffset, HX_SEEK_ORIGIN_SET);
+..\..\src\rm_parser_internal.c(3740) : Warning 534: Ignoring return value of
+    function 'rm_parseri_file_seek(struct rm_parser_internal_struct *, long
+    long, unsigned long)' (compare with line 2967) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\src\rm_parser_internal.c(2967) : Info 830: Location cited in prior
+    message
+                                                                                                  _
+											hdr.flags);
+..\..\src\rm_parser_internal.c(3800) : Warning 534: Ignoring return value of
+    function 'rm_parseri_update_seek_table(struct rm_parser_internal_struct *,
+    unsigned long, unsigned long, unsigned long, unsigned long)' (compare with
+    line 3065) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\rm_parser_internal.c(3065) : Info 830: Location cited in prior
+    message
+                                                                                              _
+										hdr.timestamp);
+..\..\src\rm_parser_internal.c(3807) : Warning 534: Ignoring return value of
+    function 'rm_parseri_update_time_range(struct rm_parser_internal_struct *,
+    unsigned long, unsigned long)' (compare with line 3127) [MISRA C++ Rules
+    0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\rm_parser_internal.c(3127) : Info 830: Location cited in prior
+    message
+                                                                           _
+							HX_SEEK_ORIGIN_CUR);
+..\..\src\rm_parser_internal.c(3822) : Warning 534: Ignoring return value of
+    function 'rm_parseri_file_seek(struct rm_parser_internal_struct *, long
+    long, unsigned long)' (compare with line 2967) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\src\rm_parser_internal.c(2967) : Info 830: Location cited in prior
+    message
+                                                                       _
+            rm_parseri_file_seek(pInt, ulLowOffset, HX_SEEK_ORIGIN_SET);
+..\..\src\rm_parser_internal.c(3889) : Warning 534: Ignoring return value of
+    function 'rm_parseri_file_seek(struct rm_parser_internal_struct *, long
+    long, unsigned long)' (compare with line 2967) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\src\rm_parser_internal.c(2967) : Info 830: Location cited in prior
+    message
+
+--- Module:   ..\..\src\rm_property.c (C)
+         _
+#include "helix_types.h"
+..\..\src\rm_property.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\helix_result.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_memory.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+                       _
+                !strcmp(pSet->property[i].pName, pszName))
+..\..\src\rm_property.c(168) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+
+--- Module:   ..\..\src\rm_stream.c (C)
+         _
+#include "helix_types.h"
+..\..\src\rm_property.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\helix_result.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_memory.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_stream.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rm_stream.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_property.h"
+..\..\src\rm_stream.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_property.h'
+                   _
+        if (!strcmp(pszStr, REALAUDIO_MIME_TYPE)           ||
+..\..\src\rm_stream.c(219) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                   _
+            !strcmp(pszStr, REALAUDIO_ENCRYPTED_MIME_TYPE) ||
+..\..\src\rm_stream.c(220) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                   _
+            !strcmp(pszStr, REALAUDIO_LOSSLESS_MIME_TYPE))
+..\..\src\rm_stream.c(221) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                   _
+        if (!strcmp(pszStr, REALAUDIO_LOSSLESS_MIME_TYPE))
+..\..\src\rm_stream.c(236) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                   _
+        if (!strcmp(pszStr, REALVIDEO_MIME_TYPE) ||
+..\..\src\rm_stream.c(251) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                   _
+            !strcmp(pszStr, REALVIDEO_ENCRYPTED_MIME_TYPE))
+..\..\src\rm_stream.c(252) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                   _
+        if (!strcmp(pszStr, REALEVENT_MIME_TYPE)              ||
+..\..\src\rm_stream.c(267) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                   _
+            !strcmp(pszStr, REALEVENT_ENCRYPTED_MIME_TYPE)    ||
+..\..\src\rm_stream.c(268) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                   _
+            !strcmp(pszStr, REALIMAGEMAP_MIME_TYPE)           ||
+..\..\src\rm_stream.c(269) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                   _
+            !strcmp(pszStr, REALIMAGEMAP_ENCRYPTED_MIME_TYPE) ||
+..\..\src\rm_stream.c(270) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                   _
+            !strcmp(pszStr, IMAGEMAP_MIME_TYPE)               ||
+..\..\src\rm_stream.c(271) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                   _
+            !strcmp(pszStr, IMAGEMAP_ENCRYPTED_MIME_TYPE)     ||
+..\..\src\rm_stream.c(272) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                   _
+            !strcmp(pszStr, SYNCMM_MIME_TYPE)                 ||
+..\..\src\rm_stream.c(273) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                   _
+            !strcmp(pszStr, SYNCMM_ENCRYPTED_MIME_TYPE))
+..\..\src\rm_stream.c(274) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                       _
+                !strcmp(pszStr, (const char*) pProp->pName))
+..\..\src\rm_stream.c(305) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                       _
+                !strcmp(pszStr, (const char*) pProp->pName))
+..\..\src\rm_stream.c(335) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                       _
+                !strcmp(pszStr, (const char*) pProp->pName))
+..\..\src\rm_stream.c(365) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+
+--- Module:   ..\..\src\RMDemux_API.cpp (C++)
+                                                                                                                                      _
+_CRTIMP __checkReturn _CONST_RETURN void *  __cdecl memchr( __in_bcount_opt(_MaxCount) const void * _Buf , __in int _Val, __in size_t _MaxCount);
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(49) : Error 18:
+    Symbol 'memchr(const void *, int, unsigned int)' redeclared (qualification)
+    conflicts with line 49, file C:\Program Files\Microsoft Visual Studio
+    8\VC\include\string.h, module ..\..\src\rm_stream.c [MISRA C++ Rule
+    2-10-6], [MISRA C++ Rule 3-2-1]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(49) : Info 830:
+    Location cited in prior message
+                                                                                              _
+_CRTIMP __checkReturn _CONST_RETURN char *  __cdecl strchr(__in_z const char * _Str, __in int _Val);
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(110) : Error 18:
+    Symbol 'strchr(const char *, int)' redeclared (qualification) conflicts
+    with line 110, file C:\Program Files\Microsoft Visual Studio
+    8\VC\include\string.h, module ..\..\src\rm_stream.c [MISRA C++ Rule
+    2-10-6], [MISRA C++ Rule 3-2-1]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(110) : Info 830:
+    Location cited in prior message
+                                                                                                          _
+_CRTIMP __checkReturn _CONST_RETURN char *  __cdecl strpbrk(__in_z const char * _Str, __in_z const char * _Control);
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(161) : Error 18:
+    Symbol 'strpbrk(const char *, const char *)' redeclared (qualification)
+    conflicts with line 161, file C:\Program Files\Microsoft Visual Studio
+    8\VC\include\string.h, module ..\..\src\rm_stream.c [MISRA C++ Rule
+    2-10-6], [MISRA C++ Rule 3-2-1]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(161) : Info 830:
+    Location cited in prior message
+                                                                                               _
+_CRTIMP __checkReturn _CONST_RETURN char *  __cdecl strrchr(__in_z const char * _Str, __in int _Ch);
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(162) : Error 18:
+    Symbol 'strrchr(const char *, int)' redeclared (qualification) conflicts
+    with line 162, file C:\Program Files\Microsoft Visual Studio
+    8\VC\include\string.h, module ..\..\src\rm_stream.c [MISRA C++ Rule
+    2-10-6], [MISRA C++ Rule 3-2-1]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(162) : Info 830:
+    Location cited in prior message
+                                                                                                         _
+_CRTIMP __checkReturn _CONST_RETURN char *  __cdecl strstr(__in_z const char * _Str, __in_z const char * _SubStr);
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(165) : Error 18:
+    Symbol 'strstr(const char *, const char *)' redeclared (qualification)
+    conflicts with line 165, file C:\Program Files\Microsoft Visual Studio
+    8\VC\include\string.h, module ..\..\src\rm_stream.c [MISRA C++ Rule
+    2-10-6], [MISRA C++ Rule 3-2-1]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(165) : Info 830:
+    Location cited in prior message
+                                                                                                  _
+_CRTIMP __checkReturn _CONST_RETURN wchar_t * __cdecl wcschr(__in_z const wchar_t * _Str, wchar_t _Ch);
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(246) : Error 18:
+    Symbol 'wcschr(const wchar_t *, wchar_t)' redeclared (qualification)
+    conflicts with line 246, file C:\Program Files\Microsoft Visual Studio
+    8\VC\include\string.h, module ..\..\src\rm_stream.c [MISRA C++ Rule
+    2-10-6], [MISRA C++ Rule 3-2-1]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(246) : Info 830:
+    Location cited in prior message
+                                                                                                                  _
+_CRTIMP __checkReturn _CONST_RETURN wchar_t * __cdecl wcspbrk(__in_z const wchar_t * _Str, __in_z const wchar_t * _Control);
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(273) : Error 18:
+    Symbol 'wcspbrk(const wchar_t *, const wchar_t *)' redeclared
+    (qualification) conflicts with line 273, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\include\string.h, module ..\..\src\rm_stream.c [MISRA
+    C++ Rule 2-10-6], [MISRA C++ Rule 3-2-1]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(273) : Info 830:
+    Location cited in prior message
+                                                                                                        _
+_CRTIMP __checkReturn _CONST_RETURN wchar_t * __cdecl wcsrchr(__in_z const wchar_t * _Str, __in wchar_t _Ch);
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(274) : Error 18:
+    Symbol 'wcsrchr(const wchar_t *, wchar_t)' redeclared (qualification)
+    conflicts with line 274, file C:\Program Files\Microsoft Visual Studio
+    8\VC\include\string.h, module ..\..\src\rm_stream.c [MISRA C++ Rule
+    2-10-6], [MISRA C++ Rule 3-2-1]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(274) : Info 830:
+    Location cited in prior message
+                                                                                                                 _
+_CRTIMP __checkReturn _CONST_RETURN wchar_t * __cdecl wcsstr(__in_z const wchar_t * _Str, __in_z const wchar_t * _SubStr);
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(276) : Error 18:
+    Symbol 'wcsstr(const wchar_t *, const wchar_t *)' redeclared
+    (qualification) conflicts with line 276, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\include\string.h, module ..\..\src\rm_stream.c [MISRA
+    C++ Rule 2-10-6], [MISRA C++ Rule 3-2-1]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(276) : Info 830:
+    Location cited in prior message
+         _
+#include "helix_types.h"
+..\..\src\helix_result.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_memory.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_error.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rm_error.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_property.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rm_property.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\rm_property.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_stream.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rm_stream.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_property.h"
+..\..\src\rm_stream.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_property.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_packet.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\rv_depack.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rv_depack.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_error.h"
+..\..\src\rv_depack.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_error.h'
+         _
+#include "rm_memory.h"
+..\..\src\rv_depack.h(44) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "rm_stream.h"
+..\..\src\rv_depack.h(45) : Warning 537: Repeated include file
+    '..\..\src\rm_stream.h'
+         _
+#include "rm_packet.h"
+..\..\src\rv_depack.h(46) : Warning 537: Repeated include file
+    '..\..\src\rm_packet.h'
+         _
+#include "helix_types.h"
+..\..\src\rv_format_info.h(45) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\ra_depack.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\ra_depack.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_error.h"
+..\..\src\ra_depack.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_error.h'
+         _
+#include "rm_memory.h"
+..\..\src\ra_depack.h(44) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "rm_stream.h"
+..\..\src\ra_depack.h(45) : Warning 537: Repeated include file
+    '..\..\src\rm_stream.h'
+         _
+#include "rm_packet.h"
+..\..\src\ra_depack.h(46) : Warning 537: Repeated include file
+    '..\..\src\rm_packet.h'
+         _
+#include "helix_types.h"
+..\..\src\ra_format_info.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\pack_utils.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\pack_utils.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\pack_utils.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "helix_types.h"
+..\..\src\rv_depack_internal.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rv_depack_internal.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\rv_depack_internal.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "rm_error.h"
+..\..\src\rv_depack_internal.h(44) : Warning 537: Repeated include file
+    '..\..\src\rm_error.h'
+         _
+#include "rv_depack.h"
+..\..\src\rv_depack_internal.h(45) : Warning 537: Repeated include file
+    '..\..\src\rv_depack.h'
+         _
+#include "helix_types.h"
+..\..\src\stream_hdr_structs.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\ra_depack_internal.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\ra_depack_internal.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\ra_depack_internal.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "rm_error.h"
+..\..\src\ra_depack_internal.h(44) : Warning 537: Repeated include file
+    '..\..\src\rm_error.h'
+         _
+#include "ra_depack.h"
+..\..\src\ra_depack_internal.h(45) : Warning 537: Repeated include file
+    '..\..\src\ra_depack.h'
+         _
+#include "stream_hdr_structs.h"
+..\..\src\ra_depack_internal.h(46) : Warning 537: Repeated include file
+    '..\..\src\stream_hdr_structs.h'
+                                                                      _
+			rm_payload* ptNewPayload = (rm_payload*)malloc(sizeof(rm_payload));
+..\..\src\RMDemux_API.cpp(194) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                            _
+			ptNewPayload->pbBuff = (BYTE*)malloc(ulPacketMalloc);
+..\..\src\RMDemux_API.cpp(201) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                    _
+				free(ptNewPayload);
+..\..\src\RMDemux_API.cpp(204) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                                      _
+			rm_payload* ptNewPayload = (rm_payload*)malloc(sizeof(rm_payload));
+..\..\src\RMDemux_API.cpp(254) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                            _
+			ptNewPayload->pbBuff = (BYTE*)malloc(ulPackLen);
+..\..\src\RMDemux_API.cpp(258) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                    _
+				free(ptNewPayload);
+..\..\src\RMDemux_API.cpp(261) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                            _
+			free(ptToDelete->pbBuff);
+..\..\src\RMDemux_API.cpp(297) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                    _
+		free(ptToDelete);
+..\..\src\RMDemux_API.cpp(298) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                            _
+			free(ptToDelete->pbBuff);
+..\..\src\RMDemux_API.cpp(306) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                    _
+		free(ptToDelete);
+..\..\src\RMDemux_API.cpp(307) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                            _
+			free(pinfo->ptLastAudOutput->pbBuff);
+..\..\src\RMDemux_API.cpp(313) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                    _
+		free(pinfo->ptLastAudOutput);
+..\..\src\RMDemux_API.cpp(314) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                            _
+			free(pinfo->ptLastVidOutput->pbBuff);
+..\..\src\RMDemux_API.cpp(320) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                    _
+		free(pinfo->ptLastVidOutput);
+..\..\src\RMDemux_API.cpp(321) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                    _
+			RM_Close(rm);
+..\..\src\RMDemux_API.cpp(409) : Warning 534: Ignoring return value of function
+    'RM_Close(RM_T *)' (compare with line 99, file ..\..\src\RMDemux_API.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\RMDemux_API.h(99) : Info 830: Location cited in prior message
+                                                                                       _
+		rm->rmOpenOption.pfnExternSeek(rm->rmOpenOption.pUserData, 0, SEEK_SET);
+..\..\src\RMDemux_API.cpp(418) : Warning 534: Ignoring return value of function
+    'pfnExternSeek' (compare with line 63, file ..\..\src\RMDemux_API.h) [MISRA
+    C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\RMDemux_API.h(63) : Info 830: Location cited in prior message
+                                    _
+			RM_Close(rm);
+..\..\src\RMDemux_API.cpp(422) : Warning 534: Ignoring return value of function
+    'RM_Close(RM_T *)' (compare with line 99, file ..\..\src\RMDemux_API.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\RMDemux_API.h(99) : Info 830: Location cited in prior message
+                                                                                       _
+		rm->rmOpenOption.pfnExternSeek(rm->rmOpenOption.pUserData, 0, SEEK_SET);
+..\..\src\RMDemux_API.cpp(427) : Warning 534: Ignoring return value of function
+    'pfnExternSeek' (compare with line 63, file ..\..\src\RMDemux_API.h) [MISRA
+    C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\RMDemux_API.h(63) : Info 830: Location cited in prior message
+                            _
+		RM_Close(rm);
+..\..\src\RMDemux_API.cpp(433) : Warning 534: Ignoring return value of function
+    'RM_Close(RM_T *)' (compare with line 99, file ..\..\src\RMDemux_API.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\RMDemux_API.h(99) : Info 830: Location cited in prior message
+                            _
+		RM_Close(rm);
+..\..\src\RMDemux_API.cpp(441) : Warning 534: Ignoring return value of function
+    'RM_Close(RM_T *)' (compare with line 99, file ..\..\src\RMDemux_API.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\RMDemux_API.h(99) : Info 830: Location cited in prior message
+                            _
+		RM_Close(rm);
+..\..\src\RMDemux_API.cpp(456) : Warning 534: Ignoring return value of function
+    'RM_Close(RM_T *)' (compare with line 99, file ..\..\src\RMDemux_API.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\RMDemux_API.h(99) : Info 830: Location cited in prior message
+                            _
+		RM_Close(rm);
+..\..\src\RMDemux_API.cpp(464) : Warning 534: Ignoring return value of function
+    'RM_Close(RM_T *)' (compare with line 99, file ..\..\src\RMDemux_API.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\RMDemux_API.h(99) : Info 830: Location cited in prior message
+                            _
+		RM_Close(rm);
+..\..\src\RMDemux_API.cpp(473) : Warning 534: Ignoring return value of function
+    'RM_Close(RM_T *)' (compare with line 99, file ..\..\src\RMDemux_API.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\RMDemux_API.h(99) : Info 830: Location cited in prior message
+                            _
+		RM_Close(rm);
+..\..\src\RMDemux_API.cpp(480) : Warning 534: Ignoring return value of function
+    'RM_Close(RM_T *)' (compare with line 99, file ..\..\src\RMDemux_API.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\RMDemux_API.h(99) : Info 830: Location cited in prior message
+                            _
+		RM_Close(rm);
+..\..\src\RMDemux_API.cpp(512) : Warning 534: Ignoring return value of function
+    'RM_Close(RM_T *)' (compare with line 99, file ..\..\src\RMDemux_API.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\RMDemux_API.h(99) : Info 830: Location cited in prior message
+                                    _
+			RM_Close(rm);
+..\..\src\RMDemux_API.cpp(534) : Warning 534: Ignoring return value of function
+    'RM_Close(RM_T *)' (compare with line 99, file ..\..\src\RMDemux_API.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\RMDemux_API.h(99) : Info 830: Location cited in prior message
+                                    _
+			RM_Close(rm);
+..\..\src\RMDemux_API.cpp(543) : Warning 534: Ignoring return value of function
+    'RM_Close(RM_T *)' (compare with line 99, file ..\..\src\RMDemux_API.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\RMDemux_API.h(99) : Info 830: Location cited in prior message
+                                    _
+			RM_Close(rm);
+..\..\src\RMDemux_API.cpp(551) : Warning 534: Ignoring return value of function
+    'RM_Close(RM_T *)' (compare with line 99, file ..\..\src\RMDemux_API.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\RMDemux_API.h(99) : Info 830: Location cited in prior message
+                                    _
+			RM_Close(rm);
+..\..\src\RMDemux_API.cpp(656) : Warning 534: Ignoring return value of function
+    'RM_Close(RM_T *)' (compare with line 99, file ..\..\src\RMDemux_API.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\RMDemux_API.h(99) : Info 830: Location cited in prior message
+                                    _
+			RM_Close(rm);
+..\..\src\RMDemux_API.cpp(664) : Warning 534: Ignoring return value of function
+    'RM_Close(RM_T *)' (compare with line 99, file ..\..\src\RMDemux_API.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\RMDemux_API.h(99) : Info 830: Location cited in prior message
+                                    _
+			RM_Close(rm);
+..\..\src\RMDemux_API.cpp(713) : Warning 534: Ignoring return value of function
+    'RM_Close(RM_T *)' (compare with line 99, file ..\..\src\RMDemux_API.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\RMDemux_API.h(99) : Info 830: Location cited in prior message
+                           _
+	rm = (RM_T *)malloc(sizeof(RM_T));
+..\..\src\RMDemux_API.cpp(765) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                    _
+			RM_Close(rm);
+..\..\src\RMDemux_API.cpp(781) : Warning 534: Ignoring return value of function
+    'RM_Close(RM_T *)' (compare with line 99, file ..\..\src\RMDemux_API.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\RMDemux_API.h(99) : Info 830: Location cited in prior message
+                                        _
+	pinfo = (rm_parser_info *)malloc(sizeof(rm_parser_info));
+..\..\src\RMDemux_API.cpp(788) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                            _
+		RM_Close(rm);
+..\..\src\RMDemux_API.cpp(791) : Warning 534: Ignoring return value of function
+    'RM_Close(RM_T *)' (compare with line 99, file ..\..\src\RMDemux_API.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\RMDemux_API.h(99) : Info 830: Location cited in prior message
+                                    _
+			RM_Close(rm);
+..\..\src\RMDemux_API.cpp(809) : Warning 534: Ignoring return value of function
+    'RM_Close(RM_T *)' (compare with line 99, file ..\..\src\RMDemux_API.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\RMDemux_API.h(99) : Info 830: Location cited in prior message
+                 _
+	return rm;
+..\..\src\RMDemux_API.cpp(823) : Warning 438: Last value assigned to variable
+    'retVal' (defined at line 749) not used [MISRA C++ Rule 0-1-6], [MISRA C++
+    Rules 0-1-6 and 0-1-9]
+..\..\src\RMDemux_API.cpp(749) : Info 830: Location cited in prior message
+_
+}
+..\..\src\RMDemux_API.cpp(824) : Warning 529: Symbol 'retVal' (line 749) not
+    subsequently referenced [MISRA C++ Rule 0-1-3], [MISRA C++ Rule 0-1-4]
+..\..\src\RMDemux_API.cpp(749) : Info 830: Location cited in prior message
+                      _
+	RM_Cleanup(rm);
+..\..\src\RMDemux_API.cpp(832) : Warning 534: Ignoring return value of function
+    'RM_Cleanup(RM_T *)' (compare with line 331) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\src\RMDemux_API.cpp(331) : Info 830: Location cited in prior message
+            _
+	free(rm->info_handle);
+..\..\src\RMDemux_API.cpp(834) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                    _
+		free(rm->rmOpenOption.fileName);
+..\..\src\RMDemux_API.cpp(846) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+            _
+	free(rm);
+..\..\src\RMDemux_API.cpp(850) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                _
+	return 0;
+..\..\src\RMDemux_API.cpp(852) : Warning 438: Last value assigned to variable
+    'rm' (defined at line 826) not used [MISRA C++ Rule 0-1-6], [MISRA C++
+    Rules 0-1-6 and 0-1-9]
+..\..\src\RMDemux_API.cpp(826) : Info 830: Location cited in prior message
+                                    _
+				free(pinfo->ptLastAudOutput->pbBuff);
+..\..\src\RMDemux_API.cpp(925) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                            _
+			free(pinfo->ptLastAudOutput);
+..\..\src\RMDemux_API.cpp(926) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                    _
+				free(pinfo->ptLastVidOutput->pbBuff);
+..\..\src\RMDemux_API.cpp(945) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                            _
+			free(pinfo->ptLastVidOutput);
+..\..\src\RMDemux_API.cpp(946) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+
+--- Module:   ..\..\src\rv_depack.c (C)
+         _
+#include "helix_types.h"
+..\..\src\helix_result.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\rv_depack.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rv_depack.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_error.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rm_error.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_memory.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_stream.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rm_stream.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_property.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rm_property.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\rm_property.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_packet.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\rv_format_info.h(45) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\rv_depack_internal.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rv_depack_internal.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\rv_depack_internal.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "rm_error.h"
+..\..\src\rv_depack_internal.h(44) : Warning 537: Repeated include file
+    '..\..\src\rm_error.h'
+         _
+#include "rv_depack.h"
+..\..\src\rv_depack_internal.h(45) : Warning 537: Repeated include file
+    '..\..\src\rv_depack.h'
+         _
+#include "helix_types.h"
+..\..\src\stream_hdr_structs.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_memory_default.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_error_default.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\memory_utils.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\memory_utils.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\memory_utils.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+
+--- Module:   ..\..\src\rv_depack_internal.c (C)
+         _
+#include "helix_types.h"
+..\..\src\helix_result.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\pack_utils.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\pack_utils.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_memory.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\string_utils.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "rm_memory.h"
+..\..\src\string_utils.h(42) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "helix_types.h"
+..\..\src\memory_utils.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\memory_utils.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\memory_utils.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "helix_types.h"
+..\..\src\stream_hdr_structs.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\stream_hdr_utils.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\stream_hdr_utils.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\stream_hdr_utils.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "stream_hdr_structs.h"
+..\..\src\stream_hdr_utils.h(44) : Warning 537: Repeated include file
+    '..\..\src\stream_hdr_structs.h'
+         _
+#include "helix_types.h"
+..\..\src\rv_depack_internal.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rv_depack_internal.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\rv_depack_internal.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_error.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rm_error.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "helix_types.h"
+..\..\src\rv_depack.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rv_depack.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_error.h"
+..\..\src\rv_depack.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_error.h'
+         _
+#include "rm_memory.h"
+..\..\src\rv_depack.h(44) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_stream.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rm_stream.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_property.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\rm_property.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\rm_property.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_packet.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\rv_format_info.h(45) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "stream_hdr_structs.h"
+..\..\src\rv_depack_internal.h(46) : Warning 537: Repeated include file
+    '..\..\src\stream_hdr_structs.h'
+                                                                             _
+            rv_depacki_unpack_rule_map(pInt, &pInt->rule2Flag, &pTmp, &ulTmp);
+..\..\src\rv_depack_internal.c(101) : Warning 534: Ignoring return value of
+    function 'rv_depacki_unpack_rule_map(struct rv_depack_internal_struct *,
+    struct rm_rule_map_struct *, unsigned char **, unsigned long *)' (compare
+    with line 113, file ..\..\src\rv_depack_internal.h, module
+    ..\..\src\RMDemux_API.cpp) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\rv_depack_internal.h(113) : Info 830: Location cited in prior message
+    _
+    }
+..\..\src\rv_depack_internal.c(261) : Warning 438: Last value assigned to
+    variable 'ulSize' (defined at line 191) not used [MISRA C++ Rule 0-1-6],
+    [MISRA C++ Rules 0-1-6 and 0-1-9]
+..\..\src\rv_depack_internal.c(191) : Info 830: Location cited in prior message
+                                            _
+        UINT32      ulPNMStrLen     = strlen(pszPNMStr);
+..\..\src\rv_depack_internal.c(360) : Warning 586: function 'strlen' is
+    deprecated. [MISRA C++ Rule 18-0-5]
+                                                            _
+                        pStrLimit     = pszRuleBook + strlen(pszRuleBook);
+..\..\src\rv_depack_internal.c(386) : Warning 586: function 'strlen' is
+    deprecated. [MISRA C++ Rule 18-0-5]
+                                         _
+                rm_unpack8(ppBuf, pulLen);
+..\..\src\rv_depack_internal.c(646) : Warning 534: Ignoring return value of
+    function 'rm_unpack8(unsigned char **, unsigned long *)' (compare with line
+    161, file ..\..\src\pack_utils.c) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\pack_utils.c(161) : Info 830: Location cited in prior message
+                                         _
+                rm_unpack8(ppBuf, pulLen);
+..\..\src\rv_depack_internal.c(672) : Warning 534: Ignoring return value of
+    function 'rm_unpack8(unsigned char **, unsigned long *)' (compare with line
+    161, file ..\..\src\pack_utils.c) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\src\pack_utils.c(161) : Info 830: Location cited in prior message
+    _
+    }
+..\..\src\rv_depack_internal.c(1179) : Warning 529: Symbol 'ulSeqNum' (line
+    1076) not subsequently referenced [MISRA C++ Rule 0-1-3], [MISRA C++ Rule
+    0-1-4]
+..\..\src\rv_depack_internal.c(1076) : Info 830: Location cited in prior
+    message
+    _
+    }
+..\..\src\rv_depack_internal.c(1179) : Warning 438: Last value assigned to
+    variable 'ulSeqNum' (defined at line 1076) not used [MISRA C++ Rule 0-1-6],
+    [MISRA C++ Rules 0-1-6 and 0-1-9]
+..\..\src\rv_depack_internal.c(1076) : Info 830: Location cited in prior
+    message
+
+--- Module:   ..\..\src\stream_hdr_utils.c (C)
+         _
+#include "helix_types.h"
+..\..\src\helix_result.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\rm_memory.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\pack_utils.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\pack_utils.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\pack_utils.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "helix_types.h"
+..\..\src\stream_hdr_structs.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_types.h"
+..\..\src\stream_hdr_utils.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+         _
+#include "helix_result.h"
+..\..\src\stream_hdr_utils.h(42) : Warning 537: Repeated include file
+    '..\..\src\helix_result.h'
+         _
+#include "rm_memory.h"
+..\..\src\stream_hdr_utils.h(43) : Warning 537: Repeated include file
+    '..\..\src\rm_memory.h'
+         _
+#include "stream_hdr_structs.h"
+..\..\src\stream_hdr_utils.h(44) : Warning 537: Repeated include file
+    '..\..\src\stream_hdr_structs.h'
+
+--- Module:   ..\..\src\string_utils.c (C)
+         _
+#include "helix_types.h"
+..\..\src\rm_memory.h(41) : Warning 537: Repeated include file
+    '..\..\src\helix_types.h'
+                                                _
+        pRet = (char*) fpMalloc(pUserMem, strlen(pszStr) + 1);
+..\..\src\string_utils.c(50) : Warning 586: function 'strlen' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                  _
+            strcpy(pRet, pszStr);
+..\..\src\string_utils.c(54) : Warning 586: function 'strcpy' is deprecated.
+    [MISRA C++ Rule 18-0-5]

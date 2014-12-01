@@ -1,0 +1,1048 @@
+
+--- Module:   ..\..\..\..\src\oggdec.c (C)
+         _
+#include "OGGDemuxAPI.h"
+..\..\..\..\src\oggdec.h(7) : Warning 537: Repeated include file
+    '..\..\..\..\src\OGGDemuxAPI.h'
+                                                                                                                 _
+			pts = gp * s->streams[i]->codec_time_base.num * 1000 / s->streams[i]->codec_time_base.den;
+..\..\..\..\src\oggdec.h(379) : Warning 573: Signed-unsigned mix with divide
+         _
+#include "oggdec.h"
+..\..\..\..\src\vorbiscomment.h(3) : Warning 537: Repeated include file
+    '..\..\..\..\src\oggdec.h'
+                               _
+    int sign= (num<0) ^ (den<0);
+..\..\..\..\src\oggdec.c(96) : Warning 514: Unusual use of a Boolean expression
+                                                        _
+#...                  ((x) > ((max  - a0.den) / a1.den) ? ((max  - a0.den) / a1
+            if(a1.den) x= MIN(x, (max - a0.den) / a1.den);
+..\..\..\..\src\oggdec.c(117) : Warning 574: Signed-unsigned mix with
+    relational
+                                                      _
+            if (den*(2*x*a1.den + a0.den) > num*a1.den)
+..\..\..\..\src\oggdec.c(119) : Warning 574: Signed-unsigned mix with
+    relational
+                                                                                                        _
+            printf("st:%d removing common factor %d from timebase\n", s->index, pts_num/s->time_base.num);
+..\..\..\..\src\oggdec.c(148) : Warning 573: Signed-unsigned mix with divide
+               _
+    st = malloc(sizeof(FormatStream));
+..\..\..\..\src\oggdec.c(166) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+        _
+	memset(st,0,sizeof(FormatStream));
+..\..\..\..\src\oggdec.c(169) : Warning 539: Did not expect positive
+    indentation from line 167
+..\..\..\..\src\oggdec.c(167) : Info 830: Location cited in prior message
+                      _
+    st->start_time =  NOPTS_VALUE;
+..\..\..\..\src\oggdec.c(178) : Warning 569: Loss of information (assignment)
+    (64 bits to 63 bits)
+                    _
+    st->duration =  NOPTS_VALUE;
+..\..\..\..\src\oggdec.c(179) : Warning 569: Loss of information (assignment)
+    (64 bits to 63 bits)
+                     _
+    st->first_dts =  NOPTS_VALUE;
+..\..\..\..\src\oggdec.c(185) : Warning 569: Loss of information (assignment)
+    (64 bits to 63 bits)
+                       _
+    st->last_IP_pts =  NOPTS_VALUE;
+..\..\..\..\src\oggdec.c(190) : Warning 569: Loss of information (assignment)
+    (64 bits to 63 bits)
+                            _
+        st->pts_buffer[i]=  NOPTS_VALUE;
+..\..\..\..\src\oggdec.c(192) : Warning 569: Loss of information (assignment)
+    (64 bits to 63 bits)
+                         _
+    st->reference_dts =  NOPTS_VALUE;
+..\..\..\..\src\oggdec.c(193) : Warning 569: Loss of information (assignment)
+    (64 bits to 63 bits)
+                 _
+    pkt->pts   = NOPTS_VALUE;
+..\..\..\..\src\oggdec.c(204) : Warning 569: Loss of information (assignment)
+    (64 bits to 63 bits)
+                 _
+    pkt->dts   = NOPTS_VALUE;
+..\..\..\..\src\oggdec.c(205) : Warning 569: Loss of information (assignment)
+    (64 bits to 63 bits)
+                       _
+    if (pkt->data) free(pkt->data);
+..\..\..\..\src\oggdec.c(216) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                     _
+        data = malloc(size + INPUT_BUFFER_PADDING_SIZE);
+..\..\..\..\src\oggdec.c(224) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                                                              _
+    if(a<0 && a != -0x7fffffffffffffffLL - 1) return -rescale_rnd(-a, b, c, rnd ^ ((rnd>>1)&1));
+..\..\..\..\src\oggdec.c(280) : Error 64: Type mismatch (arg. no. 4) (int/enum)
+                                        _
+        a1 = a1*b1 + (t1>>32) + (a0<t1a);
+..\..\..\..\src\oggdec.c(300) : Warning 514: Unusual use of a Boolean
+    expression
+                  _
+        a1 += a0<r;
+..\..\..\..\src\oggdec.c(302) : Warning 574: Signed-unsigned mix with
+    relational
+..\..\..\..\src\oggdec.c(302) : Warning 514: Unusual use of a Boolean
+    expression
+                               _
+            if(/*o || */c <= a1){
+..\..\..\..\src\oggdec.c(307) : Warning 574: Signed-unsigned mix with
+    relational
+                                _
+    for(i = 0; i < s->nb_streams; i++) {
+..\..\..\..\src\oggdec.c(324) : Warning 574: Signed-unsigned mix with
+    relational
+                 _
+    if(ts_min == NOPTS_VALUE){
+..\..\..\..\src\oggdec.c(338) : Warning 650: Constant '0x8000000000000000' out
+    of range for operator '=='
+                      _
+        if (ts_min == NOPTS_VALUE)
+..\..\..\..\src\oggdec.c(341) : Warning 650: Constant '0x8000000000000000' out
+    of range for operator '=='
+        _
+	if(target_ts <= ts_min)
+..\..\..\..\src\oggdec.c(345) : Warning 539: Did not expect positive
+    indentation from line 338
+..\..\..\..\src\oggdec.c(338) : Info 830: Location cited in prior message
+                 _
+    if(ts_max == NOPTS_VALUE){
+..\..\..\..\src\oggdec.c(351) : Warning 650: Constant '0x8000000000000000' out
+    of range for operator '=='
+                        _
+		int pos = ftell(s->pb);
+..\..\..\..\src\oggdec.c(353) : Warning 578: Declaration of symbol 'pos' hides
+    symbol 'pos' (line 334) [MISRA C++ Rule 2-10-2]
+..\..\..\..\src\oggdec.c(334) : Info 830: Location cited in prior message
+                                     _
+        }while(ts_max == NOPTS_VALUE && pos_max >= step);
+..\..\..\..\src\oggdec.c(362) : Warning 650: Constant '0x8000000000000000' out
+    of range for operator '=='
+                      _
+        if (ts_max == NOPTS_VALUE)
+..\..\..\..\src\oggdec.c(363) : Warning 650: Constant '0x8000000000000000' out
+    of range for operator '=='
+                         _
+            if(tmp_ts == NOPTS_VALUE)
+..\..\..\..\src\oggdec.c(369) : Warning 650: Constant '0x8000000000000000' out
+    of range for operator '=='
+                 _
+        if(ts == NOPTS_VALUE){
+..\..\..\..\src\oggdec.c(413) : Warning 650: Constant '0x8000000000000000' out
+    of range for operator '=='
+                                _
+#... (ts != 0x8000000000000000LL)) || (_wassert(_CRT_WIDE("ts != NOPTS_VALUE"),
+        assert(ts != NOPTS_VALUE);
+..\..\..\..\src\oggdec.c(417) : Warning 650: Constant '0x8000000000000000' out
+    of range for operator '!='
+            _
+    ts_min= NOPTS_VALUE;
+..\..\..\..\src\oggdec.c(450) : Warning 569: Loss of information (assignment)
+    (64 bits to 63 bits)
+        _
+	os = ogg->streams + stream_index;
+..\..\..\..\src\oggdec.c(489) : Warning 539: Did not expect positive
+    indentation from line 486
+..\..\..\..\src\oggdec.c(486) : Info 830: Location cited in prior message
+                                  _
+    struct ogg_state *ost = malloc(sizeof (*ost) + (ogg->nstreams-1) * sizeof (*ogg->streams));
+..\..\..\..\src\oggdec.c(500) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                            _
+    ost->pos = ftell (s->pb);
+..\..\..\..\src\oggdec.c(502) : Warning 613: Possible use of null pointer 'ost'
+    in left argument to operator '->' [Reference: file ..\..\..\..\src\oggdec.c:
+    line 500]
+..\..\..\..\src\oggdec.c(500) : Info 831: Reference cited in prior message
+                             _
+    ost->curidx = ogg->curidx;
+..\..\..\..\src\oggdec.c(503) : Warning 613: Possible use of null pointer 'ost'
+    in left argument to operator '->' [Reference: file ..\..\..\..\src\oggdec.c:
+    line 500]
+..\..\..\..\src\oggdec.c(500) : Info 831: Reference cited in prior message
+                          _
+    ost->next = ogg->state;
+..\..\..\..\src\oggdec.c(504) : Warning 613: Possible use of null pointer 'ost'
+    in left argument to operator '->' [Reference: file ..\..\..\..\src\oggdec.c:
+    line 500]
+..\..\..\..\src\oggdec.c(500) : Info 831: Reference cited in prior message
+                                 _
+    ost->nstreams = ogg->nstreams;
+..\..\..\..\src\oggdec.c(505) : Warning 613: Possible use of null pointer 'ost'
+    in left argument to operator '->' [Reference: file ..\..\..\..\src\oggdec.c:
+    line 500]
+..\..\..\..\src\oggdec.c(500) : Info 831: Reference cited in prior message
+                                                                             _
+    memcpy(ost->streams, ogg->streams, ogg->nstreams * sizeof(*ogg->streams));
+..\..\..\..\src\oggdec.c(506) : Warning 613: Possible use of null pointer 'ost'
+    in left argument to operator '->' [Reference: file ..\..\..\..\src\oggdec.c:
+    line 500]
+..\..\..\..\src\oggdec.c(500) : Info 831: Reference cited in prior message
+                         _
+        os->buf = malloc (os->bufsize);
+..\..\..\..\src\oggdec.c(510) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                         _
+        memcpy (os->buf, ost->streams[i].buf, os->bufpos);
+..\..\..\..\src\oggdec.c(512) : Warning 613: Possible use of null pointer 'ost'
+    in left argument to operator '->' [Reference: file ..\..\..\..\src\oggdec.c:
+    line 500]
+..\..\..\..\src\oggdec.c(500) : Info 831: Reference cited in prior message
+                 _
+            free (ogg->streams[i].buf);
+..\..\..\..\src\oggdec.c(534) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+         _
+    free (ost);
+..\..\..\..\src\oggdec.c(541) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                        _
+        os->granule = -1;
+..\..\..\..\src\oggdec.c(553) : Warning 570: Loss of sign (assignment) (int to
+    unsigned long long)
+                      _
+        os->lastpts = NOPTS_VALUE;
+..\..\..\..\src\oggdec.c(554) : Warning 569: Loss of information (assignment)
+    (64 bits to 63 bits)
+                      _
+        os->lastdts = NOPTS_VALUE;
+..\..\..\..\src\oggdec.c(555) : Warning 569: Loss of information (assignment)
+    (64 bits to 63 bits)
+                           _
+    ogg->streams = realloc (ogg->streams, ogg->nstreams * sizeof (*ogg->streams));
+..\..\..\..\src\oggdec.c(591) : Warning 586: function 'realloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                    _
+    os->buf = malloc(os->bufsize);
+..\..\..\..\src\oggdec.c(596) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                              _
+    unsigned char *nb = malloc(os->bufsize);
+..\..\..\..\src\oggdec.c(611) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                              _
+        memcpy(nb, os->buf + os->pstart, size);
+..\..\..\..\src\oggdec.c(614) : Warning 668: Possibly passing a null pointer to
+    function 'memcpy(void *, const void *, unsigned int)', arg. no. 1
+    [Reference: file ..\..\..\..\src\oggdec.c: line 611]
+..\..\..\..\src\oggdec.c(611) : Info 831: Reference cited in prior message
+            _
+        free(os->buf);
+..\..\..\..\src\oggdec.c(615) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                             _
+        ogg_new_buf(ogg, idx);
+..\..\..\..\src\oggdec.c(693) : Warning 534: Ignoring return value of function
+    'ogg_new_buf(struct ogg *, int)' (compare with line 608) [MISRA C++ Rules
+    0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\..\src\oggdec.c(608) : Info 830: Location cited in prior message
+        _
+	memset(os->segments, 0, sizeof(os->segments));
+..\..\..\..\src\oggdec.c(694) : Warning 539: Did not expect positive
+    indentation from line 692
+..\..\..\..\src\oggdec.c(692) : Info 830: Location cited in prior message
+                                   _
+        unsigned char *nb = malloc (os->bufsize *= 2);
+..\..\..\..\src\oggdec.c(726) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                        _
+        memcpy (nb, os->buf, os->bufpos);
+..\..\..\..\src\oggdec.c(727) : Warning 668: Possibly passing a null pointer to
+    function 'memcpy(void *, const void *, unsigned int)', arg. no. 1
+    [Reference: file ..\..\..\..\src\oggdec.c: line 726]
+..\..\..\..\src\oggdec.c(726) : Info 831: Reference cited in prior message
+             _
+        free (os->buf);
+..\..\..\..\src\oggdec.c(728) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+        _
+	os->lastpacketInPreviousPage = os->lastpacketInCurrentPage;
+..\..\..\..\src\oggdec.c(734) : Warning 539: Did not expect positive
+    indentation from line 732
+..\..\..\..\src\oggdec.c(732) : Info 830: Location cited in prior message
+            _
+    return 0;
+..\..\..\..\src\oggdec.c(745) : Warning 438: Last value assigned to variable
+    'seq' (defined at line 638) not used [MISRA C++ Rule 0-1-6], [MISRA C++
+    Rules 0-1-6 and 0-1-9]
+..\..\..\..\src\oggdec.c(638) : Info 830: Location cited in prior message
+            _
+    return 0;
+..\..\..\..\src\oggdec.c(745) : Warning 438: Last value assigned to variable
+    'crc' (defined at line 639) not used [MISRA C++ Rule 0-1-6], [MISRA C++
+    Rules 0-1-6 and 0-1-9]
+..\..\..\..\src\oggdec.c(639) : Info 830: Location cited in prior message
+_
+}
+..\..\..\..\src\oggdec.c(746) : Warning 550: Symbol 'crc' (line 639) not
+    accessed [MISRA C++ Rule 0-1-4]
+..\..\..\..\src\oggdec.c(639) : Info 830: Location cited in prior message
+_
+}
+..\..\..\..\src\oggdec.c(746) : Warning 550: Symbol 'seq' (line 638) not
+    accessed [MISRA C++ Rule 0-1-4]
+..\..\..\..\src\oggdec.c(638) : Info 830: Location cited in prior message
+        _
+	version = curInputBuf[0];
+..\..\..\..\src\oggdec.c(795) : Warning 539: Did not expect positive
+    indentation from line 790
+..\..\..\..\src\oggdec.c(790) : Info 830: Location cited in prior message
+                             _
+        ogg_new_buf(ogg, idx);
+..\..\..\..\src\oggdec.c(830) : Warning 534: Ignoring return value of function
+    'ogg_new_buf(struct ogg *, int)' (compare with line 608) [MISRA C++ Rules
+    0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\..\src\oggdec.c(608) : Info 830: Location cited in prior message
+        _
+	memset(os->segments, 0, sizeof(os->segments));
+..\..\..\..\src\oggdec.c(831) : Warning 539: Did not expect positive
+    indentation from line 829
+..\..\..\..\src\oggdec.c(829) : Info 830: Location cited in prior message
+                                   _
+        unsigned char *nb = malloc (os->bufsize *= 2);
+..\..\..\..\src\oggdec.c(867) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                        _
+        memcpy (nb, os->buf, os->bufpos);
+..\..\..\..\src\oggdec.c(868) : Warning 668: Possibly passing a null pointer to
+    function 'memcpy(void *, const void *, unsigned int)', arg. no. 1
+    [Reference: file ..\..\..\..\src\oggdec.c: line 867]
+..\..\..\..\src\oggdec.c(867) : Info 831: Reference cited in prior message
+             _
+        free (os->buf);
+..\..\..\..\src\oggdec.c(869) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+        _
+	if (curInputBuf + size > endInputBuf)
+..\..\..\..\src\oggdec.c(873) : Warning 539: Did not expect positive
+    indentation from line 866
+..\..\..\..\src\oggdec.c(866) : Info 830: Location cited in prior message
+        _
+	inputBuf->dataSize = endInputBuf - curInputBuf;
+..\..\..\..\src\oggdec.c(892) : Warning 539: Did not expect positive
+    indentation from line 888
+..\..\..\..\src\oggdec.c(888) : Info 830: Location cited in prior message
+            _
+    return 0;
+..\..\..\..\src\oggdec.c(897) : Warning 438: Last value assigned to variable
+    'seq' (defined at line 760) not used [MISRA C++ Rule 0-1-6], [MISRA C++
+    Rules 0-1-6 and 0-1-9]
+..\..\..\..\src\oggdec.c(760) : Info 830: Location cited in prior message
+            _
+    return 0;
+..\..\..\..\src\oggdec.c(897) : Warning 438: Last value assigned to variable
+    'crc' (defined at line 761) not used [MISRA C++ Rule 0-1-6], [MISRA C++
+    Rules 0-1-6 and 0-1-9]
+..\..\..\..\src\oggdec.c(761) : Info 830: Location cited in prior message
+_
+}
+..\..\..\..\src\oggdec.c(898) : Warning 550: Symbol 'crc' (line 761) not
+    accessed [MISRA C++ Rule 0-1-4]
+..\..\..\..\src\oggdec.c(761) : Info 830: Location cited in prior message
+_
+}
+..\..\..\..\src\oggdec.c(898) : Warning 550: Symbol 'seq' (line 760) not
+    accessed [MISRA C++ Rule 0-1-4]
+..\..\..\..\src\oggdec.c(760) : Info 830: Location cited in prior message
+
+During Specific Walk:
+  File ..\..\..\..\src\oggdec.c line 647: ogg_read_page_stream(?, ?) #1
+..\..\..\..\src\oggdec.c(868) : Warning 668: Possibly passing a null pointer to
+    function 'memcpy(void *, const void *, unsigned int)', arg. no. 1
+    [Reference: file ..\..\..\..\src\oggdec.c: line 867]
+..\..\..\..\src\oggdec.c(867) : Info 831: Reference cited in prior message
+                         _
+    if (os->granule == -1)
+..\..\..\..\src\oggdec.c(950) : Warning 650: Constant '-1' out of range for
+    operator '=='
+                                                              _
+        printf("Page at %d is missing granule\n", os->page_pos);
+..\..\..\..\src\oggdec.c(951) : Warning 559: Size of argument no. 2
+    inconsistent with format
+                                      _
+            os->codec->packet (s, idx);
+..\..\..\..\src\oggdec.c(990) : Warning 534: Ignoring return value of function
+    'ogg_codec::packet' (compare with line 283, file ..\..\..\..\src\oggdec.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\..\src\oggdec.h(283) : Info 830: Location cited in prior message
+                        _
+    if (s->duration !=  NOPTS_VALUE)
+..\..\..\..\src\oggdec.c(1038) : Warning 650: Constant '0x8000000000000000' out
+    of range for operator '!='
+        _
+	pos = ftell(s->pb);
+..\..\..\..\src\oggdec.c(1042) : Warning 539: Did not expect positive
+    indentation from line 1038
+..\..\..\..\src\oggdec.c(1038) : Info 830: Location cited in prior message
+                _
+    ogg_save (s);
+..\..\..\..\src\oggdec.c(1051) : Warning 534: Ignoring return value of function
+    'ogg_save(struct FormatContext *)' (compare with line 497) [MISRA C++ Rules
+    0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\..\src\oggdec.c(497) : Info 830: Location cited in prior message
+                                          _
+        if (ogg->streams[i].granule != -1 && ogg->streams[i].granule != 0 &&
+..\..\..\..\src\oggdec.c(1055) : Warning 650: Constant '-1' out of range for
+    operator '!='
+                                             _
+            if (s->streams[i]->start_time != NOPTS_VALUE)
+..\..\..\..\src\oggdec.c(1059) : Warning 650: Constant '0x8000000000000000' out
+    of range for operator '!='
+                      _
+    ogg_restore (s, 0);
+..\..\..\..\src\oggdec.c(1064) : Warning 534: Ignoring return value of function
+    'ogg_restore(struct FormatContext *, int)' (compare with line 520) [MISRA
+    C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\..\src\oggdec.c(520) : Info 830: Location cited in prior message
+        _
+	if (s->pb)
+..\..\..\..\src\oggdec.c(1085) : Warning 539: Did not expect positive
+    indentation from line 1080
+..\..\..\..\src\oggdec.c(1080) : Info 830: Location cited in prior message
+                                  _
+		ogg_get_length (s);
+..\..\..\..\src\oggdec.c(1087) : Warning 534: Ignoring return value of function
+    'ogg_get_length(struct FormatContext *)' (compare with line 1031) [MISRA
+    C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\..\src\oggdec.c(1031) : Info 830: Location cited in prior message
+                  _
+    __int64 pts = NOPTS_VALUE;
+..\..\..\..\src\oggdec.c(1098) : Warning 569: Loss of information
+    (initialization) (64 bits to 63 bits)
+               _
+        *dts = NOPTS_VALUE;
+..\..\..\..\src\oggdec.c(1101) : Warning 569: Loss of information (assignment)
+    (64 bits to 63 bits)
+        _
+	pts = ogg_gptopts(s, idx, os->granule, dts);
+..\..\..\..\src\oggdec.c(1163) : Warning 539: Did not expect positive
+    indentation from line 1100
+..\..\..\..\src\oggdec.c(1100) : Info 830: Location cited in prior message
+                                                                                                        _
+		pts -= (os->nCurPageSize - os->nCurPacketOffsetInPage)*8*1000/ s->streams[idx]->bit_rate;
+..\..\..\..\src\oggdec.c(1166) : Warning 573: Signed-unsigned mix with divide
+..\..\..\..\src\oggdec.c(1166) : Warning 647: Suspicious truncation
+             _
+        free (ogg->streams[i].buf);
+..\..\..\..\src\oggdec.c(1232) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+             _
+        free (ogg->streams[i].private);
+..\..\..\..\src\oggdec.c(1233) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+         _
+    free (ogg->streams);
+..\..\..\..\src\oggdec.c(1235) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                     _
+	for (i = 0; i < s->nb_streams; i++){
+..\..\..\..\src\oggdec.c(1236) : Warning 574: Signed-unsigned mix with
+    relational
+                                                            _
+							free(s->streams[i]->metadata->elems[j].key);
+..\..\..\..\src\oggdec.c(1248) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                            _
+							free(s->streams[i]->metadata->elems[j].value);
+..\..\..\..\src\oggdec.c(1253) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                            _
+					free(s->streams[i]->metadata->elems);
+..\..\..\..\src\oggdec.c(1260) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                            _
+					free(s->streams[i]->metadata);
+..\..\..\..\src\oggdec.c(1265) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                    _
+				free(s->streams[i]->extradata);	
+..\..\..\..\src\oggdec.c(1273) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                            _
+			free(s->streams[i]);
+..\..\..\..\src\oggdec.c(1277) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                  _
+    __int64 pts = NOPTS_VALUE;
+..\..\..\..\src\oggdec.c(1291) : Warning 569: Loss of information
+    (initialization) (64 bits to 63 bits)
+                  _
+    ogg_reset(ogg);
+..\..\..\..\src\oggdec.c(1294) : Warning 534: Ignoring return value of function
+    'ogg_reset(struct ogg *)' (compare with line 545) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\..\..\src\oggdec.c(545) : Info 830: Location cited in prior message
+                      _
+                pts = NOPTS_VALUE;
+..\..\..\..\src\oggdec.c(1300) : Warning 569: Loss of information (assignment)
+    (64 bits to 63 bits)
+                   _
+        if (pts != NOPTS_VALUE)
+..\..\..\..\src\oggdec.c(1302) : Warning 650: Constant '0x8000000000000000' out
+    of range for operator '!='
+                  _
+    ogg_reset(ogg);
+..\..\..\..\src\oggdec.c(1305) : Warning 534: Ignoring return value of function
+    'ogg_reset(struct ogg *)' (compare with line 545) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\..\..\src\oggdec.c(545) : Info 830: Location cited in prior message
+                                _
+	pfile = _tfopen(filename,_T("rb"));
+..\..\..\..\src\oggdec.c(1345) : Error 64: Type mismatch (arg. no. 1) (const
+    wchar_t * = char *)
+                                                     _
+	fread(probe_buffer,1,PROBE_BUFFER_SIZE,pfile);
+..\..\..\..\src\oggdec.c(1349) : Warning 534: Ignoring return value of function
+    'fread(void *, unsigned int, unsigned int, struct _iobuf *)' (compare with
+    line 243, file C:\Program Files\Microsoft Visual Studio
+    8\VC\include\stdio.h) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\stdio.h(243) : Info 830:
+    Location cited in prior message
+                                   _
+	s = (FormatContext *)malloc(sizeof(FormatContext));
+..\..\..\..\src\oggdec.c(1356) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                  _
+	ogg = (struct ogg *)malloc(sizeof(struct ogg));
+..\..\..\..\src\oggdec.c(1360) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                    _
+		free(s);
+..\..\..\..\src\oggdec.c(1363) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                      _
+	s->duration = NOPTS_VALUE;
+..\..\..\..\src\oggdec.c(1369) : Warning 569: Loss of information (assignment)
+    (64 bits to 63 bits)
+                    _
+		free(ogg);
+..\..\..\..\src\oggdec.c(1373) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                    _
+		free(s);
+..\..\..\..\src\oggdec.c(1375) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                       _
+		return NULL;
+..\..\..\..\src\oggdec.c(1378) : Warning 438: Last value assigned to variable
+    's' (defined at line 1341) not used [MISRA C++ Rule 0-1-6], [MISRA C++
+    Rules 0-1-6 and 0-1-9]
+..\..\..\..\src\oggdec.c(1341) : Info 830: Location cited in prior message
+                       _
+		return NULL;
+..\..\..\..\src\oggdec.c(1378) : Warning 438: Last value assigned to variable
+    'ogg' (defined at line 1342) not used [MISRA C++ Rule 0-1-6], [MISRA C++
+    Rules 0-1-6 and 0-1-9]
+..\..\..\..\src\oggdec.c(1342) : Info 830: Location cited in prior message
+                                       _
+	if (stream_idx >= s->nb_streams)
+..\..\..\..\src\oggdec.c(1403) : Warning 574: Signed-unsigned mix with
+    relational
+                                                          _
+			pComment->title.size = (int)strlen(tag->value);
+..\..\..\..\src\oggdec.c(1461) : Warning 586: function 'strlen' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                                           _
+			pComment->artist.size = (int)strlen(tag->value);
+..\..\..\..\src\oggdec.c(1466) : Warning 586: function 'strlen' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                                          _
+			pComment->album.size = (int)strlen(tag->value);
+..\..\..\..\src\oggdec.c(1471) : Warning 586: function 'strlen' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                                            _
+			pComment->comment.size = (int)strlen(tag->value);
+..\..\..\..\src\oggdec.c(1476) : Warning 586: function 'strlen' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                                                _
+			pComment->tracknumber.size = (int)strlen(tag->value);
+..\..\..\..\src\oggdec.c(1481) : Warning 586: function 'strlen' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                                         _
+			pComment->date.size = (int)strlen(tag->value);
+..\..\..\..\src\oggdec.c(1486) : Warning 586: function 'strlen' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                                          _
+			pComment->genre.size = (int)strlen(tag->value);
+..\..\..\..\src\oggdec.c(1491) : Warning 586: function 'strlen' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                         _
+	ogg_read_close(s);
+..\..\..\..\src\oggdec.c(1506) : Warning 534: Ignoring return value of function
+    'ogg_read_close(struct FormatContext *)' (compare with line 1225) [MISRA
+    C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\..\src\oggdec.c(1225) : Info 830: Location cited in prior message
+                    _
+		free(ogg);
+..\..\..\..\src\oggdec.c(1508) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                    _
+		free(s->inputBuf.buf);
+..\..\..\..\src\oggdec.c(1514) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+            _
+	free(s);
+..\..\..\..\src\oggdec.c(1518) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                              _
+	*buf = s->cur_pkt.data;
+..\..\..\..\src\oggdec.c(1531) : Error 64: Type mismatch (assignment) (ptrs to
+    signed/unsigned)
+                              _
+		ogg_reset(ogg);
+..\..\..\..\src\oggdec.c(1547) : Warning 534: Ignoring return value of function
+    'ogg_reset(struct ogg *)' (compare with line 545) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\..\..\src\oggdec.c(545) : Info 830: Location cited in prior message
+                                   _
+	s = (FormatContext *)malloc(sizeof(FormatContext));
+..\..\..\..\src\oggdec.c(1570) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                  _
+	ogg = (struct ogg *)malloc(sizeof(struct ogg));
+..\..\..\..\src\oggdec.c(1574) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                    _
+		free(s);
+..\..\..\..\src\oggdec.c(1577) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                      _
+	s->duration = NOPTS_VALUE;
+..\..\..\..\src\oggdec.c(1583) : Warning 569: Loss of information (assignment)
+    (64 bits to 63 bits)
+                                                 _
+	s->inputBuf.buf = (unsigned char *)malloc(s->inputBuf.bufSize);
+..\..\..\..\src\oggdec.c(1585) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                    _
+		free(ogg);
+..\..\..\..\src\oggdec.c(1588) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                    _
+		free(s);
+..\..\..\..\src\oggdec.c(1590) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                       _
+		return NULL;
+..\..\..\..\src\oggdec.c(1592) : Warning 438: Last value assigned to variable
+    's' (defined at line 1561) not used [MISRA C++ Rule 0-1-6], [MISRA C++
+    Rules 0-1-6 and 0-1-9]
+..\..\..\..\src\oggdec.c(1561) : Info 830: Location cited in prior message
+                       _
+		return NULL;
+..\..\..\..\src\oggdec.c(1592) : Warning 438: Last value assigned to variable
+    'ogg' (defined at line 1562) not used [MISRA C++ Rule 0-1-6], [MISRA C++
+    Rules 0-1-6 and 0-1-9]
+..\..\..\..\src\oggdec.c(1562) : Info 830: Location cited in prior message
+                    _
+		free(ogg);
+..\..\..\..\src\oggdec.c(1599) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                    _
+		free(s);
+..\..\..\..\src\oggdec.c(1601) : Warning 586: function 'free' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                       _
+		return NULL;
+..\..\..\..\src\oggdec.c(1603) : Warning 438: Last value assigned to variable
+    's' (defined at line 1561) not used [MISRA C++ Rule 0-1-6], [MISRA C++
+    Rules 0-1-6 and 0-1-9]
+..\..\..\..\src\oggdec.c(1561) : Info 830: Location cited in prior message
+                       _
+		return NULL;
+..\..\..\..\src\oggdec.c(1603) : Warning 438: Last value assigned to variable
+    'ogg' (defined at line 1562) not used [MISRA C++ Rule 0-1-6], [MISRA C++
+    Rules 0-1-6 and 0-1-9]
+..\..\..\..\src\oggdec.c(1562) : Info 830: Location cited in prior message
+_
+}
+..\..\..\..\src\oggdec.c(1620) : Warning 529: Symbol 'probe_buffer' (line 1563)
+    not subsequently referenced [MISRA C++ Rule 0-1-3], [MISRA C++ Rule 0-1-4]
+..\..\..\..\src\oggdec.c(1563) : Info 830: Location cited in prior message
+
+--- Module:   ..\..\..\..\src\oggparseflac.c (C)
+                                                                                                                 _
+			pts = gp * s->streams[i]->codec_time_base.num * 1000 / s->streams[i]->codec_time_base.den;
+..\..\..\..\src\oggdec.h(379) : Warning 573: Signed-unsigned mix with divide
+_
+}
+..\..\..\..\src\get_bits.h(88) : Warning 438: Last value assigned to variable
+    're_cache' (defined at line 84) not used [MISRA C++ Rule 0-1-6], [MISRA C++
+    Rules 0-1-6 and 0-1-9]
+..\..\..\..\src\get_bits.h(84) : Info 830: Location cited in prior message
+_
+}
+..\..\..\..\src\get_bits.h(88) : Warning 550: Symbol 're_cache' (line 84) not
+    accessed [MISRA C++ Rule 0-1-4]
+..\..\..\..\src\get_bits.h(84) : Info 830: Location cited in prior message
+                                       _
+    s->buffer_end= buffer + buffer_size;
+..\..\..\..\src\get_bits.h(122) : Warning 613: Possible use of null pointer
+    'buffer' in left argument to operator 'ptr+int' [Reference: file
+    ..\..\..\..\src\get_bits.h: line 117]
+..\..\..\..\src\get_bits.h(117) : Info 831: Reference cited in prior message
+                                             _
+    s->samples  = get_bits_long(&gb, 32) << 4;
+..\..\..\..\src\oggparseflac.c(57) : Warning 647: Suspicious truncation
+                              _
+        st->extradata = malloc(FLAC_STREAMINFO_SIZE + INPUT_BUFFER_PADDING_SIZE);
+..\..\..\..\src\oggparseflac.c(98) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                                                  _
+        vorbis_comment (s, &st->metadata, os->buf + os->pstart + 4, os->psize - 4);
+..\..\..\..\src\oggparseflac.c(105) : Warning 534: Ignoring return value of
+    function 'vorbis_comment(struct FormatContext *, struct Metadata **, const
+    unsigned char *, int)' (compare with line 355, file ..\..\..\..\src\oggdec.h,
+    module ..\..\..\..\src\oggdec.c) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\..\..\src\oggdec.h(355) : Info 830: Location cited in prior message
+                                      _
+		st->extradata = malloc(FLAC_STREAMINFO_SIZE + INPUT_BUFFER_PADDING_SIZE);
+..\..\..\..\src\oggparseflac.c(121) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                  _
+	streaminfo_start = (char*)st->extradata + INPUT_BUFFER_PADDING_SIZE;
+..\..\..\..\src\oggparseflac.c(134) : Error 64: Type mismatch (assignment)
+    (ptrs to signed/unsigned)
+
+--- Module:   ..\..\..\..\src\oggparseogm.c (C)
+                                                                                                                 _
+			pts = gp * s->streams[i]->codec_time_base.num * 1000 / s->streams[i]->codec_time_base.den;
+..\..\..\..\src\oggdec.h(379) : Warning 573: Signed-unsigned mix with divide
+                                              _
+            bytestream_get_buffer(&p, acid, 4);
+..\..\..\..\src\oggparseogm.c(68) : Warning 534: Ignoring return value of
+    function 'bytestream_get_buffer(const unsigned char **, unsigned char *,
+    unsigned int)' (compare with line 470, file ..\..\..\..\src\oggdec.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\..\src\oggdec.h(470) : Info 830: Location cited in prior message
+                             _
+            cid = strtol(acid, NULL, 16);
+..\..\..\..\src\oggparseogm.c(70) : Error 64: Type mismatch (arg. no. 1) (ptrs
+    to qualification,signed/unsigned)
+                                                              _
+            vorbis_comment(s, &st->metadata, p+7, os->psize-8);
+..\..\..\..\src\oggparseogm.c(100) : Warning 534: Ignoring return value of
+    function 'vorbis_comment(struct FormatContext *, struct Metadata **, const
+    unsigned char *, int)' (compare with line 355, file ..\..\..\..\src\oggdec.h,
+    module ..\..\..\..\src\oggdec.c) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\..\..\src\oggdec.h(355) : Info 830: Location cited in prior message
+            _
+    return 1;
+..\..\..\..\src\oggparseogm.c(103) : Warning 438: Last value assigned to
+    variable 'default_len' (defined at line 44) not used [MISRA C++ Rule
+    0-1-6], [MISRA C++ Rules 0-1-6 and 0-1-9]
+..\..\..\..\src\oggparseogm.c(44) : Info 830: Location cited in prior message
+_
+}
+..\..\..\..\src\oggparseogm.c(104) : Warning 550: Symbol 'default_len' (line
+    44) not accessed [MISRA C++ Rule 0-1-4]
+..\..\..\..\src\oggparseogm.c(44) : Info 830: Location cited in prior message
+
+--- Module:   ..\..\..\..\src\oggparsespeex.c (C)
+                                                                                                                 _
+			pts = gp * s->streams[i]->codec_time_base.num * 1000 / s->streams[i]->codec_time_base.den;
+..\..\..\..\src\oggdec.h(379) : Warning 573: Signed-unsigned mix with divide
+                     _
+        spxp = malloc(sizeof(*spxp));
+..\..\..\..\src\oggparsespeex.c(16) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                            _
+		memset(spxp,0,sizeof(*spxp));
+..\..\..\..\src\oggparsespeex.c(17) : Warning 668: Possibly passing a null
+    pointer to function 'memset(void *, int, unsigned int)', arg. no. 1
+    [Reference: file ..\..\..\..\src\oggparsespeex.c: line 16]
+..\..\..\..\src\oggparsespeex.c(16) : Info 831: Reference cited in prior
+    message
+                              _
+        st->extradata = malloc(st->extradata_size + INPUT_BUFFER_PADDING_SIZE);
+..\..\..\..\src\oggparsespeex.c(38) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                      _
+        vorbis_comment(s, &st->metadata, p, os->psize);
+..\..\..\..\src\oggparsespeex.c(44) : Warning 534: Ignoring return value of
+    function 'vorbis_comment(struct FormatContext *, struct Metadata **, const
+    unsigned char *, int)' (compare with line 355, file ..\..\..\..\src\oggdec.h,
+    module ..\..\..\..\src\oggdec.c) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\..\..\src\oggdec.h(355) : Info 830: Location cited in prior message
+                                                               _
+    if (os->flags & OGG_FLAG_EOS && os->lastpts != NOPTS_VALUE &&
+..\..\..\..\src\oggparsespeex.c(67) : Warning 650: Constant
+    '0x8000000000000000' out of range for operator '!='
+                                                                                                                _
+        spxp->final_packet_duration = (int)(os->granule - os->lastpts - packet_size * (ogg_page_packets(os) - 1));
+..\..\..\..\src\oggparsespeex.c(72) : Warning 647: Suspicious truncation
+                                                                                             _
+        os->pduration = (unsigned int)(os->granule - packet_size * (ogg_page_packets(os) - 1));
+..\..\..\..\src\oggparsespeex.c(77) : Warning 647: Suspicious truncation
+
+--- Module:   ..\..\..\..\src\oggparsevorbis.c (C)
+                                                                                                                 _
+			pts = gp * s->streams[i]->codec_time_base.num * 1000 / s->streams[i]->codec_time_base.den;
+..\..\..\..\src\oggdec.h(379) : Warning 573: Signed-unsigned mix with divide
+                    _
+    for(; i<m->count; i++){
+..\..\..\..\src\oggparsevorbis.c(14) : Warning 574: Signed-unsigned mix with
+    relational
+                     _
+        m=*pm= malloc(sizeof(*m));
+..\..\..\..\src\oggparsevorbis.c(35) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                      _
+		memset(m,0,sizeof(*m));
+..\..\..\..\src\oggparsevorbis.c(36) : Warning 668: Possibly passing a null
+    pointer to function 'memset(void *, int, unsigned int)', arg. no. 1
+    [Reference: file ..\..\..\..\src\oggparsevorbis.c: line 35]
+..\..\..\..\src\oggparsevorbis.c(35) : Info 831: Reference cited in prior
+    message
+            _
+        free(tag->value);
+..\..\..\..\src\oggparsevorbis.c(42) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+            _
+        free(tag->key);
+..\..\..\..\src\oggparsevorbis.c(43) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                 _
+        MetadataTag *tmp= realloc(m->elems, (m->count+1) * sizeof(*m->elems));
+..\..\..\..\src\oggparsevorbis.c(46) : Warning 586: function 'realloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+            _
+        free(m->elems);
+..\..\..\..\src\oggparsevorbis.c(77) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+            _
+        free(&pm);
+..\..\..\..\src\oggparsevorbis.c(78) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+..\..\..\..\src\oggparsevorbis.c(78) : Warning 424: Inappropriate deallocation
+    (free) for 'auto' data
+                     _
+        tab = realloc(tab, nb_alloc * sizeof(unsigned long));
+..\..\..\..\src\oggparsevorbis.c(97) : Warning 586: function 'realloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                    _
+    tab[nb++] = elem;
+..\..\..\..\src\oggparsevorbis.c(100) : Warning 613: Possible use of null
+    pointer 'tab' in left argument to operator '[' [Reference: file
+    ..\..\..\..\src\oggparsevorbis.c: line 97]
+..\..\..\..\src\oggparsevorbis.c(97) : Info 831: Reference cited in prior
+    message
+                             _
+    for(i=0; i<s->nb_chapters; i++)
+..\..\..\..\src\oggparsevorbis.c(109) : Warning 574: Signed-unsigned mix with
+    relational
+                       _
+        chapter= malloc(sizeof(Chapter));
+..\..\..\..\src\oggparsevorbis.c(114) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                _
+		memset(chapter,0,sizeof(Chapter));
+..\..\..\..\src\oggparsevorbis.c(117) : Warning 539: Did not expect positive
+    indentation from line 115
+..\..\..\..\src\oggparsevorbis.c(115) : Info 830: Location cited in prior
+    message
+                                 _
+        dynarray_add(&s->chapters, &s->nb_chapters, chapter);
+..\..\..\..\src\oggparsevorbis.c(118) : Error 64: Type mismatch (arg. no. 1)
+    (unsigned long ** = struct Chapter ***)
+..\..\..\..\src\oggparsevorbis.c(118) : Error 64: Type mismatch (arg. no. 2)
+    (ptrs to signed/unsigned)
+..\..\..\..\src\oggparsevorbis.c(118) : Error 64: Type mismatch (arg. no. 3)
+    (unsigned long = pointer)
+                                                        _
+    metadata_set2(&chapter->metadata, "title", title, 0);
+..\..\..\..\src\oggparsevorbis.c(121) : Warning 534: Ignoring return value of
+    function 'metadata_set2(struct Metadata **, const char *, const char *,
+    int)' (compare with line 28) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\..\..\src\oggparsevorbis.c(28) : Info 830: Location cited in prior
+    message
+                                                  _
+    int i, cnum, h, m, s, ms, keylen = (int)strlen(key);
+..\..\..\..\src\oggparsevorbis.c(146) : Warning 586: function 'strlen' is
+    deprecated. [MISRA C++ Rule 18-0-5]
+..\..\..\..\src\oggparsevorbis.c(146) : Error 64: Type mismatch (arg. no. 1)
+    (ptrs to qualification,signed/unsigned)
+                                _
+    if (keylen < 9 || sscanf(key, "CHAPTER%02d", &cnum) != 1)
+..\..\..\..\src\oggparsevorbis.c(149) : Error 64: Type mismatch (arg. no. 1)
+    (ptrs to qualification,signed/unsigned)
+                      _
+        if (sscanf(val, "%02d:%02d:%02d.%03d", &h, &m, &s, &ms) < 4)
+..\..\..\..\src\oggparsevorbis.c(153) : Error 64: Type mismatch (arg. no. 1)
+    (ptrs to qualification,signed/unsigned)
+                                                    _
+                       ms + 1000*(s + 60*(m + 60*h)),
+..\..\..\..\src\oggparsevorbis.c(157) : Warning 647: Suspicious truncation
+                       _
+                       NOPTS_VALUE, NULL);
+..\..\..\..\src\oggparsevorbis.c(158) : Warning 569: Loss of information (arg.
+    no. 5) (64 bits to 63 bits)
+..\..\..\..\src\oggparsevorbis.c(158) : Warning 534: Ignoring return value of
+    function 'new_chapter(struct FormatContext *, int, struct Rational, long
+    long, long long, const char *)' (compare with line 104) [MISRA C++ Rules
+    0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\..\src\oggparsevorbis.c(104) : Info 830: Location cited in prior
+    message
+            _
+        free(val);
+..\..\..\..\src\oggparsevorbis.c(159) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                      _
+    } else if (!strcmp(key+9, "NAME")) {
+..\..\..\..\src\oggparsevorbis.c(160) : Warning 586: function 'strcmp' is
+    deprecated. [MISRA C++ Rule 18-0-5]
+..\..\..\..\src\oggparsevorbis.c(160) : Error 64: Type mismatch (arg. no. 1)
+    (ptrs to qualification,signed/unsigned)
+                                                      _
+        metadata_set2(&chapter->metadata, "title", val,
+..\..\..\..\src\oggparsevorbis.c(169) : Error 64: Type mismatch (arg. no. 3)
+    (ptrs to qualification,signed/unsigned)
+                                                  _
+                         METADATA_DONT_STRDUP_VAL);
+..\..\..\..\src\oggparsevorbis.c(170) : Warning 534: Ignoring return value of
+    function 'metadata_set2(struct Metadata **, const char *, const char *,
+    int)' (compare with line 28) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\..\..\src\oggparsevorbis.c(28) : Info 830: Location cited in prior
+    message
+        _
+    free(key);
+..\..\..\..\src\oggparsevorbis.c(174) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+             _
+        t = p;
+..\..\..\..\src\oggparsevorbis.c(206) : Error 64: Type mismatch (assignment)
+    (ptrs to signed/unsigned)
+                       _
+            tt = malloc(tl + 1);
+..\..\..\..\src\oggparsevorbis.c(221) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                       _
+            ct = malloc(vl + 1);
+..\..\..\..\src\oggparsevorbis.c(222) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                    _
+                free(tt);
+..\..\..\..\src\oggparsevorbis.c(224) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                    _
+                free(ct);
+..\..\..\..\src\oggparsevorbis.c(225) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                   _
+            if (!ogm_chapter(as, tt, ct))
+..\..\..\..\src\oggparsevorbis.c(239) : Error 64: Type mismatch (arg. no. 2)
+    (ptrs to signed/unsigned)
+..\..\..\..\src\oggparsevorbis.c(239) : Error 64: Type mismatch (arg. no. 3)
+    (ptrs to signed/unsigned)
+                                                            _
+                                   METADATA_DONT_STRDUP_VAL);
+..\..\..\..\src\oggparsevorbis.c(242) : Warning 534: Ignoring return value of
+    function 'metadata_set2(struct Metadata **, const char *, const char *,
+    int)' (compare with line 28) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\..\..\src\oggparsevorbis.c(28) : Info 830: Location cited in prior
+    message
+                       _
+    ptr = *buf = malloc(len + len/255 + 64);
+..\..\..\..\src\oggparsevorbis.c(280) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                          _
+	memset(ptr, 0, len + len/255 + 64);
+..\..\..\..\src\oggparsevorbis.c(281) : Warning 668: Possibly passing a null
+    pointer to function 'memset(void *, int, unsigned int)', arg. no. 1
+    [Reference: file ..\..\..\..\src\oggparsevorbis.c: line 280]
+..\..\..\..\src\oggparsevorbis.c(280) : Info 831: Reference cited in prior
+    message
+            _
+        free(priv->packet[i]);
+..\..\..\..\src\oggparsevorbis.c(290) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                  _
+    *buf = realloc(*buf, offset + INPUT_BUFFER_PADDING_SIZE);
+..\..\..\..\src\oggparsevorbis.c(293) : Warning 586: function 'realloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                            _
+        os->private = malloc(sizeof(struct oggvorbis_private));
+..\..\..\..\src\oggparsevorbis.c(314) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                _
+		memset(os->private, 0 , sizeof(struct oggvorbis_private));
+..\..\..\..\src\oggparsevorbis.c(317) : Warning 539: Did not expect positive
+    indentation from line 315
+..\..\..\..\src\oggparsevorbis.c(315) : Info 830: Location cited in prior
+    message
+                                        _
+    priv->packet[pkt_type >> 1] = malloc(os->psize);
+..\..\..\..\src\oggparsevorbis.c(331) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                     _
+#... ar*)(priv->packet[1] + new_len - 5))[1] = (0)>>8; ((unsigned char*)(priv->
+                WL32(priv->packet[1] + new_len - 5, 0);
+..\..\..\..\src\oggparsevorbis.c(377) : Warning 572: Excessive shift value
+    (precision 1 shifted right by 8) [MISRA C++ Rule 5-8-1]
+                                                     _
+#... r*)(priv->packet[1] + new_len - 5))[2] = (0)>>16; ((unsigned char*)(priv->
+                WL32(priv->packet[1] + new_len - 5, 0);
+..\..\..\..\src\oggparsevorbis.c(377) : Warning 572: Excessive shift value
+    (precision 1 shifted right by 16) [MISRA C++ Rule 5-8-1]
+                                                     _
+#... r*)(priv->packet[1] + new_len - 5))[3] = (0)>>24; } while(0)
+                WL32(priv->packet[1] + new_len - 5, 0);
+..\..\..\..\src\oggparsevorbis.c(377) : Warning 572: Excessive shift value
+    (precision 1 shifted right by 24) [MISRA C++ Rule 5-8-1]
+
+--- Module:   ..\..\..\..\src\vorbiscomment.c (C)
+                                                                                                                 _
+			pts = gp * s->streams[i]->codec_time_base.num * 1000 / s->streams[i]->codec_time_base.den;
+..\..\..\..\src\oggdec.h(379) : Warning 573: Signed-unsigned mix with divide
+                      _
+    len += (int)strlen(vendor_string);
+..\..\..\..\src\vorbiscomment.c(14) : Warning 586: function 'strlen' is
+    deprecated. [MISRA C++ Rule 18-0-5]
+                                  _
+            len += 4 + (int)strlen(tag->key) + 1 + (int)strlen(tag->value);
+..\..\..\..\src\vorbiscomment.c(19) : Warning 586: function 'strlen' is
+    deprecated. [MISRA C++ Rule 18-0-5]
+..\..\..\..\src\vorbiscomment.c(19) : Warning 586: function 'strlen' is
+    deprecated. [MISRA C++ Rule 18-0-5]
+                                                     _
+    bytestream_put_le32(p, (const unsigned int)strlen(vendor_string));
+..\..\..\..\src\vorbiscomment.c(29) : Warning 586: function 'strlen' is
+    deprecated. [MISRA C++ Rule 18-0-5]
+                                          _
+    bytestream_put_buffer(p, vendor_string, (unsigned int)strlen(vendor_string));
+..\..\..\..\src\vorbiscomment.c(30) : Error 64: Type mismatch (arg. no. 2)
+    (ptrs to signed/unsigned)
+..\..\..\..\src\vorbiscomment.c(30) : Warning 586: function 'strlen' is
+    deprecated. [MISRA C++ Rule 18-0-5]
+                                                    _
+            unsigned int len1 = (unsigned int)strlen(tag->key);
+..\..\..\..\src\vorbiscomment.c(35) : Warning 586: function 'strlen' is
+    deprecated. [MISRA C++ Rule 18-0-5]
+                                                    _
+            unsigned int len2 = (unsigned int)strlen(tag->value);
+..\..\..\..\src\vorbiscomment.c(36) : Warning 586: function 'strlen' is
+    deprecated. [MISRA C++ Rule 18-0-5]
+                                             _
+            bytestream_put_buffer(p, tag->key, len1);
+..\..\..\..\src\vorbiscomment.c(38) : Error 64: Type mismatch (arg. no. 2)
+    (ptrs to qualification,signed/unsigned)
+                                               _
+            bytestream_put_buffer(p, tag->value, len2);
+..\..\..\..\src\vorbiscomment.c(40) : Error 64: Type mismatch (arg. no. 2)
+    (ptrs to qualification,signed/unsigned)
+
+--- Global Wrap-up
+
+Note 974: Worst case function for stack usage: 'get_gcd' is recursive, loop
+    contains call to 'get_gcd'. See +stack for a full report. [MISRA C++ Rule
+    7-5-4]

@@ -1,0 +1,592 @@
+
+--- Module:   ..\..\..\src\LibAVIDemux\avidemux.c (C)
+                   _
+      ptr = realloc((void *)AVI->idx,(AVI->max_idx+4096)*16);
+..\..\..\src\LibAVIDemux\avidemux.c(43) : Warning 586: function 'realloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+_
+{
+..\..\..\src\LibAVIDemux\avidemux.c(58) : Warning 578: Declaration of symbol
+    'byte' hides symbol 'byte' (line 145, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\PlatformSDK\Include\rpcndr.h) [MISRA C++ Rule 2-10-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\rpcndr.h(145)
+    : Info 830: Location cited in prior message
+                                               _
+		if(avi->audio_index[n].tot>byte)
+..\..\..\src\LibAVIDemux\avidemux.c(68) : Warning 574: Signed-unsigned mix with
+    relational
+                                                                                               _
+			n = avi->audio_pos_byteoffs % (avi->audio_channels * avi->audio_bits/8);
+..\..\..\src\LibAVIDemux\avidemux.c(94) : Warning 573: Signed-unsigned mix with
+    divide
+                                            _
+	hdrl_data = (unsigned char *) malloc(hdrl_len);
+..\..\..\src\LibAVIDemux\avidemux.c(116) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                    _
+		free(hdrl_data);
+..\..\..\src\LibAVIDemux\avidemux.c(121) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                                            _
+					avi->vids_extra_data = (char*)malloc(avi->vids_extra_data_len);
+..\..\..\src\LibAVIDemux\avidemux.c(194) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                       _
+						return E_OUTOFMEMORY;
+..\..\..\src\LibAVIDemux\avidemux.c(197) : Warning 429: Custodial pointer
+    'hdrl_data' (line 107) has not been freed or returned
+..\..\..\src\LibAVIDemux\avidemux.c(107) : Info 830: Location cited in prior
+    message
+                                                                            _
+					avi->auds_extra_data = (char*)malloc(avi->auds_extra_data_len);
+..\..\..\src\LibAVIDemux\avidemux.c(223) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                       _
+						return E_OUTOFMEMORY;
+..\..\..\src\LibAVIDemux\avidemux.c(226) : Warning 429: Custodial pointer
+    'hdrl_data' (line 107) has not been freed or returned
+..\..\..\src\LibAVIDemux\avidemux.c(107) : Info 830: Location cited in prior
+    message
+                                                                            _
+					avi->auds_extra_data = (char*)malloc(avi->auds_extra_data_len);
+..\..\..\src\LibAVIDemux\avidemux.c(233) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                       _
+						return E_OUTOFMEMORY;
+..\..\..\src\LibAVIDemux\avidemux.c(236) : Warning 429: Custodial pointer
+    'hdrl_data' (line 107) has not been freed or returned
+..\..\..\src\LibAVIDemux\avidemux.c(107) : Info 830: Location cited in prior
+    message
+                                            _
+					free(avi->pVids_indx_entry);
+..\..\..\src\LibAVIDemux\avidemux.c(254) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                                                         _
+				avi->pVids_indx_entry = (aviSuperIndexChunkEntry *)malloc(sizeof(aviSuperIndexChunkEntry) * avi->vids_indx_hdr.dwEntriesInUse);
+..\..\..\src\LibAVIDemux\avidemux.c(260) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                               _
+					return E_OUTOFMEMORY;
+..\..\..\src\LibAVIDemux\avidemux.c(263) : Warning 429: Custodial pointer
+    'hdrl_data' (line 107) has not been freed or returned
+..\..\..\src\LibAVIDemux\avidemux.c(107) : Info 830: Location cited in prior
+    message
+                                            _
+					free(avi->pAuds_indx_entry);
+..\..\..\src\LibAVIDemux\avidemux.c(272) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                                                         _
+				avi->pAuds_indx_entry = (aviSuperIndexChunkEntry *)malloc(sizeof(aviSuperIndexChunkEntry) * avi->auds_indx_hdr.dwEntriesInUse);
+..\..\..\src\LibAVIDemux\avidemux.c(278) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                               _
+					return E_OUTOFMEMORY;
+..\..\..\src\LibAVIDemux\avidemux.c(281) : Warning 429: Custodial pointer
+    'hdrl_data' (line 107) has not been freed or returned
+..\..\..\src\LibAVIDemux\avidemux.c(107) : Info 830: Location cited in prior
+    message
+            _
+	free(hdrl_data);
+..\..\..\src\LibAVIDemux\avidemux.c(307) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+               _
+	return S_OK;
+..\..\..\src\LibAVIDemux\avidemux.c(318) : Warning 438: Last value assigned to
+    variable 'vids_strf_seen' (defined at line 109) not used [MISRA C++ Rule
+    0-1-6], [MISRA C++ Rules 0-1-6 and 0-1-9]
+..\..\..\src\LibAVIDemux\avidemux.c(109) : Info 830: Location cited in prior
+    message
+               _
+	return S_OK;
+..\..\..\src\LibAVIDemux\avidemux.c(318) : Warning 438: Last value assigned to
+    variable 'auds_strf_seen' (defined at line 111) not used [MISRA C++ Rule
+    0-1-6], [MISRA C++ Rules 0-1-6 and 0-1-9]
+..\..\..\src\LibAVIDemux\avidemux.c(111) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibAVIDemux\avidemux.c(319) : Warning 550: Symbol 'vids_strf_seen'
+    (line 109) not accessed [MISRA C++ Rule 0-1-4]
+..\..\..\src\LibAVIDemux\avidemux.c(109) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibAVIDemux\avidemux.c(319) : Warning 550: Symbol 'auds_strf_seen'
+    (line 111) not accessed [MISRA C++ Rule 0-1-4]
+..\..\..\src\LibAVIDemux\avidemux.c(111) : Info 830: Location cited in prior
+    message
+                                                                           _
+				SetFilePointer(avi->hFile,n,0,FILE_CURRENT);
+..\..\..\src\LibAVIDemux\avidemux.c(361) : Warning 534: Ignoring return value
+    of function 'SetFilePointer(void *, long, long *, unsigned long)' (compare
+    with line 3643, file C:\Program Files\Microsoft Visual Studio
+    8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3643)
+    : Info 830: Location cited in prior message
+                                                                           _
+				SetFilePointer(avi->hFile,n,0,FILE_CURRENT);
+..\..\..\src\LibAVIDemux\avidemux.c(364) : Warning 534: Ignoring return value
+    of function 'SetFilePointer(void *, long, long *, unsigned long)' (compare
+    with line 3643, file C:\Program Files\Microsoft Visual Studio
+    8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3643)
+    : Info 830: Location cited in prior message
+                                                                  _
+			avi->idx = (unsigned char((*)[16])) malloc(n);
+..\..\..\src\LibAVIDemux\avidemux.c(369) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+..\..\..\src\LibAVIDemux\avidemux.c(369) : Warning 433: Allocated area not
+    large enough for pointer
+                        _
+			}				
+..\..\..\src\LibAVIDemux\avidemux.c(386) : Warning 550: Symbol 'dwError' (line
+    383) not accessed [MISRA C++ Rule 0-1-4]
+..\..\..\src\LibAVIDemux\avidemux.c(383) : Info 830: Location cited in prior
+    message
+    _
+    {
+..\..\..\src\LibAVIDemux\avidemux.c(409) : Warning 525: Negative indentation
+    from line 408
+..\..\..\src\LibAVIDemux\avidemux.c(408) : Info 830: Location cited in prior
+    message
+    _
+    }
+..\..\..\src\LibAVIDemux\avidemux.c(413) : Warning 525: Negative indentation
+    from line 408
+..\..\..\src\LibAVIDemux\avidemux.c(408) : Info 830: Location cited in prior
+    message
+    _
+    else
+..\..\..\src\LibAVIDemux\avidemux.c(421) : Warning 525: Negative indentation
+    from line 414
+..\..\..\src\LibAVIDemux\avidemux.c(414) : Info 830: Location cited in prior
+    message
+                            _
+	AVI_GetDuration(avi);	
+..\..\..\src\LibAVIDemux\avidemux.c(445) : Warning 534: Ignoring return value
+    of function 'AVI_GetDuration(AVI_T *)' (compare with line 394) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibAVIDemux\avidemux.c(394) : Info 830: Location cited in prior
+    message
+                                                                                                                _
+			for(nCurSuperIndexEntryNo = 0; nCurSuperIndexEntryNo < pSuperIndexHeader->dwEntriesInUse; nCurSuperIndexEntryNo ++)
+..\..\..\src\LibAVIDemux\avidemux.c(494) : Warning 574: Signed-unsigned mix
+    with relational
+                                                                                                                                                                                  _
+				if(0xFFFFFFFF == SetFilePointer(avi->hFile,pSuperIndexEntry[nCurSuperIndexEntryNo].dwOffsetLow,&pSuperIndexEntry[nCurSuperIndexEntryNo].dwOffsetHi,FILE_BEGIN))
+..\..\..\src\LibAVIDemux\avidemux.c(501) : Error 64: Type mismatch (arg. no. 3)
+    (ptrs to signed/unsigned)
+                                                                                     _
+					avi->video_index = (AVI_VIDEO_INDEX *) malloc(nvi*sizeof(AVI_VIDEO_INDEX));
+..\..\..\src\LibAVIDemux\avidemux.c(530) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                              _
+						AVI_Close(avi);
+..\..\..\src\LibAVIDemux\avidemux.c(533) : Warning 534: Ignoring return value
+    of function 'AVI_Close(AVI_T *)' (compare with line 257, file
+    ..\..\..\src\LibAVIDemux\avidemux.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibAVIDemux\avidemux.h(257) : Info 830: Location cited in prior
+    message
+                                                                                     _
+					avi->audio_index = (AVI_AUDIO_INDEX *) malloc(nai*sizeof(AVI_AUDIO_INDEX));
+..\..\..\src\LibAVIDemux\avidemux.c(546) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                              _
+						AVI_Close(avi);
+..\..\..\src\LibAVIDemux\avidemux.c(549) : Warning 534: Ignoring return value
+    of function 'AVI_Close(AVI_T *)' (compare with line 257, file
+    ..\..\..\src\LibAVIDemux\avidemux.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibAVIDemux\avidemux.h(257) : Info 830: Location cited in prior
+    message
+                                                                                                                _
+			for(nCurSuperIndexEntryNo = 0; nCurSuperIndexEntryNo < pSuperIndexHeader->dwEntriesInUse; nCurSuperIndexEntryNo ++)
+..\..\..\src\LibAVIDemux\avidemux.c(558) : Warning 574: Signed-unsigned mix
+    with relational
+                                                                                                                                                                                  _
+				if(0xFFFFFFFF == SetFilePointer(avi->hFile,pSuperIndexEntry[nCurSuperIndexEntryNo].dwOffsetLow,&pSuperIndexEntry[nCurSuperIndexEntryNo].dwOffsetHi,FILE_BEGIN))
+..\..\..\src\LibAVIDemux\avidemux.c(565) : Error 64: Type mismatch (arg. no. 3)
+    (ptrs to signed/unsigned)
+                                                                                         _
+				pStandardIndexEntry = (aviStandardIndexChunkEntry*)malloc(stStandardIndexHeader.dwEntriesInUse * sizeof(aviStandardIndexChunkEntry));
+..\..\..\src\LibAVIDemux\avidemux.c(576) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                               _
+					return E_FAIL;
+..\..\..\src\LibAVIDemux\avidemux.c(582) : Warning 429: Custodial pointer
+    'pStandardIndexEntry' (line 456) has not been freed or returned
+..\..\..\src\LibAVIDemux\avidemux.c(456) : Info 830: Location cited in prior
+    message
+                                                                                                                                         _
+					for(nCurStandardIndexEntryNo = 0; nCurStandardIndexEntryNo < stStandardIndexHeader.dwEntriesInUse; nCurStandardIndexEntryNo++)
+..\..\..\src\LibAVIDemux\avidemux.c(586) : Warning 574: Signed-unsigned mix
+    with relational
+                                                                                      _
+						video_tot += avi->video_index[nvi].len;
+..\..\..\src\LibAVIDemux\avidemux.c(603) : Warning 644: Variable 'video_tot'
+    (line 438) may not have been initialized
+..\..\..\src\LibAVIDemux\avidemux.c(438) : Info 830: Location cited in prior
+    message
+                                                                                                                                         _
+					for(nCurStandardIndexEntryNo = 0; nCurStandardIndexEntryNo < stStandardIndexHeader.dwEntriesInUse; nCurStandardIndexEntryNo++)
+..\..\..\src\LibAVIDemux\avidemux.c(614) : Warning 574: Signed-unsigned mix
+    with relational
+                                                                                     _
+						avi->audio_index[nai].tot = audio_tot;
+..\..\..\src\LibAVIDemux\avidemux.c(631) : Warning 644: Variable 'audio_tot'
+    (line 437) may not have been initialized
+..\..\..\src\LibAVIDemux\avidemux.c(437) : Info 830: Location cited in prior
+    message
+                                    _
+				free(pStandardIndexEntry);
+..\..\..\src\LibAVIDemux\avidemux.c(641) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                                           _
+				SetFilePointer(avi->hFile,pos,0,FILE_BEGIN);
+..\..\..\src\LibAVIDemux\avidemux.c(673) : Warning 534: Ignoring return value
+    of function 'SetFilePointer(void *, long, long *, unsigned long)' (compare
+    with line 3643, file C:\Program Files\Microsoft Visual Studio
+    8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3643)
+    : Info 830: Location cited in prior message
+                                                                                                     _
+					SetFilePointer(avi->hFile,pos+avi->movi_start-4,0,FILE_BEGIN);
+..\..\..\src\LibAVIDemux\avidemux.c(680) : Warning 534: Ignoring return value
+    of function 'SetFilePointer(void *, long, long *, unsigned long)' (compare
+    with line 3643, file C:\Program Files\Microsoft Visual Studio
+    8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3643)
+    : Info 830: Location cited in prior message
+                                                                                        _
+				SetFilePointer(avi->hFile, avi->movi_start,0,FILE_BEGIN);
+..\..\..\src\LibAVIDemux\avidemux.c(695) : Warning 534: Ignoring return value
+    of function 'SetFilePointer(void *, long, long *, unsigned long)' (compare
+    with line 3643, file C:\Program Files\Microsoft Visual Studio
+    8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3643)
+    : Info 830: Location cited in prior message
+                                                                                           _
+						SetFilePointer(avi->hFile,4,0,FILE_CURRENT);
+..\..\..\src\LibAVIDemux\avidemux.c(711) : Warning 534: Ignoring return value
+    of function 'SetFilePointer(void *, long, long *, unsigned long)' (compare
+    with line 3643, file C:\Program Files\Microsoft Visual Studio
+    8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3643)
+    : Info 830: Location cited in prior message
+                                                                                                                               _
+						avi_add_index_entry(avi,data,0,SetFilePointer(avi->hFile,0,0,FILE_CURRENT)-8,n);
+..\..\..\src\LibAVIDemux\avidemux.c(719) : Warning 534: Ignoring return value
+    of function 'avi_add_index_entry(AVI_T *, unsigned char *, long, long,
+    long)' (compare with line 37) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\..\src\LibAVIDemux\avidemux.c(37) : Info 830: Location cited in prior
+    message
+                                                                                             _
+					SetFilePointer(avi->hFile,pad_even(n),0,FILE_CURRENT);
+..\..\..\src\LibAVIDemux\avidemux.c(724) : Warning 534: Ignoring return value
+    of function 'SetFilePointer(void *, long, long *, unsigned long)' (compare
+    with line 3643, file C:\Program Files\Microsoft Visual Studio
+    8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3643)
+    : Info 830: Location cited in prior message
+                                                                             _
+				avi->video_index = (AVI_VIDEO_INDEX *) malloc(nvi*sizeof(AVI_VIDEO_INDEX));
+..\..\..\src\LibAVIDemux\avidemux.c(743) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                                       _
+			  avi->audio_index = (AVI_AUDIO_INDEX *) malloc(nai*sizeof(AVI_AUDIO_INDEX));
+..\..\..\src\LibAVIDemux\avidemux.c(750) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                        _
+    AVI_GetDuration(avi);    
+..\..\..\src\LibAVIDemux\avidemux.c(802) : Warning 534: Ignoring return value
+    of function 'AVI_GetDuration(AVI_T *)' (compare with line 394) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibAVIDemux\avidemux.c(394) : Info 830: Location cited in prior
+    message
+                    _
+		free(avi->idx);
+..\..\..\src\LibAVIDemux\avidemux.c(806) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                              _
+	avi = (AVI_T *) malloc(sizeof(AVI_T));
+..\..\..\src\LibAVIDemux\avidemux.c(817) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                              _
+		AVI_Close(avi);
+..\..\..\src\LibAVIDemux\avidemux.c(828) : Warning 534: Ignoring return value
+    of function 'AVI_Close(AVI_T *)' (compare with line 257, file
+    ..\..\..\src\LibAVIDemux\avidemux.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibAVIDemux\avidemux.h(257) : Info 830: Location cited in prior
+    message
+                                                               _
+	SetFilePointer(avi->hFile,avi->movi_start,0,FILE_BEGIN);
+..\..\..\src\LibAVIDemux\avidemux.c(831) : Warning 534: Ignoring return value
+    of function 'SetFilePointer(void *, long, long *, unsigned long)' (compare
+    with line 3643, file C:\Program Files\Microsoft Visual Studio
+    8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3643)
+    : Info 830: Location cited in prior message
+                                                     _
+		avi->read_buf[i].pBuf = (char*)malloc(sizeof(char)*BUF_SIZE);
+..\..\..\src\LibAVIDemux\avidemux.c(835) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                    _
+		free(avi->pPacketBuffer);
+..\..\..\src\LibAVIDemux\avidemux.c(849) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                    _
+		free(avi->idx);
+..\..\..\src\LibAVIDemux\avidemux.c(858) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                    _
+		free(avi->video_index);
+..\..\..\src\LibAVIDemux\avidemux.c(863) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                    _
+		free(avi->audio_index);
+..\..\..\src\LibAVIDemux\avidemux.c(868) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                            _
+			free(avi->read_buf[i].pBuf);
+..\..\..\src\LibAVIDemux\avidemux.c(874) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                    _
+		free(avi->pVids_indx_entry);
+..\..\..\src\LibAVIDemux\avidemux.c(879) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                    _
+		free(avi->pAuds_indx_entry);
+..\..\..\src\LibAVIDemux\avidemux.c(884) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                    _
+		free(avi->vids_extra_data);
+..\..\..\src\LibAVIDemux\avidemux.c(889) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                    _
+		free(avi->auds_extra_data);
+..\..\..\src\LibAVIDemux\avidemux.c(894) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+            _
+	free(avi);
+..\..\..\src\LibAVIDemux\avidemux.c(897) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                                                                   _
+		SetFilePointer(avi->hFile, avi->video_index[pos].pos, &avi->video_index[pos].pos_hi, FILE_BEGIN);
+..\..\..\src\LibAVIDemux\avidemux.c(953) : Error 64: Type mismatch (arg. no. 3)
+    (ptrs to signed/unsigned)
+..\..\..\src\LibAVIDemux\avidemux.c(953) : Warning 534: Ignoring return value
+    of function 'SetFilePointer(void *, long, long *, unsigned long)' (compare
+    with line 3643, file C:\Program Files\Microsoft Visual Studio
+    8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3643)
+    : Info 830: Location cited in prior message
+                                                                     _
+					(buf[3]>=(unsigned char)0x00 && buf[3]<=(unsigned char)0x1f) ||	//video_object_start_code
+..\..\..\src\LibAVIDemux\avidemux.c(977) : Warning 685: Relational operator
+    '>=' always evaluates to 'true' [MISRA C++ Rule 0-1-1], [MISRA C++ Rule
+    0-1-2], [MISRA C++ Rule 0-1-9]
+..\..\..\src\LibAVIDemux\avidemux.c(977) : Warning 568: non-negative quantity
+    is never less than zero
+                                      _
+			unsigned int i;
+..\..\..\src\LibAVIDemux\avidemux.c(998) : Warning 578: Declaration of symbol
+    'i' hides symbol 'i' (line 924) [MISRA C++ Rule 2-10-2]
+..\..\..\src\LibAVIDemux\avidemux.c(924) : Info 830: Location cited in prior
+    message
+                _
+		}
+..\..\..\src\LibAVIDemux\avidemux.c(1022) : Warning 529: Symbol
+    'nal_ref_idc_mask' (line 994) not subsequently referenced [MISRA C++ Rule
+    0-1-3], [MISRA C++ Rule 0-1-4]
+..\..\..\src\LibAVIDemux\avidemux.c(994) : Info 830: Location cited in prior
+    message
+               _
+	return S_OK;
+..\..\..\src\LibAVIDemux\avidemux.c(1029) : Warning 438: Last value assigned to
+    variable 'i' (defined at line 924) not used [MISRA C++ Rule 0-1-6], [MISRA
+    C++ Rules 0-1-6 and 0-1-9]
+..\..\..\src\LibAVIDemux\avidemux.c(924) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibAVIDemux\avidemux.c(1030) : Warning 529: Symbol 'i' (line 924)
+    not subsequently referenced [MISRA C++ Rule 0-1-3], [MISRA C++ Rule 0-1-4]
+..\..\..\src\LibAVIDemux\avidemux.c(924) : Info 830: Location cited in prior
+    message
+                                                                                         _
+				SetFilePointer(avi->hFile, posalign,&lPos_Hi, FILE_BEGIN);
+..\..\..\src\LibAVIDemux\avidemux.c(1100) : Warning 534: Ignoring return value
+    of function 'SetFilePointer(void *, long, long *, unsigned long)' (compare
+    with line 3643, file C:\Program Files\Microsoft Visual Studio
+    8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3643)
+    : Info 830: Location cited in prior message
+                                                         _
+					(vidbuf[3]>=0x00 && vidbuf[3]<=0x1f) ||  // video_object_start_code
+..\..\..\src\LibAVIDemux\avidemux.c(1154) : Warning 685: Relational operator
+    '>=' always evaluates to 'true' [MISRA C++ Rule 0-1-1], [MISRA C++ Rule
+    0-1-2], [MISRA C++ Rule 0-1-9]
+..\..\..\src\LibAVIDemux\avidemux.c(1154) : Warning 568: non-negative quantity
+    is never less than zero
+                                                                                     _
+			else if(vidbuf[0]==0 && vidbuf[1]==0 && vidbuf[2]&0xfc==0x80 && vidbuf[4]&0x2==0)  // h.263
+..\..\..\src\LibAVIDemux\avidemux.c(1160) : Warning 514: Unusual use of a
+    Boolean expression
+..\..\..\src\LibAVIDemux\avidemux.c(1160) : Warning 514: Unusual use of a
+    Boolean expression
+                                                  _
+			for (i = 0; i < readsize-5; i++)
+..\..\..\src\LibAVIDemux\avidemux.c(1175) : Warning 574: Signed-unsigned mix
+    with relational
+                _
+		}
+..\..\..\src\LibAVIDemux\avidemux.c(1196) : Warning 529: Symbol
+    'nal_ref_idc_mask' (line 1169) not subsequently referenced [MISRA C++ Rule
+    0-1-3], [MISRA C++ Rule 0-1-4]
+..\..\..\src\LibAVIDemux\avidemux.c(1169) : Info 830: Location cited in prior
+    message
+                                                                                          _
+				SetFilePointer(avi->hFile, posalign, &lPos_Hi, FILE_BEGIN);
+..\..\..\src\LibAVIDemux\avidemux.c(1276) : Warning 534: Ignoring return value
+    of function 'SetFilePointer(void *, long, long *, unsigned long)' (compare
+    with line 3643, file C:\Program Files\Microsoft Visual Studio
+    8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3643)
+    : Info 830: Location cited in prior message
+                                                                                   _
+		if(ReadFile(avi->hFile,chunkheader,sizeof(chunkheader),&dwBytesRead,0)==0 || dwBytesRead!=sizeof(chunkheader))
+..\..\..\src\LibAVIDemux\avidemux.c(1328) : Error 64: Type mismatch (arg. no.
+    4) (ptrs to nominal)
+                            _
+			free(avi->pPacketBuffer);
+..\..\..\src\LibAVIDemux\avidemux.c(1336) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                   _
+		avi->pPacketBuffer = (LPBYTE)malloc(nChunkSize);
+..\..\..\src\LibAVIDemux\avidemux.c(1339) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                                                        _
+			ReadFile(avi->hFile, avi->pPacketBuffer, nChunkSize, &dwSize, 0);
+..\..\..\src\LibAVIDemux\avidemux.c(1348) : Warning 534: Ignoring return value
+    of function 'ReadFile(void *, void *, unsigned long, unsigned long *,
+    struct _OVERLAPPED *)' (compare with line 3575, file C:\Program
+    Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA
+    C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3575)
+    : Info 830: Location cited in prior message
+                                                                            _
+				SetFilePointer(avi->hFile,1 ,0,FILE_CURRENT);
+..\..\..\src\LibAVIDemux\avidemux.c(1353) : Warning 534: Ignoring return value
+    of function 'SetFilePointer(void *, long, long *, unsigned long)' (compare
+    with line 3643, file C:\Program Files\Microsoft Visual Studio
+    8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3643)
+    : Info 830: Location cited in prior message
+                                                                                        _
+			ReadFile(avi->hFile, avi->pPacketBuffer, nChunkSize, &dwSize, 0);
+..\..\..\src\LibAVIDemux\avidemux.c(1363) : Warning 534: Ignoring return value
+    of function 'ReadFile(void *, void *, unsigned long, unsigned long *,
+    struct _OVERLAPPED *)' (compare with line 3575, file C:\Program
+    Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA
+    C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3575)
+    : Info 830: Location cited in prior message
+                                                                            _
+				SetFilePointer(avi->hFile,1 ,0,FILE_CURRENT);
+..\..\..\src\LibAVIDemux\avidemux.c(1368) : Warning 534: Ignoring return value
+    of function 'SetFilePointer(void *, long, long *, unsigned long)' (compare
+    with line 3643, file C:\Program Files\Microsoft Visual Studio
+    8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3643)
+    : Info 830: Location cited in prior message
+                                                                   _
+			SetFilePointer(avi->hFile,4,0,FILE_CURRENT);
+..\..\..\src\LibAVIDemux\avidemux.c(1390) : Warning 534: Ignoring return value
+    of function 'SetFilePointer(void *, long, long *, unsigned long)' (compare
+    with line 3643, file C:\Program Files\Microsoft Visual Studio
+    8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3643)
+    : Info 830: Location cited in prior message
+                                                                                       _
+			SetFilePointer(avi->hFile,pad_even(nChunkSize) ,0,FILE_CURRENT);
+..\..\..\src\LibAVIDemux\avidemux.c(1395) : Warning 534: Ignoring return value
+    of function 'SetFilePointer(void *, long, long *, unsigned long)' (compare
+    with line 3643, file C:\Program Files\Microsoft Visual Studio
+    8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3643)
+    : Info 830: Location cited in prior message
+        _
+	}
+..\..\..\src\LibAVIDemux\avidemux.c(1398) : Warning 529: Symbol 'pos' (line
+    1327) not subsequently referenced [MISRA C++ Rule 0-1-3], [MISRA C++ Rule
+    0-1-4]
+..\..\..\src\LibAVIDemux\avidemux.c(1327) : Info 830: Location cited in prior
+    message
+                                                                        _
+		SetFilePointer(avi->hFile, avi->movi_start,0,FILE_BEGIN);
+..\..\..\src\LibAVIDemux\avidemux.c(1435) : Warning 534: Ignoring return value
+    of function 'SetFilePointer(void *, long, long *, unsigned long)' (compare
+    with line 3643, file C:\Program Files\Microsoft Visual Studio
+    8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3643)
+    : Info 830: Location cited in prior message
+                                            _
+		AVI_GetPosition(avi, &dwCur);
+..\..\..\src\LibAVIDemux\avidemux.c(1444) : Warning 534: Ignoring return value
+    of function 'AVI_GetPosition(AVI_T *, unsigned long *)' (compare with line
+    1406) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibAVIDemux\avidemux.c(1406) : Info 830: Location cited in prior
+    message
+                                                                                          _
+		vframe = (DWORD)((LONGLONG)lMsec * avi->video_rate/(1000*avi->video_scale));
+..\..\..\src\LibAVIDemux\avidemux.c(1453) : Warning 647: Suspicious truncation
+                                             _
+		if(vframe > avi->video_frames)		
+..\..\..\src\LibAVIDemux\avidemux.c(1459) : Warning 574: Signed-unsigned mix
+    with relational
+                                                                                         _
+		Msec = (((double)avi->video_pos*(1000*avi->video_scale))/avi->video_rate);
+..\..\..\src\LibAVIDemux\avidemux.c(1497) : Warning 524: Loss of precision
+    (assignment) (double to long)
+                                                                                                               _
+			avi->audio_pos = (double)Msec*avi->auds_strh.dwSRTHRate/avi->auds_strh.dwSTRHScale/1000;			
+..\..\..\src\LibAVIDemux\avidemux.c(1502) : Warning 524: Loss of precision
+    (assignment) (double to long)
+                                                                                           _
+			avi->audio_pos = (double)Msec/avi->audio_duration*avi->audio_chunks;			
+..\..\..\src\LibAVIDemux\avidemux.c(1506) : Warning 524: Loss of precision
+    (assignment) (double to long)
+_
+}
+..\..\..\src\LibAVIDemux\avidemux.c(1524) : Warning 529: Symbol 'abyte' (line
+    1426) not subsequently referenced [MISRA C++ Rule 0-1-3], [MISRA C++ Rule
+    0-1-4]
+..\..\..\src\LibAVIDemux\avidemux.c(1426) : Info 830: Location cited in prior
+    message
+
+    --- Wrap-up for Module: ..\..\..\src\LibAVIDemux\avidemux.c
+
+LibAVIDemux.lnt(11) : Warning 528: Symbol 'avi_set_audio_position(AVI_T *,
+    long)' (line 57, file ..\..\..\src\LibAVIDemux\avidemux.c) not referenced
+    [MISRA C++ Rule 0-1-3], [MISRA C++ Rule 0-1-4], [MISRA C++ Rule 0-1-10]
+..\..\..\src\LibAVIDemux\avidemux.c(57) : Info 830: Location cited in prior
+    message

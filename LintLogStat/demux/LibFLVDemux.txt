@@ -1,0 +1,1050 @@
+
+--- Module:   ..\..\src\flvdemux.c (C)
+ _
+};
+..\..\src\flvdemux.h(166) : Warning 612: Expected a declarator
+                                                 _
+	ReadFile(flv->hFile,buf,1,&dwBytesRead,0);
+..\..\src\flvdemux.c(22) : Warning 534: Ignoring return value of function
+    'ReadFile(void *, void *, unsigned long, unsigned long *, struct
+    _OVERLAPPED *)' (compare with line 3575, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3575)
+    : Info 830: Location cited in prior message
+                                                 _
+	ReadFile(flv->hFile,buf,2,&dwBytesRead,0);
+..\..\src\flvdemux.c(43) : Warning 534: Ignoring return value of function
+    'ReadFile(void *, void *, unsigned long, unsigned long *, struct
+    _OVERLAPPED *)' (compare with line 3575, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3575)
+    : Info 830: Location cited in prior message
+                                                 _
+	ReadFile(flv->hFile,buf,3,&dwBytesRead,0);
+..\..\src\flvdemux.c(69) : Warning 534: Ignoring return value of function
+    'ReadFile(void *, void *, unsigned long, unsigned long *, struct
+    _OVERLAPPED *)' (compare with line 3575, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3575)
+    : Info 830: Location cited in prior message
+                                                 _
+	ReadFile(flv->hFile,buf,4,&dwBytesRead,0);
+..\..\src\flvdemux.c(99) : Warning 534: Ignoring return value of function
+    'ReadFile(void *, void *, unsigned long, unsigned long *, struct
+    _OVERLAPPED *)' (compare with line 3575, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3575)
+    : Info 830: Location cited in prior message
+                                                 _
+	ReadFile(flv->hFile,buf,8,&dwBytesRead,0);
+..\..\src\flvdemux.c(133) : Warning 534: Ignoring return value of function
+    'ReadFile(void *, void *, unsigned long, unsigned long *, struct
+    _OVERLAPPED *)' (compare with line 3575, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3575)
+    : Info 830: Location cited in prior message
+                          _
+    if(v+v > 0xFFEULL<<52 || v == 0)
+..\..\src\flvdemux.c(177) : Warning 650: Constant '-9007199254740992' out of
+    range for operator '>'
+..\..\src\flvdemux.c(177) : Warning 574: Signed-unsigned mix with relational
+        _
+	if (v == 0)
+..\..\src\flvdemux.c(179) : Warning 539: Did not expect positive indentation
+    from line 177
+..\..\src\flvdemux.c(177) : Info 830: Location cited in prior message
+                                    _
+		flv_skip(flv,length);
+..\..\src\flvdemux.c(240) : Warning 534: Ignoring return value of function
+    'flv_skip(FLV_T *, int)' (compare with line 199) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\src\flvdemux.c(199) : Info 830: Location cited in prior message
+                                                      _
+	ReadFile(flv->hFile,buf,length,&dwBytesRead,0);
+..\..\src\flvdemux.c(244) : Warning 534: Ignoring return value of function
+    'ReadFile(void *, void *, unsigned long, unsigned long *, struct
+    _OVERLAPPED *)' (compare with line 3575, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3575)
+    : Info 830: Location cited in prior message
+                                                  _
+	ReadFile(flv->hFile,data,4,&dwBytesRead,0);
+..\..\src\flvdemux.c(271) : Warning 534: Ignoring return value of function
+    'ReadFile(void *, void *, unsigned long, unsigned long *, struct
+    _OVERLAPPED *)' (compare with line 3575, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3575)
+    : Info 830: Location cited in prior message
+                                                      _
+	SetFilePointer(flv->hFile,offset,0,FILE_BEGIN);
+..\..\src\flvdemux.c(298) : Warning 534: Ignoring return value of function
+    'SetFilePointer(void *, long, long *, unsigned long)' (compare with line
+    3643, file C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3643)
+    : Info 830: Location cited in prior message
+                _
+	return 0;
+..\..\src\flvdemux.c(348) : Warning 438: Last value assigned to variable
+    'dwBytesRead' (defined at line 304) not used [MISRA C++ Rule 0-1-6], [MISRA
+    C++ Rules 0-1-6 and 0-1-9]
+..\..\src\flvdemux.c(304) : Info 830: Location cited in prior message
+_
+}
+..\..\src\flvdemux.c(349) : Warning 529: Symbol 'dwBytesRead' (line 304) not
+    subsequently referenced [MISRA C++ Rule 0-1-3], [MISRA C++ Rule 0-1-4]
+..\..\src\flvdemux.c(304) : Info 830: Location cited in prior message
+                                   _
+			 if(!strcmp(key, "stereo"))
+..\..\src\flvdemux.c(357) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                        _
+			 else if(!strcmp(key, "hasKeyframes"))
+..\..\src\flvdemux.c(361) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                         _
+			 else if (!strcmp(key, "canSeekToEnd"))
+..\..\src\flvdemux.c(365) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                _
+		else if (amf_type == AMF_DATA_TYPE_STRING)
+..\..\src\flvdemux.c(370) : Warning 525: Negative indentation from line 355
+..\..\src\flvdemux.c(355) : Info 830: Location cited in prior message
+                                  _
+			if(!strcmp(key, "creator"))
+..\..\src\flvdemux.c(372) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                       _
+			else if(!strcmp(key, "creationdate"))
+..\..\src\flvdemux.c(376) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                        _
+			else if (!strcmp(key, "metadatacreator"))
+..\..\src\flvdemux.c(380) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                        _
+			else if (!strcmp(key, "xtradata"))
+..\..\src\flvdemux.c(384) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                       _
+			else if(!strcmp(key, "flvsource"))
+..\..\src\flvdemux.c(388) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                  _
+			if(!strcmp(key, "duration"))
+..\..\src\flvdemux.c(395) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                       _
+			else if(!strcmp(key, "audiocodecid") && 0 <= (int)num_val)
+..\..\src\flvdemux.c(399) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                       _
+			else if(!strcmp(key, "videocodecid") && 0 <= (int)num_val)
+..\..\src\flvdemux.c(403) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                       _
+			else if(!strcmp(key, "width") && 0 <= (int)num_val)
+..\..\src\flvdemux.c(407) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                       _
+			else if(!strcmp(key, "height") && 0 <= (int)num_val)
+..\..\src\flvdemux.c(411) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                       _
+			else if(!strcmp(key, "audiosamplesize") && 0 < (int)num_val)
+..\..\src\flvdemux.c(415) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                       _
+			else if(!strcmp(key, "audiosamplerate") && 0 < (int)num_val)
+..\..\src\flvdemux.c(419) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                        _
+			else if (!strcmp(key, "videodatarate") && 0 < num_val)
+..\..\src\flvdemux.c(429) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                        _
+			else if (!strcmp(key, "audiodatarate") && 0 < num_val)
+..\..\src\flvdemux.c(433) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                       _
+			else if(!strcmp(key, "lasttimestamp") && 0 < (int)num_val)
+..\..\src\flvdemux.c(437) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                       _
+			else if(!strcmp(key, "lastkeyframetimestamp") && 0 < (int)num_val)
+..\..\src\flvdemux.c(441) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                       _
+			else if(!strcmp(key, "lastkeyframelocation") && 0 < (int)num_val)
+..\..\src\flvdemux.c(445) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                       _
+			else if(!strcmp(key, "datasize") && 0 < (long)num_val)
+..\..\src\flvdemux.c(449) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                       _
+			else if(!strcmp(key, "videosize") && 0 < (long)num_val)
+..\..\src\flvdemux.c(453) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                       _
+			else if(!strcmp(key, "audiosize") && 0 < (int)num_val)
+..\..\src\flvdemux.c(457) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                       _
+			else if(!strcmp(key, "filesize") && 0 < (long)num_val)
+..\..\src\flvdemux.c(461) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                       _
+			else if(!strcmp(key, "audiodelay") && 0 < (int)num_val)
+..\..\src\flvdemux.c(465) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                       _
+			else if(!strcmp(key, "framerate") && 0 < num_val)
+..\..\src\flvdemux.c(469) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                  _
+			if(!strcmp(key, "metadatadate"))
+..\..\src\flvdemux.c(476) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                  _
+			if(!strcmp(key, "filepositions") && 0 <= (int)num_val)
+..\..\src\flvdemux.c(486) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                       _
+			else if(!strcmp(key, "times") && 0 <= num_val)
+..\..\src\flvdemux.c(494) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                                                                          _
+					ReadFile(flv->hFile,str_val,keylen,&dwBytesRead,0);
+..\..\src\flvdemux.c(537) : Warning 534: Ignoring return value of function
+    'ReadFile(void *, void *, unsigned long, unsigned long *, struct
+    _OVERLAPPED *)' (compare with line 3575, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3575)
+    : Info 830: Location cited in prior message
+                                                                         _
+                if(flv_parse_object(flv, str_val, max_pos, depth + 1) < 0)
+..\..\src\flvdemux.c(540) : Warning 645: Symbol 'str_val' (line 511) may not
+    have been initialized
+..\..\src\flvdemux.c(511) : Info 830: Location cited in prior message
+                            _
+            flv_skip(flv, 4); //skip 32-bit max array index
+..\..\src\flvdemux.c(552) : Warning 534: Ignoring return value of function
+    'flv_skip(FLV_T *, int)' (compare with line 199) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\src\flvdemux.c(199) : Info 830: Location cited in prior message
+                                   _
+			if (!strcmp(key, "filepositions") || !strcmp(key, "times"))
+..\..\src\flvdemux.c(567) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+..\..\src\flvdemux.c(567) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                                                                         _
+					flv->keyframe_index = (PFLV_KEYFRAME_INDEX)malloc(arraylen * sizeof(FLV_KEYFRAME_INDEX));
+..\..\src\flvdemux.c(571) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                _
+            flv_skip(flv, 8 + 2); //timestamp (double) and UTC offset (int16)
+..\..\src\flvdemux.c(591) : Warning 534: Ignoring return value of function
+    'flv_skip(FLV_T *, int)' (compare with line 199) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\src\flvdemux.c(199) : Info 830: Location cited in prior message
+                                                                 _
+	flv_parse_object_data(flv, key, depth, amf_type, num_val);
+..\..\src\flvdemux.c(597) : Warning 644: Variable 'num_val' (line 510) may not
+    have been initialized
+..\..\src\flvdemux.c(510) : Info 830: Location cited in prior message
+                                _
+				{
+..\..\src\flvdemux.c(655) : Warning 548: else expected
+                                                           _
+					str_val[keylen] = 0;
+..\..\src\flvdemux.c(658) : Warning 661: Possible access of out-of-bounds
+    pointer (1 beyond end of data) by operator '[' [Reference: file
+    ..\..\src\flvdemux.c: lines 654, 658] [MISRA C++ Rule 5-0-16]
+..\..\src\flvdemux.c(654) : Info 831: Reference cited in prior message
+..\..\src\flvdemux.c(658) : Info 831: Reference cited in prior message
+                                _
+				curStream += parseRetVal;
+..\..\src\flvdemux.c(669) : Warning 539: Did not expect positive indentation
+    from line 665
+..\..\src\flvdemux.c(665) : Info 830: Location cited in prior message
+                        _
+			curStream += 1;
+..\..\src\flvdemux.c(676) : Warning 539: Did not expect positive indentation
+    from line 672
+..\..\src\flvdemux.c(672) : Info 830: Location cited in prior message
+                                   _
+			if (!strcmp(key, "filepositions") || !strcmp(key, "times"))
+..\..\src\flvdemux.c(721) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+..\..\src\flvdemux.c(721) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+                                                                                         _
+					flv->keyframe_index = (PFLV_KEYFRAME_INDEX)malloc(arraylen * sizeof(FLV_KEYFRAME_INDEX));
+..\..\src\flvdemux.c(725) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                                 _
+	flv_parse_object_data(flv, key, depth, amf_type, num_val);
+..\..\src\flvdemux.c(762) : Warning 644: Variable 'num_val' (line 606) may not
+    have been initialized
+..\..\src\flvdemux.c(606) : Info 830: Location cited in prior message
+                          _
+	return consumedLen;
+..\..\src\flvdemux.c(764) : Warning 438: Last value assigned to variable
+    'dwBytesRead' (defined at line 604) not used [MISRA C++ Rule 0-1-6], [MISRA
+    C++ Rules 0-1-6 and 0-1-9]
+..\..\src\flvdemux.c(604) : Info 830: Location cited in prior message
+                          _
+	return consumedLen;
+..\..\src\flvdemux.c(764) : Warning 438: Last value assigned to variable
+    'curStream' (defined at line 609) not used [MISRA C++ Rule 0-1-6], [MISRA
+    C++ Rules 0-1-6 and 0-1-9]
+..\..\src\flvdemux.c(609) : Info 830: Location cited in prior message
+_
+}
+..\..\src\flvdemux.c(765) : Warning 529: Symbol 'dwBytesRead' (line 604) not
+    subsequently referenced [MISRA C++ Rule 0-1-3], [MISRA C++ Rule 0-1-4]
+..\..\src\flvdemux.c(604) : Info 830: Location cited in prior message
+
+During Specific Walk:
+  File ..\..\src\flvdemux.c line 664: flv_parse_object_stream(?, !=0, [256], ?,
+    ?) #1
+..\..\src\flvdemux.c(658) : Warning 661: Possible access of out-of-bounds
+    pointer (1 beyond end of data) by operator '[' [Reference: file
+    ..\..\src\flvdemux.c: lines 654, 658] [MISRA C++ Rule 5-0-16]
+..\..\src\flvdemux.c(654) : Info 831: Reference cited in prior message
+..\..\src\flvdemux.c(658) : Info 831: Reference cited in prior message
+
+During Specific Walk:
+  File ..\..\src\flvdemux.c line 698: flv_parse_object_stream(?, !=0, [256], ?,
+    ?) #2
+..\..\src\flvdemux.c(658) : Warning 661: Possible access of out-of-bounds
+    pointer (1 beyond end of data) by operator '[' [Reference: file
+    ..\..\src\flvdemux.c: lines 654, 658] [MISRA C++ Rule 5-0-16]
+..\..\src\flvdemux.c(654) : Info 831: Reference cited in prior message
+..\..\src\flvdemux.c(658) : Info 831: Reference cited in prior message
+
+During Specific Walk:
+  File ..\..\src\flvdemux.c line 740: flv_parse_object_stream(?, ?, ?, ?, ?) #3
+..\..\src\flvdemux.c(658) : Warning 661: Possible access of out-of-bounds
+    pointer (1 beyond end of data) by operator '[' [Reference: file
+    ..\..\src\flvdemux.c: lines 654, 658] [MISRA C++ Rule 5-0-16]
+..\..\src\flvdemux.c(654) : Info 831: Reference cited in prior message
+..\..\src\flvdemux.c(658) : Info 831: Reference cited in prior message
+
+During Specific Walk:
+  File ..\..\src\flvdemux.c line 664: flv_parse_object_stream(?, !=0, [256], ?,
+    ?) #1
+  File ..\..\src\flvdemux.c line 664: flv_parse_object_stream(!=0, !=0, [256],
+    ?, ?) #4
+..\..\src\flvdemux.c(658) : Warning 661: Possible access of out-of-bounds
+    pointer (1 beyond end of data) by operator '[' [Reference: file
+    ..\..\src\flvdemux.c: lines 654, 658] [MISRA C++ Rule 5-0-16]
+..\..\src\flvdemux.c(654) : Info 831: Reference cited in prior message
+..\..\src\flvdemux.c(658) : Info 831: Reference cited in prior message
+                                                                                                  _
+	if (type != AMF_DATA_TYPE_STRING || flv_getstring(flv,buffer,sizeof(buffer)) < 0 || strcmp(buffer, "onMetaData"))
+..\..\src\flvdemux.c(776) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+        _
+	return 0;
+..\..\src\flvdemux.c(783) : Warning 539: Did not expect positive indentation
+    from line 780
+..\..\src\flvdemux.c(780) : Info 830: Location cited in prior message
+                  _
+	if (strcmp(buffer, "onMetaData") != 0)
+..\..\src\flvdemux.c(809) : Warning 586: function 'strcmp' is deprecated.
+    [MISRA C++ Rule 18-0-5]
+        _
+	curStream += parsedLen;
+..\..\src\flvdemux.c(819) : Warning 539: Did not expect positive indentation
+    from line 815
+..\..\src\flvdemux.c(815) : Info 830: Location cited in prior message
+                    _
+		free(flv->extradata);
+..\..\src\flvdemux.c(832) : Warning 586: function 'free' is deprecated. [MISRA
+    C++ Rule 18-4-1]
+                                       _
+	flv->extradata = (char *)malloc(size + FLV_INPUT_BUFFER_PADDING_SIZE);
+..\..\src\flvdemux.c(835) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                               _
+	ReadFile(flv->hFile,flv->extradata,size,&dwBytesRead,0);
+..\..\src\flvdemux.c(840) : Warning 534: Ignoring return value of function
+    'ReadFile(void *, void *, unsigned long, unsigned long *, struct
+    _OVERLAPPED *)' (compare with line 3575, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3575)
+    : Info 830: Location cited in prior message
+                    _
+		free(flv->avc_spec_config);
+..\..\src\flvdemux.c(853) : Warning 586: function 'free' is deprecated. [MISRA
+    C++ Rule 18-4-1]
+                                             _
+	flv->avc_spec_config = (char *)malloc(size);
+..\..\src\flvdemux.c(856) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                                     _
+	ReadFile(flv->hFile,flv->avc_spec_config,size,&dwBytesRead,0);
+..\..\src\flvdemux.c(860) : Warning 534: Ignoring return value of function
+    'ReadFile(void *, void *, unsigned long, unsigned long *, struct
+    _OVERLAPPED *)' (compare with line 3575, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3575)
+    : Info 830: Location cited in prior message
+                    _
+		free(flv->avc_spec_config);
+..\..\src\flvdemux.c(875) : Warning 586: function 'free' is deprecated. [MISRA
+    C++ Rule 18-4-1]
+                                             _
+	flv->avc_spec_config = (char *)malloc(size);
+..\..\src\flvdemux.c(878) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                _
+	return 0;
+..\..\src\flvdemux.c(886) : Warning 438: Last value assigned to variable
+    'dwBytesRead' (defined at line 868) not used [MISRA C++ Rule 0-1-6], [MISRA
+    C++ Rules 0-1-6 and 0-1-9]
+..\..\src\flvdemux.c(868) : Info 830: Location cited in prior message
+_
+}
+..\..\src\flvdemux.c(887) : Warning 529: Symbol 'dwBytesRead' (line 868) not
+    subsequently referenced [MISRA C++ Rule 0-1-3], [MISRA C++ Rule 0-1-4]
+..\..\src\flvdemux.c(868) : Info 830: Location cited in prior message
+                    _
+		free(flv->aac_spec_config);
+..\..\src\flvdemux.c(898) : Warning 586: function 'free' is deprecated. [MISRA
+    C++ Rule 18-4-1]
+                                             _
+	flv->aac_spec_config = (char *)malloc(size);
+..\..\src\flvdemux.c(901) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                                                                     _
+	ReadFile(flv->hFile,flv->aac_spec_config,size,&dwBytesRead,0);
+..\..\src\flvdemux.c(905) : Warning 534: Ignoring return value of function
+    'ReadFile(void *, void *, unsigned long, unsigned long *, struct
+    _OVERLAPPED *)' (compare with line 3575, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3575)
+    : Info 830: Location cited in prior message
+                    _
+		free(flv->aac_spec_config);
+..\..\src\flvdemux.c(918) : Warning 586: function 'free' is deprecated. [MISRA
+    C++ Rule 18-4-1]
+                                             _
+	flv->aac_spec_config = (char *)malloc(size);
+..\..\src\flvdemux.c(921) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                _
+	return 0;
+..\..\src\flvdemux.c(927) : Warning 438: Last value assigned to variable
+    'dwBytesRead' (defined at line 911) not used [MISRA C++ Rule 0-1-6], [MISRA
+    C++ Rules 0-1-6 and 0-1-9]
+..\..\src\flvdemux.c(911) : Info 830: Location cited in prior message
+_
+}
+..\..\src\flvdemux.c(928) : Warning 529: Symbol 'dwBytesRead' (line 911) not
+    subsequently referenced [MISRA C++ Rule 0-1-3], [MISRA C++ Rule 0-1-4]
+..\..\src\flvdemux.c(911) : Info 830: Location cited in prior message
+                                _
+		flv_skip(flv, 4); /* size of previous packet */
+..\..\src\flvdemux.c(1031) : Warning 534: Ignoring return value of function
+    'flv_skip(FLV_T *, int)' (compare with line 199) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\src\flvdemux.c(199) : Info 830: Location cited in prior message
+                                             _
+		dts |= flv_getbyte(flv) << 24;
+..\..\src\flvdemux.c(1035) : Warning 647: Suspicious truncation
+                                _
+		flv_skip(flv, 3);
+..\..\src\flvdemux.c(1041) : Warning 534: Ignoring return value of function
+    'flv_skip(FLV_T *, int)' (compare with line 199) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\src\flvdemux.c(199) : Info 830: Location cited in prior message
+                                                               _
+				flv_seek(flv, next, FILE_BEGIN);
+..\..\src\flvdemux.c(1057) : Warning 534: Ignoring return value of function
+    'flv_seek(FLV_T *, long long, int)' (compare with line 184) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\flvdemux.c(184) : Info 830: Location cited in prior message
+                                                            _
+				flv_read_metabody(flv, next);
+..\..\src\flvdemux.c(1060) : Warning 534: Ignoring return value of function
+    'flv_read_metabody(FLV_T *, long long)' (compare with line 767) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\flvdemux.c(767) : Info 830: Location cited in prior message
+                                                       _
+			flv_seek(flv, next, FILE_BEGIN);
+..\..\src\flvdemux.c(1063) : Warning 534: Ignoring return value of function
+    'flv_seek(FLV_T *, long long, int)' (compare with line 184) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\flvdemux.c(184) : Info 830: Location cited in prior message
+                                                       _
+			flv_seek(flv, next, FILE_BEGIN);
+..\..\src\flvdemux.c(1073) : Warning 534: Ignoring return value of function
+    'flv_seek(FLV_T *, long long, int)' (compare with line 184) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\flvdemux.c(184) : Info 830: Location cited in prior message
+                                  _
+		const int64_t pos = SetFilePointer(flv->hFile,0,0,FILE_CURRENT);
+..\..\src\flvdemux.c(1082) : Warning 578: Declaration of symbol 'pos' hides
+    symbol 'pos' (line 930) [MISRA C++ Rule 2-10-2]
+..\..\src\flvdemux.c(930) : Info 830: Location cited in prior message
+                                        _
+		flv_seek(flv,0,SEEK_END);
+..\..\src\flvdemux.c(1083) : Warning 534: Ignoring return value of function
+    'flv_seek(FLV_T *, long long, int)' (compare with line 184) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\flvdemux.c(184) : Info 830: Location cited in prior message
+                                              _
+		flv_seek(flv,fsize-4,SEEK_SET);
+..\..\src\flvdemux.c(1085) : Warning 534: Ignoring return value of function
+    'flv_seek(FLV_T *, long long, int)' (compare with line 184) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\flvdemux.c(184) : Info 830: Location cited in prior message
+                                                     _
+		flv_seek(flv,fsize-3-isize, SEEK_SET);
+..\..\src\flvdemux.c(1087) : Warning 534: Ignoring return value of function
+    'flv_seek(FLV_T *, long long, int)' (compare with line 184) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\flvdemux.c(184) : Info 830: Location cited in prior message
+                                    _
+        flv_seek(flv, pos, SEEK_SET);
+..\..\src\flvdemux.c(1092) : Warning 534: Ignoring return value of function
+    'flv_seek(FLV_T *, long long, int)' (compare with line 184) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\flvdemux.c(184) : Info 830: Location cited in prior message
+                                                                                                                              _
+			flv->sample_rate = (44100 << ((flags & FLV_AUDIO_SAMPLERATE_MASK) >> FLV_AUDIO_SAMPLERATE_OFFSET) >> 3);
+..\..\src\flvdemux.c(1099) : Warning 504: Unusual shift operation (left side
+    unparenthesized)
+                        _
+			case FLV_CODECID_VP6A  :
+..\..\src\flvdemux.c(1116) : Warning 616: control flows into case/default
+    [MISRA C++ Rule 6-4-5]
+                                _
+				flv_getbyte(flv);
+..\..\src\flvdemux.c(1119) : Warning 548: else expected
+..\..\src\flvdemux.c(1119) : Warning 534: Ignoring return value of function
+    'flv_getbyte(FLV_T *)' (compare with line 13) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\src\flvdemux.c(13) : Info 830: Location cited in prior message
+                                _
+			int ret = 0;
+..\..\src\flvdemux.c(1144) : Warning 578: Declaration of symbol 'ret' hides
+    symbol 'ret' (line 932) [MISRA C++ Rule 2-10-2]
+..\..\src\flvdemux.c(932) : Info 830: Location cited in prior message
+            _
+            if ((ret = flv_get_avc_config_data(flv, size)) < 0)
+..\..\src\flvdemux.c(1145) : Warning 525: Negative indentation from line 1142
+..\..\src\flvdemux.c(1142) : Info 830: Location cited in prior message
+                        _
+			goto retry;
+..\..\src\flvdemux.c(1147) : Warning 539: Did not expect positive indentation
+    from line 1145
+..\..\src\flvdemux.c(1145) : Info 830: Location cited in prior message
+                                _
+			int ret = 0;
+..\..\src\flvdemux.c(1156) : Warning 578: Declaration of symbol 'ret' hides
+    symbol 'ret' (line 932) [MISRA C++ Rule 2-10-2]
+..\..\src\flvdemux.c(932) : Info 830: Location cited in prior message
+                _
+		}
+..\..\src\flvdemux.c(1234) : Warning 438: Last value assigned to variable
+    'code' (defined at line 1170) not used [MISRA C++ Rule 0-1-6], [MISRA C++
+    Rules 0-1-6 and 0-1-9]
+..\..\src\flvdemux.c(1170) : Info 830: Location cited in prior message
+                                                      _
+		flv_seek(flv, package_pos, FILE_BEGIN); 
+..\..\src\flvdemux.c(1255) : Warning 534: Ignoring return value of function
+    'flv_seek(FLV_T *, long long, int)' (compare with line 184) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\flvdemux.c(184) : Info 830: Location cited in prior message
+                                                                                                        _
+			ReadFile(flv->hFile,(LPVOID)pNalLenBuffer, flv->avc_nal_len_size,&read_length,0);
+..\..\src\flvdemux.c(1258) : Warning 534: Ignoring return value of function
+    'ReadFile(void *, void *, unsigned long, unsigned long *, struct
+    _OVERLAPPED *)' (compare with line 3575, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3575)
+    : Info 830: Location cited in prior message
+                                                                                       _
+			ReadFile(flv->hFile,pbuf + *out_length,nNalSize,&read_length,0);
+..\..\src\flvdemux.c(1272) : Warning 534: Ignoring return value of function
+    'ReadFile(void *, void *, unsigned long, unsigned long *, struct
+    _OVERLAPPED *)' (compare with line 3575, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3575)
+    : Info 830: Location cited in prior message
+                                                      _
+		flv_seek(flv, package_pos, FILE_BEGIN); 
+..\..\src\flvdemux.c(1304) : Warning 534: Ignoring return value of function
+    'flv_seek(FLV_T *, long long, int)' (compare with line 184) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\flvdemux.c(184) : Info 830: Location cited in prior message
+                                                                    _
+		ReadFile(flv->hFile,pbuf,*out_length,&read_length,0);
+..\..\src\flvdemux.c(1305) : Warning 534: Ignoring return value of function
+    'ReadFile(void *, void *, unsigned long, unsigned long *, struct
+    _OVERLAPPED *)' (compare with line 3575, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3575)
+    : Info 830: Location cited in prior message
+                                  _
+		flv_skip(flv,size);
+..\..\src\flvdemux.c(1309) : Warning 534: Ignoring return value of function
+    'flv_skip(FLV_T *, int)' (compare with line 199) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\src\flvdemux.c(199) : Info 830: Location cited in prior message
+                                                                               _
+		dts |= flv_getbyte_stream(flv, curStream + 4 + 1 + 3 + 3) << 24;
+..\..\src\flvdemux.c(1474) : Warning 647: Suspicious truncation
+                                                                                      _
+				flv_read_metabody_stream(flv, curStream, tagRemainLen);
+..\..\src\flvdemux.c(1522) : Warning 534: Ignoring return value of function
+    'flv_read_metabody_stream(FLV_T *, unsigned char *, long long)' (compare
+    with line 786) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\flvdemux.c(786) : Info 830: Location cited in prior message
+                                                                                                                              _
+			flv->sample_rate = (44100 << ((flags & FLV_AUDIO_SAMPLERATE_MASK) >> FLV_AUDIO_SAMPLERATE_OFFSET) >> 3);
+..\..\src\flvdemux.c(1567) : Warning 504: Unusual shift operation (left side
+    unparenthesized)
+                        _
+			case FLV_CODECID_VP6A  :
+..\..\src\flvdemux.c(1584) : Warning 616: control flows into case/default
+    [MISRA C++ Rule 6-4-5]
+                                                                  _
+				flv_getbyte_stream(flv, curStream);
+..\..\src\flvdemux.c(1588) : Warning 534: Ignoring return value of function
+    'flv_getbyte_stream(FLV_T *, unsigned char *)' (compare with line 26)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\flvdemux.c(26) : Info 830: Location cited in prior message
+                                _
+			int ret = flv_get_avc_config_data_stream(flv, size, curStream);
+..\..\src\flvdemux.c(1620) : Warning 578: Declaration of symbol 'ret' hides
+    symbol 'ret' (line 1337) [MISRA C++ Rule 2-10-2]
+..\..\src\flvdemux.c(1337) : Info 830: Location cited in prior message
+            _
+            if (ret < 0)
+..\..\src\flvdemux.c(1623) : Warning 525: Negative indentation from line 1618
+..\..\src\flvdemux.c(1618) : Info 830: Location cited in prior message
+                                _
+			int ret = flv_get_aac_config_data_stream(flv, size, curStream);
+..\..\src\flvdemux.c(1641) : Warning 578: Declaration of symbol 'ret' hides
+    symbol 'ret' (line 1337) [MISRA C++ Rule 2-10-2]
+..\..\src\flvdemux.c(1337) : Info 830: Location cited in prior message
+                _
+		}
+..\..\src\flvdemux.c(1741) : Warning 438: Last value assigned to variable
+    'code' (defined at line 1664) not used [MISRA C++ Rule 0-1-6], [MISRA C++
+    Rules 0-1-6 and 0-1-9]
+..\..\src\flvdemux.c(1664) : Info 830: Location cited in prior message
+                        _
+		return 0;
+..\..\src\flvdemux.c(1815) : Warning 438: Last value assigned to variable
+    'read_length' (defined at line 1755) not used [MISRA C++ Rule 0-1-6],
+    [MISRA C++ Rules 0-1-6 and 0-1-9]
+..\..\src\flvdemux.c(1755) : Info 830: Location cited in prior message
+        _
+	}
+..\..\src\flvdemux.c(1816) : Warning 529: Symbol 'read_length' (line 1755) not
+    subsequently referenced [MISRA C++ Rule 0-1-3], [MISRA C++ Rule 0-1-4]
+..\..\src\flvdemux.c(1755) : Info 830: Location cited in prior message
+        _
+	}
+..\..\src\flvdemux.c(1828) : Warning 529: Symbol 'read_length' (line 1820) not
+    subsequently referenced [MISRA C++ Rule 0-1-3], [MISRA C++ Rule 0-1-4]
+..\..\src\flvdemux.c(1820) : Info 830: Location cited in prior message
+        _
+	}
+..\..\src\flvdemux.c(1828) : Warning 438: Last value assigned to variable
+    'read_length' (defined at line 1820) not used [MISRA C++ Rule 0-1-6],
+    [MISRA C++ Rules 0-1-6 and 0-1-9]
+..\..\src\flvdemux.c(1820) : Info 830: Location cited in prior message
+                  _
+	return ret;	
+..\..\src\flvdemux.c(1856) : Warning 438: Last value assigned to variable
+    'curStream' (defined at line 1343) not used [MISRA C++ Rule 0-1-6], [MISRA
+    C++ Rules 0-1-6 and 0-1-9]
+..\..\src\flvdemux.c(1343) : Info 830: Location cited in prior message
+                                                                                   _
+	ReadFile(flv->hFile,s_aucParseBuff,INDEX_READ_SIZE,(LPDWORD)&dwBytesRead,0);
+..\..\src\flvdemux.c(1876) : Warning 534: Ignoring return value of function
+    'ReadFile(void *, void *, unsigned long, unsigned long *, struct
+    _OVERLAPPED *)' (compare with line 3575, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3575)
+    : Info 830: Location cited in prior message
+                                                                _
+			flv_seek(flv, *pos + offset, FILE_BEGIN);
+..\..\src\flvdemux.c(1887) : Warning 534: Ignoring return value of function
+    'flv_seek(FLV_T *, long long, int)' (compare with line 184) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\flvdemux.c(184) : Info 830: Location cited in prior message
+                                                     _
+		dts |= s_aucParseBuff[offset++] << 24;
+..\..\src\flvdemux.c(1902) : Warning 647: Suspicious truncation
+                                                                        _
+			flv_seek(flv, *pos + offset - 8 - 4, FILE_BEGIN);
+..\..\src\flvdemux.c(1912) : Warning 534: Ignoring return value of function
+    'flv_seek(FLV_T *, long long, int)' (compare with line 184) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\flvdemux.c(184) : Info 830: Location cited in prior message
+                                                                                   _
+				flv_seek(flv, *pos + offset + size - 1, FILE_BEGIN);
+..\..\src\flvdemux.c(1933) : Warning 534: Ignoring return value of function
+    'flv_seek(FLV_T *, long long, int)' (compare with line 184) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\flvdemux.c(184) : Info 830: Location cited in prior message
+                                        _
+				return 0;
+..\..\src\flvdemux.c(1937) : Warning 438: Last value assigned to variable
+    'test' (defined at line 1867) not used [MISRA C++ Rule 0-1-6], [MISRA C++
+    Rules 0-1-6 and 0-1-9]
+..\..\src\flvdemux.c(1867) : Info 830: Location cited in prior message
+_
+}
+..\..\src\flvdemux.c(1945) : Warning 550: Symbol 'test' (line 1867) not
+    accessed [MISRA C++ Rule 0-1-4]
+..\..\src\flvdemux.c(1867) : Info 830: Location cited in prior message
+                                                    _
+	SetFilePointer(ptFlv->hFile, 0, 0, FILE_END);
+..\..\src\flvdemux.c(1965) : Warning 534: Ignoring return value of function
+    'SetFilePointer(void *, long, long *, unsigned long)' (compare with line
+    3643, file C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3643)
+    : Info 830: Location cited in prior message
+                                                                    _
+	SetFilePointer(ptFlv->hFile, ulSearchBuffPos, 0, FILE_BEGIN);
+..\..\src\flvdemux.c(1980) : Warning 534: Ignoring return value of function
+    'SetFilePointer(void *, long, long *, unsigned long)' (compare with line
+    3643, file C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3643)
+    : Info 830: Location cited in prior message
+                                                                               _
+	ReadFile(ptFlv->hFile, s_aucParseBuff, INDEX_READ_SIZE, &ulDataSize, 0);
+..\..\src\flvdemux.c(1981) : Warning 534: Ignoring return value of function
+    'ReadFile(void *, void *, unsigned long, unsigned long *, struct
+    _OVERLAPPED *)' (compare with line 3575, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3575)
+    : Info 830: Location cited in prior message
+                                                                                                                                           _
+				ReadFile(ptFlv->hFile, s_aucParseBuff+ulMinCheckBytes-1, INDEX_READ_SIZE-ulMinCheckBytes+1, &ulDataSize, 0);
+..\..\src\flvdemux.c(2003) : Warning 534: Ignoring return value of function
+    'ReadFile(void *, void *, unsigned long, unsigned long *, struct
+    _OVERLAPPED *)' (compare with line 3575, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3575)
+    : Info 830: Location cited in prior message
+                                                                                                 _
+			SetFilePointer(ptFlv->hFile, ulSearchBuffPos+ulParsingPos, 0, FILE_BEGIN);
+..\..\src\flvdemux.c(2030) : Warning 534: Ignoring return value of function
+    'SetFilePointer(void *, long, long *, unsigned long)' (compare with line
+    3643, file C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3643)
+    : Info 830: Location cited in prior message
+                                                                                               _
+			ReadFile(ptFlv->hFile, s_aucParseBuff, INDEX_READ_SIZE, &ulDataSize, 0);
+..\..\src\flvdemux.c(2031) : Warning 534: Ignoring return value of function
+    'ReadFile(void *, void *, unsigned long, unsigned long *, struct
+    _OVERLAPPED *)' (compare with line 3575, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3575)
+    : Info 830: Location cited in prior message
+                                                                                                                 _
+					SetFilePointer(ptFlv->hFile, ulSearchBuffPos+ulParsingPos, 0, FILE_BEGIN);
+..\..\src\flvdemux.c(2051) : Warning 534: Ignoring return value of function
+    'SetFilePointer(void *, long, long *, unsigned long)' (compare with line
+    3643, file C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3643)
+    : Info 830: Location cited in prior message
+                                                                                                               _
+					ReadFile(ptFlv->hFile, s_aucParseBuff, INDEX_READ_SIZE, &ulDataSize, 0);
+..\..\src\flvdemux.c(2052) : Warning 534: Ignoring return value of function
+    'ReadFile(void *, void *, unsigned long, unsigned long *, struct
+    _OVERLAPPED *)' (compare with line 3575, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3575)
+    : Info 830: Location cited in prior message
+                                                                               _
+			SetFilePointer(ptFlv->hFile, ulEntryPos, 0, FILE_BEGIN);
+..\..\src\flvdemux.c(2074) : Warning 534: Ignoring return value of function
+    'SetFilePointer(void *, long, long *, unsigned long)' (compare with line
+    3643, file C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3643)
+    : Info 830: Location cited in prior message
+                                                                                               _
+			ReadFile(ptFlv->hFile, s_aucParseBuff, INDEX_READ_SIZE, &ulDataSize, 0);
+..\..\src\flvdemux.c(2075) : Warning 534: Ignoring return value of function
+    'ReadFile(void *, void *, unsigned long, unsigned long *, struct
+    _OVERLAPPED *)' (compare with line 3575, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3575)
+    : Info 830: Location cited in prior message
+                                                                            _
+		SetFilePointer(ptFlv->hFile, ulSearchBuffPos, 0, FILE_BEGIN);
+..\..\src\flvdemux.c(2088) : Warning 534: Ignoring return value of function
+    'SetFilePointer(void *, long, long *, unsigned long)' (compare with line
+    3643, file C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3643)
+    : Info 830: Location cited in prior message
+                                                                         _
+		ReadFile(ptFlv->hFile, s_aucParseBuff, 4, &ulDataSize, 0);
+..\..\src\flvdemux.c(2089) : Warning 534: Ignoring return value of function
+    'ReadFile(void *, void *, unsigned long, unsigned long *, struct
+    _OVERLAPPED *)' (compare with line 3575, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3575)
+    : Info 830: Location cited in prior message
+                                                               _
+	SetFilePointer(ptFlv->hFile, ulEntryPos, 0, FILE_BEGIN);
+..\..\src\flvdemux.c(2103) : Warning 534: Ignoring return value of function
+    'SetFilePointer(void *, long, long *, unsigned long)' (compare with line
+    3643, file C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3643)
+    : Info 830: Location cited in prior message
+                                                                               _
+	ReadFile(ptFlv->hFile, s_aucParseBuff, INDEX_READ_SIZE, &ulDataSize, 0);
+..\..\src\flvdemux.c(2104) : Warning 534: Ignoring return value of function
+    'ReadFile(void *, void *, unsigned long, unsigned long *, struct
+    _OVERLAPPED *)' (compare with line 3575, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3575)
+    : Info 830: Location cited in prior message
+                                                                                                 _
+			SetFilePointer(ptFlv->hFile, ulSearchBuffPos+ulNextTagPos, 0, FILE_BEGIN);
+..\..\src\flvdemux.c(2112) : Warning 534: Ignoring return value of function
+    'SetFilePointer(void *, long, long *, unsigned long)' (compare with line
+    3643, file C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3643)
+    : Info 830: Location cited in prior message
+                                                                                               _
+			ReadFile(ptFlv->hFile, s_aucParseBuff, INDEX_READ_SIZE, &ulDataSize, 0);
+..\..\src\flvdemux.c(2113) : Warning 534: Ignoring return value of function
+    'ReadFile(void *, void *, unsigned long, unsigned long *, struct
+    _OVERLAPPED *)' (compare with line 3575, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3575)
+    : Info 830: Location cited in prior message
+                                                                            _
+		SetFilePointer(ptFlv->hFile, ulSearchBuffPos, 0, FILE_BEGIN);
+..\..\src\flvdemux.c(2150) : Warning 534: Ignoring return value of function
+    'SetFilePointer(void *, long, long *, unsigned long)' (compare with line
+    3643, file C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3643)
+    : Info 830: Location cited in prior message
+                                                                                  _
+		ReadFile(ptFlv->hFile, s_aucParseBuff, ulReadSize, &ulDataSize, 0);
+..\..\src\flvdemux.c(2151) : Warning 534: Ignoring return value of function
+    'ReadFile(void *, void *, unsigned long, unsigned long *, struct
+    _OVERLAPPED *)' (compare with line 3575, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3575)
+    : Info 830: Location cited in prior message
+                                                                                            _
+				SetFilePointer(ptFlv->hFile, ulSearchBuffPos, 0, FILE_BEGIN);
+..\..\src\flvdemux.c(2178) : Warning 534: Ignoring return value of function
+    'SetFilePointer(void *, long, long *, unsigned long)' (compare with line
+    3643, file C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3643)
+    : Info 830: Location cited in prior message
+                                                                                                  _
+				ReadFile(ptFlv->hFile, s_aucParseBuff, ulReadSize, &ulDataSize, 0);
+..\..\src\flvdemux.c(2179) : Warning 534: Ignoring return value of function
+    'ReadFile(void *, void *, unsigned long, unsigned long *, struct
+    _OVERLAPPED *)' (compare with line 3575, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3575)
+    : Info 830: Location cited in prior message
+                                                                                                                 _
+					SetFilePointer(ptFlv->hFile, ulSearchBuffPos+ulNextTagPos, 0, FILE_BEGIN);
+..\..\src\flvdemux.c(2224) : Warning 534: Ignoring return value of function
+    'SetFilePointer(void *, long, long *, unsigned long)' (compare with line
+    3643, file C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3643)
+    : Info 830: Location cited in prior message
+                                                                                                               _
+					ReadFile(ptFlv->hFile, s_aucParseBuff, INDEX_READ_SIZE, &ulDataSize, 0);
+..\..\src\flvdemux.c(2225) : Warning 534: Ignoring return value of function
+    'ReadFile(void *, void *, unsigned long, unsigned long *, struct
+    _OVERLAPPED *)' (compare with line 3575, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3575)
+    : Info 830: Location cited in prior message
+                                                                                    _
+			SetFilePointer(ptFlv->hFile, ulSearchBuffPos, 0, FILE_BEGIN);
+..\..\src\flvdemux.c(2292) : Warning 534: Ignoring return value of function
+    'SetFilePointer(void *, long, long *, unsigned long)' (compare with line
+    3643, file C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3643)
+    : Info 830: Location cited in prior message
+                                                                                          _
+			ReadFile(ptFlv->hFile, s_aucParseBuff, ulReadSize, &ulDataSize, 0);
+..\..\src\flvdemux.c(2293) : Warning 534: Ignoring return value of function
+    'ReadFile(void *, void *, unsigned long, unsigned long *, struct
+    _OVERLAPPED *)' (compare with line 3575, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3575)
+    : Info 830: Location cited in prior message
+                                                                                                    _
+					SetFilePointer(ptFlv->hFile, ulSearchBuffPos, 0, FILE_BEGIN);
+..\..\src\flvdemux.c(2319) : Warning 534: Ignoring return value of function
+    'SetFilePointer(void *, long, long *, unsigned long)' (compare with line
+    3643, file C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3643)
+    : Info 830: Location cited in prior message
+                                                                                                          _
+					ReadFile(ptFlv->hFile, s_aucParseBuff, ulReadSize, &ulDataSize, 0);
+..\..\src\flvdemux.c(2320) : Warning 534: Ignoring return value of function
+    'ReadFile(void *, void *, unsigned long, unsigned long *, struct
+    _OVERLAPPED *)' (compare with line 3575, file C:\Program Files\Microsoft
+    Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3575)
+    : Info 830: Location cited in prior message
+                             _
+	flv = (FLV_T *)malloc(sizeof(FLV_T));
+..\..\src\flvdemux.c(2391) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                              _
+		FLV_Close(flv);
+..\..\src\flvdemux.c(2399) : Warning 534: Ignoring return value of function
+    'FLV_Close(FLV_T *)' (compare with line 169, file ..\..\src\flvdemux.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\flvdemux.h(169) : Info 830: Location cited in prior message
+                              _
+		FLV_Close(flv);
+..\..\src\flvdemux.c(2404) : Warning 534: Ignoring return value of function
+    'FLV_Close(FLV_T *)' (compare with line 169, file ..\..\src\flvdemux.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\flvdemux.h(169) : Info 830: Location cited in prior message
+                              _
+		FLV_Close(flv);
+..\..\src\flvdemux.c(2409) : Warning 534: Ignoring return value of function
+    'FLV_Close(FLV_T *)' (compare with line 169, file ..\..\src\flvdemux.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\flvdemux.h(169) : Info 830: Location cited in prior message
+                             _
+	flv = (FLV_T *)malloc(sizeof(FLV_T));
+..\..\src\flvdemux.c(2429) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+                              _
+		FLV_Close(flv);
+..\..\src\flvdemux.c(2436) : Warning 534: Ignoring return value of function
+    'FLV_Close(FLV_T *)' (compare with line 169, file ..\..\src\flvdemux.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\flvdemux.h(169) : Info 830: Location cited in prior message
+                                           _
+	packetBuf = (unsigned char *)malloc(maxPacketLen);
+..\..\src\flvdemux.c(2440) : Warning 586: function 'malloc' is deprecated.
+    [MISRA C++ Rule 18-4-1]
+            _
+	free(packetBuf);
+..\..\src\flvdemux.c(2456) : Warning 586: function 'free' is deprecated. [MISRA
+    C++ Rule 18-4-1]
+                  _
+	return flv;
+..\..\src\flvdemux.c(2460) : Warning 438: Last value assigned to variable
+    'dataEndPos' (defined at line 2423) not used [MISRA C++ Rule 0-1-6], [MISRA
+    C++ Rules 0-1-6 and 0-1-9]
+..\..\src\flvdemux.c(2423) : Info 830: Location cited in prior message
+_
+}
+..\..\src\flvdemux.c(2461) : Warning 550: Symbol 'dataEndPos' (line 2423) not
+    accessed [MISRA C++ Rule 0-1-4]
+..\..\src\flvdemux.c(2423) : Info 830: Location cited in prior message
+                    _
+		free(flv->keyframe_index);
+..\..\src\flvdemux.c(2470) : Warning 586: function 'free' is deprecated. [MISRA
+    C++ Rule 18-4-1]
+                    _
+		free(flv->extradata);
+..\..\src\flvdemux.c(2476) : Warning 586: function 'free' is deprecated. [MISRA
+    C++ Rule 18-4-1]
+                    _
+		free(flv->aac_spec_config);
+..\..\src\flvdemux.c(2482) : Warning 586: function 'free' is deprecated. [MISRA
+    C++ Rule 18-4-1]
+                    _
+		free(flv->avc_spec_config);
+..\..\src\flvdemux.c(2488) : Warning 586: function 'free' is deprecated. [MISRA
+    C++ Rule 18-4-1]
+            _
+	free(flv);
+..\..\src\flvdemux.c(2493) : Warning 586: function 'free' is deprecated. [MISRA
+    C++ Rule 18-4-1]
+                _
+	return 0;
+..\..\src\flvdemux.c(2495) : Warning 438: Last value assigned to variable 'flv'
+    (defined at line 2463) not used [MISRA C++ Rule 0-1-6], [MISRA C++ Rules
+    0-1-6 and 0-1-9]
+..\..\src\flvdemux.c(2463) : Info 830: Location cited in prior message
+                        _
+		return 0;
+..\..\src\flvdemux.c(2652) : Warning 438: Last value assigned to variable
+    'bFound' (defined at line 2576) not used [MISRA C++ Rule 0-1-6], [MISRA C++
+    Rules 0-1-6 and 0-1-9]
+..\..\src\flvdemux.c(2576) : Info 830: Location cited in prior message
+                        _
+		return 0;
+..\..\src\flvdemux.c(2765) : Warning 438: Last value assigned to variable
+    'bFound' (defined at line 2696) not used [MISRA C++ Rule 0-1-6], [MISRA C++
+    Rules 0-1-6 and 0-1-9]
+..\..\src\flvdemux.c(2696) : Info 830: Location cited in prior message
+                                                                       _
+				*lMsec = (long)(flv_temp/flv->file_size);
+..\..\src\flvdemux.c(2787) : Warning 573: Signed-unsigned mix with divide
+                                               _
+	flv_seek(flv, llFileOffset, FILE_BEGIN);
+..\..\src\flvdemux.c(2816) : Warning 534: Ignoring return value of function
+    'flv_seek(FLV_T *, long long, int)' (compare with line 184) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\src\flvdemux.c(184) : Info 830: Location cited in prior message
+
+--- Global Wrap-up
+
+Note 974: Worst case function for stack usage: 'flv_parse_object' is recursive,
+    loop contains call to 'flv_parse_object'. See +stack for a full report.
+    [MISRA C++ Rule 7-5-4]

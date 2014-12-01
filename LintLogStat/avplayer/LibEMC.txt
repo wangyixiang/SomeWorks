@@ -1,0 +1,3805 @@
+
+--- Module:   ..\..\..\src\LibEMC\basedecoder.cpp (C++)
+                                    _
+	_iviGUID(int n) {memset(this, n, sizeof(_GUID));}
+..\..\..\src\LibEMC\guid.h(76) : Warning 1415: Pointer to non-POD class
+    '_iviGUID' passed to function 'memset(void *, int, unsigned int)' (arg. no.
+    1)
+                                            _
+	_iviGUID()		{memset(this, 0, sizeof(_GUID));}
+..\..\..\src\LibEMC\guid.h(77) : Warning 1415: Pointer to non-POD class
+    '_iviGUID' passed to function 'memset(void *, int, unsigned int)' (arg. no.
+    1)
+                           _
+		memcpy(this, &that, sizeof(_GUID));
+..\..\..\src\LibEMC\guid.h(80) : Warning 1415: Pointer to non-POD class
+    '_iviGUID' passed to function 'memcpy(void *, const void *, unsigned int)'
+    (arg. no. 1)
+                           _
+		memcpy(this, &that, sizeof(_GUID));
+..\..\..\src\LibEMC\guid.h(84) : Warning 1415: Pointer to non-POD class
+    '_iviGUID' passed to function 'memcpy(void *, const void *, unsigned int)'
+    (arg. no. 1)
+..\..\..\src\LibEMC\guid.h(84) : Warning 1415: Pointer to non-POD class 'const
+    _iviGUID' passed to function 'memcpy(void *, const void *, unsigned int)'
+    (arg. no. 2)
+        _
+	}
+..\..\..\src\LibEMC\guid.h(86) : Warning 1529: Symbol '_iviGUID::operator=(const
+    _iviGUID &)' not first checking for assignment to this
+                        _
+class CEmcBaseUnknown : INonDelegatingUnknown
+..\..\..\src\LibEMC\basecom.h(46) : Warning 1505: no access specifier provided,
+    'private' assumed
+                                   _
+	virtual ~CEmcBaseUnknown() {}
+..\..\..\src\LibEMC\basecom.h(56) : Warning 1510: base class
+    'INonDelegatingUnknown' has no destructor
+        _
+	}
+..\..\..\src\LibEMC\basecom.h(55) : Warning 1541: Member 'CEmcBaseUnknown::m_pName'
+    (line 93) possibly not initialized by constructor
+..\..\..\src\LibEMC\basecom.h(93) : Info 830: Location cited in prior message
+                                    _
+	virtual ~CEmcBaseUnknown() {}
+..\..\..\src\LibEMC\basecom.h(56) : Warning 1540: Pointer member
+    'CEmcBaseUnknown::m_pName' (line 93) neither freed nor zeroed by destructor
+..\..\..\src\LibEMC\basecom.h(93) : Info 830: Location cited in prior message
+                                    _
+	virtual ~CEmcBaseUnknown() {}
+..\..\..\src\LibEMC\basecom.h(56) : Warning 1540: Pointer member
+    'CEmcBaseUnknown::m_pUnk' (line 95) neither freed nor zeroed by destructor
+..\..\..\src\LibEMC\basecom.h(95) : Info 830: Location cited in prior message
+                                   _
+			delete this;
+..\..\..\src\LibEMC\basecom.h(76) : Warning 586: function 'operator delete' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                     _
+		NonDelegatingAddRef();
+..\..\..\src\LibEMC\basecom.h(87) : Warning 534: Ignoring return value of
+    function 'CEmcBaseUnknown::NonDelegatingAddRef(void)' (compare with line
+    57) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\basecom.h(57) : Info 830: Location cited in prior message
+                _
+		}
+..\..\..\src\LibEMC\ts.h(87) : Warning 1401: member 'EMC_TS::unused1' (line 52)
+    not initialized by constructor [MISRA C++ Rule 8-5-1]
+..\..\..\src\LibEMC\ts.h(52) : Info 830: Location cited in prior message
+                _
+		}
+..\..\..\src\LibEMC\ts.h(87) : Warning 1401: member 'EMC_TS::unused2' (line 53)
+    not initialized by constructor [MISRA C++ Rule 8-5-1]
+..\..\..\src\LibEMC\ts.h(53) : Info 830: Location cited in prior message
+                _
+		}
+..\..\..\src\LibEMC\ts.h(95) : Warning 1401: member 'EMC_TS::unused1' (line 52)
+    not initialized by constructor [MISRA C++ Rule 8-5-1]
+..\..\..\src\LibEMC\ts.h(52) : Info 830: Location cited in prior message
+                _
+		}
+..\..\..\src\LibEMC\ts.h(95) : Warning 1401: member 'EMC_TS::unused2' (line 53)
+    not initialized by constructor [MISRA C++ Rule 8-5-1]
+..\..\..\src\LibEMC\ts.h(53) : Info 830: Location cited in prior message
+                                _
+		ts = ts/uncommon*uncommon;
+..\..\..\src\LibEMC\ts.h(338) : Warning 573: Signed-unsigned mix with divide
+                                      _
+	return Ts*(__int64)(toFreq/gcd)/(__int64)(fromFreq/gcd);
+..\..\..\src\LibEMC\ts.h(373) : Warning 573: Signed-unsigned mix with divide
+..\..\..\src\LibEMC\ts.h(373) : Warning 573: Signed-unsigned mix with divide
+                                               _
+	return Ts*(unsigned __int64)(toFreq/gcd)/(unsigned __int64)(fromFreq/gcd);
+..\..\..\src\LibEMC\ts.h(383) : Warning 573: Signed-unsigned mix with divide
+..\..\..\src\LibEMC\ts.h(383) : Warning 573: Signed-unsigned mix with divide
+                                         _
+	virtual ~CEmcBaseEventGenerator();
+..\..\..\src\LibEMC\baseevent.h(31) : Warning 1510: base class
+    'IEmcEventSource' has no destructor
+..\..\..\src\LibEMC\baseevent.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                       _
+	virtual ~CEmcBaseEventHandler();
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class 'IEmcEventSink'
+    has no destructor
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                _
+	virtual ~CEmcMediaType();
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'IEmcMediaType'
+    has no destructor
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'EMC_MEDIA_TYPE'
+    has no destructor
+                                  _
+	virtual ~CEmcMediaSample();
+..\..\..\src\LibEMC\mediasample.h(25) : Warning 1510: base class
+    'IEmcMediaSample' has no destructor
+..\..\..\src\LibEMC\mediasample.h(25) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                      _
+	virtual ~CEmcSampleAllocator();
+..\..\..\src\LibEMC\sampleallocator.h(25) : Warning 1510: base class
+    'IEmcSampleAllocator' has no destructor
+..\..\..\src\LibEMC\sampleallocator.h(25) : Warning 1510: base class 'IUnknown'
+    has no destructor
+         _
+#include "guid.h"
+..\..\..\src\LibEMC\ChainBuffer.h(6) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\guid.h'
+         _
+#include "basecom.h"
+..\..\..\src\LibEMC\ChainBuffer.h(7) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\basecom.h'
+         _
+#include "ts.h"
+..\..\..\src\LibEMC\ChainBuffer.h(8) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\ts.h'
+         _
+#include "lock.h"
+..\..\..\src\LibEMC\ChainBuffer.h(9) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\lock.h'
+         _
+#include "emccore.h"
+..\..\..\src\LibEMC\ChainBuffer.h(10) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\emccore.h'
+         _
+#include "baseevent.h"
+..\..\..\src\LibEMC\ChainBuffer.h(11) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\baseevent.h'
+         _
+#include "misc.h"
+..\..\..\src\LibEMC\ChainBuffer.h(12) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\misc.h'
+                            _
+	~ChainBufferNode() {}
+..\..\..\src\LibEMC\ChainBuffer.h(33) : Warning 1540: Pointer member
+    'ChainBufferNode::pucBuff' (line 36) neither freed nor zeroed by destructor
+..\..\..\src\LibEMC\ChainBuffer.h(36) : Info 830: Location cited in prior
+    message
+                            _
+	~ChainBufferNode() {}
+..\..\..\src\LibEMC\ChainBuffer.h(33) : Warning 1540: Pointer member
+    'ChainBufferNode::m_ptPrv' (line 49) neither freed nor zeroed by destructor
+..\..\..\src\LibEMC\ChainBuffer.h(49) : Info 830: Location cited in prior
+    message
+                            _
+	~ChainBufferNode() {}
+..\..\..\src\LibEMC\ChainBuffer.h(33) : Warning 1540: Pointer member
+    'ChainBufferNode::m_ptNxt' (line 50) neither freed nor zeroed by destructor
+..\..\..\src\LibEMC\ChainBuffer.h(50) : Info 830: Location cited in prior
+    message
+                               _
+	virtual ~CChainBuffer();
+..\..\..\src\LibEMC\ChainBuffer.h(60) : Warning 1510: base class
+    'IEmcPullStream' has no destructor
+..\..\..\src\LibEMC\ChainBuffer.h(60) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                                                      _
+			Fire(EMC_EVENT_CB_UNDERFLOW_SAFE, m_ulCBcount);
+..\..\..\src\LibEMC\ChainBuffer.h(80) : Warning 534: Ignoring return value of
+    function 'CEmcBaseEventGenerator::Fire(enum EMC_EVENT, unsigned long)'
+    (compare with line 34, file ..\..\..\src\LibEMC\baseevent.h) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\baseevent.h(34) : Info 830: Location cited in prior message
+                                  _
+	virtual ~CEmcBaseDecoder();
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IEmcDecoder'
+    has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcEventSink' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                 _
+		Fire(event, data);
+..\..\..\src\LibEMC\basedecoder.h(51) : Warning 534: Ignoring return value of
+    function 'CEmcBaseEventGenerator::Fire(enum EMC_EVENT, unsigned long)'
+    (compare with line 34, file ..\..\..\src\LibEMC\baseevent.h) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\baseevent.h(34) : Info 830: Location cited in prior message
+                                  _
+	virtual ~CEmcBaseEncoder();
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IEmcEncoder'
+    has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcEventSink' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                 _
+		Fire(event, data);
+..\..\..\src\LibEMC\baseencoder.h(46) : Warning 534: Ignoring return value of
+    function 'CEmcBaseEventGenerator::Fire(enum EMC_EVENT, unsigned long)'
+    (compare with line 34, file ..\..\..\src\LibEMC\baseevent.h) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\baseevent.h(34) : Info 830: Location cited in prior message
+                                _
+	virtual ~CEmcBaseDemux();
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class 'IEmcDemux' has
+    no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                              _
+	virtual ~CEmcBaseMux();
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IEmcMux' has no
+    destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IEmcPropertySet'
+    has no destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IUnknown' has no
+    destructor
+                               _
+	memset(&m_tCurrBuffNode, 0, sizeof(m_tCurrBuffNode));
+..\..\..\src\LibEMC\basedecoder.cpp(30) : Warning 1415: Pointer to non-POD
+    class 'ChainBufferNode' passed to function 'memset(void *, int, unsigned
+    int)' (arg. no. 1)
+_
+}
+..\..\..\src\LibEMC\basedecoder.cpp(33) : Warning 1401: member
+    'CEmcBaseDecoder::m_ptfnCallBackArray' (line 62, file ..\..\..\src\LibEMC\basedecoder.h)
+    not initialized by constructor [MISRA C++ Rule 8-5-1]
+..\..\..\src\LibEMC\basedecoder.h(62) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibEMC\basedecoder.cpp(33) : Warning 1401: member
+    'CEmcBaseDecoder::m_dFrameRate' (line 68, file ..\..\..\src\LibEMC\basedecoder.h)
+    not initialized by constructor [MISRA C++ Rule 8-5-1]
+..\..\..\src\LibEMC\basedecoder.h(68) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibEMC\basedecoder.cpp(37) : Warning 1540: Pointer member
+    'CEmcBaseDecoder::m_ptfnCallBackArray' (line 62, file ..\..\..\src\LibEMC\basedecoder.h)
+    neither freed nor zeroed by destructor
+..\..\..\src\LibEMC\basedecoder.h(62) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibEMC\basedecoder.cpp(37) : Warning 1540: Pointer member
+    'CEmcBaseDecoder::m_pPullStream' (line 63, file ..\..\..\src\LibEMC\basedecoder.h)
+    neither freed nor zeroed by destructor
+..\..\..\src\LibEMC\basedecoder.h(63) : Info 830: Location cited in prior
+    message
+                                                                          _
+{
+..\..\..\src\LibEMC\basedecoder.cpp(40) : Error 18: Symbol 'CEmcBaseDecoder::NonDelegatingQueryInterface(const
+    struct _GUID &, void **)' redeclared (qualification) conflicts with line
+    45, file ..\..\..\src\LibEMC\basedecoder.h [MISRA C++ Rule 2-10-6], [MISRA
+    C++ Rule 3-2-1]
+..\..\..\src\LibEMC\basedecoder.h(45) : Info 830: Location cited in prior
+    message
+                                                                                    _
+{
+..\..\..\src\LibEMC\basedecoder.cpp(66) : Error 18: Symbol 'CEmcBaseDecoder::QuerySupported(const
+    struct _GUID &, unsigned long, unsigned long *)' redeclared (qualification)
+    conflicts with line 46, file ..\..\..\src\LibEMC\basedecoder.h [MISRA C++
+    Rule 2-10-6], [MISRA C++ Rule 3-2-1]
+..\..\..\src\LibEMC\basedecoder.h(46) : Info 830: Location cited in prior
+    message
+                                                                            _
+{
+..\..\..\src\LibEMC\basedecoder.cpp(71) : Error 18: Symbol 'CEmcBaseDecoder::SetInterface(unsigned
+    long, const struct _GUID &, IUnknown *)' redeclared (qualification)
+    conflicts with line 36, file ..\..\..\src\LibEMC\basedecoder.h [MISRA C++
+    Rule 2-10-6], [MISRA C++ Rule 3-2-1]
+..\..\..\src\LibEMC\basedecoder.h(36) : Info 830: Location cited in prior
+    message
+                                                                                        _
+{
+..\..\..\src\LibEMC\basedecoder.cpp(86) : Error 18: Symbol 'CEmcBaseDecoder::GetSampleWithTimeStamp(IEmcMediaSample
+    **, struct _tagTTimeStamp *)' redeclared (qualification) conflicts with
+    line 37, file ..\..\..\src\LibEMC\basedecoder.h [MISRA C++ Rule 2-10-6],
+    [MISRA C++ Rule 3-2-1]
+..\..\..\src\LibEMC\basedecoder.h(37) : Info 830: Location cited in prior
+    message
+                                                   _
+{
+..\..\..\src\LibEMC\basedecoder.cpp(91) : Error 18: Symbol 'CEmcBaseDecoder::Open(void
+    *, unsigned long)' redeclared (qualification) conflicts with line 33, file
+    ..\..\..\src\LibEMC\basedecoder.h [MISRA C++ Rule 2-10-6], [MISRA C++ Rule
+    3-2-1]
+..\..\..\src\LibEMC\basedecoder.h(33) : Info 830: Location cited in prior
+    message
+                         _
+{
+..\..\..\src\LibEMC\basedecoder.cpp(96) : Error 18: Symbol 'CEmcBaseDecoder::SkipToKey(void)'
+    redeclared (qualification) conflicts with line 38, file
+    ..\..\..\src\LibEMC\basedecoder.h [MISRA C++ Rule 2-10-6], [MISRA C++ Rule
+    3-2-1]
+..\..\..\src\LibEMC\basedecoder.h(38) : Info 830: Location cited in prior
+    message
+                                        _
+{
+..\..\..\src\LibEMC\basedecoder.cpp(101) : Error 18: Symbol
+    'CEmcBaseDecoder::SkipBFrame(int)' redeclared (qualification) conflicts
+    with line 39, file ..\..\..\src\LibEMC\basedecoder.h [MISRA C++ Rule
+    2-10-6], [MISRA C++ Rule 3-2-1]
+..\..\..\src\LibEMC\basedecoder.h(39) : Info 830: Location cited in prior
+    message
+                         _
+{
+..\..\..\src\LibEMC\basedecoder.cpp(106) : Error 18: Symbol
+    'CEmcBaseDecoder::Close(void)' redeclared (qualification) conflicts with
+    line 34, file ..\..\..\src\LibEMC\basedecoder.h [MISRA C++ Rule 2-10-6],
+    [MISRA C++ Rule 3-2-1]
+..\..\..\src\LibEMC\basedecoder.h(34) : Info 830: Location cited in prior
+    message
+                               _
+	memset(&m_tCurrBuffNode, 0, sizeof(m_tCurrBuffNode));
+..\..\..\src\LibEMC\basedecoder.cpp(113) : Warning 1415: Pointer to non-POD
+    class 'ChainBufferNode' passed to function 'memset(void *, int, unsigned
+    int)' (arg. no. 1)
+                         _
+{
+..\..\..\src\LibEMC\basedecoder.cpp(119) : Error 18: Symbol
+    'CEmcBaseDecoder::Stop(void)' redeclared (qualification) conflicts with
+    line 35, file ..\..\..\src\LibEMC\basedecoder.h [MISRA C++ Rule 2-10-6],
+    [MISRA C++ Rule 3-2-1]
+..\..\..\src\LibEMC\basedecoder.h(35) : Info 830: Location cited in prior
+    message
+                           _
+	ResetStreamBuffer();
+..\..\..\src\LibEMC\basedecoder.cpp(120) : Warning 534: Ignoring return value
+    of function 'CEmcBaseDecoder::ResetStreamBuffer(void)' (compare with line
+    57, file ..\..\..\src\LibEMC\basedecoder.h) [MISRA C++ Rules 0-1-7], [MISRA
+    C++ Rules 0-3-2]
+..\..\..\src\LibEMC\basedecoder.h(57) : Info 830: Location cited in prior
+    message
+                               _
+	memset(&m_tCurrBuffNode, 0, sizeof(m_tCurrBuffNode));
+..\..\..\src\LibEMC\basedecoder.cpp(125) : Warning 1415: Pointer to non-POD
+    class 'ChainBufferNode' passed to function 'memset(void *, int, unsigned
+    int)' (arg. no. 1)
+                         _
+{
+..\..\..\src\LibEMC\basedecoder.cpp(130) : Error 18: Symbol
+    'CEmcBaseDecoder::Run(void)' redeclared (qualification) conflicts with line
+    41, file ..\..\..\src\LibEMC\basedecoder.h [MISRA C++ Rule 2-10-6], [MISRA
+    C++ Rule 3-2-1]
+..\..\..\src\LibEMC\basedecoder.h(41) : Info 830: Location cited in prior
+    message
+                         _
+{
+..\..\..\src\LibEMC\basedecoder.cpp(135) : Error 18: Symbol
+    'CEmcBaseDecoder::Pause(void)' redeclared (qualification) conflicts with
+    line 42, file ..\..\..\src\LibEMC\basedecoder.h [MISRA C++ Rule 2-10-6],
+    [MISRA C++ Rule 3-2-1]
+..\..\..\src\LibEMC\basedecoder.h(42) : Info 830: Location cited in prior
+    message
+                                       _
+		memset(&m_tCurrBuffNode, 0, sizeof(m_tCurrBuffNode));
+..\..\..\src\LibEMC\basedecoder.cpp(155) : Warning 1415: Pointer to non-POD
+    class 'ChainBufferNode' passed to function 'memset(void *, int, unsigned
+    int)' (arg. no. 1)
+                                                                                                                                                         _
+{
+..\..\..\src\LibEMC\basedecoder.cpp(233) : Error 18: Symbol
+    'CEmcBaseDecoder::Get(const struct _GUID &, unsigned long, void *, unsigned
+    long, void *, unsigned long, unsigned long *)' redeclared (qualification)
+    conflicts with line 47, file ..\..\..\src\LibEMC\basedecoder.h [MISRA C++
+    Rule 2-10-6], [MISRA C++ Rule 3-2-1]
+..\..\..\src\LibEMC\basedecoder.h(47) : Info 830: Location cited in prior
+    message
+                                                                                                                                      _
+{
+..\..\..\src\LibEMC\basedecoder.cpp(238) : Error 18: Symbol
+    'CEmcBaseDecoder::Set(const struct _GUID &, unsigned long, void *, unsigned
+    long, void *, unsigned long)' redeclared (qualification) conflicts with
+    line 48, file ..\..\..\src\LibEMC\basedecoder.h [MISRA C++ Rule 2-10-6],
+    [MISRA C++ Rule 3-2-1]
+..\..\..\src\LibEMC\basedecoder.h(48) : Info 830: Location cited in prior
+    message
+
+--- Module:   ..\..\..\src\LibEMC\basedemux.cpp (C++)
+                        _
+class CEmcBaseUnknown : INonDelegatingUnknown
+..\..\..\src\LibEMC\basecom.h(46) : Warning 1505: no access specifier provided,
+    'private' assumed
+                                   _
+	virtual ~CEmcBaseUnknown() {}
+..\..\..\src\LibEMC\basecom.h(56) : Warning 1510: base class
+    'INonDelegatingUnknown' has no destructor
+                                _
+		ts = ts/uncommon*uncommon;
+..\..\..\src\LibEMC\ts.h(338) : Warning 573: Signed-unsigned mix with divide
+                                      _
+	return Ts*(__int64)(toFreq/gcd)/(__int64)(fromFreq/gcd);
+..\..\..\src\LibEMC\ts.h(373) : Warning 573: Signed-unsigned mix with divide
+..\..\..\src\LibEMC\ts.h(373) : Warning 573: Signed-unsigned mix with divide
+                                               _
+	return Ts*(unsigned __int64)(toFreq/gcd)/(unsigned __int64)(fromFreq/gcd);
+..\..\..\src\LibEMC\ts.h(383) : Warning 573: Signed-unsigned mix with divide
+..\..\..\src\LibEMC\ts.h(383) : Warning 573: Signed-unsigned mix with divide
+                                         _
+	virtual ~CEmcBaseEventGenerator();
+..\..\..\src\LibEMC\baseevent.h(31) : Warning 1510: base class
+    'IEmcEventSource' has no destructor
+..\..\..\src\LibEMC\baseevent.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                       _
+	virtual ~CEmcBaseEventHandler();
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class 'IEmcEventSink'
+    has no destructor
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                _
+	virtual ~CEmcMediaType();
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'IEmcMediaType'
+    has no destructor
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'EMC_MEDIA_TYPE'
+    has no destructor
+                                  _
+	virtual ~CEmcMediaSample();
+..\..\..\src\LibEMC\mediasample.h(25) : Warning 1510: base class
+    'IEmcMediaSample' has no destructor
+..\..\..\src\LibEMC\mediasample.h(25) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                      _
+	virtual ~CEmcSampleAllocator();
+..\..\..\src\LibEMC\sampleallocator.h(25) : Warning 1510: base class
+    'IEmcSampleAllocator' has no destructor
+..\..\..\src\LibEMC\sampleallocator.h(25) : Warning 1510: base class 'IUnknown'
+    has no destructor
+         _
+#include "guid.h"
+..\..\..\src\LibEMC\ChainBuffer.h(6) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\guid.h'
+         _
+#include "basecom.h"
+..\..\..\src\LibEMC\ChainBuffer.h(7) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\basecom.h'
+         _
+#include "ts.h"
+..\..\..\src\LibEMC\ChainBuffer.h(8) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\ts.h'
+         _
+#include "lock.h"
+..\..\..\src\LibEMC\ChainBuffer.h(9) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\lock.h'
+         _
+#include "emccore.h"
+..\..\..\src\LibEMC\ChainBuffer.h(10) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\emccore.h'
+         _
+#include "baseevent.h"
+..\..\..\src\LibEMC\ChainBuffer.h(11) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\baseevent.h'
+         _
+#include "misc.h"
+..\..\..\src\LibEMC\ChainBuffer.h(12) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\misc.h'
+                               _
+	virtual ~CChainBuffer();
+..\..\..\src\LibEMC\ChainBuffer.h(60) : Warning 1510: base class
+    'IEmcPullStream' has no destructor
+..\..\..\src\LibEMC\ChainBuffer.h(60) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                  _
+	virtual ~CEmcBaseDecoder();
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IEmcDecoder'
+    has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcEventSink' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                  _
+	virtual ~CEmcBaseEncoder();
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IEmcEncoder'
+    has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcEventSink' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                _
+	virtual ~CEmcBaseDemux();
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class 'IEmcDemux' has
+    no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                              _
+	virtual ~CEmcBaseMux();
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IEmcMux' has no
+    destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IEmcPropertySet'
+    has no destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IUnknown' has no
+    destructor
+_
+}
+..\..\..\src\LibEMC\basedemux.cpp(28) : Warning 1401: member
+    'CEmcBaseDemux::m_pAudioCB' (line 36, file ..\..\..\src\LibEMC\basedemux.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) not initialized by constructor
+    [MISRA C++ Rule 8-5-1]
+..\..\..\src\LibEMC\basedemux.h(36) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\basedemux.cpp(28) : Warning 1401: member
+    'CEmcBaseDemux::m_pVideoCB' (line 36, file ..\..\..\src\LibEMC\basedemux.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) not initialized by constructor
+    [MISRA C++ Rule 8-5-1]
+..\..\..\src\LibEMC\basedemux.h(36) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\basedemux.cpp(28) : Warning 1401: member
+    'CEmcBaseDemux::m_pSubtitleCB' (line 36, file ..\..\..\src\LibEMC\basedemux.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) not initialized by constructor
+    [MISRA C++ Rule 8-5-1]
+..\..\..\src\LibEMC\basedemux.h(36) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\basedemux.cpp(32) : Warning 1540: Pointer member
+    'CEmcBaseDemux::m_pAudioCB' (line 36, file ..\..\..\src\LibEMC\basedemux.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) neither freed nor zeroed by
+    destructor
+..\..\..\src\LibEMC\basedemux.h(36) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\basedemux.cpp(32) : Warning 1540: Pointer member
+    'CEmcBaseDemux::m_pVideoCB' (line 36, file ..\..\..\src\LibEMC\basedemux.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) neither freed nor zeroed by
+    destructor
+..\..\..\src\LibEMC\basedemux.h(36) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\basedemux.cpp(32) : Warning 1540: Pointer member
+    'CEmcBaseDemux::m_pSubtitleCB' (line 36, file ..\..\..\src\LibEMC\basedemux.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) neither freed nor zeroed by
+    destructor
+..\..\..\src\LibEMC\basedemux.h(36) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\basedemux.cpp(32) : Warning 1540: Pointer member
+    'CEmcBaseDemux::m_pmtAudio' (line 37, file ..\..\..\src\LibEMC\basedemux.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) neither freed nor zeroed by
+    destructor
+..\..\..\src\LibEMC\basedemux.h(37) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\basedemux.cpp(32) : Warning 1540: Pointer member
+    'CEmcBaseDemux::m_pmtVideo' (line 37, file ..\..\..\src\LibEMC\basedemux.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) neither freed nor zeroed by
+    destructor
+..\..\..\src\LibEMC\basedemux.h(37) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\basedemux.cpp(32) : Warning 1540: Pointer member
+    'CEmcBaseDemux::m_pmtSubtitle' (line 37, file ..\..\..\src\LibEMC\basedemux.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) neither freed nor zeroed by
+    destructor
+..\..\..\src\LibEMC\basedemux.h(37) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\basedemux.cpp(32) : Warning 1540: Pointer member
+    'CEmcBaseDemux::m_pmtDemux' (line 37, file ..\..\..\src\LibEMC\basedemux.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) neither freed nor zeroed by
+    destructor
+..\..\..\src\LibEMC\basedemux.h(37) : Info 830: Location cited in prior message
+                                            _
+			m_pAudioCB->AddRef();
+..\..\..\src\LibEMC\basedemux.cpp(40) : Warning 534: Ignoring return value of
+    function 'IUnknown::AddRef(void)' (compare with line 117, file C:\Program
+    Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h, module
+    ..\..\..\src\LibEMC\basedecoder.cpp) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h(117)
+    : Info 830: Location cited in prior message
+                                            _
+			m_pVideoCB->AddRef();
+..\..\..\src\LibEMC\basedemux.cpp(46) : Warning 534: Ignoring return value of
+    function 'IUnknown::AddRef(void)' (compare with line 117, file C:\Program
+    Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h, module
+    ..\..\..\src\LibEMC\basedecoder.cpp) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h(117)
+    : Info 830: Location cited in prior message
+                                               _
+			m_pSubtitleCB->AddRef();
+..\..\..\src\LibEMC\basedemux.cpp(52) : Warning 534: Ignoring return value of
+    function 'IUnknown::AddRef(void)' (compare with line 117, file C:\Program
+    Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h, module
+    ..\..\..\src\LibEMC\basedecoder.cpp) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h(117)
+    : Info 830: Location cited in prior message
+                                            _
+			m_pmtAudio->AddRef();
+..\..\..\src\LibEMC\basedemux.cpp(62) : Warning 534: Ignoring return value of
+    function 'CEmcMediaType::AddRef(void)' (compare with line 32, file
+    ..\..\..\src\LibEMC\mediatype.h, module ..\..\..\src\LibEMC\basedecoder.cpp)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\mediatype.h(32) : Info 830: Location cited in prior message
+                                            _
+			m_pmtAudio->AddRef();
+..\..\..\src\LibEMC\basedemux.cpp(62) : Warning 613: Possible use of null
+    pointer 'CEmcBaseDemux::m_pmtAudio' in left argument to operator '->'
+    [Reference: file ..\..\..\src\LibEMC\basedemux.cpp: line 24]
+..\..\..\src\LibEMC\basedemux.cpp(24) : Info 831: Reference cited in prior
+    message
+                                            _
+			m_pmtVideo->AddRef();
+..\..\..\src\LibEMC\basedemux.cpp(68) : Warning 534: Ignoring return value of
+    function 'CEmcMediaType::AddRef(void)' (compare with line 32, file
+    ..\..\..\src\LibEMC\mediatype.h, module ..\..\..\src\LibEMC\basedecoder.cpp)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\mediatype.h(32) : Info 830: Location cited in prior message
+                                            _
+			m_pmtVideo->AddRef();
+..\..\..\src\LibEMC\basedemux.cpp(68) : Warning 613: Possible use of null
+    pointer 'CEmcBaseDemux::m_pmtVideo' in left argument to operator '->'
+    [Reference: file ..\..\..\src\LibEMC\basedemux.cpp: line 25]
+..\..\..\src\LibEMC\basedemux.cpp(25) : Info 831: Reference cited in prior
+    message
+                                            _
+			m_pmtDemux->AddRef();
+..\..\..\src\LibEMC\basedemux.cpp(74) : Warning 534: Ignoring return value of
+    function 'CEmcMediaType::AddRef(void)' (compare with line 32, file
+    ..\..\..\src\LibEMC\mediatype.h, module ..\..\..\src\LibEMC\basedecoder.cpp)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\mediatype.h(32) : Info 830: Location cited in prior message
+                                            _
+			m_pmtDemux->AddRef();
+..\..\..\src\LibEMC\basedemux.cpp(74) : Warning 613: Possible use of null
+    pointer 'CEmcBaseDemux::m_pmtDemux' in left argument to operator '->'
+    [Reference: file ..\..\..\src\LibEMC\basedemux.cpp: line 27]
+..\..\..\src\LibEMC\basedemux.cpp(27) : Info 831: Reference cited in prior
+    message
+                                               _
+			m_pmtSubtitle->AddRef();
+..\..\..\src\LibEMC\basedemux.cpp(80) : Warning 534: Ignoring return value of
+    function 'CEmcMediaType::AddRef(void)' (compare with line 32, file
+    ..\..\..\src\LibEMC\mediatype.h, module ..\..\..\src\LibEMC\basedecoder.cpp)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\mediatype.h(32) : Info 830: Location cited in prior message
+                                               _
+			m_pmtSubtitle->AddRef();
+..\..\..\src\LibEMC\basedemux.cpp(80) : Warning 613: Possible use of null
+    pointer 'CEmcBaseDemux::m_pmtSubtitle' in left argument to operator '->'
+    [Reference: file ..\..\..\src\LibEMC\basedemux.cpp: line 26]
+..\..\..\src\LibEMC\basedemux.cpp(26) : Info 831: Reference cited in prior
+    message
+
+--- Module:   ..\..\..\src\LibEMC\baseencoder.cpp (C++)
+                        _
+class CEmcBaseUnknown : INonDelegatingUnknown
+..\..\..\src\LibEMC\basecom.h(46) : Warning 1505: no access specifier provided,
+    'private' assumed
+                                   _
+	virtual ~CEmcBaseUnknown() {}
+..\..\..\src\LibEMC\basecom.h(56) : Warning 1510: base class
+    'INonDelegatingUnknown' has no destructor
+                                _
+		ts = ts/uncommon*uncommon;
+..\..\..\src\LibEMC\ts.h(338) : Warning 573: Signed-unsigned mix with divide
+                                      _
+	return Ts*(__int64)(toFreq/gcd)/(__int64)(fromFreq/gcd);
+..\..\..\src\LibEMC\ts.h(373) : Warning 573: Signed-unsigned mix with divide
+..\..\..\src\LibEMC\ts.h(373) : Warning 573: Signed-unsigned mix with divide
+                                               _
+	return Ts*(unsigned __int64)(toFreq/gcd)/(unsigned __int64)(fromFreq/gcd);
+..\..\..\src\LibEMC\ts.h(383) : Warning 573: Signed-unsigned mix with divide
+..\..\..\src\LibEMC\ts.h(383) : Warning 573: Signed-unsigned mix with divide
+                                         _
+	virtual ~CEmcBaseEventGenerator();
+..\..\..\src\LibEMC\baseevent.h(31) : Warning 1510: base class
+    'IEmcEventSource' has no destructor
+..\..\..\src\LibEMC\baseevent.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                       _
+	virtual ~CEmcBaseEventHandler();
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class 'IEmcEventSink'
+    has no destructor
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                _
+	virtual ~CEmcMediaType();
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'IEmcMediaType'
+    has no destructor
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'EMC_MEDIA_TYPE'
+    has no destructor
+                                  _
+	virtual ~CEmcMediaSample();
+..\..\..\src\LibEMC\mediasample.h(25) : Warning 1510: base class
+    'IEmcMediaSample' has no destructor
+..\..\..\src\LibEMC\mediasample.h(25) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                      _
+	virtual ~CEmcSampleAllocator();
+..\..\..\src\LibEMC\sampleallocator.h(25) : Warning 1510: base class
+    'IEmcSampleAllocator' has no destructor
+..\..\..\src\LibEMC\sampleallocator.h(25) : Warning 1510: base class 'IUnknown'
+    has no destructor
+         _
+#include "guid.h"
+..\..\..\src\LibEMC\ChainBuffer.h(6) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\guid.h'
+         _
+#include "basecom.h"
+..\..\..\src\LibEMC\ChainBuffer.h(7) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\basecom.h'
+         _
+#include "ts.h"
+..\..\..\src\LibEMC\ChainBuffer.h(8) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\ts.h'
+         _
+#include "lock.h"
+..\..\..\src\LibEMC\ChainBuffer.h(9) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\lock.h'
+         _
+#include "emccore.h"
+..\..\..\src\LibEMC\ChainBuffer.h(10) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\emccore.h'
+         _
+#include "baseevent.h"
+..\..\..\src\LibEMC\ChainBuffer.h(11) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\baseevent.h'
+         _
+#include "misc.h"
+..\..\..\src\LibEMC\ChainBuffer.h(12) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\misc.h'
+                               _
+	virtual ~CChainBuffer();
+..\..\..\src\LibEMC\ChainBuffer.h(60) : Warning 1510: base class
+    'IEmcPullStream' has no destructor
+..\..\..\src\LibEMC\ChainBuffer.h(60) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                  _
+	virtual ~CEmcBaseDecoder();
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IEmcDecoder'
+    has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcEventSink' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                  _
+	virtual ~CEmcBaseEncoder();
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IEmcEncoder'
+    has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcEventSink' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                _
+	virtual ~CEmcBaseDemux();
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class 'IEmcDemux' has
+    no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                              _
+	virtual ~CEmcBaseMux();
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IEmcMux' has no
+    destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IEmcPropertySet'
+    has no destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IUnknown' has no
+    destructor
+_
+}
+..\..\..\src\LibEMC\baseencoder.cpp(36) : Warning 1540: Pointer member
+    'CEmcBaseEncoder::m_pGetRawDataFunc' (line 58, file ..\..\..\src\LibEMC\baseencoder.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) neither freed nor zeroed by
+    destructor
+..\..\..\src\LibEMC\baseencoder.h(58) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibEMC\baseencoder.cpp(36) : Warning 1540: Pointer member
+    'CEmcBaseEncoder::m_pMux' (line 59, file ..\..\..\src\LibEMC\baseencoder.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) neither freed nor zeroed by
+    destructor
+..\..\..\src\LibEMC\baseencoder.h(59) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibEMC\baseencoder.cpp(36) : Warning 1540: Pointer member
+    'CEmcBaseEncoder::m_pAnotherEnc' (line 68, file ..\..\..\src\LibEMC\baseencoder.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) neither freed nor zeroed by
+    destructor
+..\..\..\src\LibEMC\baseencoder.h(68) : Info 830: Location cited in prior
+    message
+                                                                          _
+{
+..\..\..\src\LibEMC\baseencoder.cpp(39) : Error 18: Symbol 'CEmcBaseEncoder::NonDelegatingQueryInterface(const
+    struct _GUID &, void **)' redeclared (qualification) conflicts with line
+    40, file ..\..\..\src\LibEMC\baseencoder.h, module ..\..\..\src\LibEMC\basedecoder.cpp
+    [MISRA C++ Rule 2-10-6], [MISRA C++ Rule 3-2-1]
+..\..\..\src\LibEMC\baseencoder.h(40) : Info 830: Location cited in prior
+    message
+                                                                                    _
+{
+..\..\..\src\LibEMC\baseencoder.cpp(65) : Error 18: Symbol 'CEmcBaseEncoder::QuerySupported(const
+    struct _GUID &, unsigned long, unsigned long *)' redeclared (qualification)
+    conflicts with line 41, file ..\..\..\src\LibEMC\baseencoder.h, module
+    ..\..\..\src\LibEMC\basedecoder.cpp [MISRA C++ Rule 2-10-6], [MISRA C++
+    Rule 3-2-1]
+..\..\..\src\LibEMC\baseencoder.h(41) : Info 830: Location cited in prior
+    message
+                                                                            _
+{
+..\..\..\src\LibEMC\baseencoder.cpp(70) : Error 18: Symbol 'CEmcBaseEncoder::SetInterface(unsigned
+    long, const struct _GUID &, IUnknown *)' redeclared (qualification)
+    conflicts with line 36, file ..\..\..\src\LibEMC\baseencoder.h, module
+    ..\..\..\src\LibEMC\basedecoder.cpp [MISRA C++ Rule 2-10-6], [MISRA C++
+    Rule 3-2-1]
+..\..\..\src\LibEMC\baseencoder.h(36) : Info 830: Location cited in prior
+    message
+                                                   _
+{
+..\..\..\src\LibEMC\baseencoder.cpp(96) : Error 18: Symbol 'CEmcBaseEncoder::Open(void
+    *, unsigned long)' redeclared (qualification) conflicts with line 32, file
+    ..\..\..\src\LibEMC\baseencoder.h, module ..\..\..\src\LibEMC\basedecoder.cpp
+    [MISRA C++ Rule 2-10-6], [MISRA C++ Rule 3-2-1]
+..\..\..\src\LibEMC\baseencoder.h(32) : Info 830: Location cited in prior
+    message
+                         _
+{
+..\..\..\src\LibEMC\baseencoder.cpp(101) : Error 18: Symbol
+    'CEmcBaseEncoder::Close(void)' redeclared (qualification) conflicts with
+    line 33, file ..\..\..\src\LibEMC\baseencoder.h, module
+    ..\..\..\src\LibEMC\basedecoder.cpp [MISRA C++ Rule 2-10-6], [MISRA C++
+    Rule 3-2-1]
+..\..\..\src\LibEMC\baseencoder.h(33) : Info 830: Location cited in prior
+    message
+                         _
+{
+..\..\..\src\LibEMC\baseencoder.cpp(112) : Error 18: Symbol
+    'CEmcBaseEncoder::Stop(void)' redeclared (qualification) conflicts with
+    line 34, file ..\..\..\src\LibEMC\baseencoder.h, module
+    ..\..\..\src\LibEMC\basedecoder.cpp [MISRA C++ Rule 2-10-6], [MISRA C++
+    Rule 3-2-1]
+..\..\..\src\LibEMC\baseencoder.h(34) : Info 830: Location cited in prior
+    message
+                         _
+{
+..\..\..\src\LibEMC\baseencoder.cpp(117) : Error 18: Symbol
+    'CEmcBaseEncoder::Run(void)' redeclared (qualification) conflicts with line
+    38, file ..\..\..\src\LibEMC\baseencoder.h, module ..\..\..\src\LibEMC\basedecoder.cpp
+    [MISRA C++ Rule 2-10-6], [MISRA C++ Rule 3-2-1]
+..\..\..\src\LibEMC\baseencoder.h(38) : Info 830: Location cited in prior
+    message
+                                    _
+		StartEncoderThread();
+..\..\..\src\LibEMC\baseencoder.cpp(130) : Warning 534: Ignoring return value
+    of function 'CEmcBaseEncoder::StartEncoderThread(void)' (compare with line
+    52, file ..\..\..\src\LibEMC\baseencoder.h, module ..\..\..\src\LibEMC\basedecoder.cpp)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\baseencoder.h(52) : Info 830: Location cited in prior
+    message
+                _
+	Resume();
+..\..\..\src\LibEMC\baseencoder.cpp(133) : Warning 534: Ignoring return value
+    of function 'CEmcBaseThread::Resume(void)' (compare with line 37, file
+    ..\..\..\src\LibEMC\basethread.h, module ..\..\..\src\LibEMC\basedecoder.cpp)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\basethread.h(37) : Info 830: Location cited in prior
+    message
+                         _
+{
+..\..\..\src\LibEMC\baseencoder.cpp(140) : Error 18: Symbol
+    'CEmcBaseEncoder::Pause(void)' redeclared (qualification) conflicts with
+    line 39, file ..\..\..\src\LibEMC\baseencoder.h, module
+    ..\..\..\src\LibEMC\basedecoder.cpp [MISRA C++ Rule 2-10-6], [MISRA C++
+    Rule 3-2-1]
+..\..\..\src\LibEMC\baseencoder.h(39) : Info 830: Location cited in prior
+    message
+                                                                _
+{
+..\..\..\src\LibEMC\baseencoder.cpp(145) : Error 18: Symbol
+    'CEmcBaseEncoder::GetCurEncFrameTimeStamp(unsigned long *)' redeclared
+    (qualification) conflicts with line 35, file ..\..\..\src\LibEMC\baseencoder.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp [MISRA C++ Rule 2-10-6], [MISRA
+    C++ Rule 3-2-1]
+..\..\..\src\LibEMC\baseencoder.h(35) : Info 830: Location cited in prior
+    message
+                                                                  _
+	m_pAnotherEnc->GetCurEncFrameTimeStamp(&uAnotherTimeStamp);
+..\..\..\src\LibEMC\baseencoder.cpp(163) : Warning 534: Ignoring return value
+    of function 'IEmcEncoder::GetCurEncFrameTimeStamp(unsigned long *)'
+    (compare with line 948, file ..\..\..\src\LibEMC\emccore.h, module
+    ..\..\..\src\LibEMC\basedecoder.cpp) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(948) : Info 830: Location cited in prior message
+                                                                                                                                                         _
+{
+..\..\..\src\LibEMC\baseencoder.cpp(174) : Error 18: Symbol
+    'CEmcBaseEncoder::Get(const struct _GUID &, unsigned long, void *, unsigned
+    long, void *, unsigned long, unsigned long *)' redeclared (qualification)
+    conflicts with line 42, file ..\..\..\src\LibEMC\baseencoder.h, module
+    ..\..\..\src\LibEMC\basedecoder.cpp [MISRA C++ Rule 2-10-6], [MISRA C++
+    Rule 3-2-1]
+..\..\..\src\LibEMC\baseencoder.h(42) : Info 830: Location cited in prior
+    message
+                                                                                                                                      _
+{
+..\..\..\src\LibEMC\baseencoder.cpp(183) : Error 18: Symbol
+    'CEmcBaseEncoder::Set(const struct _GUID &, unsigned long, void *, unsigned
+    long, void *, unsigned long)' redeclared (qualification) conflicts with
+    line 43, file ..\..\..\src\LibEMC\baseencoder.h, module
+    ..\..\..\src\LibEMC\basedecoder.cpp [MISRA C++ Rule 2-10-6], [MISRA C++
+    Rule 3-2-1]
+..\..\..\src\LibEMC\baseencoder.h(43) : Info 830: Location cited in prior
+    message
+                                        _
+	HRESULT res = WaitThenTerminate(INFINITE);
+..\..\..\src\LibEMC\baseencoder.cpp(199) : Warning 569: Loss of information
+    (arg. no. 1) (32 bits to 31 bits)
+
+--- Module:   ..\..\..\src\LibEMC\baseevent.cpp (C++)
+                        _
+class CEmcBaseUnknown : INonDelegatingUnknown
+..\..\..\src\LibEMC\basecom.h(46) : Warning 1505: no access specifier provided,
+    'private' assumed
+                                   _
+	virtual ~CEmcBaseUnknown() {}
+..\..\..\src\LibEMC\basecom.h(56) : Warning 1510: base class
+    'INonDelegatingUnknown' has no destructor
+                                _
+		ts = ts/uncommon*uncommon;
+..\..\..\src\LibEMC\ts.h(338) : Warning 573: Signed-unsigned mix with divide
+                                      _
+	return Ts*(__int64)(toFreq/gcd)/(__int64)(fromFreq/gcd);
+..\..\..\src\LibEMC\ts.h(373) : Warning 573: Signed-unsigned mix with divide
+..\..\..\src\LibEMC\ts.h(373) : Warning 573: Signed-unsigned mix with divide
+                                               _
+	return Ts*(unsigned __int64)(toFreq/gcd)/(unsigned __int64)(fromFreq/gcd);
+..\..\..\src\LibEMC\ts.h(383) : Warning 573: Signed-unsigned mix with divide
+..\..\..\src\LibEMC\ts.h(383) : Warning 573: Signed-unsigned mix with divide
+                                         _
+	virtual ~CEmcBaseEventGenerator();
+..\..\..\src\LibEMC\baseevent.h(31) : Warning 1510: base class
+    'IEmcEventSource' has no destructor
+..\..\..\src\LibEMC\baseevent.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                       _
+	virtual ~CEmcBaseEventHandler();
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class 'IEmcEventSink'
+    has no destructor
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                _
+	virtual ~CEmcMediaType();
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'IEmcMediaType'
+    has no destructor
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'EMC_MEDIA_TYPE'
+    has no destructor
+                                  _
+	virtual ~CEmcMediaSample();
+..\..\..\src\LibEMC\mediasample.h(25) : Warning 1510: base class
+    'IEmcMediaSample' has no destructor
+..\..\..\src\LibEMC\mediasample.h(25) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                      _
+	virtual ~CEmcSampleAllocator();
+..\..\..\src\LibEMC\sampleallocator.h(25) : Warning 1510: base class
+    'IEmcSampleAllocator' has no destructor
+..\..\..\src\LibEMC\sampleallocator.h(25) : Warning 1510: base class 'IUnknown'
+    has no destructor
+         _
+#include "guid.h"
+..\..\..\src\LibEMC\ChainBuffer.h(6) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\guid.h'
+         _
+#include "basecom.h"
+..\..\..\src\LibEMC\ChainBuffer.h(7) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\basecom.h'
+         _
+#include "ts.h"
+..\..\..\src\LibEMC\ChainBuffer.h(8) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\ts.h'
+         _
+#include "lock.h"
+..\..\..\src\LibEMC\ChainBuffer.h(9) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\lock.h'
+         _
+#include "emccore.h"
+..\..\..\src\LibEMC\ChainBuffer.h(10) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\emccore.h'
+         _
+#include "baseevent.h"
+..\..\..\src\LibEMC\ChainBuffer.h(11) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\baseevent.h'
+         _
+#include "misc.h"
+..\..\..\src\LibEMC\ChainBuffer.h(12) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\misc.h'
+                               _
+	virtual ~CChainBuffer();
+..\..\..\src\LibEMC\ChainBuffer.h(60) : Warning 1510: base class
+    'IEmcPullStream' has no destructor
+..\..\..\src\LibEMC\ChainBuffer.h(60) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                  _
+	virtual ~CEmcBaseDecoder();
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IEmcDecoder'
+    has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcEventSink' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                  _
+	virtual ~CEmcBaseEncoder();
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IEmcEncoder'
+    has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcEventSink' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                _
+	virtual ~CEmcBaseDemux();
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class 'IEmcDemux' has
+    no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                              _
+	virtual ~CEmcBaseMux();
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IEmcMux' has no
+    destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IEmcPropertySet'
+    has no destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IUnknown' has no
+    destructor
+                                         _
+		m_Listeners[i]->Release();
+..\..\..\src\LibEMC\baseevent.cpp(41) : Warning 534: Ignoring return value of
+    function 'IUnknown::Release(void)' (compare with line 119, file C:\Program
+    Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h, module
+    ..\..\..\src\LibEMC\basedecoder.cpp) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h(119)
+    : Info 830: Location cited in prior message
+                                         _
+		m_Listeners[i]->Release();
+..\..\..\src\LibEMC\baseevent.cpp(41) : Warning 1551: Function may throw
+    exception '...' in destructor 'CEmcBaseEventGenerator::~CEmcBaseEventGenerator(void)'
+                   _
+	WriteLock();
+..\..\..\src\LibEMC\baseevent.cpp(52) : Warning 534: Ignoring return value of
+    function 'CEmcMultipleReaderLock::WriteLock(void)' (compare with line 34,
+    file ..\..\..\src\LibEMC\lock.h, module ..\..\..\src\LibEMC\basedecoder.cpp)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\lock.h(34) : Info 830: Location cited in prior message
+                                   _
+		pListener->AddRef();
+..\..\..\src\LibEMC\baseevent.cpp(58) : Warning 534: Ignoring return value of
+    function 'IUnknown::AddRef(void)' (compare with line 117, file C:\Program
+    Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h, module
+    ..\..\..\src\LibEMC\basedecoder.cpp) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h(117)
+    : Info 830: Location cited in prior message
+                     _
+	WriteUnlock();
+..\..\..\src\LibEMC\baseevent.cpp(61) : Warning 534: Ignoring return value of
+    function 'CEmcMultipleReaderLock::WriteUnlock(void)' (compare with line 35,
+    file ..\..\..\src\LibEMC\lock.h, module ..\..\..\src\LibEMC\basedecoder.cpp)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\lock.h(35) : Info 830: Location cited in prior message
+                   _
+	WriteLock();
+..\..\..\src\LibEMC\baseevent.cpp(70) : Warning 534: Ignoring return value of
+    function 'CEmcMultipleReaderLock::WriteLock(void)' (compare with line 34,
+    file ..\..\..\src\LibEMC\lock.h, module ..\..\..\src\LibEMC\basedecoder.cpp)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\lock.h(34) : Info 830: Location cited in prior message
+                                    _
+		pListener->Release();
+..\..\..\src\LibEMC\baseevent.cpp(76) : Warning 534: Ignoring return value of
+    function 'IUnknown::Release(void)' (compare with line 119, file C:\Program
+    Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h, module
+    ..\..\..\src\LibEMC\basedecoder.cpp) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h(119)
+    : Info 830: Location cited in prior message
+                     _
+	WriteUnlock();
+..\..\..\src\LibEMC\baseevent.cpp(81) : Warning 534: Ignoring return value of
+    function 'CEmcMultipleReaderLock::WriteUnlock(void)' (compare with line 35,
+    file ..\..\..\src\LibEMC\lock.h, module ..\..\..\src\LibEMC\basedecoder.cpp)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\lock.h(35) : Info 830: Location cited in prior message
+                                                            _
+{
+..\..\..\src\LibEMC\baseevent.cpp(86) : Error 18: Symbol 'CEmcBaseEventGenerator::Fire(enum
+    EMC_EVENT, unsigned long)' redeclared (qualification) conflicts with line
+    34, file ..\..\..\src\LibEMC\baseevent.h, module ..\..\..\src\LibEMC\basedecoder.cpp
+    [MISRA C++ Rule 2-10-6], [MISRA C++ Rule 3-2-1]
+..\..\..\src\LibEMC\baseevent.h(34) : Info 830: Location cited in prior message
+                  _
+	ReadLock();
+..\..\..\src\LibEMC\baseevent.cpp(89) : Warning 534: Ignoring return value of
+    function 'CEmcMultipleReaderLock::ReadLock(void)' (compare with line 32,
+    file ..\..\..\src\LibEMC\lock.h, module ..\..\..\src\LibEMC\basedecoder.cpp)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\lock.h(32) : Info 830: Location cited in prior message
+                                                                        _
+			m_Listeners[i]->ReceiveEvent(event, data, FALSE);
+..\..\..\src\LibEMC\baseevent.cpp(93) : Warning 534: Ignoring return value of
+    function 'IEmcEventSink::ReceiveEvent(enum EMC_EVENT, unsigned long, int)'
+    (compare with line 777, file ..\..\..\src\LibEMC\emccore.h, module
+    ..\..\..\src\LibEMC\basedecoder.cpp) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(777) : Info 830: Location cited in prior message
+                    _
+	ReadUnlock();
+..\..\..\src\LibEMC\baseevent.cpp(95) : Warning 534: Ignoring return value of
+    function 'CEmcMultipleReaderLock::ReadUnlock(void)' (compare with line 33,
+    file ..\..\..\src\LibEMC\lock.h, module ..\..\..\src\LibEMC\basedecoder.cpp)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\lock.h(33) : Info 830: Location cited in prior message
+               _
+	Reset();
+..\..\..\src\LibEMC\baseevent.cpp(105) : Warning 534: Ignoring return value of
+    function 'CEmcEventClock::Reset(void)' (compare with line 51, file
+    ..\..\..\src\LibEMC\baseevent.h, module ..\..\..\src\LibEMC\basedecoder.cpp)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\baseevent.h(51) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\baseevent.cpp(106) : Warning 1566: member
+    'CEmcEventClock::m_nIdx' (line 56, file ..\..\..\src\LibEMC\baseevent.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) might have been initialized by
+    a separate function but no '-sem(CEmcEventClock::Reset,initializer)' was
+    seen
+..\..\..\src\LibEMC\baseevent.h(56) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\baseevent.cpp(106) : Warning 1566: member
+    'CEmcEventClock::m_nCount' (line 57, file ..\..\..\src\LibEMC\baseevent.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) might have been initialized by
+    a separate function but no '-sem(CEmcEventClock::Reset,initializer)' was
+    seen
+..\..\..\src\LibEMC\baseevent.h(57) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\baseevent.cpp(106) : Warning 1566: member
+    'CEmcEventClock::m_dwClockOffset' (line 60, file ..\..\..\src\LibEMC\baseevent.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) might have been initialized by
+    a separate function but no '-sem(CEmcEventClock::Reset,initializer)' was
+    seen
+..\..\..\src\LibEMC\baseevent.h(60) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\baseevent.cpp(106) : Warning 1566: member
+    'CEmcEventClock::m_dwPauseTime' (line 60, file ..\..\..\src\LibEMC\baseevent.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) might have been initialized by
+    a separate function but no '-sem(CEmcEventClock::Reset,initializer)' was
+    seen
+..\..\..\src\LibEMC\baseevent.h(60) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\baseevent.cpp(106) : Warning 1566: member
+    'CEmcEventClock::m_dwEventOffset' (line 61, file ..\..\..\src\LibEMC\baseevent.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) might have been initialized by
+    a separate function but no '-sem(CEmcEventClock::Reset,initializer)' was
+    seen
+..\..\..\src\LibEMC\baseevent.h(61) : Info 830: Location cited in prior message
+        _
+	LeaveCriticalSection(&m_cs);
+..\..\..\src\LibEMC\baseevent.cpp(205) : Warning 539: Did not expect positive
+    indentation from line 200
+..\..\..\src\LibEMC\baseevent.cpp(200) : Info 830: Location cited in prior
+    message
+                                                                  _
+		TerminateThread(m_hEventProcessThread, 0xfffffffe);
+..\..\..\src\LibEMC\baseevent.cpp(252) : Warning 534: Ignoring return value of
+    function 'TerminateThread(void *, unsigned long)' (compare with line 3009,
+    file C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3009)
+    : Info 830: Location cited in prior message
+                                                  _
+		CloseHandle(m_hEventProcessThread);
+..\..\..\src\LibEMC\baseevent.cpp(253) : Warning 534: Ignoring return value of
+    function 'CloseHandle(void *)' (compare with line 3713, file C:\Program
+    Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA
+    C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3713)
+    : Info 830: Location cited in prior message
+                                 _
+		delete ptToDelete;
+..\..\..\src\LibEMC\baseevent.cpp(264) : Warning 586: function 'operator
+    delete' is deprecated. [MISRA C++ Rule 18-4-1]
+                              _
+{
+..\..\..\src\LibEMC\baseevent.cpp(272) : Error 18: Symbol 'CEmcBaseEventHandler::CreateEventThread(void)
+' redeclared (qualification) conflicts with line 73, file ..\..\..\src\LibEMC\baseevent.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp [MISRA C++ Rule 2-10-6], [MISRA
+    C++ Rule 3-2-1]
+..\..\..\src\LibEMC\baseevent.h(73) : Info 830: Location cited in prior message
+                              _
+{
+..\..\..\src\LibEMC\baseevent.cpp(301) : Error 18: Symbol 'CEmcBaseEventHandler::DestroyEventThread(void)
+' redeclared (qualification) conflicts with line 74, file ..\..\..\src\LibEMC\baseevent.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp [MISRA C++ Rule 2-10-6], [MISRA
+    C++ Rule 3-2-1]
+..\..\..\src\LibEMC\baseevent.h(74) : Info 830: Location cited in prior message
+                                                                    _
+		WaitForSingleObject(m_hEventProcessThread, INFINITE);
+..\..\..\src\LibEMC\baseevent.cpp(311) : Warning 534: Ignoring return value of
+    function 'WaitForSingleObject(void *, unsigned long)' (compare with line
+    3369, file C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3369)
+    : Info 830: Location cited in prior message
+                                                  _
+		CloseHandle(m_hEventProcessThread);
+..\..\..\src\LibEMC\baseevent.cpp(312) : Warning 534: Ignoring return value of
+    function 'CloseHandle(void *)' (compare with line 3713, file C:\Program
+    Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA
+    C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3713)
+    : Info 830: Location cited in prior message
+                                 _
+		delete ptToDelete;
+..\..\..\src\LibEMC\baseevent.cpp(323) : Warning 586: function 'operator
+    delete' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                                             _
+{
+..\..\..\src\LibEMC\baseevent.cpp(335) : Error 18: Symbol 'CEmcBaseEventHandler::ReceiveEvent(enum
+    EMC_EVENT, unsigned long, int)' redeclared (qualification) conflicts with
+    line 75, file ..\..\..\src\LibEMC\baseevent.h, module ..\..\..\src\LibEMC\basedecoder.cpp
+    [MISRA C++ Rule 2-10-6], [MISRA C++ Rule 3-2-1]
+..\..\..\src\LibEMC\baseevent.h(75) : Info 830: Location cited in prior message
+                                               _
+	TEventNode*  ptNewNode = new TEventNode;
+..\..\..\src\LibEMC\baseevent.cpp(343) : Warning 586: function 'operator new'
+    is deprecated. [MISRA C++ Rule 18-4-1]
+                                         _
+			delete ptToDelete;
+..\..\..\src\LibEMC\baseevent.cpp(395) : Warning 586: function 'operator
+    delete' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                             _
+			ProcessEvent(eEventType, dwEventData);
+..\..\..\src\LibEMC\baseevent.cpp(401) : Warning 534: Ignoring return value of
+    function 'CEmcBaseEventHandler::ProcessEvent(enum EMC_EVENT, unsigned
+    long)' (compare with line 81, file ..\..\..\src\LibEMC\baseevent.h, module
+    ..\..\..\src\LibEMC\basedecoder.cpp) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibEMC\baseevent.h(81) : Info 830: Location cited in prior message
+                                                                           _
+				ReceiveEvent(eEventType, dwEventData, TRUE);  // if repeat, add this event back to the queue
+..\..\..\src\LibEMC\baseevent.cpp(405) : Warning 534: Ignoring return value of
+    function 'CEmcBaseEventHandler::ReceiveEvent(enum EMC_EVENT, unsigned long,
+    int)' (compare with line 334) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules
+    0-3-2]
+..\..\..\src\LibEMC\baseevent.cpp(334) : Info 830: Location cited in prior
+    message
+
+--- Module:   ..\..\..\src\LibEMC\basemediacomponent.cpp (C++)
+                        _
+class CEmcBaseUnknown : INonDelegatingUnknown
+..\..\..\src\LibEMC\basecom.h(46) : Warning 1505: no access specifier provided,
+    'private' assumed
+                                   _
+	virtual ~CEmcBaseUnknown() {}
+..\..\..\src\LibEMC\basecom.h(56) : Warning 1510: base class
+    'INonDelegatingUnknown' has no destructor
+                                _
+		ts = ts/uncommon*uncommon;
+..\..\..\src\LibEMC\ts.h(338) : Warning 573: Signed-unsigned mix with divide
+                                      _
+	return Ts*(__int64)(toFreq/gcd)/(__int64)(fromFreq/gcd);
+..\..\..\src\LibEMC\ts.h(373) : Warning 573: Signed-unsigned mix with divide
+..\..\..\src\LibEMC\ts.h(373) : Warning 573: Signed-unsigned mix with divide
+                                               _
+	return Ts*(unsigned __int64)(toFreq/gcd)/(unsigned __int64)(fromFreq/gcd);
+..\..\..\src\LibEMC\ts.h(383) : Warning 573: Signed-unsigned mix with divide
+..\..\..\src\LibEMC\ts.h(383) : Warning 573: Signed-unsigned mix with divide
+                                         _
+	virtual ~CEmcBaseEventGenerator();
+..\..\..\src\LibEMC\baseevent.h(31) : Warning 1510: base class
+    'IEmcEventSource' has no destructor
+..\..\..\src\LibEMC\baseevent.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                       _
+	virtual ~CEmcBaseEventHandler();
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class 'IEmcEventSink'
+    has no destructor
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                _
+	virtual ~CEmcMediaType();
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'IEmcMediaType'
+    has no destructor
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'EMC_MEDIA_TYPE'
+    has no destructor
+                                  _
+	virtual ~CEmcMediaSample();
+..\..\..\src\LibEMC\mediasample.h(25) : Warning 1510: base class
+    'IEmcMediaSample' has no destructor
+..\..\..\src\LibEMC\mediasample.h(25) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                      _
+	virtual ~CEmcSampleAllocator();
+..\..\..\src\LibEMC\sampleallocator.h(25) : Warning 1510: base class
+    'IEmcSampleAllocator' has no destructor
+..\..\..\src\LibEMC\sampleallocator.h(25) : Warning 1510: base class 'IUnknown'
+    has no destructor
+         _
+#include "guid.h"
+..\..\..\src\LibEMC\ChainBuffer.h(6) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\guid.h'
+         _
+#include "basecom.h"
+..\..\..\src\LibEMC\ChainBuffer.h(7) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\basecom.h'
+         _
+#include "ts.h"
+..\..\..\src\LibEMC\ChainBuffer.h(8) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\ts.h'
+         _
+#include "lock.h"
+..\..\..\src\LibEMC\ChainBuffer.h(9) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\lock.h'
+         _
+#include "emccore.h"
+..\..\..\src\LibEMC\ChainBuffer.h(10) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\emccore.h'
+         _
+#include "baseevent.h"
+..\..\..\src\LibEMC\ChainBuffer.h(11) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\baseevent.h'
+         _
+#include "misc.h"
+..\..\..\src\LibEMC\ChainBuffer.h(12) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\misc.h'
+                               _
+	virtual ~CChainBuffer();
+..\..\..\src\LibEMC\ChainBuffer.h(60) : Warning 1510: base class
+    'IEmcPullStream' has no destructor
+..\..\..\src\LibEMC\ChainBuffer.h(60) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                  _
+	virtual ~CEmcBaseDecoder();
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IEmcDecoder'
+    has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcEventSink' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                  _
+	virtual ~CEmcBaseEncoder();
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IEmcEncoder'
+    has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcEventSink' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                _
+	virtual ~CEmcBaseDemux();
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class 'IEmcDemux' has
+    no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                              _
+	virtual ~CEmcBaseMux();
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IEmcMux' has no
+    destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IEmcPropertySet'
+    has no destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IUnknown' has no
+    destructor
+                                                         _
+{
+..\..\..\src\LibEMC\basemediacomponent.cpp(23) : Error 18: Symbol
+    'CEmcBaseMediaComponent::Open(void *, unsigned long)' redeclared
+    (qualification) conflicts with line 35, file ..\..\..\src\LibEMC\basemediacomponent.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp [MISRA C++ Rule 2-10-6], [MISRA
+    C++ Rule 3-2-1]
+..\..\..\src\LibEMC\basemediacomponent.h(35) : Info 830: Location cited in
+    prior message
+                                _
+{
+..\..\..\src\LibEMC\basemediacomponent.cpp(28) : Error 18: Symbol
+    'CEmcBaseMediaComponent::Close(void)' redeclared (qualification) conflicts
+    with line 36, file ..\..\..\src\LibEMC\basemediacomponent.h, module
+    ..\..\..\src\LibEMC\basedecoder.cpp [MISRA C++ Rule 2-10-6], [MISRA C++
+    Rule 3-2-1]
+..\..\..\src\LibEMC\basemediacomponent.h(36) : Info 830: Location cited in
+    prior message
+                                _
+{
+..\..\..\src\LibEMC\basemediacomponent.cpp(33) : Error 18: Symbol
+    'CEmcBaseMediaComponent::Run(void)' redeclared (qualification) conflicts
+    with line 37, file ..\..\..\src\LibEMC\basemediacomponent.h, module
+    ..\..\..\src\LibEMC\basedecoder.cpp [MISRA C++ Rule 2-10-6], [MISRA C++
+    Rule 3-2-1]
+..\..\..\src\LibEMC\basemediacomponent.h(37) : Info 830: Location cited in
+    prior message
+                                _
+{
+..\..\..\src\LibEMC\basemediacomponent.cpp(38) : Error 18: Symbol
+    'CEmcBaseMediaComponent::Pause(void)' redeclared (qualification) conflicts
+    with line 38, file ..\..\..\src\LibEMC\basemediacomponent.h, module
+    ..\..\..\src\LibEMC\basedecoder.cpp [MISRA C++ Rule 2-10-6], [MISRA C++
+    Rule 3-2-1]
+..\..\..\src\LibEMC\basemediacomponent.h(38) : Info 830: Location cited in
+    prior message
+                                _
+{
+..\..\..\src\LibEMC\basemediacomponent.cpp(43) : Error 18: Symbol
+    'CEmcBaseMediaComponent::Stop(void)' redeclared (qualification) conflicts
+    with line 39, file ..\..\..\src\LibEMC\basemediacomponent.h, module
+    ..\..\..\src\LibEMC\basedecoder.cpp [MISRA C++ Rule 2-10-6], [MISRA C++
+    Rule 3-2-1]
+..\..\..\src\LibEMC\basemediacomponent.h(39) : Info 830: Location cited in
+    prior message
+_
+{
+..\..\..\src\LibEMC\basemediacomponent.cpp(48) : Warning 578: Declaration of
+    symbol 'state' hides symbol 'CEmcBaseMediaComponent::state' (line 41, file
+    ..\..\..\src\LibEMC\basemediacomponent.h, module ..\..\..\src\LibEMC\basedecoder.cpp)
+    [MISRA C++ Rule 2-10-2]
+..\..\..\src\LibEMC\basemediacomponent.h(41) : Info 830: Location cited in
+    prior message
+                                                                              _
+			pEventSource->Fire(EMC_EVENT_ENG_STATUS_CHANGED,state);
+..\..\..\src\LibEMC\basemediacomponent.cpp(55) : Warning 534: Ignoring return
+    value of function 'IEmcEventSource::Fire(enum EMC_EVENT, unsigned long)'
+    (compare with line 784, file ..\..\..\src\LibEMC\emccore.h, module
+    ..\..\..\src\LibEMC\basedecoder.cpp) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(784) : Info 830: Location cited in prior message
+                                               _
+			pEventSource->Release();
+..\..\..\src\LibEMC\basemediacomponent.cpp(56) : Warning 534: Ignoring return
+    value of function 'IUnknown::Release(void)' (compare with line 119, file
+    C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) [MISRA C++ Rules 0-1-7], [MISRA
+    C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h(119)
+    : Info 830: Location cited in prior message
+
+--- Module:   ..\..\..\src\LibEMC\basemux.cpp (C++)
+                        _
+class CEmcBaseUnknown : INonDelegatingUnknown
+..\..\..\src\LibEMC\basecom.h(46) : Warning 1505: no access specifier provided,
+    'private' assumed
+                                   _
+	virtual ~CEmcBaseUnknown() {}
+..\..\..\src\LibEMC\basecom.h(56) : Warning 1510: base class
+    'INonDelegatingUnknown' has no destructor
+                                _
+		ts = ts/uncommon*uncommon;
+..\..\..\src\LibEMC\ts.h(338) : Warning 573: Signed-unsigned mix with divide
+                                      _
+	return Ts*(__int64)(toFreq/gcd)/(__int64)(fromFreq/gcd);
+..\..\..\src\LibEMC\ts.h(373) : Warning 573: Signed-unsigned mix with divide
+..\..\..\src\LibEMC\ts.h(373) : Warning 573: Signed-unsigned mix with divide
+                                               _
+	return Ts*(unsigned __int64)(toFreq/gcd)/(unsigned __int64)(fromFreq/gcd);
+..\..\..\src\LibEMC\ts.h(383) : Warning 573: Signed-unsigned mix with divide
+..\..\..\src\LibEMC\ts.h(383) : Warning 573: Signed-unsigned mix with divide
+                                         _
+	virtual ~CEmcBaseEventGenerator();
+..\..\..\src\LibEMC\baseevent.h(31) : Warning 1510: base class
+    'IEmcEventSource' has no destructor
+..\..\..\src\LibEMC\baseevent.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                       _
+	virtual ~CEmcBaseEventHandler();
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class 'IEmcEventSink'
+    has no destructor
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                _
+	virtual ~CEmcMediaType();
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'IEmcMediaType'
+    has no destructor
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'EMC_MEDIA_TYPE'
+    has no destructor
+                                  _
+	virtual ~CEmcMediaSample();
+..\..\..\src\LibEMC\mediasample.h(25) : Warning 1510: base class
+    'IEmcMediaSample' has no destructor
+..\..\..\src\LibEMC\mediasample.h(25) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                      _
+	virtual ~CEmcSampleAllocator();
+..\..\..\src\LibEMC\sampleallocator.h(25) : Warning 1510: base class
+    'IEmcSampleAllocator' has no destructor
+..\..\..\src\LibEMC\sampleallocator.h(25) : Warning 1510: base class 'IUnknown'
+    has no destructor
+         _
+#include "guid.h"
+..\..\..\src\LibEMC\ChainBuffer.h(6) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\guid.h'
+         _
+#include "basecom.h"
+..\..\..\src\LibEMC\ChainBuffer.h(7) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\basecom.h'
+         _
+#include "ts.h"
+..\..\..\src\LibEMC\ChainBuffer.h(8) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\ts.h'
+         _
+#include "lock.h"
+..\..\..\src\LibEMC\ChainBuffer.h(9) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\lock.h'
+         _
+#include "emccore.h"
+..\..\..\src\LibEMC\ChainBuffer.h(10) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\emccore.h'
+         _
+#include "baseevent.h"
+..\..\..\src\LibEMC\ChainBuffer.h(11) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\baseevent.h'
+         _
+#include "misc.h"
+..\..\..\src\LibEMC\ChainBuffer.h(12) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\misc.h'
+                               _
+	virtual ~CChainBuffer();
+..\..\..\src\LibEMC\ChainBuffer.h(60) : Warning 1510: base class
+    'IEmcPullStream' has no destructor
+..\..\..\src\LibEMC\ChainBuffer.h(60) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                  _
+	virtual ~CEmcBaseDecoder();
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IEmcDecoder'
+    has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcEventSink' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                  _
+	virtual ~CEmcBaseEncoder();
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IEmcEncoder'
+    has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcEventSink' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                _
+	virtual ~CEmcBaseDemux();
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class 'IEmcDemux' has
+    no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                              _
+	virtual ~CEmcBaseMux();
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IEmcMux' has no
+    destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IEmcPropertySet'
+    has no destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IUnknown' has no
+    destructor
+_
+}
+..\..\..\src\LibEMC\basemux.cpp(30) : Warning 1540: Pointer member
+    'CEmcBaseMux::m_pDstFileName' (line 45, file ..\..\..\src\LibEMC\basemux.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) neither freed nor zeroed by
+    destructor
+..\..\..\src\LibEMC\basemux.h(45) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\basemux.cpp(30) : Warning 1540: Pointer member
+    'CEmcBaseMux::m_hDstFile' (line 46, file ..\..\..\src\LibEMC\basemux.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) neither freed nor zeroed by
+    destructor
+..\..\..\src\LibEMC\basemux.h(46) : Info 830: Location cited in prior message
+                                       _
+		CloseHandle(m_hDstFile);
+..\..\..\src\LibEMC\basemux.cpp(102) : Warning 534: Ignoring return value of
+    function 'CloseHandle(void *)' (compare with line 3713, file C:\Program
+    Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA
+    C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3713)
+    : Info 830: Location cited in prior message
+
+--- Module:   ..\..\..\src\LibEMC\basethread.cpp (C++)
+                        _
+class CEmcBaseUnknown : INonDelegatingUnknown
+..\..\..\src\LibEMC\basecom.h(46) : Warning 1505: no access specifier provided,
+    'private' assumed
+                                   _
+	virtual ~CEmcBaseUnknown() {}
+..\..\..\src\LibEMC\basecom.h(56) : Warning 1510: base class
+    'INonDelegatingUnknown' has no destructor
+                                _
+		ts = ts/uncommon*uncommon;
+..\..\..\src\LibEMC\ts.h(338) : Warning 573: Signed-unsigned mix with divide
+                                      _
+	return Ts*(__int64)(toFreq/gcd)/(__int64)(fromFreq/gcd);
+..\..\..\src\LibEMC\ts.h(373) : Warning 573: Signed-unsigned mix with divide
+..\..\..\src\LibEMC\ts.h(373) : Warning 573: Signed-unsigned mix with divide
+                                               _
+	return Ts*(unsigned __int64)(toFreq/gcd)/(unsigned __int64)(fromFreq/gcd);
+..\..\..\src\LibEMC\ts.h(383) : Warning 573: Signed-unsigned mix with divide
+..\..\..\src\LibEMC\ts.h(383) : Warning 573: Signed-unsigned mix with divide
+                                         _
+	virtual ~CEmcBaseEventGenerator();
+..\..\..\src\LibEMC\baseevent.h(31) : Warning 1510: base class
+    'IEmcEventSource' has no destructor
+..\..\..\src\LibEMC\baseevent.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                       _
+	virtual ~CEmcBaseEventHandler();
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class 'IEmcEventSink'
+    has no destructor
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                _
+	virtual ~CEmcMediaType();
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'IEmcMediaType'
+    has no destructor
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'EMC_MEDIA_TYPE'
+    has no destructor
+                                  _
+	virtual ~CEmcMediaSample();
+..\..\..\src\LibEMC\mediasample.h(25) : Warning 1510: base class
+    'IEmcMediaSample' has no destructor
+..\..\..\src\LibEMC\mediasample.h(25) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                      _
+	virtual ~CEmcSampleAllocator();
+..\..\..\src\LibEMC\sampleallocator.h(25) : Warning 1510: base class
+    'IEmcSampleAllocator' has no destructor
+..\..\..\src\LibEMC\sampleallocator.h(25) : Warning 1510: base class 'IUnknown'
+    has no destructor
+         _
+#include "guid.h"
+..\..\..\src\LibEMC\ChainBuffer.h(6) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\guid.h'
+         _
+#include "basecom.h"
+..\..\..\src\LibEMC\ChainBuffer.h(7) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\basecom.h'
+         _
+#include "ts.h"
+..\..\..\src\LibEMC\ChainBuffer.h(8) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\ts.h'
+         _
+#include "lock.h"
+..\..\..\src\LibEMC\ChainBuffer.h(9) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\lock.h'
+         _
+#include "emccore.h"
+..\..\..\src\LibEMC\ChainBuffer.h(10) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\emccore.h'
+         _
+#include "baseevent.h"
+..\..\..\src\LibEMC\ChainBuffer.h(11) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\baseevent.h'
+         _
+#include "misc.h"
+..\..\..\src\LibEMC\ChainBuffer.h(12) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\misc.h'
+                               _
+	virtual ~CChainBuffer();
+..\..\..\src\LibEMC\ChainBuffer.h(60) : Warning 1510: base class
+    'IEmcPullStream' has no destructor
+..\..\..\src\LibEMC\ChainBuffer.h(60) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                  _
+	virtual ~CEmcBaseDecoder();
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IEmcDecoder'
+    has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcEventSink' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                  _
+	virtual ~CEmcBaseEncoder();
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IEmcEncoder'
+    has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcEventSink' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                _
+	virtual ~CEmcBaseDemux();
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class 'IEmcDemux' has
+    no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                              _
+	virtual ~CEmcBaseMux();
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IEmcMux' has no
+    destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IEmcPropertySet'
+    has no destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IUnknown' has no
+    destructor
+                                                            _
+			_tcscpy(m_szThreadName,szThreadName);
+..\..\..\src\LibEMC\basethread.cpp(52) : Warning 534: Ignoring return value of
+    function 'wcscpy(wchar_t *, const wchar_t *)' (compare with line 252, file
+    C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(252) : Info 830:
+    Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\basethread.cpp(62) : Warning 1401: member
+    'CEmcBaseThread::m_dwThdPauseTime' (line 64, file ..\..\..\src\LibEMC\basethread.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) not initialized by constructor
+    [MISRA C++ Rule 8-5-1]
+..\..\..\src\LibEMC\basethread.h(64) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibEMC\basethread.cpp(62) : Warning 1401: member
+    'CEmcBaseThread::m_dwThdStartTime' (line 64, file ..\..\..\src\LibEMC\basethread.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) not initialized by constructor
+    [MISRA C++ Rule 8-5-1]
+..\..\..\src\LibEMC\basethread.h(64) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibEMC\basethread.cpp(62) : Warning 1401: member
+    'CEmcBaseThread::m_dwThdEndTime' (line 64, file ..\..\..\src\LibEMC\basethread.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) not initialized by constructor
+    [MISRA C++ Rule 8-5-1]
+..\..\..\src\LibEMC\basethread.h(64) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibEMC\basethread.cpp(62) : Warning 1401: member
+    'CEmcBaseThread::m_dwThdSleepTime' (line 64, file ..\..\..\src\LibEMC\basethread.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) not initialized by constructor
+    [MISRA C++ Rule 8-5-1]
+..\..\..\src\LibEMC\basethread.h(64) : Info 830: Location cited in prior
+    message
+                                     _
+		CloseHandle(m_hEvent);
+..\..\..\src\LibEMC\basethread.cpp(68) : Warning 534: Ignoring return value of
+    function 'CloseHandle(void *)' (compare with line 3713, file C:\Program
+    Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA
+    C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3713)
+    : Info 830: Location cited in prior message
+                                     _
+		CloseHandle(m_hSleep);
+..\..\..\src\LibEMC\basethread.cpp(73) : Warning 534: Ignoring return value of
+    function 'CloseHandle(void *)' (compare with line 3713, file C:\Program
+    Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA
+    C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3713)
+    : Info 830: Location cited in prior message
+                                             _
+			CloseHandle(m_hEvent);
+..\..\..\src\LibEMC\basethread.cpp(104) : Warning 534: Ignoring return value of
+    function 'CloseHandle(void *)' (compare with line 3713, file C:\Program
+    Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA
+    C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3713)
+    : Info 830: Location cited in prior message
+                                    _
+		ResetEvent(m_hEvent);
+..\..\..\src\LibEMC\basethread.cpp(228) : Warning 534: Ignoring return value of
+    function 'ResetEvent(void *)' (compare with line 3339, file C:\Program
+    Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA
+    C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3339)
+    : Info 830: Location cited in prior message
+                              _
+	if (m_ahThread[0] == 0)
+..\..\..\src\LibEMC\basethread.cpp(265) : Warning 613: Possible use of null
+    pointer 'CEmcBaseThread::m_ahThread' in left argument to operator '['
+    [Reference: file ..\..\..\src\LibEMC\basethread.cpp: line 36]
+..\..\..\src\LibEMC\basethread.cpp(36) : Info 831: Reference cited in prior
+    message
+                                                                   _
+	m_lDefaultThreadPriority = GetThreadPriority(m_ahThread[0]);
+..\..\..\src\LibEMC\basethread.cpp(271) : Warning 613: Possible use of null
+    pointer 'CEmcBaseThread::m_ahThread' in left argument to operator '['
+    [Reference: file ..\..\..\src\LibEMC\basethread.cpp: line 36]
+..\..\..\src\LibEMC\basethread.cpp(36) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibEMC\basethread.cpp line 146: CEmcBaseThread::GetDefaultThreadPriority()
+    #1
+..\..\..\src\LibEMC\basethread.cpp(265) : Warning 613: Possible use of null
+    pointer 'CEmcBaseThread::m_ahThread' in left argument to operator '['
+    [Reference: file ..\..\..\src\LibEMC\basethread.cpp: line 36]
+..\..\..\src\LibEMC\basethread.cpp(36) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibEMC\basethread.cpp line 146: CEmcBaseThread::GetDefaultThreadPriority()
+    #1
+..\..\..\src\LibEMC\basethread.cpp(271) : Warning 613: Possible use of null
+    pointer 'CEmcBaseThread::m_ahThread' in left argument to operator '['
+    [Reference: file ..\..\..\src\LibEMC\basethread.cpp: line 36]
+..\..\..\src\LibEMC\basethread.cpp(36) : Info 831: Reference cited in prior
+    message
+                                                                           _
+		if (THREAD_PRIORITY_ABOVE_NORMAL-THREAD_PRIORITY_NORMAL > 0)
+..\..\..\src\LibEMC\basethread.cpp(325) : Warning 506: Constant value Boolean
+    [MISRA C++ Rule 0-1-1]
+                                                     _
+		SetThreadPriority(m_ahThread[i], pri);
+..\..\..\src\LibEMC\basethread.cpp(337) : Warning 534: Ignoring return value of
+    function 'SetThreadPriority(void *, int)' (compare with line 2947, file
+    C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(2947)
+    : Info 830: Location cited in prior message
+                                                                           _
+		if (THREAD_PRIORITY_ABOVE_NORMAL-THREAD_PRIORITY_NORMAL > 0)
+..\..\..\src\LibEMC\basethread.cpp(374) : Warning 506: Constant value Boolean
+    [MISRA C++ Rule 0-1-1]
+                                                     _
+		SetThreadPriority(m_ahThread[i], pri);
+..\..\..\src\LibEMC\basethread.cpp(386) : Warning 534: Ignoring return value of
+    function 'SetThreadPriority(void *, int)' (compare with line 2947, file
+    C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(2947)
+    : Info 830: Location cited in prior message
+                _
+		return E_FAIL;
+..\..\..\src\LibEMC\basethread.cpp(416) : Warning 527: Unreachable code at
+    token 'return' [MISRA C++ Rule 0-1-1]
+                                                                                          _
+		for (repeat = 0; repeat < 50 && (res = SuspendThread(m_ahThread[i])) == -1; repeat++)
+..\..\..\src\LibEMC\basethread.cpp(422) : Warning 613: Possible use of null
+    pointer 'CEmcBaseThread::m_ahThread' in left argument to operator '['
+    [Reference: file ..\..\..\src\LibEMC\basethread.cpp: line 36]
+..\..\..\src\LibEMC\basethread.cpp(36) : Info 831: Reference cited in prior
+    message
+
+..\..\..\src\LibEMC\basethread.cpp(422) : Warning 613: Possible use of null
+    pointer 'CEmcBaseThread::m_ahThread' in left argument to operator '['
+    [Reference: file ..\..\..\src\LibEMC\basethread.cpp: line 36]
+..\..\..\src\LibEMC\basethread.cpp(36) : Info 831: Reference cited in prior
+    message
+                                                                                              _
+			DP("Suspending thread 0x%x has return (%d)!\n", m_adwThreadId[i], res);
+..\..\..\src\LibEMC\basethread.cpp(429) : Warning 613: Possible use of null
+    pointer 'CEmcBaseThread::m_adwThreadId' in left argument to operator '['
+    [Reference: file ..\..\..\src\LibEMC\basethread.cpp: line 37]
+..\..\..\src\LibEMC\basethread.cpp(37) : Info 831: Reference cited in prior
+    message
+                                  _
+		SetEvent(m_hSleep);
+..\..\..\src\LibEMC\basethread.cpp(471) : Warning 534: Ignoring return value of
+    function 'SetEvent(void *)' (compare with line 3332, file C:\Program
+    Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA
+    C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3332)
+    : Info 830: Location cited in prior message
+                                    _
+		ResetEvent(m_hSleep);
+..\..\..\src\LibEMC\basethread.cpp(476) : Warning 534: Ignoring return value of
+    function 'ResetEvent(void *)' (compare with line 3339, file C:\Program
+    Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA
+    C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3339)
+    : Info 830: Location cited in prior message
+                                                                                            _
+			DP("Resuming thread 0x%x has return (%d)!\n", m_adwThreadId[i], res);
+..\..\..\src\LibEMC\basethread.cpp(540) : Warning 613: Possible use of null
+    pointer 'CEmcBaseThread::m_adwThreadId' in left argument to operator '['
+    [Reference: file ..\..\..\src\LibEMC\basethread.cpp: line 37]
+..\..\..\src\LibEMC\basethread.cpp(37) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibEMC\baseencoder.cpp line 133: CEmcBaseThread::Resume()
+    #1
+..\..\..\src\LibEMC\basethread.cpp(540) : Warning 613: Possible use of null
+    pointer 'CEmcBaseThread::m_adwThreadId' in left argument to operator '['
+    [Reference: file ..\..\..\src\LibEMC\basethread.cpp: line 37]
+..\..\..\src\LibEMC\basethread.cpp(37) : Info 831: Reference cited in prior
+    message
+                            _
+	ResetEvent(m_hSleep);
+..\..\..\src\LibEMC\basethread.cpp(560) : Warning 534: Ignoring return value of
+    function 'ResetEvent(void *)' (compare with line 3339, file C:\Program
+    Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA
+    C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3339)
+    : Info 830: Location cited in prior message
+                                    _
+		ResetEvent(m_hEvent);
+..\..\..\src\LibEMC\basethread.cpp(573) : Warning 534: Ignoring return value of
+    function 'ResetEvent(void *)' (compare with line 3339, file C:\Program
+    Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA
+    C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3339)
+    : Info 830: Location cited in prior message
+                                            _
+		if (dwId == m_adwThreadId[i])
+..\..\..\src\LibEMC\basethread.cpp(595) : Warning 613: Possible use of null
+    pointer 'CEmcBaseThread::m_adwThreadId' in left argument to operator '['
+    [Reference: file ..\..\..\src\LibEMC\basethread.cpp: line 37]
+..\..\..\src\LibEMC\basethread.cpp(37) : Info 831: Reference cited in prior
+    message
+                                  _
+		SetEvent(m_hSleep);  // ensure any "sleeping" threads are awake.
+..\..\..\src\LibEMC\basethread.cpp(624) : Warning 534: Ignoring return value of
+    function 'SetEvent(void *)' (compare with line 3332, file C:\Program
+    Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA
+    C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3332)
+    : Info 830: Location cited in prior message
+                                  _
+		SetEvent(m_hEvent);  // just in case paused
+..\..\..\src\LibEMC\basethread.cpp(628) : Warning 534: Ignoring return value of
+    function 'SetEvent(void *)' (compare with line 3332, file C:\Program
+    Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA
+    C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3332)
+    : Info 830: Location cited in prior message
+                        _
+		Resume();  // just in case paused
+..\..\..\src\LibEMC\basethread.cpp(632) : Warning 534: Ignoring return value of
+    function 'CEmcBaseThread::Resume(void)' (compare with line 488) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\basethread.cpp(488) : Info 830: Location cited in prior
+    message
+                                              _
+	StoreThreadTimes(m_ahThread[0], &m_tt);
+..\..\..\src\LibEMC\basethread.cpp(640) : Warning 534: Ignoring return value of
+    function 'StoreThreadTimes(void *, struct ThreadTimes *)' (compare with
+    line 74, file ..\..\..\src\LibEMC\basethread.h, module ..\..\..\src\LibEMC\basedecoder.cpp)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\basethread.h(74) : Info 830: Location cited in prior
+    message
+                _
+		}
+..\..\..\src\LibEMC\basethread.cpp(647) : Warning 550: Symbol 'bres' (line 645)
+    not accessed [MISRA C++ Rule 0-1-4]
+..\..\..\src\LibEMC\basethread.cpp(645) : Info 830: Location cited in prior
+    message
+                _
+		}
+..\..\..\src\LibEMC\basethread.cpp(647) : Warning 438: Last value assigned to
+    variable 'bres' (defined at line 645) not used [MISRA C++ Rule 0-1-6],
+    [MISRA C++ Rules 0-1-6 and 0-1-9]
+..\..\..\src\LibEMC\basethread.cpp(645) : Info 830: Location cited in prior
+    message
+                                          _
+		CloseHandle(m_ahThread[i]);
+..\..\..\src\LibEMC\basethread.cpp(652) : Warning 534: Ignoring return value of
+    function 'CloseHandle(void *)' (compare with line 3713, file C:\Program
+    Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA
+    C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3713)
+    : Info 830: Location cited in prior message
+                                    _
+		m_adwThreadId[i] = 0;
+..\..\..\src\LibEMC\basethread.cpp(654) : Warning 613: Possible use of null
+    pointer 'CEmcBaseThread::m_adwThreadId' in left argument to operator '['
+    [Reference: file ..\..\..\src\LibEMC\basethread.cpp: line 37]
+..\..\..\src\LibEMC\basethread.cpp(37) : Info 831: Reference cited in prior
+    message
+                                    _
+		ResetEvent(m_hEvent);
+..\..\..\src\LibEMC\basethread.cpp(662) : Warning 534: Ignoring return value of
+    function 'ResetEvent(void *)' (compare with line 3339, file C:\Program
+    Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA
+    C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3339)
+    : Info 830: Location cited in prior message
+                                    _
+		ResetEvent(m_hSleep);
+..\..\..\src\LibEMC\basethread.cpp(666) : Warning 534: Ignoring return value of
+    function 'ResetEvent(void *)' (compare with line 3339, file C:\Program
+    Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA
+    C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3339)
+    : Info 830: Location cited in prior message
+
+During Specific Walk:
+  File ..\..\..\src\LibEMC\baseencoder.cpp line 199: CEmcBaseThread::WaitThenTerminate(4294967295)
+    #1
+..\..\..\src\LibEMC\basethread.cpp(654) : Warning 613: Possible use of null
+    pointer 'CEmcBaseThread::m_adwThreadId' in left argument to operator '['
+    [Reference: file ..\..\..\src\LibEMC\basethread.cpp: lines 37, 657]
+..\..\..\src\LibEMC\basethread.cpp(37) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\basethread.cpp(657) : Info 831: Reference cited in prior
+    message
+                                                    _
+		StoreThreadTimes(m_ahThread[0], ptt);
+..\..\..\src\LibEMC\basethread.cpp(695) : Warning 534: Ignoring return value of
+    function 'StoreThreadTimes(void *, struct ThreadTimes *)' (compare with
+    line 74, file ..\..\..\src\LibEMC\basethread.h, module ..\..\..\src\LibEMC\basedecoder.cpp)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\basethread.h(74) : Info 830: Location cited in prior
+    message
+                                                                _
+		reinterpret_cast<LPFILETIME>(&ptt->ullUserTime));
+..\..\..\src\LibEMC\basethread.cpp(726) : Warning 534: Ignoring return value of
+    function 'GetThreadTimes(void *, struct _FILETIME *, struct _FILETIME *,
+    struct _FILETIME *, struct _FILETIME *)' (compare with line 2978, file
+    C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(2978)
+    : Info 830: Location cited in prior message
+                                                                                         _
+		SystemTimeToFileTime(&st,reinterpret_cast<LPFILETIME>(&ptt->ullExitTime));  // replace exit time with current system time.
+..\..\..\src\LibEMC\basethread.cpp(732) : Warning 534: Ignoring return value of
+    function 'SystemTimeToFileTime(const struct _SYSTEMTIME *, struct _FILETIME
+    *)' (compare with line 4176, file C:\Program Files\Microsoft Visual Studio
+    8\VC\PlatformSDK\Include\winbase.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(4176)
+    : Info 830: Location cited in prior message
+                                                                _
+		reinterpret_cast<LPFILETIME>(&ptt->ullUserTime));
+..\..\..\src\LibEMC\basethread.cpp(754) : Warning 534: Ignoring return value of
+    function 'GetProcessTimes(void *, struct _FILETIME *, struct _FILETIME *,
+    struct _FILETIME *, struct _FILETIME *)' (compare with line 2532, file
+    C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(2532)
+    : Info 830: Location cited in prior message
+                                             _
+		dwKernelTime*100/dwTotalTime);
+..\..\..\src\LibEMC\basethread.cpp(778) : Warning 534: Ignoring return value of
+    function '_snprintf(char *, unsigned int, const char *, ...)' (compare with
+    line 339, file C:\Program Files\Microsoft Visual Studio
+    8\VC\include\stdio.h) [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\stdio.h(339) : Info 830:
+    Location cited in prior message
+
+--- Module:   ..\..\..\src\LibEMC\ChainBuffer.cpp (C++)
+                        _
+class CEmcBaseUnknown : INonDelegatingUnknown
+..\..\..\src\LibEMC\basecom.h(46) : Warning 1505: no access specifier provided,
+    'private' assumed
+                                   _
+	virtual ~CEmcBaseUnknown() {}
+..\..\..\src\LibEMC\basecom.h(56) : Warning 1510: base class
+    'INonDelegatingUnknown' has no destructor
+                                _
+		ts = ts/uncommon*uncommon;
+..\..\..\src\LibEMC\ts.h(338) : Warning 573: Signed-unsigned mix with divide
+                                      _
+	return Ts*(__int64)(toFreq/gcd)/(__int64)(fromFreq/gcd);
+..\..\..\src\LibEMC\ts.h(373) : Warning 573: Signed-unsigned mix with divide
+..\..\..\src\LibEMC\ts.h(373) : Warning 573: Signed-unsigned mix with divide
+                                               _
+	return Ts*(unsigned __int64)(toFreq/gcd)/(unsigned __int64)(fromFreq/gcd);
+..\..\..\src\LibEMC\ts.h(383) : Warning 573: Signed-unsigned mix with divide
+..\..\..\src\LibEMC\ts.h(383) : Warning 573: Signed-unsigned mix with divide
+                                         _
+	virtual ~CEmcBaseEventGenerator();
+..\..\..\src\LibEMC\baseevent.h(31) : Warning 1510: base class
+    'IEmcEventSource' has no destructor
+..\..\..\src\LibEMC\baseevent.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                       _
+	virtual ~CEmcBaseEventHandler();
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class 'IEmcEventSink'
+    has no destructor
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                               _
+	virtual ~CChainBuffer();
+..\..\..\src\LibEMC\ChainBuffer.h(60) : Warning 1510: base class
+    'IEmcPullStream' has no destructor
+..\..\..\src\LibEMC\ChainBuffer.h(60) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                       _
+	memset(&m_tHead, 0, sizeof(m_tHead));
+..\..\..\src\LibEMC\ChainBuffer.cpp(14) : Warning 1415: Pointer to non-POD
+    class 'ChainBufferNode' passed to function 'memset(void *, int, unsigned
+    int)' (arg. no. 1)
+_
+}
+..\..\..\src\LibEMC\ChainBuffer.cpp(40) : Warning 1401: member
+    'CChainBuffer::m_ulSizeUndFlwSaf' (line 116, file ..\..\..\src\LibEMC\ChainBuffer.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) not initialized by constructor
+    [MISRA C++ Rule 8-5-1]
+..\..\..\src\LibEMC\ChainBuffer.h(116) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibEMC\ChainBuffer.cpp(40) : Warning 1401: member
+    'CChainBuffer::m_ulSizeUndFlwWar' (line 117, file ..\..\..\src\LibEMC\ChainBuffer.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) not initialized by constructor
+    [MISRA C++ Rule 8-5-1]
+..\..\..\src\LibEMC\ChainBuffer.h(117) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibEMC\ChainBuffer.cpp(40) : Warning 1401: member
+    'CChainBuffer::m_ulSizeOvrFlwSaf' (line 118, file ..\..\..\src\LibEMC\ChainBuffer.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) not initialized by constructor
+    [MISRA C++ Rule 8-5-1]
+..\..\..\src\LibEMC\ChainBuffer.h(118) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibEMC\ChainBuffer.cpp(40) : Warning 1401: member
+    'CChainBuffer::m_ulSizeOvrFlwWar' (line 119, file ..\..\..\src\LibEMC\ChainBuffer.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) not initialized by constructor
+    [MISRA C++ Rule 8-5-1]
+..\..\..\src\LibEMC\ChainBuffer.h(119) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibEMC\ChainBuffer.cpp(40) : Warning 1401: member
+    'CChainBuffer::m_ulMaxStoredBytes' (line 121, file ..\..\..\src\LibEMC\ChainBuffer.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) not initialized by constructor
+    [MISRA C++ Rule 8-5-1]
+..\..\..\src\LibEMC\ChainBuffer.h(121) : Info 830: Location cited in prior
+    message
+                            _
+	DestroyChainBuffer();
+..\..\..\src\LibEMC\ChainBuffer.cpp(44) : Warning 1551: Function may throw
+    exception '...' in destructor 'CChainBuffer::~CChainBuffer(void)'
+_
+}
+..\..\..\src\LibEMC\ChainBuffer.cpp(46) : Warning 1579: Pointer member
+    'CChainBuffer::m_ptFree' (line 127, file ..\..\..\src\LibEMC\ChainBuffer.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) might have been freed by a
+    separate function but no '-sem(CChainBuffer::DestroyChainBuffer,cleanup)'
+    was seen
+..\..\..\src\LibEMC\ChainBuffer.h(127) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibEMC\ChainBuffer.cpp(46) : Warning 1579: Pointer member
+    'CChainBuffer::m_ptWrite' (line 128, file ..\..\..\src\LibEMC\ChainBuffer.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) might have been freed by a
+    separate function but no '-sem(CChainBuffer::DestroyChainBuffer,cleanup)'
+    was seen
+..\..\..\src\LibEMC\ChainBuffer.h(128) : Info 830: Location cited in prior
+    message
+                                           _
+#... Buff != NULL) {free(pToDelete->pucBuff); pToDelete->pucBuff = NULL;}
+		SAFEFREE(pToDelete->pucBuff);
+..\..\..\src\LibEMC\ChainBuffer.cpp(55) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                _
+		delete pToDelete;
+..\..\..\src\LibEMC\ChainBuffer.cpp(56) : Warning 586: function 'operator
+    delete' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                          _
+			ReallocNodeBuffer(pToDelete, 0, 0);
+..\..\..\src\LibEMC\ChainBuffer.cpp(101) : Warning 534: Ignoring return value
+    of function 'CChainBuffer::ReallocNodeBuffer(ChainBufferNode *, unsigned
+    long, int)' (compare with line 96, file ..\..\..\src\LibEMC\ChainBuffer.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) [MISRA C++ Rules 0-1-7], [MISRA
+    C++ Rules 0-3-2]
+..\..\..\src\LibEMC\ChainBuffer.h(96) : Info 830: Location cited in prior
+    message
+                                        _
+			delete pToDelete;
+..\..\..\src\LibEMC\ChainBuffer.cpp(102) : Warning 586: function 'operator
+    delete' is deprecated. [MISRA C++ Rule 18-4-1]
+                     _
+	memset(ptNode, 0, sizeof(ChainBufferNode));
+..\..\..\src\LibEMC\ChainBuffer.cpp(145) : Warning 1415: Pointer to non-POD
+    class 'ChainBufferNode' passed to function 'memset(void *, int, unsigned
+    int)' (arg. no. 1)
+                                                                     _
+				Fire(EMC_EVENT_CB_EMPTY, m_ulCBcount);
+..\..\..\src\LibEMC\ChainBuffer.cpp(217) : Warning 534: Ignoring return value
+    of function 'CEmcBaseEventGenerator::Fire(enum EMC_EVENT, unsigned long)'
+    (compare with line 85, file ..\..\..\src\LibEMC\baseevent.cpp) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\baseevent.cpp(85) : Info 830: Location cited in prior
+    message
+                                                                                                 _
+						Fire(EMC_EVENT_CB_UNDERFLOW_WARNING, m_ulCBcount);
+..\..\..\src\LibEMC\ChainBuffer.cpp(228) : Warning 534: Ignoring return value
+    of function 'CEmcBaseEventGenerator::Fire(enum EMC_EVENT, unsigned long)'
+    (compare with line 85, file ..\..\..\src\LibEMC\baseevent.cpp) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\baseevent.cpp(85) : Info 830: Location cited in prior
+    message
+                                                                                     _
+					Fire(EMC_EVENT_CB_OVERFLOW_SAFE, m_ulCBcount);
+..\..\..\src\LibEMC\ChainBuffer.cpp(232) : Warning 534: Ignoring return value
+    of function 'CEmcBaseEventGenerator::Fire(enum EMC_EVENT, unsigned long)'
+    (compare with line 85, file ..\..\..\src\LibEMC\baseevent.cpp) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\baseevent.cpp(85) : Info 830: Location cited in prior
+    message
+                                                                                                 _
+						Fire(EMC_EVENT_CB_UNDERFLOW_WARNING, m_ulCBcount);
+..\..\..\src\LibEMC\ChainBuffer.cpp(244) : Warning 534: Ignoring return value
+    of function 'CEmcBaseEventGenerator::Fire(enum EMC_EVENT, unsigned long)'
+    (compare with line 85, file ..\..\..\src\LibEMC\baseevent.cpp) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\baseevent.cpp(85) : Info 830: Location cited in prior
+    message
+                                                                                     _
+					Fire(EMC_EVENT_CB_OVERFLOW_SAFE, m_ulCBcount);
+..\..\..\src\LibEMC\ChainBuffer.cpp(252) : Warning 534: Ignoring return value
+    of function 'CEmcBaseEventGenerator::Fire(enum EMC_EVENT, unsigned long)'
+    (compare with line 85, file ..\..\..\src\LibEMC\baseevent.cpp) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\baseevent.cpp(85) : Info 830: Location cited in prior
+    message
+                                                          _
+			ReallocNodeBuffer(pToRemove, 0, 0);
+..\..\..\src\LibEMC\ChainBuffer.cpp(281) : Warning 534: Ignoring return value
+    of function 'CChainBuffer::ReallocNodeBuffer(ChainBufferNode *, unsigned
+    long, int)' (compare with line 96, file ..\..\..\src\LibEMC\ChainBuffer.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) [MISRA C++ Rules 0-1-7], [MISRA
+    C++ Rules 0-3-2]
+..\..\..\src\LibEMC\ChainBuffer.h(96) : Info 830: Location cited in prior
+    message
+                                        _
+			delete pToRemove;
+..\..\..\src\LibEMC\ChainBuffer.cpp(282) : Warning 586: function 'operator
+    delete' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                               _
+	m_ulAvgPackageDuration = m_ulBuffDuration/m_ulNodeCount;
+..\..\..\src\LibEMC\ChainBuffer.cpp(304) : Warning 414: Possible division by 0
+    [Reference: file ..\..\..\src\LibEMC\ChainBuffer.h: line 82; file
+    ..\..\..\src\LibEMC\ChainBuffer.cpp: lines 17, 211]
+..\..\..\src\LibEMC\ChainBuffer.h(82) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(17) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(211) : Info 831: Reference cited in prior
+    message
+                                                                      _
+			Fire(EMC_EVENT_CB_UNDERFLOW_SAFE, m_ulCBcount);
+..\..\..\src\LibEMC\ChainBuffer.cpp(327) : Warning 534: Ignoring return value
+    of function 'CEmcBaseEventGenerator::Fire(enum EMC_EVENT, unsigned long)'
+    (compare with line 85, file ..\..\..\src\LibEMC\baseevent.cpp) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\baseevent.cpp(85) : Info 830: Location cited in prior
+    message
+                                                                        _
+			Fire(EMC_EVENT_CB_OVERFLOW_WARNING, m_ulCBcount);
+..\..\..\src\LibEMC\ChainBuffer.cpp(335) : Warning 534: Ignoring return value
+    of function 'CEmcBaseEventGenerator::Fire(enum EMC_EVENT, unsigned long)'
+    (compare with line 85, file ..\..\..\src\LibEMC\baseevent.cpp) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\baseevent.cpp(85) : Info 830: Location cited in prior
+    message
+                                                _
+				delete ptNewNode;
+..\..\..\src\LibEMC\ChainBuffer.cpp(375) : Warning 586: function 'operator
+    delete' is deprecated. [MISRA C++ Rule 18-4-1]
+                                          _
+		node = new ChainBufferNode;
+..\..\..\src\LibEMC\ChainBuffer.cpp(426) : Warning 586: function 'operator new'
+    is deprecated. [MISRA C++ Rule 18-4-1]
+                                                     _
+			buf = (unsigned char*)realloc(node->pucBuff, ulDataLength);
+..\..\..\src\LibEMC\ChainBuffer.cpp(447) : Warning 586: function 'realloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                              _
+#... ode->pucBuff != NULL) {free(node->pucBuff); node->pucBuff = NULL;}
+			SAFEFREE(node->pucBuff);			
+..\..\..\src\LibEMC\ChainBuffer.cpp(451) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                            _
+				buf = (unsigned char*)malloc(ulDataLength);
+..\..\..\src\LibEMC\ChainBuffer.cpp(453) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                                        _
+							delete ptNewNode;
+..\..\..\src\LibEMC\ChainBuffer.cpp(558) : Warning 586: function 'operator
+    delete' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                        _
+					delete ptNewNode;
+..\..\..\src\LibEMC\ChainBuffer.cpp(624) : Warning 586: function 'operator
+    delete' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                                       _
+		m_ulAvgPackageDuration = m_ulBuffDuration/m_ulNodeCount;
+..\..\..\src\LibEMC\ChainBuffer.cpp(674) : Warning 414: Possible division by 0
+    [Reference: file ..\..\..\src\LibEMC\ChainBuffer.h: line 82; file
+    ..\..\..\src\LibEMC\ChainBuffer.cpp: lines 17, 211]
+..\..\..\src\LibEMC\ChainBuffer.h(82) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(17) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(211) : Info 831: Reference cited in prior
+    message
+                                                                              _
+				Fire(EMC_EVENT_CB_UNDERFLOW_SAFE, m_ulCBcount);
+..\..\..\src\LibEMC\ChainBuffer.cpp(697) : Warning 534: Ignoring return value
+    of function 'CEmcBaseEventGenerator::Fire(enum EMC_EVENT, unsigned long)'
+    (compare with line 85, file ..\..\..\src\LibEMC\baseevent.cpp) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\baseevent.cpp(85) : Info 830: Location cited in prior
+    message
+                                                                                _
+				Fire(EMC_EVENT_CB_OVERFLOW_WARNING, m_ulCBcount);
+..\..\..\src\LibEMC\ChainBuffer.cpp(705) : Warning 534: Ignoring return value
+    of function 'CEmcBaseEventGenerator::Fire(enum EMC_EVENT, unsigned long)'
+    (compare with line 85, file ..\..\..\src\LibEMC\baseevent.cpp) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\baseevent.cpp(85) : Info 830: Location cited in prior
+    message
+                                                                      _
+			Fire(EMC_EVENT_CB_UNDERFLOW_SAFE, m_ulCBcount);
+..\..\..\src\LibEMC\ChainBuffer.cpp(713) : Warning 534: Ignoring return value
+    of function 'CEmcBaseEventGenerator::Fire(enum EMC_EVENT, unsigned long)'
+    (compare with line 85, file ..\..\..\src\LibEMC\baseevent.cpp) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\baseevent.cpp(85) : Info 830: Location cited in prior
+    message
+                                                                        _
+			Fire(EMC_EVENT_CB_OVERFLOW_WARNING, m_ulCBcount);
+..\..\..\src\LibEMC\ChainBuffer.cpp(717) : Warning 534: Ignoring return value
+    of function 'CEmcBaseEventGenerator::Fire(enum EMC_EVENT, unsigned long)'
+    (compare with line 85, file ..\..\..\src\LibEMC\baseevent.cpp) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\baseevent.cpp(85) : Info 830: Location cited in prior
+    message
+                                                                 _
+			if (pOptimal->ulBuffLength < ulDataLength)
+..\..\..\src\LibEMC\ChainBuffer.cpp(802) : Warning 613: Possible use of null
+    pointer 'pOptimal' in left argument to operator '->' [Reference: file
+    ..\..\..\src\LibEMC\ChainBuffer.cpp: lines 16, 59, 106, 416, 795, 796]
+..\..\..\src\LibEMC\ChainBuffer.cpp(16) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(59) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(106) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(416) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(795) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(796) : Info 831: Reference cited in prior
+    message
+                                                                               _
+			else if (pSearch->ulBuffLength < pOptimal->ulBuffLength)
+..\..\..\src\LibEMC\ChainBuffer.cpp(804) : Warning 613: Possible use of null
+    pointer 'pOptimal' in left argument to operator '->' [Reference: file
+    ..\..\..\src\LibEMC\ChainBuffer.cpp: lines 16, 59, 106, 416, 795, 796]
+..\..\..\src\LibEMC\ChainBuffer.cpp(16) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(59) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(106) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(416) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(795) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(796) : Info 831: Reference cited in prior
+    message
+                                                                       _
+		else if (pSearch->ulBuffLength > pOptimal->ulBuffLength)
+..\..\..\src\LibEMC\ChainBuffer.cpp(807) : Warning 613: Possible use of null
+    pointer 'pOptimal' in left argument to operator '->' [Reference: file
+    ..\..\..\src\LibEMC\ChainBuffer.cpp: lines 16, 59, 106, 416, 795, 796]
+..\..\..\src\LibEMC\ChainBuffer.cpp(16) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(59) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(106) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(416) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(795) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(796) : Info 831: Reference cited in prior
+    message
+                                            _
+		m_ptFree->m_ptPrv = pOptimal;
+..\..\..\src\LibEMC\ChainBuffer.cpp(822) : Warning 613: Possible use of null
+    pointer 'CChainBuffer::m_ptFree' in left argument to operator '->'
+    [Reference: file ..\..\..\src\LibEMC\ChainBuffer.cpp: lines 16, 59, 106,
+    416]
+..\..\..\src\LibEMC\ChainBuffer.cpp(16) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(59) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(106) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(416) : Info 831: Reference cited in prior
+    message
+                                                  _
+			pSearch = pSearch->m_ptNxt;
+..\..\..\src\LibEMC\ChainBuffer.cpp(835) : Warning 613: Possible use of null
+    pointer 'pSearch' in left argument to operator '->' [Reference: file
+    ..\..\..\src\LibEMC\ChainBuffer.cpp: lines 816, 834]
+..\..\..\src\LibEMC\ChainBuffer.cpp(816) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(834) : Info 831: Reference cited in prior
+    message
+                                                    _
+				pPrv->m_ptNxt = pNxt;
+..\..\..\src\LibEMC\ChainBuffer.cpp(848) : Warning 613: Possible use of null
+    pointer 'pPrv' in left argument to operator '->' [Reference: file
+    ..\..\..\src\LibEMC\ChainBuffer.cpp: line 837]
+..\..\..\src\LibEMC\ChainBuffer.cpp(837) : Info 831: Reference cited in prior
+    message
+                                                                _
+				ReallocNodeBuffer(pSearch, 0, 0);	
+..\..\..\src\LibEMC\ChainBuffer.cpp(851) : Warning 534: Ignoring return value
+    of function 'CChainBuffer::ReallocNodeBuffer(ChainBufferNode *, unsigned
+    long, int)' (compare with line 431) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibEMC\ChainBuffer.cpp(431) : Info 830: Location cited in prior
+    message
+                                              _
+				delete pSearch;
+..\..\..\src\LibEMC\ChainBuffer.cpp(852) : Warning 586: function 'operator
+    delete' is deprecated. [MISRA C++ Rule 18-4-1]
+
+During Specific Walk:
+  File ..\..\..\src\LibEMC\ChainBuffer.cpp line 419: CChainBuffer::SearchOptimalFreeNode(!=0)
+    #1
+..\..\..\src\LibEMC\ChainBuffer.cpp(802) : Warning 613: Possible use of null
+    pointer 'pOptimal' in left argument to operator '->' [Reference: file
+    ..\..\..\src\LibEMC\ChainBuffer.cpp: lines 16, 59, 106, 416, 795, 796]
+..\..\..\src\LibEMC\ChainBuffer.cpp(16) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(59) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(106) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(416) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(795) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(796) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibEMC\ChainBuffer.cpp line 419: CChainBuffer::SearchOptimalFreeNode(!=0)
+    #1
+..\..\..\src\LibEMC\ChainBuffer.cpp(804) : Warning 613: Possible use of null
+    pointer 'pOptimal' in left argument to operator '->' [Reference: file
+    ..\..\..\src\LibEMC\ChainBuffer.cpp: lines 16, 59, 106, 416, 795, 796]
+..\..\..\src\LibEMC\ChainBuffer.cpp(16) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(59) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(106) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(416) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(795) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(796) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibEMC\ChainBuffer.cpp line 419: CChainBuffer::SearchOptimalFreeNode(!=0)
+    #1
+..\..\..\src\LibEMC\ChainBuffer.cpp(807) : Warning 613: Possible use of null
+    pointer 'pOptimal' in left argument to operator '->' [Reference: file
+    ..\..\..\src\LibEMC\ChainBuffer.cpp: lines 16, 59, 106, 416, 795, 796]
+..\..\..\src\LibEMC\ChainBuffer.cpp(16) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(59) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(106) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(416) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(795) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(796) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibEMC\ChainBuffer.cpp line 419: CChainBuffer::SearchOptimalFreeNode(!=0)
+    #1
+..\..\..\src\LibEMC\ChainBuffer.cpp(822) : Warning 613: Possible use of null
+    pointer 'CChainBuffer::m_ptFree' in left argument to operator '->'
+    [Reference: file ..\..\..\src\LibEMC\ChainBuffer.cpp: lines 16, 59, 106,
+    416]
+..\..\..\src\LibEMC\ChainBuffer.cpp(16) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(59) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(106) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(416) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibEMC\ChainBuffer.cpp line 419: CChainBuffer::SearchOptimalFreeNode(!=0)
+    #1
+..\..\..\src\LibEMC\ChainBuffer.cpp(835) : Warning 613: Possible use of null
+    pointer 'pSearch' in left argument to operator '->' [Reference: file
+    ..\..\..\src\LibEMC\ChainBuffer.cpp: lines 16, 59, 106, 416, 795, 796, 816,
+    834]
+..\..\..\src\LibEMC\ChainBuffer.cpp(16) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(59) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(106) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(416) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(795) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(796) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(816) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(834) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibEMC\ChainBuffer.cpp line 419: CChainBuffer::SearchOptimalFreeNode(!=0)
+    #1
+..\..\..\src\LibEMC\ChainBuffer.cpp(848) : Warning 613: Possible use of null
+    pointer 'pPrv' in left argument to operator '->' [Reference: file
+    ..\..\..\src\LibEMC\ChainBuffer.cpp: line 837]
+..\..\..\src\LibEMC\ChainBuffer.cpp(837) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibEMC\ChainBuffer.cpp line 359: CChainBuffer::GetWriteNode(!=0)
+    #1
+  File ..\..\..\src\LibEMC\ChainBuffer.cpp line 419: CChainBuffer::SearchOptimalFreeNode(!=0)
+    #2
+..\..\..\src\LibEMC\ChainBuffer.cpp(802) : Warning 613: Possible use of null
+    pointer 'pOptimal' in left argument to operator '->' [Reference: file
+    ..\..\..\src\LibEMC\ChainBuffer.cpp: lines 16, 59, 106, 416, 795, 796]
+..\..\..\src\LibEMC\ChainBuffer.cpp(16) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(59) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(106) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(416) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(795) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(796) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibEMC\ChainBuffer.cpp line 359: CChainBuffer::GetWriteNode(!=0)
+    #1
+  File ..\..\..\src\LibEMC\ChainBuffer.cpp line 419: CChainBuffer::SearchOptimalFreeNode(!=0)
+    #2
+..\..\..\src\LibEMC\ChainBuffer.cpp(804) : Warning 613: Possible use of null
+    pointer 'pOptimal' in left argument to operator '->' [Reference: file
+    ..\..\..\src\LibEMC\ChainBuffer.cpp: lines 16, 59, 106, 416, 795, 796]
+..\..\..\src\LibEMC\ChainBuffer.cpp(16) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(59) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(106) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(416) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(795) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(796) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibEMC\ChainBuffer.cpp line 359: CChainBuffer::GetWriteNode(!=0)
+    #1
+  File ..\..\..\src\LibEMC\ChainBuffer.cpp line 419: CChainBuffer::SearchOptimalFreeNode(!=0)
+    #2
+..\..\..\src\LibEMC\ChainBuffer.cpp(807) : Warning 613: Possible use of null
+    pointer 'pOptimal' in left argument to operator '->' [Reference: file
+    ..\..\..\src\LibEMC\ChainBuffer.cpp: lines 16, 59, 106, 416, 795, 796]
+..\..\..\src\LibEMC\ChainBuffer.cpp(16) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(59) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(106) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(416) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(795) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(796) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibEMC\ChainBuffer.cpp line 359: CChainBuffer::GetWriteNode(!=0)
+    #1
+  File ..\..\..\src\LibEMC\ChainBuffer.cpp line 419: CChainBuffer::SearchOptimalFreeNode(!=0)
+    #2
+..\..\..\src\LibEMC\ChainBuffer.cpp(822) : Warning 613: Possible use of null
+    pointer 'CChainBuffer::m_ptFree' in left argument to operator '->'
+    [Reference: file ..\..\..\src\LibEMC\ChainBuffer.cpp: lines 16, 59, 106,
+    416]
+..\..\..\src\LibEMC\ChainBuffer.cpp(16) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(59) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(106) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(416) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibEMC\ChainBuffer.cpp line 359: CChainBuffer::GetWriteNode(!=0)
+    #1
+  File ..\..\..\src\LibEMC\ChainBuffer.cpp line 419: CChainBuffer::SearchOptimalFreeNode(!=0)
+    #2
+..\..\..\src\LibEMC\ChainBuffer.cpp(835) : Warning 613: Possible use of null
+    pointer 'pSearch' in left argument to operator '->' [Reference: file
+    ..\..\..\src\LibEMC\ChainBuffer.cpp: lines 16, 59, 106, 416, 795, 796, 816,
+    834]
+..\..\..\src\LibEMC\ChainBuffer.cpp(16) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(59) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(106) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(416) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(795) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(796) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(816) : Info 831: Reference cited in prior
+    message
+..\..\..\src\LibEMC\ChainBuffer.cpp(834) : Info 831: Reference cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibEMC\ChainBuffer.cpp line 359: CChainBuffer::GetWriteNode(!=0)
+    #1
+  File ..\..\..\src\LibEMC\ChainBuffer.cpp line 419: CChainBuffer::SearchOptimalFreeNode(!=0)
+    #2
+..\..\..\src\LibEMC\ChainBuffer.cpp(848) : Warning 613: Possible use of null
+    pointer 'pPrv' in left argument to operator '->' [Reference: file
+    ..\..\..\src\LibEMC\ChainBuffer.cpp: line 837]
+..\..\..\src\LibEMC\ChainBuffer.cpp(837) : Info 831: Reference cited in prior
+    message
+                                                 _
+#... rch->pucBuff != NULL) {free(pSearch->pucBuff); pSearch->pucBuff = NULL;}
+			SAFEFREE(pSearch->pucBuff);
+..\..\..\src\LibEMC\ChainBuffer.cpp(919) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                      _
+			delete pSearch;
+..\..\..\src\LibEMC\ChainBuffer.cpp(920) : Warning 586: function 'operator
+    delete' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                  _
+		ReallocNodeBuffer(pToDelete, 0, 0);	
+..\..\..\src\LibEMC\ChainBuffer.cpp(936) : Warning 534: Ignoring return value
+    of function 'CChainBuffer::ReallocNodeBuffer(ChainBufferNode *, unsigned
+    long, int)' (compare with line 431) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibEMC\ChainBuffer.cpp(431) : Info 830: Location cited in prior
+    message
+                                _
+		delete pToDelete;
+..\..\..\src\LibEMC\ChainBuffer.cpp(937) : Warning 586: function 'operator
+    delete' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                                       _
+{
+..\..\..\src\LibEMC\ChainBuffer.cpp(1029) : Error 18: Symbol
+    'CChainBuffer::NonDelegatingQueryInterface(const struct _GUID &, void **)'
+    redeclared (qualification) conflicts with line 93, file
+    ..\..\..\src\LibEMC\ChainBuffer.h, module ..\..\..\src\LibEMC\basedecoder.cpp
+    [MISRA C++ Rule 2-10-6], [MISRA C++ Rule 3-2-1]
+..\..\..\src\LibEMC\ChainBuffer.h(93) : Info 830: Location cited in prior
+    message
+
+--- Module:   ..\..\..\src\LibEMC\debug.cpp (C++)
+                                                                                                        _
+	_stprintf(szInfo, TEXT("[eplExceptionFilter] pName is %s, ptrs is %d %#x\n"), pName, ptrs, ptrs);
+..\..\..\src\LibEMC\debug.cpp(31) : Warning 534: Ignoring return value of
+    function '_swprintf(wchar_t *, const wchar_t *, ...)' (compare with line
+    506, file C:\Program Files\Microsoft Visual Studio 8\VC\include\stdio.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\stdio.h(506) : Info 830:
+    Location cited in prior message
+                                                                                         _
+	_stprintf(szInfo, TEXT("[eplExceptionHandler] SDK close, exit code: %d\n"), code);
+..\..\..\src\LibEMC\debug.cpp(65) : Warning 534: Ignoring return value of
+    function '_swprintf(wchar_t *, const wchar_t *, ...)' (compare with line
+    506, file C:\Program Files\Microsoft Visual Studio 8\VC\include\stdio.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\stdio.h(506) : Info 830:
+    Location cited in prior message
+            _
+	exit(code);
+..\..\..\src\LibEMC\debug.cpp(68) : Warning 586: function 'exit' is deprecated.
+    [MISRA C++ Rule 18-0-3]
+
+--- Module:   ..\..\..\src\LibEMC\lock.cpp (C++)
+                        _
+class CEmcBaseUnknown : INonDelegatingUnknown
+..\..\..\src\LibEMC\basecom.h(46) : Warning 1505: no access specifier provided,
+    'private' assumed
+                                   _
+	virtual ~CEmcBaseUnknown() {}
+..\..\..\src\LibEMC\basecom.h(56) : Warning 1510: base class
+    'INonDelegatingUnknown' has no destructor
+                                _
+		ts = ts/uncommon*uncommon;
+..\..\..\src\LibEMC\ts.h(338) : Warning 573: Signed-unsigned mix with divide
+                                      _
+	return Ts*(__int64)(toFreq/gcd)/(__int64)(fromFreq/gcd);
+..\..\..\src\LibEMC\ts.h(373) : Warning 573: Signed-unsigned mix with divide
+..\..\..\src\LibEMC\ts.h(373) : Warning 573: Signed-unsigned mix with divide
+                                               _
+	return Ts*(unsigned __int64)(toFreq/gcd)/(unsigned __int64)(fromFreq/gcd);
+..\..\..\src\LibEMC\ts.h(383) : Warning 573: Signed-unsigned mix with divide
+..\..\..\src\LibEMC\ts.h(383) : Warning 573: Signed-unsigned mix with divide
+                                         _
+	virtual ~CEmcBaseEventGenerator();
+..\..\..\src\LibEMC\baseevent.h(31) : Warning 1510: base class
+    'IEmcEventSource' has no destructor
+..\..\..\src\LibEMC\baseevent.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                       _
+	virtual ~CEmcBaseEventHandler();
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class 'IEmcEventSink'
+    has no destructor
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                _
+	virtual ~CEmcMediaType();
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'IEmcMediaType'
+    has no destructor
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'EMC_MEDIA_TYPE'
+    has no destructor
+                                  _
+	virtual ~CEmcMediaSample();
+..\..\..\src\LibEMC\mediasample.h(25) : Warning 1510: base class
+    'IEmcMediaSample' has no destructor
+..\..\..\src\LibEMC\mediasample.h(25) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                      _
+	virtual ~CEmcSampleAllocator();
+..\..\..\src\LibEMC\sampleallocator.h(25) : Warning 1510: base class
+    'IEmcSampleAllocator' has no destructor
+..\..\..\src\LibEMC\sampleallocator.h(25) : Warning 1510: base class 'IUnknown'
+    has no destructor
+         _
+#include "guid.h"
+..\..\..\src\LibEMC\ChainBuffer.h(6) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\guid.h'
+         _
+#include "basecom.h"
+..\..\..\src\LibEMC\ChainBuffer.h(7) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\basecom.h'
+         _
+#include "ts.h"
+..\..\..\src\LibEMC\ChainBuffer.h(8) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\ts.h'
+         _
+#include "lock.h"
+..\..\..\src\LibEMC\ChainBuffer.h(9) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\lock.h'
+         _
+#include "emccore.h"
+..\..\..\src\LibEMC\ChainBuffer.h(10) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\emccore.h'
+         _
+#include "baseevent.h"
+..\..\..\src\LibEMC\ChainBuffer.h(11) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\baseevent.h'
+         _
+#include "misc.h"
+..\..\..\src\LibEMC\ChainBuffer.h(12) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\misc.h'
+                               _
+	virtual ~CChainBuffer();
+..\..\..\src\LibEMC\ChainBuffer.h(60) : Warning 1510: base class
+    'IEmcPullStream' has no destructor
+..\..\..\src\LibEMC\ChainBuffer.h(60) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                  _
+	virtual ~CEmcBaseDecoder();
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IEmcDecoder'
+    has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcEventSink' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                  _
+	virtual ~CEmcBaseEncoder();
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IEmcEncoder'
+    has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcEventSink' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                _
+	virtual ~CEmcBaseDemux();
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class 'IEmcDemux' has
+    no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                              _
+	virtual ~CEmcBaseMux();
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IEmcMux' has no
+    destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IEmcPropertySet'
+    has no destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IUnknown' has no
+    destructor
+                                    _
+	CloseHandle(m_hMRLSemaphore);
+..\..\..\src\LibEMC\lock.cpp(32) : Warning 534: Ignoring return value of
+    function 'CloseHandle(void *)' (compare with line 3713, file C:\Program
+    Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h) [MISRA
+    C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3713)
+    : Info 830: Location cited in prior message
+                                                     _
+		ReleaseSemaphore(m_hMRLSemaphore,1,0);
+..\..\..\src\LibEMC\lock.cpp(49) : Warning 534: Ignoring return value of
+    function 'ReleaseSemaphore(void *, long, long *)' (compare with line 3353,
+    file C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3353)
+    : Info 830: Location cited in prior message
+                                                             _
+		WaitForSingleObject(m_hMRLSemaphore,INFINITE);
+..\..\..\src\LibEMC\lock.cpp(63) : Warning 534: Ignoring return value of
+    function 'WaitForSingleObject(void *, unsigned long)' (compare with line
+    3369, file C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3369)
+    : Info 830: Location cited in prior message
+                                                     _
+		ReleaseSemaphore(m_hMRLSemaphore,1,0);
+..\..\..\src\LibEMC\lock.cpp(75) : Warning 534: Ignoring return value of
+    function 'ReleaseSemaphore(void *, long, long *)' (compare with line 3353,
+    file C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(3353)
+    : Info 830: Location cited in prior message
+
+--- Module:   ..\..\..\src\LibEMC\mediasample.cpp (C++)
+                        _
+class CEmcBaseUnknown : INonDelegatingUnknown
+..\..\..\src\LibEMC\basecom.h(46) : Warning 1505: no access specifier provided,
+    'private' assumed
+                                   _
+	virtual ~CEmcBaseUnknown() {}
+..\..\..\src\LibEMC\basecom.h(56) : Warning 1510: base class
+    'INonDelegatingUnknown' has no destructor
+                                _
+		ts = ts/uncommon*uncommon;
+..\..\..\src\LibEMC\ts.h(338) : Warning 573: Signed-unsigned mix with divide
+                                      _
+	return Ts*(__int64)(toFreq/gcd)/(__int64)(fromFreq/gcd);
+..\..\..\src\LibEMC\ts.h(373) : Warning 573: Signed-unsigned mix with divide
+..\..\..\src\LibEMC\ts.h(373) : Warning 573: Signed-unsigned mix with divide
+                                               _
+	return Ts*(unsigned __int64)(toFreq/gcd)/(unsigned __int64)(fromFreq/gcd);
+..\..\..\src\LibEMC\ts.h(383) : Warning 573: Signed-unsigned mix with divide
+..\..\..\src\LibEMC\ts.h(383) : Warning 573: Signed-unsigned mix with divide
+                                         _
+	virtual ~CEmcBaseEventGenerator();
+..\..\..\src\LibEMC\baseevent.h(31) : Warning 1510: base class
+    'IEmcEventSource' has no destructor
+..\..\..\src\LibEMC\baseevent.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                       _
+	virtual ~CEmcBaseEventHandler();
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class 'IEmcEventSink'
+    has no destructor
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                _
+	virtual ~CEmcMediaType();
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'IEmcMediaType'
+    has no destructor
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'EMC_MEDIA_TYPE'
+    has no destructor
+                                  _
+	virtual ~CEmcMediaSample();
+..\..\..\src\LibEMC\mediasample.h(25) : Warning 1510: base class
+    'IEmcMediaSample' has no destructor
+..\..\..\src\LibEMC\mediasample.h(25) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                      _
+	virtual ~CEmcSampleAllocator();
+..\..\..\src\LibEMC\sampleallocator.h(25) : Warning 1510: base class
+    'IEmcSampleAllocator' has no destructor
+..\..\..\src\LibEMC\sampleallocator.h(25) : Warning 1510: base class 'IUnknown'
+    has no destructor
+         _
+#include "guid.h"
+..\..\..\src\LibEMC\ChainBuffer.h(6) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\guid.h'
+         _
+#include "basecom.h"
+..\..\..\src\LibEMC\ChainBuffer.h(7) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\basecom.h'
+         _
+#include "ts.h"
+..\..\..\src\LibEMC\ChainBuffer.h(8) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\ts.h'
+         _
+#include "lock.h"
+..\..\..\src\LibEMC\ChainBuffer.h(9) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\lock.h'
+         _
+#include "emccore.h"
+..\..\..\src\LibEMC\ChainBuffer.h(10) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\emccore.h'
+         _
+#include "baseevent.h"
+..\..\..\src\LibEMC\ChainBuffer.h(11) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\baseevent.h'
+         _
+#include "misc.h"
+..\..\..\src\LibEMC\ChainBuffer.h(12) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\misc.h'
+                               _
+	virtual ~CChainBuffer();
+..\..\..\src\LibEMC\ChainBuffer.h(60) : Warning 1510: base class
+    'IEmcPullStream' has no destructor
+..\..\..\src\LibEMC\ChainBuffer.h(60) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                  _
+	virtual ~CEmcBaseDecoder();
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IEmcDecoder'
+    has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcEventSink' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                  _
+	virtual ~CEmcBaseEncoder();
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IEmcEncoder'
+    has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcEventSink' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                _
+	virtual ~CEmcBaseDemux();
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class 'IEmcDemux' has
+    no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                              _
+	virtual ~CEmcBaseMux();
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IEmcMux' has no
+    destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IEmcPropertySet'
+    has no destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IUnknown' has no
+    destructor
+                                       _
+		m_pMediaType->Release();
+..\..\..\src\LibEMC\mediasample.cpp(76) : Warning 534: Ignoring return value of
+    function 'IUnknown::Release(void)' (compare with line 119, file C:\Program
+    Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h, module
+    ..\..\..\src\LibEMC\basedecoder.cpp) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h(119)
+    : Info 830: Location cited in prior message
+                                       _
+		m_pMediaType->Release();
+..\..\..\src\LibEMC\mediasample.cpp(76) : Warning 1551: Function may throw
+    exception '...' in destructor 'CEmcMediaSample::~CEmcMediaSample(void)'
+                                       _
+		m_pMediaType->Release();
+..\..\..\src\LibEMC\mediasample.cpp(209) : Warning 534: Ignoring return value
+    of function 'IUnknown::Release(void)' (compare with line 119, file
+    C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) [MISRA C++ Rules 0-1-7], [MISRA
+    C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h(119)
+    : Info 830: Location cited in prior message
+                              _
+	m_pMediaType->AddRef();
+..\..\..\src\LibEMC\mediasample.cpp(211) : Warning 534: Ignoring return value
+    of function 'IUnknown::AddRef(void)' (compare with line 117, file
+    C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) [MISRA C++ Rules 0-1-7], [MISRA
+    C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h(117)
+    : Info 830: Location cited in prior message
+                              _
+	m_pMediaType->AddRef();
+..\..\..\src\LibEMC\mediasample.cpp(221) : Warning 534: Ignoring return value
+    of function 'IUnknown::AddRef(void)' (compare with line 117, file
+    C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) [MISRA C++ Rules 0-1-7], [MISRA
+    C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h(117)
+    : Info 830: Location cited in prior message
+                           _
+		delete this;
+..\..\..\src\LibEMC\mediasample.cpp(289) : Warning 586: function 'operator
+    delete' is deprecated. [MISRA C++ Rule 18-4-1]
+                                                        _
+			m_pAllocator->ReturnSample(this);
+..\..\..\src\LibEMC\mediasample.cpp(299) : Warning 534: Ignoring return value
+    of function 'IEmcSampleAllocator::ReturnSample(IEmcMediaSample *)' (compare
+    with line 924, file ..\..\..\src\LibEMC\emccore.h, module
+    ..\..\..\src\LibEMC\basedecoder.cpp) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(924) : Info 830: Location cited in prior message
+                                   _
+			delete this;
+..\..\..\src\LibEMC\mediasample.cpp(301) : Warning 586: function 'operator
+    delete' is deprecated. [MISRA C++ Rule 18-4-1]
+
+--- Module:   ..\..\..\src\LibEMC\mediatype.cpp (C++)
+                        _
+class CEmcBaseUnknown : INonDelegatingUnknown
+..\..\..\src\LibEMC\basecom.h(46) : Warning 1505: no access specifier provided,
+    'private' assumed
+                                   _
+	virtual ~CEmcBaseUnknown() {}
+..\..\..\src\LibEMC\basecom.h(56) : Warning 1510: base class
+    'INonDelegatingUnknown' has no destructor
+                                _
+		ts = ts/uncommon*uncommon;
+..\..\..\src\LibEMC\ts.h(338) : Warning 573: Signed-unsigned mix with divide
+                                      _
+	return Ts*(__int64)(toFreq/gcd)/(__int64)(fromFreq/gcd);
+..\..\..\src\LibEMC\ts.h(373) : Warning 573: Signed-unsigned mix with divide
+..\..\..\src\LibEMC\ts.h(373) : Warning 573: Signed-unsigned mix with divide
+                                               _
+	return Ts*(unsigned __int64)(toFreq/gcd)/(unsigned __int64)(fromFreq/gcd);
+..\..\..\src\LibEMC\ts.h(383) : Warning 573: Signed-unsigned mix with divide
+..\..\..\src\LibEMC\ts.h(383) : Warning 573: Signed-unsigned mix with divide
+                                         _
+	virtual ~CEmcBaseEventGenerator();
+..\..\..\src\LibEMC\baseevent.h(31) : Warning 1510: base class
+    'IEmcEventSource' has no destructor
+..\..\..\src\LibEMC\baseevent.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                       _
+	virtual ~CEmcBaseEventHandler();
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class 'IEmcEventSink'
+    has no destructor
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                _
+	virtual ~CEmcMediaType();
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'IEmcMediaType'
+    has no destructor
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'EMC_MEDIA_TYPE'
+    has no destructor
+                                  _
+	virtual ~CEmcMediaSample();
+..\..\..\src\LibEMC\mediasample.h(25) : Warning 1510: base class
+    'IEmcMediaSample' has no destructor
+..\..\..\src\LibEMC\mediasample.h(25) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                      _
+	virtual ~CEmcSampleAllocator();
+..\..\..\src\LibEMC\sampleallocator.h(25) : Warning 1510: base class
+    'IEmcSampleAllocator' has no destructor
+..\..\..\src\LibEMC\sampleallocator.h(25) : Warning 1510: base class 'IUnknown'
+    has no destructor
+         _
+#include "guid.h"
+..\..\..\src\LibEMC\ChainBuffer.h(6) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\guid.h'
+         _
+#include "basecom.h"
+..\..\..\src\LibEMC\ChainBuffer.h(7) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\basecom.h'
+         _
+#include "ts.h"
+..\..\..\src\LibEMC\ChainBuffer.h(8) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\ts.h'
+         _
+#include "lock.h"
+..\..\..\src\LibEMC\ChainBuffer.h(9) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\lock.h'
+         _
+#include "emccore.h"
+..\..\..\src\LibEMC\ChainBuffer.h(10) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\emccore.h'
+         _
+#include "baseevent.h"
+..\..\..\src\LibEMC\ChainBuffer.h(11) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\baseevent.h'
+         _
+#include "misc.h"
+..\..\..\src\LibEMC\ChainBuffer.h(12) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\misc.h'
+                               _
+	virtual ~CChainBuffer();
+..\..\..\src\LibEMC\ChainBuffer.h(60) : Warning 1510: base class
+    'IEmcPullStream' has no destructor
+..\..\..\src\LibEMC\ChainBuffer.h(60) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                  _
+	virtual ~CEmcBaseDecoder();
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IEmcDecoder'
+    has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcEventSink' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                  _
+	virtual ~CEmcBaseEncoder();
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IEmcEncoder'
+    has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcEventSink' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                _
+	virtual ~CEmcBaseDemux();
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class 'IEmcDemux' has
+    no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                              _
+	virtual ~CEmcBaseMux();
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IEmcMux' has no
+    destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IEmcPropertySet'
+    has no destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IUnknown' has no
+    destructor
+_
+}
+..\..\..\src\LibEMC\mediatype.cpp(25) : Warning 1566: member
+    'EMC_MEDIA_TYPE::m_gType' (line 21, file ..\..\..\src\LibEMC\mediatype.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) might have been initialized by
+    a separate function but no '-sem(CEmcMediaType::Clear,initializer)' was
+    seen
+..\..\..\src\LibEMC\mediatype.h(21) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\mediatype.cpp(25) : Warning 1566: member
+    'EMC_MEDIA_TYPE::m_gSubType' (line 22, file ..\..\..\src\LibEMC\mediatype.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) might have been initialized by
+    a separate function but no '-sem(CEmcMediaType::Clear,initializer)' was
+    seen
+..\..\..\src\LibEMC\mediatype.h(22) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\mediatype.cpp(25) : Warning 1566: member
+    'EMC_MEDIA_TYPE::m_gFormat' (line 23, file ..\..\..\src\LibEMC\mediatype.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) might have been initialized by
+    a separate function but no '-sem(CEmcMediaType::Clear,initializer)' was
+    seen
+..\..\..\src\LibEMC\mediatype.h(23) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\mediatype.cpp(25) : Warning 1566: member
+    'EMC_MEDIA_TYPE::m_dwFlags' (line 24, file ..\..\..\src\LibEMC\mediatype.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) might have been initialized by
+    a separate function but no '-sem(CEmcMediaType::Clear,initializer)' was
+    seen
+..\..\..\src\LibEMC\mediatype.h(24) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\mediatype.cpp(25) : Warning 1566: member
+    'EMC_MEDIA_TYPE::m_dwFormatSize' (line 25, file ..\..\..\src\LibEMC\mediatype.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) might have been initialized by
+    a separate function but no '-sem(CEmcMediaType::Clear,initializer)' was
+    seen
+..\..\..\src\LibEMC\mediatype.h(25) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\mediatype.cpp(25) : Warning 1566: member
+    'EMC_MEDIA_TYPE::m_pFormat' (line 26, file ..\..\..\src\LibEMC\mediatype.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) might have been initialized by
+    a separate function but no '-sem(CEmcMediaType::Clear,initializer)' was
+    seen
+..\..\..\src\LibEMC\mediatype.h(26) : Info 830: Location cited in prior message
+                                         _
+		pClone->GetType(&m_gType);
+..\..\..\src\LibEMC\mediatype.cpp(31) : Warning 534: Ignoring return value of
+    function 'IEmcMediaType::GetType(struct _GUID *)' (compare with line 790,
+    file ..\..\..\src\LibEMC\emccore.h, module ..\..\..\src\LibEMC\basedecoder.cpp)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(790) : Info 830: Location cited in prior message
+                                               _
+		pClone->GetSubType(&m_gSubType);
+..\..\..\src\LibEMC\mediatype.cpp(32) : Warning 534: Ignoring return value of
+    function 'IEmcMediaType::GetSubType(struct _GUID *)' (compare with line
+    792, file ..\..\..\src\LibEMC\emccore.h, module ..\..\..\src\LibEMC\basedecoder.cpp)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(792) : Info 830: Location cited in prior message
+                                             _
+		pClone->GetFormat(&m_gFormat);
+..\..\..\src\LibEMC\mediatype.cpp(33) : Warning 534: Ignoring return value of
+    function 'IEmcMediaType::GetFormat(struct _GUID *)' (compare with line 794,
+    file ..\..\..\src\LibEMC\emccore.h, module ..\..\..\src\LibEMC\basedecoder.cpp)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(794) : Info 830: Location cited in prior message
+                                                      _
+		pClone->GetFormatSize(&m_dwFormatSize);
+..\..\..\src\LibEMC\mediatype.cpp(34) : Warning 534: Ignoring return value of
+    function 'IEmcMediaType::GetFormatSize(unsigned long *)' (compare with line
+    796, file ..\..\..\src\LibEMC\emccore.h, module ..\..\..\src\LibEMC\basedecoder.cpp)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(796) : Info 830: Location cited in prior message
+                                                                         _
+			pClone->GetFormatBuffer(m_pFormat,m_dwFormatSize);
+..\..\..\src\LibEMC\mediatype.cpp(38) : Warning 534: Ignoring return value of
+    function 'IEmcMediaType::GetFormatBuffer(unsigned char *, unsigned long)'
+    (compare with line 797, file ..\..\..\src\LibEMC\emccore.h, module
+    ..\..\..\src\LibEMC\basedecoder.cpp) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(797) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\mediatype.cpp(45) : Warning 1566: member
+    'EMC_MEDIA_TYPE::m_gType' (line 21, file ..\..\..\src\LibEMC\mediatype.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) might have been initialized by
+    a separate function but no '-sem(CEmcMediaType::Clear,initializer)' was
+    seen
+..\..\..\src\LibEMC\mediatype.h(21) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\mediatype.cpp(45) : Warning 1566: member
+    'EMC_MEDIA_TYPE::m_gSubType' (line 22, file ..\..\..\src\LibEMC\mediatype.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) might have been initialized by
+    a separate function but no '-sem(CEmcMediaType::Clear,initializer)' was
+    seen
+..\..\..\src\LibEMC\mediatype.h(22) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\mediatype.cpp(45) : Warning 1566: member
+    'EMC_MEDIA_TYPE::m_gFormat' (line 23, file ..\..\..\src\LibEMC\mediatype.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) might have been initialized by
+    a separate function but no '-sem(CEmcMediaType::Clear,initializer)' was
+    seen
+..\..\..\src\LibEMC\mediatype.h(23) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\mediatype.cpp(45) : Warning 1566: member
+    'EMC_MEDIA_TYPE::m_dwFlags' (line 24, file ..\..\..\src\LibEMC\mediatype.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) might have been initialized by
+    a separate function but no '-sem(CEmcMediaType::Clear,initializer)' was
+    seen
+..\..\..\src\LibEMC\mediatype.h(24) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\mediatype.cpp(45) : Warning 1566: member
+    'EMC_MEDIA_TYPE::m_dwFormatSize' (line 25, file ..\..\..\src\LibEMC\mediatype.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) might have been initialized by
+    a separate function but no '-sem(CEmcMediaType::Clear,initializer)' was
+    seen
+..\..\..\src\LibEMC\mediatype.h(25) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\mediatype.cpp(45) : Warning 1566: member
+    'EMC_MEDIA_TYPE::m_pFormat' (line 26, file ..\..\..\src\LibEMC\mediatype.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) might have been initialized by
+    a separate function but no '-sem(CEmcMediaType::Clear,initializer)' was
+    seen
+..\..\..\src\LibEMC\mediatype.h(26) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\mediatype.cpp(62) : Warning 1566: member
+    'EMC_MEDIA_TYPE::m_gType' (line 21, file ..\..\..\src\LibEMC\mediatype.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) might have been initialized by
+    a separate function but no '-sem(CEmcMediaType::Clear,initializer)' was
+    seen
+..\..\..\src\LibEMC\mediatype.h(21) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\mediatype.cpp(62) : Warning 1566: member
+    'EMC_MEDIA_TYPE::m_gSubType' (line 22, file ..\..\..\src\LibEMC\mediatype.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) might have been initialized by
+    a separate function but no '-sem(CEmcMediaType::Clear,initializer)' was
+    seen
+..\..\..\src\LibEMC\mediatype.h(22) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\mediatype.cpp(62) : Warning 1566: member
+    'EMC_MEDIA_TYPE::m_gFormat' (line 23, file ..\..\..\src\LibEMC\mediatype.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) might have been initialized by
+    a separate function but no '-sem(CEmcMediaType::Clear,initializer)' was
+    seen
+..\..\..\src\LibEMC\mediatype.h(23) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\mediatype.cpp(62) : Warning 1566: member
+    'EMC_MEDIA_TYPE::m_dwFlags' (line 24, file ..\..\..\src\LibEMC\mediatype.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) might have been initialized by
+    a separate function but no '-sem(CEmcMediaType::Clear,initializer)' was
+    seen
+..\..\..\src\LibEMC\mediatype.h(24) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\mediatype.cpp(62) : Warning 1566: member
+    'EMC_MEDIA_TYPE::m_dwFormatSize' (line 25, file ..\..\..\src\LibEMC\mediatype.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) might have been initialized by
+    a separate function but no '-sem(CEmcMediaType::Clear,initializer)' was
+    seen
+..\..\..\src\LibEMC\mediatype.h(25) : Info 830: Location cited in prior message
+_
+}
+..\..\..\src\LibEMC\mediatype.cpp(62) : Warning 1566: member
+    'EMC_MEDIA_TYPE::m_pFormat' (line 26, file ..\..\..\src\LibEMC\mediatype.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) might have been initialized by
+    a separate function but no '-sem(CEmcMediaType::Clear,initializer)' was
+    seen
+..\..\..\src\LibEMC\mediatype.h(26) : Info 830: Location cited in prior message
+
+During Specific Walk:
+  File ..\..\..\src\LibEMC\mediatype.cpp line 38: CEmcMediaType::GetFormatBuffer(?,
+    !=0) #1
+..\..\..\src\LibEMC\mediatype.cpp(156) : Warning 429: Custodial pointer
+    'pBuffer' (line 148) has not been freed or returned
+..\..\..\src\LibEMC\mediatype.cpp(148) : Info 830: Location cited in prior
+    message
+
+During Specific Walk:
+  File ..\..\..\src\LibEMC\mediatype.cpp line 38: CEmcMediaType::GetFormatBuffer(?,
+    !=0) #1
+..\..\..\src\LibEMC\mediatype.cpp(156) : Warning 429: Custodial pointer
+    'pBuffer' (line 148) has not been freed or returned
+..\..\..\src\LibEMC\mediatype.cpp(148) : Info 830: Location cited in prior
+    message
+                                                _
+		memcpy(m_pFormat,pBuffer,dwSize);
+..\..\..\src\LibEMC\mediatype.cpp(170) : Warning 668: Possibly passing a null
+    pointer to function 'memcpy(void *, const void *, unsigned int)', arg. no.
+    2 [Reference: file ..\..\..\src\LibEMC\mediatype.cpp: line 160]
+..\..\..\src\LibEMC\mediatype.cpp(160) : Info 831: Reference cited in prior
+    message
+                                          _
+	memcpy(m_pFormat, pBuffer, dwSize);	
+..\..\..\src\LibEMC\mediatype.cpp(190) : Warning 668: Possibly passing a null
+    pointer to function 'memcpy(void *, const void *, unsigned int)', arg. no.
+    2 [Reference: file ..\..\..\src\LibEMC\mediatype.cpp: line 179]
+..\..\..\src\LibEMC\mediatype.cpp(179) : Info 831: Reference cited in prior
+    message
+               _
+	return S_OK;
+..\..\..\src\LibEMC\mediatype.cpp(191) : Warning 438: Last value assigned to
+    variable 'pNewFormat' (defined at line 178) not used [MISRA C++ Rule
+    0-1-6], [MISRA C++ Rules 0-1-6 and 0-1-9]
+..\..\..\src\LibEMC\mediatype.cpp(178) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibEMC\mediatype.cpp(192) : Warning 529: Symbol 'pNewFormat' (line
+    178) not subsequently referenced [MISRA C++ Rule 0-1-3], [MISRA C++ Rule
+    0-1-4]
+..\..\..\src\LibEMC\mediatype.cpp(178) : Info 830: Location cited in prior
+    message
+
+--- Module:   ..\..\..\src\LibEMC\sampleallocator.cpp (C++)
+                        _
+class CEmcBaseUnknown : INonDelegatingUnknown
+..\..\..\src\LibEMC\basecom.h(46) : Warning 1505: no access specifier provided,
+    'private' assumed
+                                   _
+	virtual ~CEmcBaseUnknown() {}
+..\..\..\src\LibEMC\basecom.h(56) : Warning 1510: base class
+    'INonDelegatingUnknown' has no destructor
+                                _
+		ts = ts/uncommon*uncommon;
+..\..\..\src\LibEMC\ts.h(338) : Warning 573: Signed-unsigned mix with divide
+                                      _
+	return Ts*(__int64)(toFreq/gcd)/(__int64)(fromFreq/gcd);
+..\..\..\src\LibEMC\ts.h(373) : Warning 573: Signed-unsigned mix with divide
+..\..\..\src\LibEMC\ts.h(373) : Warning 573: Signed-unsigned mix with divide
+                                               _
+	return Ts*(unsigned __int64)(toFreq/gcd)/(unsigned __int64)(fromFreq/gcd);
+..\..\..\src\LibEMC\ts.h(383) : Warning 573: Signed-unsigned mix with divide
+..\..\..\src\LibEMC\ts.h(383) : Warning 573: Signed-unsigned mix with divide
+                                         _
+	virtual ~CEmcBaseEventGenerator();
+..\..\..\src\LibEMC\baseevent.h(31) : Warning 1510: base class
+    'IEmcEventSource' has no destructor
+..\..\..\src\LibEMC\baseevent.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                       _
+	virtual ~CEmcBaseEventHandler();
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class 'IEmcEventSink'
+    has no destructor
+..\..\..\src\LibEMC\baseevent.h(71) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                _
+	virtual ~CEmcMediaType();
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'IEmcMediaType'
+    has no destructor
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\mediatype.h(37) : Warning 1510: base class 'EMC_MEDIA_TYPE'
+    has no destructor
+                                  _
+	virtual ~CEmcMediaSample();
+..\..\..\src\LibEMC\mediasample.h(25) : Warning 1510: base class
+    'IEmcMediaSample' has no destructor
+..\..\..\src\LibEMC\mediasample.h(25) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                      _
+	virtual ~CEmcSampleAllocator();
+..\..\..\src\LibEMC\sampleallocator.h(25) : Warning 1510: base class
+    'IEmcSampleAllocator' has no destructor
+..\..\..\src\LibEMC\sampleallocator.h(25) : Warning 1510: base class 'IUnknown'
+    has no destructor
+         _
+#include "guid.h"
+..\..\..\src\LibEMC\ChainBuffer.h(6) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\guid.h'
+         _
+#include "basecom.h"
+..\..\..\src\LibEMC\ChainBuffer.h(7) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\basecom.h'
+         _
+#include "ts.h"
+..\..\..\src\LibEMC\ChainBuffer.h(8) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\ts.h'
+         _
+#include "lock.h"
+..\..\..\src\LibEMC\ChainBuffer.h(9) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\lock.h'
+         _
+#include "emccore.h"
+..\..\..\src\LibEMC\ChainBuffer.h(10) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\emccore.h'
+         _
+#include "baseevent.h"
+..\..\..\src\LibEMC\ChainBuffer.h(11) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\baseevent.h'
+         _
+#include "misc.h"
+..\..\..\src\LibEMC\ChainBuffer.h(12) : Warning 537: Repeated include file
+    '..\..\..\src\LibEMC\misc.h'
+                               _
+	virtual ~CChainBuffer();
+..\..\..\src\LibEMC\ChainBuffer.h(60) : Warning 1510: base class
+    'IEmcPullStream' has no destructor
+..\..\..\src\LibEMC\ChainBuffer.h(60) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                  _
+	virtual ~CEmcBaseDecoder();
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IEmcDecoder'
+    has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class
+    'IEmcEventSink' has no destructor
+..\..\..\src\LibEMC\basedecoder.h(31) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                  _
+	virtual ~CEmcBaseEncoder();
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IEmcEncoder'
+    has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IUnknown' has
+    no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'CEmcBaseEventListener' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class
+    'IEmcEventSink' has no destructor
+..\..\..\src\LibEMC\baseencoder.h(30) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                                _
+	virtual ~CEmcBaseDemux();
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class 'IEmcDemux' has
+    no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class
+    'IEmcPropertySet' has no destructor
+..\..\..\src\LibEMC\basedemux.h(28) : Warning 1510: base class 'IUnknown' has
+    no destructor
+                              _
+	virtual ~CEmcBaseMux();
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IEmcMux' has no
+    destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class
+    'IEmcMediaComponent' has no destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IEmcPropertySet'
+    has no destructor
+..\..\..\src\LibEMC\basemux.h(28) : Warning 1510: base class 'IUnknown' has no
+    destructor
+                                                          _
+			m_pSampleArray[i]->SetAllocator(0);
+..\..\..\src\LibEMC\sampleallocator.cpp(38) : Warning 534: Ignoring return
+    value of function 'IEmcMediaSample::SetAllocator(IEmcSampleAllocator *)'
+    (compare with line 918, file ..\..\..\src\LibEMC\emccore.h, module
+    ..\..\..\src\LibEMC\basedecoder.cpp) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\..\..\src\LibEMC\emccore.h(918) : Info 830: Location cited in prior message
+                                                          _
+			m_pSampleArray[i]->SetAllocator(0);
+..\..\..\src\LibEMC\sampleallocator.cpp(38) : Warning 1551: Function may throw
+    exception '...' in destructor 'CEmcSampleAllocator::~CEmcSampleAllocator(void)'
+                                                    _
+			m_pSampleArray[i]->Release();	// release the sample held on my queue
+..\..\..\src\LibEMC\sampleallocator.cpp(39) : Warning 534: Ignoring return
+    value of function 'IUnknown::Release(void)' (compare with line 119, file
+    C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) [MISRA C++ Rules 0-1-7], [MISRA
+    C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h(119)
+    : Info 830: Location cited in prior message
+                                                    _
+			m_pSampleArray[i]->Release();	// release the sample held on my queue
+..\..\..\src\LibEMC\sampleallocator.cpp(39) : Warning 1551: Function may throw
+    exception '...' in destructor 'CEmcSampleAllocator::~CEmcSampleAllocator(void)'
+                         _
+	pSample->AddRef();	// internally all samples on the queue have a refcount of 1.
+..\..\..\src\LibEMC\sampleallocator.cpp(78) : Warning 534: Ignoring return
+    value of function 'IUnknown::AddRef(void)' (compare with line 117, file
+    C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) [MISRA C++ Rules 0-1-7], [MISRA
+    C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\unknwn.h(117)
+    : Info 830: Location cited in prior message
+
+--- Module:   ..\..\..\src\LibEMC\ts.cpp (C++)
+                                _
+		ts = ts/uncommon*uncommon;
+..\..\..\src\LibEMC\ts.h(338) : Warning 573: Signed-unsigned mix with divide
+                                      _
+	return Ts*(__int64)(toFreq/gcd)/(__int64)(fromFreq/gcd);
+..\..\..\src\LibEMC\ts.h(373) : Warning 573: Signed-unsigned mix with divide
+..\..\..\src\LibEMC\ts.h(373) : Warning 573: Signed-unsigned mix with divide
+                                               _
+	return Ts*(unsigned __int64)(toFreq/gcd)/(unsigned __int64)(fromFreq/gcd);
+..\..\..\src\LibEMC\ts.h(383) : Warning 573: Signed-unsigned mix with divide
+..\..\..\src\LibEMC\ts.h(383) : Warning 573: Signed-unsigned mix with divide
+
+--- Global Wrap-up
+
+Warning 526: Symbol 'DP(const char *, ...)' (line 21, file ..\..\..\src\LibEMC\emc.h,
+    module ..\..\..\src\LibEMC\basedecoder.cpp) not defined
+..\..\..\src\LibEMC\emc.h(21) : Info 830: Location cited in prior message
+Note 974: Worst case function for stack usage: 'CChainBuffer::AddRef' is
+    recursive, loop contains call to 'CChainBuffer::AddRef'. See +stack for a
+    full report. [MISRA C++ Rule 7-5-4]

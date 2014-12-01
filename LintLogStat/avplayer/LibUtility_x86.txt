@@ -1,0 +1,785 @@
+
+--- Module:   ..\..\..\src\LibUtility\CI_Utility.cpp (C++)
+                                                                         _
+		CCiDllHelper::getInstance().releaseDllModule(hDecoderDLL);
+..\..\..\src\LibUtility\CI_Utility.cpp(203) : Warning 534: Ignoring return
+    value of function 'CCiDllHelper::releaseDllModule(struct HINSTANCE__ *)'
+    (compare with line 105, file ..\..\..\src\LibUtility\CI_Utility.h) [MISRA
+    C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibUtility\CI_Utility.h(105) : Info 830: Location cited in prior
+    message
+                                                                      _
+		pfnGetDllInterface(IID_MPADEC_C, (CI_VOID**)&ptpfnMPA);
+..\..\..\src\LibUtility\CI_Utility.cpp(220) : Warning 534: Ignoring return
+    value of function 'pfnGetDllInterface' (compare with line 195) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibUtility\CI_Utility.cpp(195) : Info 830: Location cited in prior
+    message
+                                                                                      _
+		ptpfnMPA->Create(&pvDecoder, (CI_VOID*)&u32License, &tMpaConfig, 0, 0);
+..\..\..\src\LibUtility\CI_Utility.cpp(226) : Warning 534: Ignoring return
+    value of function 'Create' (compare with line 265, file
+    ..\ExternalDependency\ci_mpadec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_mpadec.h(265) : Info 830: Location cited in prior
+    message
+                                            _
+		ptpfnMPA->Destroy(pvDecoder);
+..\..\..\src\LibUtility\CI_Utility.cpp(230) : Warning 534: Ignoring return
+    value of function 'Destroy' (compare with line 266, file
+    ..\ExternalDependency\ci_mpadec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_mpadec.h(266) : Info 830: Location cited in prior
+    message
+                                                                      _
+		pfnGetDllInterface(IID_AACDEC_C, (CI_VOID**)&ptpfnAAC);
+..\..\..\src\LibUtility\CI_Utility.cpp(237) : Warning 534: Ignoring return
+    value of function 'pfnGetDllInterface' (compare with line 195) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibUtility\CI_Utility.cpp(195) : Info 830: Location cited in prior
+    message
+                                                                                                             _
+		ptpfnAAC->Create(&pvDecoder, (CI_VOID*)&u32License, &tAacConfig, (CI_U8*)pucBuff, ulBuffSize);
+..\..\..\src\LibUtility\CI_Utility.cpp(243) : Warning 534: Ignoring return
+    value of function 'Create' (compare with line 278, file
+    ..\ExternalDependency\ci_aacdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_aacdec.h(278) : Info 830: Location cited in prior
+    message
+                                            _
+		ptpfnAAC->Destroy(pvDecoder);
+..\..\..\src\LibUtility\CI_Utility.cpp(247) : Warning 534: Ignoring return
+    value of function 'Destroy' (compare with line 279, file
+    ..\ExternalDependency\ci_aacdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_aacdec.h(279) : Info 830: Location cited in prior
+    message
+                                                                      _
+		pfnGetDllInterface(IID_AC3DEC_C, (CI_VOID**)&ptpfnAC3);
+..\..\..\src\LibUtility\CI_Utility.cpp(254) : Warning 534: Ignoring return
+    value of function 'pfnGetDllInterface' (compare with line 195) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibUtility\CI_Utility.cpp(195) : Info 830: Location cited in prior
+    message
+                                                                                      _
+		ptpfnAC3->Create(&pvDecoder, (CI_VOID*)&u32License, &tAc3Config, 0, 0);
+..\..\..\src\LibUtility\CI_Utility.cpp(265) : Warning 534: Ignoring return
+    value of function 'Create' (compare with line 201, file
+    ..\ExternalDependency\ci_ac3dec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_ac3dec.h(201) : Info 830: Location cited in prior
+    message
+                                            _
+		ptpfnAC3->Destroy(pvDecoder);
+..\..\..\src\LibUtility\CI_Utility.cpp(269) : Warning 534: Ignoring return
+    value of function 'Destroy' (compare with line 202, file
+    ..\ExternalDependency\ci_ac3dec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_ac3dec.h(202) : Info 830: Location cited in prior
+    message
+                                                                        _
+		pfnGetDllInterface(IID_FLACDEC_C, (CI_VOID**)&ptpfnFLAC);
+..\..\..\src\LibUtility\CI_Utility.cpp(276) : Warning 534: Ignoring return
+    value of function 'pfnGetDllInterface' (compare with line 195) [MISRA C++
+    Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibUtility\CI_Utility.cpp(195) : Info 830: Location cited in prior
+    message
+                                                                                                               _
+		ptpfnFLAC->Create(&pvDecoder, (CI_VOID*)&u32License, &tFlacConfig, (CI_U8*)pucBuff, ulBuffSize);
+..\..\..\src\LibUtility\CI_Utility.cpp(282) : Warning 534: Ignoring return
+    value of function 'Create' (compare with line 178, file
+    ..\ExternalDependency\ci_flacdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_flacdec.h(178) : Info 830: Location cited in prior
+    message
+                                             _
+		ptpfnFLAC->Destroy(pvDecoder);
+..\..\..\src\LibUtility\CI_Utility.cpp(286) : Warning 534: Ignoring return
+    value of function 'Destroy' (compare with line 179, file
+    ..\ExternalDependency\ci_flacdec.h) [MISRA C++ Rules 0-1-7], [MISRA C++
+    Rules 0-3-2]
+..\ExternalDependency\ci_flacdec.h(179) : Info 830: Location cited in prior
+    message
+                                                                 _
+	CCiDllHelper::getInstance().releaseDllModule(hDecoderDLL);
+..\..\..\src\LibUtility\CI_Utility.cpp(290) : Warning 534: Ignoring return
+    value of function 'CCiDllHelper::releaseDllModule(struct HINSTANCE__ *)'
+    (compare with line 105, file ..\..\..\src\LibUtility\CI_Utility.h) [MISRA
+    C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibUtility\CI_Utility.h(105) : Info 830: Location cited in prior
+    message
+                    _
+		free(m_tcDllPath);
+..\..\..\src\LibUtility\CI_Utility.cpp(311) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                           _
+			FreeLibrary(m_Module[i].hDllModule);
+..\..\..\src\LibUtility\CI_Utility.cpp(318) : Warning 534: Ignoring return
+    value of function 'FreeLibrary(struct HINSTANCE__ *)' (compare with line
+    1885, file C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include\winbase.h(1885)
+    : Info 830: Location cited in prior message
+                                                              _
+				_tcscpy(DllFullPath, _T("./"));
+..\..\..\src\LibUtility\CI_Utility.cpp(385) : Warning 534: Ignoring return
+    value of function 'wcscpy(wchar_t *, const wchar_t *)' (compare with line
+    252, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(252) : Info 830:
+    Location cited in prior message
+                                                                         _
+				_tcscat(DllFullPath, SHARELIBRARY_PREFIX);
+..\..\..\src\LibUtility\CI_Utility.cpp(386) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                                   _
+				_tcscat(DllFullPath, _T("cividec"));
+..\..\..\src\LibUtility\CI_Utility.cpp(387) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                                         _
+				_tcscat(DllFullPath, SHARELIBRARY_SUFFIX);
+..\..\..\src\LibUtility\CI_Utility.cpp(388) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                                 _
+				_tcscpy(DllFullPath, m_tcDllPath);
+..\..\..\src\LibUtility\CI_Utility.cpp(392) : Warning 534: Ignoring return
+    value of function 'wcscpy(wchar_t *, const wchar_t *)' (compare with line
+    252, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(252) : Info 830:
+    Location cited in prior message
+                                                                         _
+				_tcscat(DllFullPath, SHARELIBRARY_PREFIX);
+..\..\..\src\LibUtility\CI_Utility.cpp(393) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                                   _
+				_tcscat(DllFullPath, _T("cividec"));
+..\..\..\src\LibUtility\CI_Utility.cpp(394) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                                         _
+				_tcscat(DllFullPath, SHARELIBRARY_SUFFIX);
+..\..\..\src\LibUtility\CI_Utility.cpp(395) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                              _
+				_tcscpy(DllFullPath, _T("./"));
+..\..\..\src\LibUtility\CI_Utility.cpp(403) : Warning 534: Ignoring return
+    value of function 'wcscpy(wchar_t *, const wchar_t *)' (compare with line
+    252, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(252) : Info 830:
+    Location cited in prior message
+                                                                         _
+				_tcscat(DllFullPath, SHARELIBRARY_PREFIX);
+..\..\..\src\LibUtility\CI_Utility.cpp(404) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                                   _
+				_tcscat(DllFullPath, _T("ciaudec"));
+..\..\..\src\LibUtility\CI_Utility.cpp(405) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                                         _
+				_tcscat(DllFullPath, SHARELIBRARY_SUFFIX);
+..\..\..\src\LibUtility\CI_Utility.cpp(406) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                                 _
+				_tcscpy(DllFullPath, m_tcDllPath);
+..\..\..\src\LibUtility\CI_Utility.cpp(410) : Warning 534: Ignoring return
+    value of function 'wcscpy(wchar_t *, const wchar_t *)' (compare with line
+    252, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(252) : Info 830:
+    Location cited in prior message
+                                                                         _
+				_tcscat(DllFullPath, SHARELIBRARY_PREFIX);
+..\..\..\src\LibUtility\CI_Utility.cpp(411) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                                   _
+				_tcscat(DllFullPath, _T("ciaudec"));
+..\..\..\src\LibUtility\CI_Utility.cpp(412) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                                         _
+				_tcscat(DllFullPath, SHARELIBRARY_SUFFIX);
+..\..\..\src\LibUtility\CI_Utility.cpp(413) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                              _
+				_tcscpy(DllFullPath, _T("./"));
+..\..\..\src\LibUtility\CI_Utility.cpp(421) : Warning 534: Ignoring return
+    value of function 'wcscpy(wchar_t *, const wchar_t *)' (compare with line
+    252, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(252) : Info 830:
+    Location cited in prior message
+                                                                        _
+				_tcscat(DllFullPath, _T("libvrpresent"));
+..\..\..\src\LibUtility\CI_Utility.cpp(422) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                                         _
+				_tcscat(DllFullPath, SHARELIBRARY_SUFFIX);
+..\..\..\src\LibUtility\CI_Utility.cpp(423) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                                 _
+				_tcscpy(DllFullPath, m_tcDllPath);
+..\..\..\src\LibUtility\CI_Utility.cpp(427) : Warning 534: Ignoring return
+    value of function 'wcscpy(wchar_t *, const wchar_t *)' (compare with line
+    252, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(252) : Info 830:
+    Location cited in prior message
+                                                                       _
+				_tcscat(DllFullPath,_T("libvrpresent"));
+..\..\..\src\LibUtility\CI_Utility.cpp(428) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                                         _
+				_tcscat(DllFullPath, SHARELIBRARY_SUFFIX);
+..\..\..\src\LibUtility\CI_Utility.cpp(429) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                              _
+				_tcscpy(DllFullPath, _T("./"));
+..\..\..\src\LibUtility\CI_Utility.cpp(437) : Warning 534: Ignoring return
+    value of function 'wcscpy(wchar_t *, const wchar_t *)' (compare with line
+    252, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(252) : Info 830:
+    Location cited in prior message
+                                                                        _
+				_tcscat(DllFullPath, _T("LibARPresent"));
+..\..\..\src\LibUtility\CI_Utility.cpp(438) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                                         _
+				_tcscat(DllFullPath, SHARELIBRARY_SUFFIX);
+..\..\..\src\LibUtility\CI_Utility.cpp(439) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                                 _
+				_tcscpy(DllFullPath, m_tcDllPath);
+..\..\..\src\LibUtility\CI_Utility.cpp(443) : Warning 534: Ignoring return
+    value of function 'wcscpy(wchar_t *, const wchar_t *)' (compare with line
+    252, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(252) : Info 830:
+    Location cited in prior message
+                                                                       _
+				_tcscat(DllFullPath,_T("LibARPresent"));
+..\..\..\src\LibUtility\CI_Utility.cpp(444) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                                         _
+				_tcscat(DllFullPath, SHARELIBRARY_SUFFIX);
+..\..\..\src\LibUtility\CI_Utility.cpp(445) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                              _
+				_tcscpy(DllFullPath, _T("./"));
+..\..\..\src\LibUtility\CI_Utility.cpp(453) : Warning 534: Ignoring return
+    value of function 'wcscpy(wchar_t *, const wchar_t *)' (compare with line
+    252, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(252) : Info 830:
+    Location cited in prior message
+                                                                         _
+				_tcscat(DllFullPath, SHARELIBRARY_PREFIX);
+..\..\..\src\LibUtility\CI_Utility.cpp(454) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                                    _
+				_tcscat(DllFullPath, _T("ciimgdec"));
+..\..\..\src\LibUtility\CI_Utility.cpp(455) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                                         _
+				_tcscat(DllFullPath, SHARELIBRARY_SUFFIX);
+..\..\..\src\LibUtility\CI_Utility.cpp(456) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                                 _
+				_tcscpy(DllFullPath, m_tcDllPath);
+..\..\..\src\LibUtility\CI_Utility.cpp(460) : Warning 534: Ignoring return
+    value of function 'wcscpy(wchar_t *, const wchar_t *)' (compare with line
+    252, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(252) : Info 830:
+    Location cited in prior message
+                                                                         _
+				_tcscat(DllFullPath, SHARELIBRARY_PREFIX);
+..\..\..\src\LibUtility\CI_Utility.cpp(461) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                                    _
+				_tcscat(DllFullPath, _T("ciimgdec"));
+..\..\..\src\LibUtility\CI_Utility.cpp(462) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                                         _
+				_tcscat(DllFullPath, SHARELIBRARY_SUFFIX);
+..\..\..\src\LibUtility\CI_Utility.cpp(463) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                              _
+				_tcscpy(DllFullPath, _T("./"));
+..\..\..\src\LibUtility\CI_Utility.cpp(471) : Warning 534: Ignoring return
+    value of function 'wcscpy(wchar_t *, const wchar_t *)' (compare with line
+    252, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(252) : Info 830:
+    Location cited in prior message
+                                                                         _
+				_tcscat(DllFullPath, _T("libSUBDecoder"));
+..\..\..\src\LibUtility\CI_Utility.cpp(472) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                                         _
+				_tcscat(DllFullPath, SHARELIBRARY_SUFFIX);
+..\..\..\src\LibUtility\CI_Utility.cpp(473) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                                 _
+				_tcscpy(DllFullPath, m_tcDllPath);
+..\..\..\src\LibUtility\CI_Utility.cpp(477) : Warning 534: Ignoring return
+    value of function 'wcscpy(wchar_t *, const wchar_t *)' (compare with line
+    252, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(252) : Info 830:
+    Location cited in prior message
+                                                                         _
+				_tcscat(DllFullPath, _T("libSUBDecoder"));
+..\..\..\src\LibUtility\CI_Utility.cpp(478) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                                         _
+				_tcscat(DllFullPath, SHARELIBRARY_SUFFIX);
+..\..\..\src\LibUtility\CI_Utility.cpp(479) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                              _
+				_tcscpy(DllFullPath, _T("./"));
+..\..\..\src\LibUtility\CI_Utility.cpp(487) : Warning 534: Ignoring return
+    value of function 'wcscpy(wchar_t *, const wchar_t *)' (compare with line
+    252, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(252) : Info 830:
+    Location cited in prior message
+      _
+#elif linux
+..\..\..\src\LibUtility\CI_Utility.cpp(490) : Warning 553: Undefined
+    preprocessor variable 'linux', assumed 0 [MISRA C++ Rule 16-0-7]
+                                                                            _
+				_tcscat(DllFullPath, _T("LibCMMBDemux_x86"));
+..\..\..\src\LibUtility\CI_Utility.cpp(493) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                                         _
+				_tcscat(DllFullPath, SHARELIBRARY_SUFFIX);
+..\..\..\src\LibUtility\CI_Utility.cpp(495) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                                 _
+				_tcscpy(DllFullPath, m_tcDllPath);
+..\..\..\src\LibUtility\CI_Utility.cpp(499) : Warning 534: Ignoring return
+    value of function 'wcscpy(wchar_t *, const wchar_t *)' (compare with line
+    252, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(252) : Info 830:
+    Location cited in prior message
+      _
+#elif linux
+..\..\..\src\LibUtility\CI_Utility.cpp(502) : Warning 553: Undefined
+    preprocessor variable 'linux', assumed 0 [MISRA C++ Rule 16-0-7]
+                                                                            _
+				_tcscat(DllFullPath, _T("LibCMMBDemux_x86"));
+..\..\..\src\LibUtility\CI_Utility.cpp(505) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                                                                         _
+				_tcscat(DllFullPath, SHARELIBRARY_SUFFIX);
+..\..\..\src\LibUtility\CI_Utility.cpp(507) : Warning 534: Ignoring return
+    value of function 'wcscat(wchar_t *, const wchar_t *)' (compare with line
+    245, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(245) : Info 830:
+    Location cited in prior message
+                       _
+		return E_INVALIDARG;
+..\..\..\src\LibUtility\CI_Utility.cpp(527) : Warning 570: Loss of sign
+    (return) (long to unsigned long)
+                    _
+		free(m_tcDllPath);
+..\..\..\src\LibUtility\CI_Utility.cpp(533) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                    _
+	m_tcDllPath = (TCHAR*)malloc((uPathLen+1)*sizeof(TCHAR));
+..\..\..\src\LibUtility\CI_Utility.cpp(536) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                        _
+	memset(m_tcDllPath, 0, uPathLen);
+..\..\..\src\LibUtility\CI_Utility.cpp(537) : Warning 668: Possibly passing a
+    null pointer to function 'memset(void *, int, unsigned int)', arg. no. 1
+    [Reference: file ..\..\..\src\LibUtility\CI_Utility.cpp: line 536]
+..\..\..\src\LibUtility\CI_Utility.cpp(536) : Info 831: Reference cited in
+    prior message
+                   _
+	CloseFile();
+..\..\..\src\LibUtility\CI_Utility.cpp(564) : Warning 534: Ignoring return
+    value of function 'CCiFileMapBuffer::CloseFile(void)' (compare with line
+    135, file ..\..\..\src\LibUtility\CI_Utility.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibUtility\CI_Utility.h(135) : Info 830: Location cited in prior
+    message
+                   _
+	CloseFile();
+..\..\..\src\LibUtility\CI_Utility.cpp(564) : Warning 1551: Function may throw
+    exception '...' in destructor 'CCiFileMapBuffer::~CCiFileMapBuffer(void)'
+                                    _
+				free(m_ptBlockBuff[i].pucBuff);
+..\..\..\src\LibUtility\CI_Utility.cpp(572) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                    _
+		free(m_ptBlockBuff);
+..\..\..\src\LibUtility\CI_Utility.cpp(576) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+_
+}
+..\..\..\src\LibUtility\CI_Utility.cpp(579) : Warning 1579: Pointer member
+    'CCiFileMapBuffer::m_ptcFileName' (line 151, file ..\..\..\src\LibUtility\CI_Utility.h)
+    might have been freed by a separate function but no '-sem(CCiFileMapBuffer::CloseFile,cleanup)'
+    was seen
+..\..\..\src\LibUtility\CI_Utility.h(151) : Info 830: Location cited in prior
+    message
+_
+}
+..\..\..\src\LibUtility\CI_Utility.cpp(579) : Warning 1579: Pointer member
+    'CCiFileMapBuffer::m_pfFile' (line 156, file ..\..\..\src\LibUtility\CI_Utility.h)
+    might have been freed by a separate function but no '-sem(CCiFileMapBuffer::CloseFile,cleanup)'
+    was seen
+..\..\..\src\LibUtility\CI_Utility.h(156) : Info 830: Location cited in prior
+    message
+                           _
+		CloseFile();
+..\..\..\src\LibUtility\CI_Utility.cpp(618) : Warning 534: Ignoring return
+    value of function 'CCiFileMapBuffer::CloseFile(void)' (compare with line
+    135, file ..\..\..\src\LibUtility\CI_Utility.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibUtility\CI_Utility.h(135) : Info 830: Location cited in prior
+    message
+                                      _
+	m_ptcFileName = (TCHAR*)malloc((_tcslen(ptcFileName)+1)*sizeof(TCHAR));
+..\..\..\src\LibUtility\CI_Utility.cpp(622) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                           _
+		CloseFile();
+..\..\..\src\LibUtility\CI_Utility.cpp(625) : Warning 534: Ignoring return
+    value of function 'CCiFileMapBuffer::CloseFile(void)' (compare with line
+    135, file ..\..\..\src\LibUtility\CI_Utility.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibUtility\CI_Utility.h(135) : Info 830: Location cited in prior
+    message
+                                           _
+	_tcscpy(m_ptcFileName, ptcFileName);
+..\..\..\src\LibUtility\CI_Utility.cpp(628) : Warning 534: Ignoring return
+    value of function 'wcscpy(wchar_t *, const wchar_t *)' (compare with line
+    252, file C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h)
+    [MISRA C++ Rules 0-1-7], [MISRA C++ Rules 0-3-2]
+C:\Program Files\Microsoft Visual Studio 8\VC\include\string.h(252) : Info 830:
+    Location cited in prior message
+                           _
+		CloseFile();
+..\..\..\src\LibUtility\CI_Utility.cpp(639) : Warning 534: Ignoring return
+    value of function 'CCiFileMapBuffer::CloseFile(void)' (compare with line
+    135, file ..\..\..\src\LibUtility\CI_Utility.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibUtility\CI_Utility.h(135) : Info 830: Location cited in prior
+    message
+                           _
+		CloseFile();
+..\..\..\src\LibUtility\CI_Utility.cpp(644) : Warning 534: Ignoring return
+    value of function 'CCiFileMapBuffer::CloseFile(void)' (compare with line
+    135, file ..\..\..\src\LibUtility\CI_Utility.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibUtility\CI_Utility.h(135) : Info 830: Location cited in prior
+    message
+                           _
+		CloseFile();
+..\..\..\src\LibUtility\CI_Utility.cpp(649) : Warning 534: Ignoring return
+    value of function 'CCiFileMapBuffer::CloseFile(void)' (compare with line
+    135, file ..\..\..\src\LibUtility\CI_Utility.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibUtility\CI_Utility.h(135) : Info 830: Location cited in prior
+    message
+                                                 _
+	m_ptBlockBuff = (TFMB_BlockBuffer*)malloc(sizeof(TFMB_BlockBuffer)*m_ulBlockCount);
+..\..\..\src\LibUtility\CI_Utility.cpp(654) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                           _
+		CloseFile();
+..\..\..\src\LibUtility\CI_Utility.cpp(657) : Warning 534: Ignoring return
+    value of function 'CCiFileMapBuffer::CloseFile(void)' (compare with line
+    135, file ..\..\..\src\LibUtility\CI_Utility.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibUtility\CI_Utility.h(135) : Info 830: Location cited in prior
+    message
+                                                                 _
+		m_ptBlockBuff[i].pucBuff = (unsigned char*)malloc(m_ulBlockSize);
+..\..\..\src\LibUtility\CI_Utility.cpp(665) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                    _
+				free(m_ptBlockBuff[i].pucBuff);
+..\..\..\src\LibUtility\CI_Utility.cpp(675) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                           _
+		CloseFile();
+..\..\..\src\LibUtility\CI_Utility.cpp(679) : Warning 534: Ignoring return
+    value of function 'CCiFileMapBuffer::CloseFile(void)' (compare with line
+    135, file ..\..\..\src\LibUtility\CI_Utility.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibUtility\CI_Utility.h(135) : Info 830: Location cited in prior
+    message
+                           _
+		CloseFile();
+..\..\..\src\LibUtility\CI_Utility.cpp(696) : Warning 534: Ignoring return
+    value of function 'CCiFileMapBuffer::CloseFile(void)' (compare with line
+    135, file ..\..\..\src\LibUtility\CI_Utility.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibUtility\CI_Utility.h(135) : Info 830: Location cited in prior
+    message
+                           _
+		CloseFile();
+..\..\..\src\LibUtility\CI_Utility.cpp(701) : Warning 534: Ignoring return
+    value of function 'CCiFileMapBuffer::CloseFile(void)' (compare with line
+    135, file ..\..\..\src\LibUtility\CI_Utility.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibUtility\CI_Utility.h(135) : Info 830: Location cited in prior
+    message
+                           _
+		CloseFile();
+..\..\..\src\LibUtility\CI_Utility.cpp(706) : Warning 534: Ignoring return
+    value of function 'CCiFileMapBuffer::CloseFile(void)' (compare with line
+    135, file ..\..\..\src\LibUtility\CI_Utility.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibUtility\CI_Utility.h(135) : Info 830: Location cited in prior
+    message
+                                                 _
+	m_ptBlockBuff = (TFMB_BlockBuffer*)malloc(sizeof(TFMB_BlockBuffer)*m_ulBlockCount);
+..\..\..\src\LibUtility\CI_Utility.cpp(710) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+..\..\..\src\LibUtility\CI_Utility.cpp(710) : Warning 423: Creation of memory
+    leak in assignment to 'CCiFileMapBuffer::m_ptBlockBuff'
+                           _
+		CloseFile();
+..\..\..\src\LibUtility\CI_Utility.cpp(713) : Warning 534: Ignoring return
+    value of function 'CCiFileMapBuffer::CloseFile(void)' (compare with line
+    135, file ..\..\..\src\LibUtility\CI_Utility.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibUtility\CI_Utility.h(135) : Info 830: Location cited in prior
+    message
+                                                                 _
+		m_ptBlockBuff[i].pucBuff = (unsigned char*)malloc(m_ulBlockSize);
+..\..\..\src\LibUtility\CI_Utility.cpp(721) : Warning 586: function 'malloc' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                    _
+				free(m_ptBlockBuff[i].pucBuff);
+..\..\..\src\LibUtility\CI_Utility.cpp(731) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                           _
+		CloseFile();
+..\..\..\src\LibUtility\CI_Utility.cpp(735) : Warning 534: Ignoring return
+    value of function 'CCiFileMapBuffer::CloseFile(void)' (compare with line
+    135, file ..\..\..\src\LibUtility\CI_Utility.h) [MISRA C++ Rules 0-1-7],
+    [MISRA C++ Rules 0-3-2]
+..\..\..\src\LibUtility\CI_Utility.h(135) : Info 830: Location cited in prior
+    message
+                    _
+		free(m_ptcFileName);
+..\..\..\src\LibUtility\CI_Utility.cpp(751) : Warning 586: function 'free' is
+    deprecated. [MISRA C++ Rule 18-4-1]
+                                                                                  _
+		TFMB_BlockBuffer* ptReadBlkBuff = &m_ptBlockBuff[m_ulReadBlockIdx];
+..\..\..\src\LibUtility\CI_Utility.cpp(794) : Warning 613: Possible use of null
+    pointer 'CCiFileMapBuffer::m_ptBlockBuff' in left argument to operator '['
+    [Reference: file ..\..\..\src\LibUtility\CI_Utility.cpp: lines 559, 764]
+..\..\..\src\LibUtility\CI_Utility.cpp(559) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibUtility\CI_Utility.cpp(764) : Info 831: Reference cited in
+    prior message
+                                                                     _
+				ptReadBlkBuff = &m_ptBlockBuff[ulIdx];
+..\..\..\src\LibUtility\CI_Utility.cpp(802) : Warning 613: Possible use of null
+    pointer 'CCiFileMapBuffer::m_ptBlockBuff' in left argument to operator '['
+    [Reference: file ..\..\..\src\LibUtility\CI_Utility.cpp: lines 559, 764]
+..\..\..\src\LibUtility\CI_Utility.cpp(559) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibUtility\CI_Utility.cpp(764) : Info 831: Reference cited in
+    prior message
+                                                                  _
+	if (ulFlags == 1 && m_ptBlockBuff[m_ulReadBlockIdx].bValid)  // pre-load file data of all the buffers
+..\..\..\src\LibUtility\CI_Utility.cpp(850) : Warning 613: Possible use of null
+    pointer 'CCiFileMapBuffer::m_ptBlockBuff' in left argument to operator '['
+    [Reference: file ..\..\..\src\LibUtility\CI_Utility.cpp: lines 559, 764]
+..\..\..\src\LibUtility\CI_Utility.cpp(559) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibUtility\CI_Utility.cpp(764) : Info 831: Reference cited in
+    prior message
+                                                                                                        _
+		long long llNextBlockOffset = m_ptBlockBuff[m_ulReadBlockIdx].llFileOffset+m_ulBlockSize;
+..\..\..\src\LibUtility\CI_Utility.cpp(853) : Warning 613: Possible use of null
+    pointer 'CCiFileMapBuffer::m_ptBlockBuff' in left argument to operator '['
+    [Reference: file ..\..\..\src\LibUtility\CI_Utility.cpp: lines 559, 764]
+..\..\..\src\LibUtility\CI_Utility.cpp(559) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibUtility\CI_Utility.cpp(764) : Info 831: Reference cited in
+    prior message
+                                                   _
+	if (llNewPos < 0 || llNewPos > m_llFileSize)
+..\..\..\src\LibUtility\CI_Utility.cpp(894) : Warning 644: Variable 'llNewPos'
+    (line 886) may not have been initialized
+..\..\..\src\LibUtility\CI_Utility.cpp(886) : Info 830: Location cited in prior
+    message
+                                                             _
+	long lRet = (long)fread(pucBuff, 1, ulSize, m_pfFile);
+..\..\..\src\LibUtility\CI_Utility.cpp(913) : Warning 668: Possibly passing a
+    null pointer to function 'fread(void *, unsigned int, unsigned int, struct
+    _iobuf *)', arg. no. 4 [Reference: file ..\..\..\src\LibUtility\CI_Utility.cpp:
+    lines 549, 746, 749, 756]
+..\..\..\src\LibUtility\CI_Utility.cpp(549) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibUtility\CI_Utility.cpp(746) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibUtility\CI_Utility.cpp(749) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibUtility\CI_Utility.cpp(756) : Info 831: Reference cited in
+    prior message
+
+During Specific Walk:
+  File ..\..\..\src\LibUtility\CI_Utility.cpp line 821: CCiFileMapBuffer::sys_read(?,
+    ?) #1
+..\..\..\src\LibUtility\CI_Utility.cpp(913) : Warning 668: Possibly passing a
+    null pointer to function 'fread(void *, unsigned int, unsigned int, struct
+    _iobuf *)', arg. no. 4 [Reference: file ..\..\..\src\LibUtility\CI_Utility.cpp:
+    lines 549, 746, 749, 756]
+..\..\..\src\LibUtility\CI_Utility.cpp(549) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibUtility\CI_Utility.cpp(746) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibUtility\CI_Utility.cpp(749) : Info 831: Reference cited in
+    prior message
+..\..\..\src\LibUtility\CI_Utility.cpp(756) : Info 831: Reference cited in
+    prior message
+                                                    _
+	iRet = _fseeki64(m_pfFile, llOffset, origin);
+..\..\..\src\LibUtility\CI_Utility.cpp(946) : Warning 644: Variable 'origin'
+    (line 928) may not have been initialized
+..\..\..\src\LibUtility\CI_Utility.cpp(928) : Info 830: Location cited in prior
+    message
