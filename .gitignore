@@ -215,3 +215,8 @@ pip-log.txt
 .mr.developer.cfg
 LintLogStat/*.csv
 LintLogStat/*.zip
+
+#############
+## JetBrain
+#############
+.idea/
