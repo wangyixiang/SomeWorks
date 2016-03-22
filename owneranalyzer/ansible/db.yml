@@ -1,0 +1,84 @@
+---
+- name: Deploy database
+  hosts: dbserver
+  user: "{{ansible_ssh_user}}"
+
+  tasks:
+    - name: PostgreSQL | Make sure the CA certificates are available
+      apt:
+        pkg: ca-certificates
+        state: present
+
+    - name: PostgreSQL | Add PostgreSQL repository apt-key
+      apt_key:
+        id: "{{ postgresql_apt_key_id }}"
+        url: "{{ postgresql_apt_key_url }}"
+        state: present
+      sudo: True
+
+    - name: PostgreSQL | Add PostgreSQL repository
+      apt_repository:
+        repo: "{{ postgresql_apt_repository }}"
+        state: present
+      sudo: True
+
+    - name: install postgresql
+      apt: pkg={{item}} update_cache=yes cache_valid_time="{{apt_cache_valid_time|default(3600)}}"
+      sudo: True
+      with_items:
+        - postgresql-{{postgresql_version}}
+        - postgresql-contrib-{{postgresql_version}}
+        - python-psycopg2
+
+    - name: Ensure the PostgreSQL service is running
+      service: name=postgresql state=started enabled=yes
+
+    - lineinfile:
+        dest: /etc/postgresql/{{postgresql_version}}/main/pg_hba.conf
+        line: "host all all 192.168.0.0/24  md5"
+        state: present
+      register: pg_hbaconf
+      become: True
+      become_user: "{{db_user}}"
+
+    - lineinfile:
+        dest: /etc/postgresql/{{postgresql_version}}/main/postgresql.conf
+        line: "listen_addresses = '*'"
+        state: present
+      register: postgresqlconf
+      become: True
+      become_user: "{{db_user}}"
+
+    - service: name=postgresql state=restarted
+      when: pg_hbaconf.changed or postgresqlconf.changed
+      sudo: True
+
+    - name: create the database
+      postgresql_db:
+        name: "{{database_name}}"
+        owner: "{{db_user}}"
+        encoding: UTF8
+        lc_ctype: "{{locale}}"
+        lc_collate: "{{locale}}"
+        template: template0
+      become: True
+      become_user: "{{db_user}}"
+
+    - name: create a user
+      postgresql_user:
+        name: "{{db_user}}"
+        password: "{{db_pass}}"
+        state: present
+      sudo: True
+      sudo_user: postgres
+
+    - name: create table files
+      copy: dest=/tmp/postgre.sql src=../postgre.sql
+
+    - name: create it now.
+      shell: psql -U {{db_user}} -d {{database_name}} -v ON_ERROR_STOP=1 -f /tmp/postgre.sql
+      become: yes
+      become_user: postgres
+
+    - name: clean sql files from server.
+      file: path=/tmp/postgre.sql state=absent
