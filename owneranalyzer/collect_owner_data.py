@@ -10,6 +10,7 @@ import logging
 import os
 import subprocess
 import sys
+import time
 
 import psycopg2
 
@@ -117,7 +118,20 @@ def process_node(conn, source_path, source_dict, is_file, is_insert=True):
     else:
         basename = u""
         dir_name = absolute_name
-    last_modified_time = psycopg2.TimestampFromTicks(os.path.getmtime(EXTENDEDLENGTH + absolute_name))
+
+    # It's hard to image the file in the file system which without modified timestamp, but this kind sick file exist on
+    # our windows NTFS system.
+    # when it's empty, the os.path.getmtime will return value 46001572830.34235, it will fail functions from datetime
+    # module as I tried, it also failed psycopg2's TimestampFromTicks
+    #
+    # adding protection here, when it happens using the now time instead.
+
+    last_modified_time = psycopg2.TimestampFromTicks(time.time())
+    try:
+        last_modified_time = psycopg2.TimestampFromTicks(os.path.getmtime(EXTENDEDLENGTH + absolute_name))
+    except Exception as e:
+        logging.exception(e.message)
+
     file_size = os.path.getsize(EXTENDEDLENGTH + absolute_name)
 
     insert_or_update(conn, is_insert,
