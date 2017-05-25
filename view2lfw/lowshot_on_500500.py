@@ -74,7 +74,8 @@ def dlib_generate_embedding(query_paths, dataset_paths):
     # face_rec_dat_path = r"./4000_dlib_face_recognition_resnet_model_v1.dat"
     # face_rec_dat_path = r"./10000_dlib_face_recognition_resnet_model_v1.dat"
     # face_rec_dat_path = r"./20000_dlib_face_recognition_resnet_model_v1.dat"
-    face_rec_dat_path = r"./origplus20000_dlib_face_recognition_resnet_model_v1.dat"
+    # face_rec_dat_path = r"./origplus20000_dlib_face_recognition_resnet_model_v1.dat"
+    face_rec_dat_path = r"./10x10origplus20000_dlib_face_recognition_resnet_model_v1.dat"
 
     # predictor_dat_path = r"C:\sources\dlib\build\Release\shape_predictor_68_face_landmarks.dat"
     # face_rec_dat_path = r"C:\sources\dlib\build\Release\orig_dlib_face_recognition_resnet_model_v1.dat"
@@ -83,16 +84,11 @@ def dlib_generate_embedding(query_paths, dataset_paths):
     shape_predictor = dlib.shape_predictor(predictor_dat_path)
     face_rec = dlib.face_recognition_model_v1(face_rec_dat_path)
     embedding_dict = {}
-    non_only_one_list = []
-    more_than_one_list = []
 
     for i, img_path in enumerate(query_paths + dataset_paths):
         img = io.imread(img_path)
         key = os.path.basename(img_path)
         dets = detector(img, 1)
-
-        # win.clear_overlay()
-        # win.set_image(img)
 
         if i % 1000 == 0:
             print(i, time.asctime(time.localtime(time.time())))
@@ -135,9 +131,9 @@ def dlib_generate_embedding(query_paths, dataset_paths):
                 actual_issame.append(False)
     embeddings1 = embedding_list[0::2]
     embeddings2 = embedding_list[1::2]
-    diff = np.subtract(embeddings1,embeddings2)
+    diff = np.subtract(embeddings1, embeddings2)
     dist = np.sum(np.square(diff), 1)
-    predict_issame = np.less(dist, 0.406)
+    predict_issame = np.less(dist, 0.396)
     wrong_pairs = []
     same_wrong = 0
     diff_wrong = 0
@@ -150,8 +146,8 @@ def dlib_generate_embedding(query_paths, dataset_paths):
                 wrong_pairs.append(pair)
                 if actual_issame[i] == True:
                     same_wrong += 1
-                    show_pair(os.path.join(os.path.dirname(query_paths[0]), pair[0]),
-                              os.path.join(os.path.dirname(dataset_paths[0]), pair[1]))
+                    # show_pair(os.path.join(os.path.dirname(query_paths[0]), pair[0]),
+                    #           os.path.join(os.path.dirname(dataset_paths[0]), pair[1]))
                 else:
                     diff_wrong += 1
                 print(pair)
@@ -168,8 +164,8 @@ def dlib_generate_embedding(query_paths, dataset_paths):
         else:
             print("can't be wrong here, quit and go to debug it.")
             sys.exit(1)
-    embedding_list.extend(true_list*498)
-    actual_issame.extend([True]*(500*498))
+    embedding_list.extend(true_list * 498)
+    actual_issame.extend([True] * (500 * 498))
     return embedding_list, actual_issame
 
 
@@ -186,9 +182,11 @@ def evaluate(embedding_list, actual_issame, nrof_folds=10):
 
 win1 = None
 win2 = None
+
+
 def show_pair(path1, path2):
     global win1, win2
-    if win1 == None :
+    if win1 == None:
         win1 = dlib.image_window()
     if win2 == None:
         win2 = dlib.image_window()
