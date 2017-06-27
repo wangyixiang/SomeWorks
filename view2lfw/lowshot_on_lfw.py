@@ -36,12 +36,14 @@ def parse_args():
 
 def dlib_generate_embedding(image_paths, actual_issame, embedding_size=128):
     predictor_dat_path = r"./shape_predictor_68_face_landmarks.dat"
-    face_rec_dat_path = r"./orig_dlib_face_recognition_resnet_model_v1.dat"
+    # face_rec_dat_path = r"./orig_dlib_face_recognition_resnet_model_v1.dat"
     # face_rec_dat_path = r"./1000_dlib_face_recognition_resnet_model_v1.dat"
     # face_rec_dat_path = r"./4000_dlib_face_recognition_resnet_model_v1.dat"
     # face_rec_dat_path = r"./10000_dlib_face_recognition_resnet_model_v1.dat"
     # face_rec_dat_path = r"./20000_dlib_face_recognition_resnet_model_v1.dat"
     # face_rec_dat_path = r"./origplus20000_dlib_face_recognition_resnet_model_v1.dat"
+    face_rec_dat_path = r"./10x10origplus20000_dlib_face_recognition_resnet_model_v1.dat"
+
     # predictor_dat_path = r"C:\sources\dlib\examples\build\Release\shape_predictor_68_face_landmarks.dat"
     # face_rec_dat_path = r"C:\sources\dlib\examples\build\Release\orig_dlib_face_recognition_resnet_model_v1.dat"
 

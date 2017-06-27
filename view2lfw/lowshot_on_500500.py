@@ -27,19 +27,17 @@ nodetected_dict = {
 
 
 def main(args):
-    queryset_path = r"D:\datasets\500500\testdata\query"
-    dataset_path = r"D:\datasets\500500\testdata\database"
-    # queryset_path = r"./testdata/query"
-    # dataset_path = r"./testdata/database"
+    # queryset_path = r"D:\datasets\500500\testdata\query"
+    # dataset_path = r"D:\datasets\500500\testdata\database"
+    queryset_path = r"./testdata/query"
+    dataset_path = r"./testdata/database"
 
     embedding_list, real_same_list = dlib_generate_embedding(get_q_list(queryset_path), get_d_list(dataset_path))
-    # tpr, fpr, accuracy = evaluate(embedding_list, real_same_list)
-    # print('Accuracy: %1.3f+-%1.3f' % (np.mean(accuracy), np.std(accuracy)))
-    #
-    # auc = metrics.auc(fpr, tpr)
-    # print('Area Under Curve (AUC): %1.3f' % auc)
+    tpr, fpr, accuracy = evaluate(embedding_list, real_same_list)
+    print('Accuracy: %1.3f+-%1.3f' % (np.mean(accuracy), np.std(accuracy)))
 
-
+    auc = metrics.auc(fpr, tpr)
+    print('Area Under Curve (AUC): %1.3f' % auc)
     # eer = brentq(lambda x: 1. - x - interpolate.interp1d(fpr, tpr)(x), 0., 1.)
     # print('Equal Error Rate (EER): %1.3f' % eer)
 
@@ -69,14 +67,11 @@ def parse_args():
 
 def dlib_generate_embedding(query_paths, dataset_paths):
     predictor_dat_path = r"./shape_predictor_68_face_landmarks.dat"
-    # face_rec_dat_path = r"./orig_dlib_face_recognition_resnet_model_v1.dat"
+    face_rec_dat_path = r"./orig_dlib_face_recognition_resnet_model_v1.dat"
     # face_rec_dat_path = r"./1000_dlib_face_recognition_resnet_model_v1.dat"
     # face_rec_dat_path = r"./4000_dlib_face_recognition_resnet_model_v1.dat"
     # face_rec_dat_path = r"./10000_dlib_face_recognition_resnet_model_v1.dat"
     # face_rec_dat_path = r"./20000_dlib_face_recognition_resnet_model_v1.dat"
-    # face_rec_dat_path = r"./origplus20000_dlib_face_recognition_resnet_model_v1.dat"
-    face_rec_dat_path = r"./10x10origplus20000_dlib_face_recognition_resnet_model_v1.dat"
-
     # predictor_dat_path = r"C:\sources\dlib\build\Release\shape_predictor_68_face_landmarks.dat"
     # face_rec_dat_path = r"C:\sources\dlib\build\Release\orig_dlib_face_recognition_resnet_model_v1.dat"
 
@@ -84,11 +79,16 @@ def dlib_generate_embedding(query_paths, dataset_paths):
     shape_predictor = dlib.shape_predictor(predictor_dat_path)
     face_rec = dlib.face_recognition_model_v1(face_rec_dat_path)
     embedding_dict = {}
+    non_only_one_list = []
+    more_than_one_list = []
 
     for i, img_path in enumerate(query_paths + dataset_paths):
         img = io.imread(img_path)
         key = os.path.basename(img_path)
         dets = detector(img, 1)
+
+        # win.clear_overlay()
+        # win.set_image(img)
 
         if i % 1000 == 0:
             print(i, time.asctime(time.localtime(time.time())))
@@ -117,89 +117,33 @@ def dlib_generate_embedding(query_paths, dataset_paths):
     print("embedding geranating finished", time.asctime(time.localtime(time.time())))
     actual_issame = []
     embedding_list = []
-    pairs = []
     for qkey in query_paths:
         qqkey = os.path.basename(qkey)
         for dkey in dataset_paths:
             ddkey = os.path.basename(dkey)
             embedding_list.append(embedding_dict[qqkey])
             embedding_list.append(embedding_dict[ddkey])
-            pairs.append([qqkey, ddkey])
             if qqkey[1:] == ddkey[1:]:
-                actual_issame.append(True)
+                actual_issame = True
             else:
-                actual_issame.append(False)
-    embeddings1 = embedding_list[0::2]
-    embeddings2 = embedding_list[1::2]
-    diff = np.subtract(embeddings1, embeddings2)
-    dist = np.sum(np.square(diff), 1)
-    predict_issame = np.less(dist, 0.396)
-    wrong_pairs = []
-    same_wrong = 0
-    diff_wrong = 0
-    if len(predict_issame) != len(actual_issame):
-        print("wrong, wrong, wrong")
-        sys.exit(1)
-    else:
-        for i, pair in enumerate(pairs):
-            if predict_issame[i] != actual_issame[i]:
-                wrong_pairs.append(pair)
-                if actual_issame[i] == True:
-                    same_wrong += 1
-                    # show_pair(os.path.join(os.path.dirname(query_paths[0]), pair[0]),
-                    #           os.path.join(os.path.dirname(dataset_paths[0]), pair[1]))
-                else:
-                    diff_wrong += 1
-                print(pair)
+                actual_issame = False
 
-    print("same wrong %i" % same_wrong)
-    print("diff wrong %i" % diff_wrong)
-    true_list = []
-    for i, _ in enumerate(query_paths):
-        qqkey = os.path.basename(query_paths[i])
-        ddkey = os.path.basename(dataset_paths[i])
-        if qqkey[1:] == ddkey[1:]:
-            true_list.append(embedding_dict[qqkey])
-            true_list.append(embedding_dict[ddkey])
-        else:
-            print("can't be wrong here, quit and go to debug it.")
-            sys.exit(1)
-    embedding_list.extend(true_list * 498)
-    actual_issame.extend([True] * (500 * 498))
+
+
+
     return embedding_list, actual_issame
 
 
 def evaluate(embedding_list, actual_issame, nrof_folds=10):
     # Calculate evaluation metrics
     embeddings = np.asarray(embedding_list)
-    thresholds = np.arange(0, 4, 0.001)
+    thresholds = np.arange(0, 4, 0.01)
     embeddings1 = embeddings[0::2]
     embeddings2 = embeddings[1::2]
     tpr, fpr, accuracy = lfw.calculate_roc(thresholds, embeddings1, embeddings2,
                                            np.asarray(actual_issame), nrof_folds=nrof_folds)
     return tpr, fpr, accuracy
 
-
-win1 = None
-win2 = None
-
-
-def show_pair(path1, path2):
-    global win1, win2
-    if win1 == None:
-        win1 = dlib.image_window()
-    if win2 == None:
-        win2 = dlib.image_window()
-    img1 = io.imread(path1)
-    img2 = io.imread(path2)
-    win1.clear_overlay()
-    win2.clear_overlay()
-    win1.set_image(img1)
-    win2.set_image(img2)
-    dlib.hit_enter_to_continue()
-
-    win1.set_image(img1)
-    win2.set_image(img2)
 
 if __name__ == "__main__":
     main(parse_args())

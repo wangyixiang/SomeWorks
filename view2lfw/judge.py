@@ -53,11 +53,16 @@ def read_test_result(filepath):
                 data = Result(items[0], gmsfhm , float(items[2]))
                 test_data_list.append(data)
                 #print(gmsfhm)
-                gt = gt_map[data.query]
-                if gt == data.register:
-                    pos_count = pos_count + 1
-                else:
+                try:
+                    gt = gt_map[data.query]
+                    if gt == data.register:
+                        pos_count = pos_count + 1
+                    else:
+                        neg_count = neg_count + 1
+                except KeyError:
                     neg_count = neg_count + 1
+                    pass
+
             else:
                 print ('[WARNING] Line(%d) can\'t parse query filename' % (total_linenum))
 
