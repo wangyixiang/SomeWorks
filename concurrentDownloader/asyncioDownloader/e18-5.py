@@ -39,11 +39,11 @@ def download_all_for_star(star_id):
             if len(line.strip()) > 0:
                 urls.append(line.strip())
     if len(urls) > 0:
-        loop = asyncio.get_event_loop()
         if not os.path.exists(os.path.join(STAR_PHOTO_DIR, star_id)):
             os.mkdir(os.path.join(STAR_PHOTO_DIR, star_id))
         to_download = [download_one(star_id, url) for url in sorted(urls)]
         wait_coro = asyncio.wait(to_download)
+        loop = asyncio.get_event_loop()
         res, _ = loop.run_until_complete(wait_coro)
         loop.close()
     else:
