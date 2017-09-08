@@ -35,7 +35,7 @@ def put_jobs_to_check_dir(job_dir, label_categories, check_dir):
                 print(src_dir)
 
 
-def get_result_to_git(checked_dirs):
+def get_result_to_git(checked_dirs, categories):
     def get_key(x):
         try:
             return int(x.rsplit("-", maxsplit=3)[1].strip())
@@ -63,7 +63,7 @@ def get_daizl_jobs(job_dir=DAIZL_JOB_DIR, check_dir=DAIZL_CHECK_DIR):
 
 
 def get_check_result_to_git_from_daizl(checked_dir=DAIZL_CHECK_DIR):
-    get_result_to_git([checked_dir])
+    get_result_to_git([checked_dir], categories)
 
 
 LVJING_JOB_DIR = r"/3T/intern_datasets/lvjing/msdataset/category"
@@ -74,8 +74,13 @@ def get_lvjing_jobs(job_dir=LVJING_JOB_DIR, check_dir=LVJING_CHECK_DIR):
 
 
 def get_check_result_to_git_from_lvjing(checked_dir=LVJING_CHECK_DIR):
-    get_result_to_git([checked_dir])
+    get_result_to_git([checked_dir], categories)
+
+
+def get_check_result_to_git_from_3399999(checked_dir, categories):
+    get_result_to_git([checked_dir], categories)
+
 
 if __name__ == "__main__":
-    pass
+    get_check_result_to_git_from_3399999(r"/6T/datasetgeneration", ["wangyixiang3399999"])
 
